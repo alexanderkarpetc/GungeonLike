@@ -49,66 +49,46 @@ namespace Player
       var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
       if (angle >= -75 && angle < 45)
       {
-        if (_currentTurn == DownRight) 
-          return;
-        _currentTurn = DownRight;
-
-        TurnTo(DownRight);
-        SetXScale(1);
+        ProcessPlayerTurn(DownRight, 1);
         return;
       }
       if (angle >= 45 && angle < 75)
       {
-        if (_currentTurn == UpRight) 
-          return;
-        _currentTurn = UpRight;
-
-        TurnTo(UpRight);
-        SetXScale(1);
+        ProcessPlayerTurn(UpRight, 1);
         return;
       }
       if (angle >= 75 && angle < 105)
       {
-        if (_currentTurn == Up) 
-          return;
-        _currentTurn = Up;
-        
-        TurnTo(Up);
-        SetXScale(1);
+        ProcessPlayerTurn(Up, 1);
         return;
       }
       if (angle >= 105 && angle < 135)
       {
-        if (_currentTurn == UpRight)
-          return;
-        _currentTurn = UpRight;
-
-        TurnTo(UpRight);
-        SetXScale(-1);
+        ProcessPlayerTurn(UpRight, -1);
         return;
       }
       
       if (angle > -135 && angle < -75)
       {
-        if (_currentTurn == Down) 
-          return;
-        _currentTurn = Down;
-
-        TurnTo(Down);
-        SetXScale(1);
+        ProcessPlayerTurn(Down, 1);
         return;
       }
       
       if (Mathf.Abs(angle) >= 135)
       {
-        if (_currentTurn == DownRight) 
-          return;
-        _currentTurn = DownRight;
-
-        TurnTo(DownRight);
-        SetXScale(-1);
+        ProcessPlayerTurn(DownRight, -1);
         return;
       }
+    }
+
+    private void ProcessPlayerTurn(int direction, int scale)
+    {
+      if (_currentTurn == direction)
+        return;
+      _currentTurn = direction;
+
+      TurnTo(direction);
+      SetXScale(scale);
     }
 
     private void TurnTo(int direction)
