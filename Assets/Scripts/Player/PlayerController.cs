@@ -20,6 +20,7 @@ namespace Player
     private static readonly int DownRun = Animator.StringToHash("downRun");
     private static readonly int DownRightRun = Animator.StringToHash("downRightRun");
     private static readonly int UpRightRun = Animator.StringToHash("upRightRun");
+    private bool _previousRunState;
 
     private void Update()
     {
@@ -47,22 +48,22 @@ namespace Player
     {
       Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
       var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-      if (angle >= -75 && angle < 45)
+      if (angle >= -75 && angle < 25)
       {
         ProcessPlayerTurn(DownRight, 1);
         return;
       }
-      if (angle >= 45 && angle < 75)
+      if (angle >= 25 && angle < 70)
       {
         ProcessPlayerTurn(UpRight, 1);
         return;
       }
-      if (angle >= 75 && angle < 105)
+      if (angle >= 70 && angle < 110)
       {
         ProcessPlayerTurn(Up, 1);
         return;
       }
-      if (angle >= 105 && angle < 135)
+      if (angle >= 110 && angle < 155)
       {
         ProcessPlayerTurn(UpRight, -1);
         return;
@@ -83,17 +84,17 @@ namespace Player
 
     private void ProcessPlayerTurn(int direction, int scale)
     {
-      if (_currentTurn == direction)
+      var currentRunningState = _horizontalMove != 0 || _verticalMove != 0;
+      if (_currentTurn == direction && _previousRunState == currentRunningState)
         return;
       _currentTurn = direction;
-
-      TurnTo(direction);
+      _previousRunState = currentRunningState;
+      TurnTo(direction, currentRunningState);
       SetXScale(scale);
     }
 
-    private void TurnTo(int direction)
+    private void TurnTo(int direction, bool isRunning)
     {
-      var isRunning = _horizontalMove != 0 || _verticalMove != 0;
       if (!isRunning)
       {
         _animator.SetTrigger(direction);
