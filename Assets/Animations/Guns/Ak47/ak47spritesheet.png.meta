@@ -1,0 +1,344 @@
+fileFormatVersion: 2
+guid: 6fbeb321059df2344b25dd3f03791c46
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4627038102986004866
+    second: ak47spritesheet_0
+  - first:
+      213: -4604036206031255751
+    second: ak47big2
+  - first:
+      213: 6140507309893608129
+    second: ak47spritesheet_2
+  - first:
+      213: 7021287922763686749
+    second: ak47reload1
+  - first:
+      213: 5863737045142157640
+    second: ak47spritesheet_4
+  - first:
+      213: 7074743568470305695
+    second: ak47reload2
+  - first:
+      213: -6154685225800677034
+    second: ak47spritesheet_6
+  - first:
+      213: -9016371849305481163
+    second: ak47big1
+  - first:
+      213: 1156949723260047508
+    second: ak47fire1
+  - first:
+      213: -3405188911030556019
+    second: ak47fire2
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 18
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ak47spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 44
+        width: 27
+        height: 7
+      alignment: 9
+      pivot: {x: 0.2842685, y: 0.5268418}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2899daab3aa863040800000000000000
+      internalID: 4627038102986004866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ak47big2
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 43
+        width: 24
+        height: 8
+      alignment: 9
+      pivot: {x: 0.3238484, y: 0.48825645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937487eb67d2b10c0800000000000000
+      internalID: -4604036206031255751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ak47spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 35
+        width: 27
+        height: 7
+      alignment: 9
+      pivot: {x: 0.27382988, y: 0.5134212}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2e5e25dd6773550800000000000000
+      internalID: 6140507309893608129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ak47reload1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 31
+        width: 26
+        height: 10
+      alignment: 9
+      pivot: {x: 0.29042464, y: 0.265131}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d53e1165a20a07160800000000000000
+      internalID: 7021287922763686749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ak47spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 26
+        width: 26
+        height: 7
+      alignment: 9
+      pivot: {x: 0.29042456, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8493fff66cd206150800000000000000
+      internalID: 5863737045142157640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ak47reload2
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 19
+        width: 26
+        height: 10
+      alignment: 9
+      pivot: {x: 0.28171408, y: 0.24879226}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9be6abbac98e2260800000000000000
+      internalID: 7074743568470305695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ak47spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 17
+        width: 25
+        height: 7
+      alignment: 9
+      pivot: {x: 0.2970732, y: 0.51342094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6594ec3656a269aa0800000000000000
+      internalID: -6154685225800677034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ak47big1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 7
+        width: 26
+        height: 8
+      alignment: 9
+      pivot: {x: 0.29042456, y: 0.44128287}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530a057e2996fd280800000000000000
+      internalID: -9016371849305481163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ak47fire1
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 10
+        width: 27
+        height: 7
+      alignment: 9
+      pivot: {x: 0.26912323, y: 0.48670864}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 490d6edb4af4e0010800000000000000
+      internalID: 1156949723260047508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ak47fire2
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1
+        width: 26
+        height: 7
+      alignment: 9
+      pivot: {x: 0.28887102, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8aace41ab65eb0d0800000000000000
+      internalID: -3405188911030556019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
