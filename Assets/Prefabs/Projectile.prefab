@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1269866929858603300}
   m_Layer: 0
   m_Name: Projectile
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damage: 1
   _speed: 10
+  IsInverted: 0
 --- !u!50 &1269866929858603299
 Rigidbody2D:
   serializedVersion: 4

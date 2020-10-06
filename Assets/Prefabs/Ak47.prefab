@@ -118,8 +118,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _body: {fileID: 4700838025997285466}
   _secondaryHandPos: {fileID: 8938371636009332708}
-  _leftHandPos: {x: -0.3, y: -0.3, z: 0}
-  _rightHandPos: {x: 0.3, y: -0.3, z: 0}
+  _leftHandPos: {x: -0.225, y: -0.3, z: 0}
+  _rightHandPos: {x: 0.225, y: -0.3, z: 0}
   Weapon: {fileID: 1712927347}
 --- !u!1 &4700838025997285464
 GameObject:
