@@ -9,7 +9,7 @@ namespace Player
   public class PlayerController : MonoBehaviour
   {
     [SerializeField] private float Speed;
-    [SerializeField] private PlayerTurnAnimator _turnAnimator;
+    [SerializeField] private PlayerTurnAnimator playerTurnAnimator;
     private int _verticalMove;
     private int _horizontalMove;
 
@@ -23,11 +23,11 @@ namespace Player
       var a = Input.GetKey(KeyCode.A) ? 1 : 0;
       var d = Input.GetKey(KeyCode.D) ? 1 : 0;
       _horizontalMove = d - a;
-      _turnAnimator.HorizontalMove = _horizontalMove;
+      playerTurnAnimator.HorizontalMove = _horizontalMove;
       var w = Input.GetKey(KeyCode.W) ? 1 : 0;
       var s = Input.GetKey(KeyCode.S) ? 1 : 0;
       _verticalMove = w - s;
-      _turnAnimator.VerticalMove = _verticalMove;
+      playerTurnAnimator.VerticalMove = _verticalMove;
       Move();
     }
 

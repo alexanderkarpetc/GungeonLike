@@ -8,6 +8,11 @@
       <e p="Assets" t="Include">
         <e p="CameraFollow.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="Enemy" t="Include">
+            <e p="BulletTurnAnimator.cs" t="Include" />
+            <e p="EnemyAnimState.cs" t="Include" />
+            <e p="EnemyWeaponTurn.cs" t="Include" />
+          </e>
           <e p="Player" t="Include">
             <e p="PlayerAnimState.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
@@ -17,7 +22,6 @@
           </e>
           <e p="Projectile.cs" t="Include" />
           <e p="SpriteUtil.cs" t="Include" />
-          <e p="TurnAnimator.cs" t="Include" />
         </e>
       </e>
       <e p="GungeonLike.sln" t="IncludeFlat" />

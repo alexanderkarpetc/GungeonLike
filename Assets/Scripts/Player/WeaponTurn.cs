@@ -12,17 +12,16 @@ namespace Player
     [SerializeField] private Vector3 _rightHandPos;
     [SerializeField] private Weapon Weapon;
 
-    private Transform _rightHand;
+    public Transform _rightHand;
+    public Transform _leftHand;
+
     private SpriteRenderer _rightHandSprite;
-    private Transform _leftHand;
     private SpriteRenderer _leftHandSprite;
     private Animator _playerAnimator;
-    private float _angle;
+    protected float Angle;
 
     private void Start()
     {
-      _rightHand = GameObject.Find("RightHand").transform;
-      _leftHand = GameObject.Find("LeftHand").transform;
       _rightHandSprite = _rightHand.GetComponent<SpriteRenderer>();
       _leftHandSprite = _leftHand.GetComponent<SpriteRenderer>();
       _playerAnimator = GameObject.Find("Player").GetComponent<Animator>();
@@ -36,11 +35,11 @@ namespace Player
       MoveHands();
     }
 
-    private void TurnGun()
+    protected virtual void TurnGun()
     {
       Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-      _angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-      var rot = Quaternion.AngleAxis(Mathf.Abs(_angle) < 90 ? _angle : - 180 + _angle, Vector3.forward);
+      Angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+      var rot = Quaternion.AngleAxis(Mathf.Abs(Angle) < 90 ? Angle : - 180 + Angle, Vector3.forward);
       transform.rotation = rot;
     }
 
@@ -62,7 +61,7 @@ namespace Player
         _leftHandSprite.sortingOrder = -2;
       }
 
-      if (Mathf.Abs(_angle) < 90)
+      if (Mathf.Abs(Angle) < 90)
       {
         _leftHand.localPosition = _leftHandPos;
         _rightHand.position = _secondaryHandPos.position;
