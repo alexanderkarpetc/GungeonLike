@@ -781,7 +781,7 @@ TextureImporter:
     second: ENV_Tileset_BulletHell_258
   - first:
       213: 6043318580602130496
-    second: ENV_Tileset_BulletHell_259
+    second: Floor21
   - first:
       213: -5641656497558138096
     second: ENV_Tileset_BulletHell_260
@@ -865,7 +865,7 @@ TextureImporter:
     second: ENV_Tileset_BulletHell_286
   - first:
       213: 1041186206892918101
-    second: ENV_Tileset_BulletHell_287
+    second: Floor20
   - first:
       213: -2157533582151829423
     second: ENV_Tileset_BulletHell_288
@@ -877,7 +877,7 @@ TextureImporter:
     second: ENV_Tileset_BulletHell_290
   - first:
       213: -2382288837054974436
-    second: ENV_Tileset_BulletHell_291
+    second: Floor22
   - first:
       213: 3431362523973686504
     second: ENV_Tileset_BulletHell_292
@@ -1480,7 +1480,7 @@ TextureImporter:
     second: ENV_Tileset_BulletHell_491
   - first:
       213: 101454058267819443
-    second: ENV_Tileset_BulletHell_492
+    second: Obsticle17
   - first:
       213: 3214160916839360094
     second: Obsticle9
@@ -1510,7 +1510,7 @@ TextureImporter:
     second: ENV_Tileset_BulletHell_501
   - first:
       213: 413021698594717520
-    second: ENV_Tileset_BulletHell_502
+    second: Obsticle16
   - first:
       213: -7370536302527510072
     second: Obsticle10
@@ -1675,10 +1675,10 @@ TextureImporter:
     second: Floor10
   - first:
       213: 2205144797436039447
-    second: ENV_Tileset_BulletHell_557
+    second: Floor23
   - first:
       213: -246384498089312538
-    second: ENV_Tileset_BulletHell_558
+    second: Floor19
   - first:
       213: 8285026739787867316
     second: ENV_Tileset_BulletHell_559
@@ -1837,7 +1837,7 @@ TextureImporter:
     second: ENV_Tileset_BulletHell_610
   - first:
       213: 244142417093694473
-    second: ENV_Tileset_BulletHell_611
+    second: Wall7
   - first:
       213: 474316593173738140
     second: ENV_Tileset_BulletHell_612
@@ -3631,7 +3631,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 90
-        y: 396
+        y: 378
         width: 18
         height: 18
       alignment: 0
@@ -7386,7 +7386,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ENV_Tileset_BulletHell_259
+      name: Floor21
       rect:
         serializedVersion: 2
         x: 54
@@ -7974,7 +7974,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ENV_Tileset_BulletHell_287
+      name: Floor20
       rect:
         serializedVersion: 2
         x: 54
@@ -8058,7 +8058,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ENV_Tileset_BulletHell_291
+      name: Floor22
       rect:
         serializedVersion: 2
         x: 126
@@ -12279,7 +12279,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ENV_Tileset_BulletHell_492
+      name: Obsticle17
       rect:
         serializedVersion: 2
         x: 216
@@ -12489,7 +12489,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ENV_Tileset_BulletHell_502
+      name: Obsticle16
       rect:
         serializedVersion: 2
         x: 396
@@ -13644,7 +13644,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ENV_Tileset_BulletHell_557
+      name: Floor23
       rect:
         serializedVersion: 2
         x: 378
@@ -13665,7 +13665,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ENV_Tileset_BulletHell_558
+      name: Floor19
       rect:
         serializedVersion: 2
         x: 396
@@ -14778,7 +14778,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ENV_Tileset_BulletHell_611
+      name: Wall7
       rect:
         serializedVersion: 2
         x: 342
