@@ -116,7 +116,7 @@ QualitySettings:
     excludedTargetPlatforms: []
   - serializedVersion: 2
     name: High
-    pixelLightCount: 2
+    pixelLightCount: 1
     shadows: 0
     shadowResolution: 1
     shadowProjection: 1
@@ -147,7 +147,7 @@ QualitySettings:
     asyncUploadTimeSlice: 2
     asyncUploadBufferSize: 16
     asyncUploadPersistentBuffer: 1
-    resolutionScalingFixedDPIFactor: 1
+    resolutionScalingFixedDPIFactor: 2
     customRenderPipeline: {fileID: 0}
     excludedTargetPlatforms: []
   - serializedVersion: 2
