@@ -121,6 +121,8 @@ MonoBehaviour:
   _leftHandPos: {x: -0.225, y: -0.3, z: 0}
   _rightHandPos: {x: 0.225, y: -0.3, z: 0}
   Weapon: {fileID: 1712927347}
+  _rightHand: {fileID: 0}
+  _leftHand: {fileID: 0}
 --- !u!1 &4700838025997285464
 GameObject:
   m_ObjectHideFlags: 0
