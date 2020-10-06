@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -9,17 +10,10 @@ namespace Player
   {
     [SerializeField] private Animator _animator;
     [SerializeField] private float Speed;
+    [SerializeField] private GameObject _body;
     private int _verticalMove;
     private int _horizontalMove;
     private int _currentTurn;
-    private static readonly int DownRight = Animator.StringToHash("downRight");
-    private static readonly int UpRight = Animator.StringToHash("upRight");
-    private static readonly int Up = Animator.StringToHash("up");
-    private static readonly int Down = Animator.StringToHash("down");
-    private static readonly int UpRun = Animator.StringToHash("upRun");
-    private static readonly int DownRun = Animator.StringToHash("downRun");
-    private static readonly int DownRightRun = Animator.StringToHash("downRightRun");
-    private static readonly int UpRightRun = Animator.StringToHash("upRightRun");
     private bool _previousRunState;
 
     private void Update()
@@ -50,34 +44,34 @@ namespace Player
       var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
       if (angle >= -75 && angle < 25)
       {
-        ProcessPlayerTurn(DownRight, 1);
+        ProcessPlayerTurn(PlayerAnimState.DownRight, 1);
         return;
       }
       if (angle >= 25 && angle < 70)
       {
-        ProcessPlayerTurn(UpRight, 1);
+        ProcessPlayerTurn(PlayerAnimState.UpRight, 1);
         return;
       }
       if (angle >= 70 && angle < 110)
       {
-        ProcessPlayerTurn(Up, 1);
+        ProcessPlayerTurn(PlayerAnimState.Up, 1);
         return;
       }
       if (angle >= 110 && angle < 155)
       {
-        ProcessPlayerTurn(UpRight, -1);
+        ProcessPlayerTurn(PlayerAnimState.UpRight, -1);
         return;
       }
       
       if (angle > -135 && angle < -75)
       {
-        ProcessPlayerTurn(Down, 1);
+        ProcessPlayerTurn(PlayerAnimState.Down, 1);
         return;
       }
       
       if (Mathf.Abs(angle) >= 135)
       {
-        ProcessPlayerTurn(DownRight, -1);
+        ProcessPlayerTurn(PlayerAnimState.DownRight, -1);
         return;
       }
     }
@@ -90,7 +84,7 @@ namespace Player
       _currentTurn = direction;
       _previousRunState = currentRunningState;
       TurnTo(direction, currentRunningState);
-      SetXScale(scale);
+      SpriteUtil.SetXScale(_body, scale);
     }
 
     private void TurnTo(int direction, bool isRunning)
@@ -100,30 +94,22 @@ namespace Player
         _animator.SetTrigger(direction);
         return;
       }
-      if (direction == Up)
+      if (direction == PlayerAnimState.Up)
       {
-        _animator.SetTrigger(UpRun);
+        _animator.SetTrigger(PlayerAnimState.UpRun);
       }
-      else if (direction == Down)
+      else if (direction == PlayerAnimState.Down)
       {
-        _animator.SetTrigger(DownRun);
+        _animator.SetTrigger(PlayerAnimState.DownRun);
       }
-      else if (direction == DownRight)
+      else if (direction == PlayerAnimState.DownRight)
       {
-        _animator.SetTrigger(DownRightRun);
+        _animator.SetTrigger(PlayerAnimState.DownRightRun);
       }
-      else if (direction == UpRight)
+      else if (direction == PlayerAnimState.UpRight)
       {
-        _animator.SetTrigger(UpRightRun);
+        _animator.SetTrigger(PlayerAnimState.UpRightRun);
       }
-    }
-
-    private void SetXScale(int x)
-    {
-      var transform1 = transform;
-      var newScale = transform1.localScale;
-      newScale.x = x;
-      transform1.localScale = newScale;
     }
   }
 }
