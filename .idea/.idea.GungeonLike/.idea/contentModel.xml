@@ -11,11 +11,13 @@
           <e p="Player" t="Include">
             <e p="PlayerAnimState.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
+            <e p="PlayerTurnAnimator.cs" t="Include" />
             <e p="Weapon.cs" t="Include" />
             <e p="WeaponTurn.cs" t="Include" />
           </e>
           <e p="Projectile.cs" t="Include" />
           <e p="SpriteUtil.cs" t="Include" />
+          <e p="TurnAnimator.cs" t="Include" />
         </e>
       </e>
       <e p="GungeonLike.sln" t="IncludeFlat" />
