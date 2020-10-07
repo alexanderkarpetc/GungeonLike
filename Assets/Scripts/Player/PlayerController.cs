@@ -10,6 +10,7 @@ namespace Player
   {
     [SerializeField] private float Speed;
     [SerializeField] private PlayerTurnAnimator playerTurnAnimator;
+    [SerializeField] private Rigidbody2D _rigidbody;
     private int _verticalMove;
     private int _horizontalMove;
 
@@ -33,7 +34,7 @@ namespace Player
 
     private void Move()
     {
-      transform.Translate(Time.deltaTime * Speed * new Vector2(_horizontalMove, _verticalMove).normalized);
+      _rigidbody.velocity = new Vector2(_horizontalMove, _verticalMove).normalized * Speed;
     }
   }
 }

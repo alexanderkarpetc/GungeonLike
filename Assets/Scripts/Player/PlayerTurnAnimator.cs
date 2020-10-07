@@ -65,7 +65,7 @@ public class PlayerTurnAnimator : MonoBehaviour
       return;
     _currentTurn = direction;
     _previousRunState = currentRunningState;
-    TurnTo(direction, true);
+    TurnTo(direction, currentRunningState);
     SpriteUtil.SetXScale(_body, scale);
   }
 
