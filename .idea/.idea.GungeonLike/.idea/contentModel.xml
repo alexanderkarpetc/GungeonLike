@@ -215,6 +215,7 @@
           <e p="Enemy" t="Include">
             <e p="BulletEnemyTurnAnimator.cs" t="Include" />
             <e p="EnemyAnimState.cs" t="Include" />
+            <e p="EnemyController.cs" t="Include" />
             <e p="EnemyWeaponTurn.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
