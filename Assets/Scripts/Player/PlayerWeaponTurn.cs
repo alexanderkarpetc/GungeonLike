@@ -1,14 +1,14 @@
-﻿using Player;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Enemy
+namespace Player
 {
-  public class EnemyWeaponTurn : WeaponTurn
+  public class PlayerWeaponTurn : WeaponTurn
   {
     protected override void TurnGun()
     {
-
+      base.TurnGun();
     }
+
     protected override void ChangeSortingOrder(AnimatorStateInfo state)
     {
       if (state.IsName(PlayerAnimState.IdleDown) || state.IsName(PlayerAnimState.RunDown) ||

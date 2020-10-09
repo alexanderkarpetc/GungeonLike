@@ -6,18 +6,19 @@ namespace Player
 {
   public class WeaponTurn : MonoBehaviour
   {
-    [SerializeField] private SpriteRenderer _body;
-    [SerializeField] private Transform _secondaryHandPos;
-    [SerializeField] private Vector3 _leftHandPos;
-    [SerializeField] private Vector3 _rightHandPos;
-    [SerializeField] private Weapon Weapon;
+    [SerializeField] protected SpriteRenderer _body;
+    [SerializeField] protected Transform _secondaryHandPos;
+    [SerializeField] protected Vector3 _leftHandPos;
+    [SerializeField] protected Vector3 _rightHandPos;
+    [SerializeField] protected Weapon Weapon;
 
     public Transform _rightHand;
     public Transform _leftHand;
 
-    private SpriteRenderer _rightHandSprite;
-    private SpriteRenderer _leftHandSprite;
-    private Animator _playerAnimator;
+    protected SpriteRenderer _rightHandSprite;
+    protected SpriteRenderer _leftHandSprite;
+    
+    protected Animator _playerAnimator;
     protected float Angle;
 
     private void Start()
@@ -46,20 +47,7 @@ namespace Player
     private void MoveHands()
     {
       var state = _playerAnimator.GetCurrentAnimatorStateInfo(0);
-      if (state.IsName(PlayerAnimState.IdleDown) || state.IsName(PlayerAnimState.RunDown) ||
-          state.IsName(PlayerAnimState.IdleDownRight) || state.IsName(PlayerAnimState.RunDownRight))
-      {
-        _body.sortingOrder = 1;
-        _rightHandSprite.sortingOrder = 2;
-        _leftHandSprite.sortingOrder = 2;
-      }
-      else if (state.IsName(PlayerAnimState.IdleUp) || state.IsName(PlayerAnimState.RunUp) ||
-               state.IsName(PlayerAnimState.IdleUpRight) || state.IsName(PlayerAnimState.RunUpRight))
-      {
-        _body.sortingOrder = -2;
-        _rightHandSprite.sortingOrder = -2;
-        _leftHandSprite.sortingOrder = -2;
-      }
+      ChangeSortingOrder(state);
 
       if (Mathf.Abs(Angle) < 90)
       {
@@ -78,5 +66,7 @@ namespace Player
         Weapon.IsInverted = true;
       }
     }
+
+    protected virtual void ChangeSortingOrder(AnimatorStateInfo state) { }
   }
 }

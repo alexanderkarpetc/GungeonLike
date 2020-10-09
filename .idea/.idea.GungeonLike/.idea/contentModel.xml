@@ -213,7 +213,7 @@
         <e p="Scripts" t="Include">
           <e p="CameraFollow.cs" t="Include" />
           <e p="Enemy" t="Include">
-            <e p="BulletTurnAnimator.cs" t="Include" />
+            <e p="BulletEnemyTurnAnimator.cs" t="Include" />
             <e p="EnemyAnimState.cs" t="Include" />
             <e p="EnemyWeaponTurn.cs" t="Include" />
           </e>
@@ -222,11 +222,12 @@
             <e p="PlayerController.cs" t="Include" />
             <e p="PlayerShooting.cs" t="Include" />
             <e p="PlayerTurnAnimator.cs" t="Include" />
-            <e p="WeaponTurn.cs" t="Include" />
+            <e p="PlayerWeaponTurn.cs" t="Include" />
           </e>
           <e p="Projectile.cs" t="Include" />
           <e p="SpriteUtil.cs" t="Include" />
           <e p="Weapon.cs" t="Include" />
+          <e p="WeaponTurn.cs" t="Include" />
         </e>
       </e>
       <e p="AstarPathfindingProject.csproj" t="IncludeRecursive" />
