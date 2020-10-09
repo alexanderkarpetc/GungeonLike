@@ -793,7 +793,7 @@ TextureImporter:
     second: ENV_Tileset_BulletHell_262
   - first:
       213: -8663099448605848718
-    second: ENV_Tileset_BulletHell_263
+    second: Obstacle20
   - first:
       213: -7388383294955401299
     second: ENV_Tileset_BulletHell_264
@@ -1216,10 +1216,10 @@ TextureImporter:
     second: ENV_Tileset_BulletHell_403
   - first:
       213: -2841636143210372513
-    second: ENV_Tileset_BulletHell_404
+    second: Obstacle19
   - first:
       213: -8021482501636657859
-    second: ENV_Tileset_BulletHell_405
+    second: Obstacle18
   - first:
       213: -2943442414366134300
     second: ENV_Tileset_BulletHell_406
@@ -7470,7 +7470,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ENV_Tileset_BulletHell_263
+      name: Obstacle20
       rect:
         serializedVersion: 2
         x: 126
@@ -10431,7 +10431,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ENV_Tileset_BulletHell_404
+      name: Obstacle19
       rect:
         serializedVersion: 2
         x: 144
@@ -10452,7 +10452,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ENV_Tileset_BulletHell_405
+      name: Obstacle18
       rect:
         serializedVersion: 2
         x: 162
