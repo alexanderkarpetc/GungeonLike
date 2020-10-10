@@ -11,5 +11,6 @@ namespace Enemy
     public static readonly int downLeft = Animator.StringToHash("downLeft");
     public static readonly int idle = Animator.StringToHash("idle");
     public static readonly int idleBack = Animator.StringToHash("idleBack");
+
   }
 }

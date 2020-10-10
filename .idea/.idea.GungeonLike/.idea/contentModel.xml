@@ -6,6 +6,7 @@
     <e p="C:\Users\Alexander\unity\GungeonLike" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="AnimationAutoDestroy.cs" t="Include" />
         <e p="AstarPathfindingProject" t="Include">
           <e p="AstarPathfindingProject.asmdef" t="Include" />
           <e p="Behaviors" t="Include">
@@ -217,6 +218,9 @@
             <e p="EnemyAnimState.cs" t="Include" />
             <e p="EnemyController.cs" t="Include" />
             <e p="EnemyWeaponTurn.cs" t="Include" />
+            <e p="State" t="Include">
+              <e p="EnemyState.cs" t="Include" />
+            </e>
           </e>
           <e p="Player" t="Include">
             <e p="PlayerAnimState.cs" t="Include" />

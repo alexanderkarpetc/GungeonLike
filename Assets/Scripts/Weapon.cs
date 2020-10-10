@@ -5,6 +5,7 @@ namespace Player
   public class Weapon : MonoBehaviour
   {
     public bool IsInverted;
+    [HideInInspector] public bool IsPlayers;
 
     [SerializeField] private GameObject _projectile;
     [SerializeField] private Transform _shootPoint;
@@ -29,6 +30,7 @@ namespace Player
       var go = Instantiate(_projectile, _shootPoint.position, transform.rotation);
       var projectile = go.GetComponent<Projectile>();
       projectile.IsInverted = IsInverted;
+      projectile.IsPlayerBullet = IsPlayers;
       _nextShotTime = Time.time + _shootRate;
     }
   }

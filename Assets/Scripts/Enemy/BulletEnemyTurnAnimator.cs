@@ -12,10 +12,12 @@ namespace Enemy
     private int _currentTurn;
     private bool _previousRunState;
     private bool _isRunning;
-
+    public bool IsDying;
 
     void Update()
     {
+      if(IsDying)
+        return;;
       Animate();
     }
 

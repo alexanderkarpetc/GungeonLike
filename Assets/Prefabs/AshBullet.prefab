@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 5014539121441640379}
   m_Layer: 0
   m_Name: AshBullet
-  m_TagString: Player
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -403,6 +403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animator: {fileID: 8284064114409565633}
   _aiPath: {fileID: 4739193085893968551}
+  IsDying: 0
 --- !u!114 &5014539121441640379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -418,6 +419,8 @@ MonoBehaviour:
   _destinationSetter: {fileID: 2270374981625696082}
   _aiPath: {fileID: 4739193085893968551}
   speed: 2
+  _animator: {fileID: 8284064114409565633}
+  _turnAnimator: {fileID: 1508823137948543789}
 --- !u!1 &8284064114467451515
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,6 +510,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9218048875519357227}
     m_Modifications:
+    - target: {fileID: 1712927347, guid: 02dac79d2ed7c094799836c1418fa78d, type: 3}
+      propertyPath: IsPlayers
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1712927349, guid: 02dac79d2ed7c094799836c1418fa78d, type: 3}
       propertyPath: _rightHand
       value: 

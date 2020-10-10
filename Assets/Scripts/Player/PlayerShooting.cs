@@ -17,6 +17,7 @@ public class PlayerShooting : MonoBehaviour
   private void GetWeapon()
   {
     Weapon = _weaponSlot.GetChild(0).GetComponent<Weapon>();
+    Weapon.IsPlayers = true;
   }
 
   void Update()
