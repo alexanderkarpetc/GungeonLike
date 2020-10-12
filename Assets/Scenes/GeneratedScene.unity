@@ -226,7 +226,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12eabdfb045c4a38b5e01cf172b60a98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoomObj: {fileID: 874448859247282575, guid: df0b73d1b9b2f6a4790b2d622af1ebf1, type: 3}
+  RoomObj:
+  - {fileID: 874448859247282575, guid: df0b73d1b9b2f6a4790b2d622af1ebf1, type: 3}
+  floor: {fileID: 11400000, guid: be49c8d73d1354345b31400492323299, type: 2}
   roomDimensions: {x: 23, y: 20}
   gutterSize: {x: 1, y: 1}
 --- !u!1 &1334157835
