@@ -62,6 +62,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomObj:
   - {fileID: 874448859247282575, guid: df0b73d1b9b2f6a4790b2d622af1ebf1, type: 3}
+  CorridorUpDown: {fileID: 874448859247282575, guid: e4647db66c30e474f8ddc4bce8c4b5e1,
+    type: 3}
+  CorridorLeftRight: {fileID: 874448859247282575, guid: 9d4ac143f3c985740912734190d081f7,
+    type: 3}
   floor: {fileID: 11400000, guid: be49c8d73d1354345b31400492323299, type: 2}
-  roomDimensions: {x: 23, y: 20}
-  gutterSize: {x: 1, y: 1}
+  roomDimensions: {x: 25, y: 19}
+  gutterSize: {x: 4, y: 4}

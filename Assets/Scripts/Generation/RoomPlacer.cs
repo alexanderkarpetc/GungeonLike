@@ -7,6 +7,8 @@ using UnityEngine.WSA;
 public class RoomPlacer : MonoBehaviour
 {
   [SerializeField] GameObject[] RoomObj;
+  [SerializeField] GameObject CorridorUpDown;
+  [SerializeField] GameObject CorridorLeftRight;
   [SerializeField] TileBase floor;
 
   public Vector2 roomDimensions = new Vector2(1, 1);
@@ -14,6 +16,7 @@ public class RoomPlacer : MonoBehaviour
   
   private Room[,] _rooms;
   private Dictionary<Room, GameObject> roomObjects = new Dictionary<Room, GameObject>();
+  private static GameObject _parentObj;
 
   public void Place(Room[,] rooms)
   {
@@ -29,6 +32,7 @@ public class RoomPlacer : MonoBehaviour
 
   private void DoPlace()
   {
+    InitParentIfNeed();
     foreach (var room in _rooms)
     {
       if (room == null)
@@ -39,7 +43,7 @@ public class RoomPlacer : MonoBehaviour
       var pos = new Vector3(room.gridPos.x * (roomDimensions.x + gutterSize.x),
         room.gridPos.y * (roomDimensions.y + gutterSize.y), 0);
       var index = Random.Range(0, RoomObj.Length - 1);
-      var go = Instantiate(RoomObj[index], pos, Quaternion.identity);
+      var go = Instantiate(RoomObj[index], pos, Quaternion.identity, _parentObj.transform);
       roomObjects.Add(room, go);
     }
   }
@@ -56,23 +60,32 @@ public class RoomPlacer : MonoBehaviour
       var size = cellBounds.size;
       if (roomObject.Key.doorBot)
       {
-        SetFloor(tilemapRoof,   tilemapWall, tilemapMain, 0 ,(center.y - size.y) / 2);
-        SetFloor(tilemapRoof,  tilemapWall, tilemapMain, 1 ,(center.y - size.y) / 2);
+        SetFloor(tilemapRoof,   tilemapWall, tilemapMain, center.x - 1 ,(center.y - size.y) / 2);
+        SetFloor(tilemapRoof,  tilemapWall, tilemapMain, center.x - 2 ,(center.y - size.y) / 2);
       }
       if (roomObject.Key.doorTop)
       {
-        SetFloor(tilemapRoof,   tilemapWall, tilemapMain, 0 ,(center.y + size.y) / 2 - 1);
-        SetFloor(tilemapRoof,  tilemapWall, tilemapMain, 1 ,(center.y + size.y) / 2 - 1);
+        SetFloor(tilemapRoof,   tilemapWall, tilemapMain, center.x-1 ,(center.y + size.y) / 2 - 1);
+        SetFloor(tilemapRoof,  tilemapWall, tilemapMain, center.x - 2 ,(center.y + size.y) / 2 - 1);
+        SetFloor(tilemapRoof,   tilemapWall, tilemapMain, center.x-1 ,(center.y + size.y) / 2 - 2);
+        SetFloor(tilemapRoof,  tilemapWall, tilemapMain, center.x - 2 ,(center.y + size.y) / 2 - 2);
+        var offset = new Vector3(center.x-1, center.y+ size.y/2 -2,0);
+        Instantiate(CorridorUpDown, roomObject.Value.transform.position + offset, Quaternion.identity, roomObject.Value.transform);
       }
       if (roomObject.Key.doorRight)
       {
-        SetFloor(tilemapRoof,   tilemapWall, tilemapMain, (center.x + size.x) / 2 ,0);
-        SetFloor(tilemapRoof,  tilemapWall, tilemapMain, (center.x + size.x) / 2 ,1);
+        SetFloor(tilemapRoof,  tilemapWall, tilemapMain, -center.x+ size.x/2 ,-1);
+        SetFloor(tilemapRoof,   tilemapWall, tilemapMain, -center.x+ size.x/2 ,0);
+        SetFloor(tilemapRoof,   tilemapWall, tilemapMain, -center.x+ size.x/2 ,1);
+        
+        var offset = new Vector3(-center.x+ size.x/2, 0,0);
+        Instantiate(CorridorLeftRight, roomObject.Value.transform.position + offset, Quaternion.identity, roomObject.Value.transform);
       }
       if (roomObject.Key.doorLeft)
       {
-        SetFloor(tilemapRoof,   tilemapWall, tilemapMain, (center.x - size.x) / 2 ,0);
-        SetFloor(tilemapRoof,  tilemapWall, tilemapMain, (center.x - size.x) / 2 ,1);
+        SetFloor(tilemapRoof,   tilemapWall, tilemapMain, center.x - size.x / 2 + 2 ,1);
+        SetFloor(tilemapRoof,   tilemapWall, tilemapMain, center.x - size.x / 2 + 2 ,0);
+        SetFloor(tilemapRoof,  tilemapWall, tilemapMain, center.x - size.x / 2 + 2,-1);
       }
     }
   }
@@ -81,6 +94,17 @@ public class RoomPlacer : MonoBehaviour
   {
     tilemapRoof.SetTile(new Vector3Int(x, y, 0), null);
     tilemapWall.SetTile(new Vector3Int(x, y, 0), null);
-    tilemapMain.SetTile(new Vector3Int(x, y, 0), floor);
+    // tilemapMain.SetTile(new Vector3Int(x, y, 0), floor);
+  }
+  
+  private static void InitParentIfNeed()
+  {
+    var levelParent = GameObject.Find("Level");
+    if (levelParent == null)
+    {
+      levelParent = new GameObject("Level");
+    }
+
+    _parentObj = levelParent;
   }
 }
