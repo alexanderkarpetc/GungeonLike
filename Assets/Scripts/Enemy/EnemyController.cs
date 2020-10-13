@@ -28,7 +28,7 @@ namespace Enemy
     public void Hit(float damage, Vector2 impulse)
     {
       State.Hp -= damage;
-      _rigidbody.AddForce(impulse, ForceMode2D.Impulse);
+      StartCoroutine(HitImpulse(impulse));
       if (!_turnAnimator.IsDying && State.Hp <= 0)
       {
         StopProcesses();
@@ -39,6 +39,14 @@ namespace Enemy
       }
 
       StartCoroutine(HitAnimation());
+    }
+
+    private IEnumerator HitImpulse(Vector2 impulse)
+    {
+      _aiPath.canMove = false;
+      _rigidbody.AddForce(impulse, ForceMode2D.Impulse);
+      yield return new WaitForSeconds(0.3f);
+      _aiPath.canMove = true;
     }
 
     private IEnumerator HitAnimation()

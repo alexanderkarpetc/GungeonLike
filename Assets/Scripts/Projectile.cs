@@ -8,7 +8,7 @@ public class Projectile : MonoBehaviour
 {
     private static List<string> _envTags = new List<string> {"Obstacle", "Environment"};
 
-    public Vector2 Impulse;
+    public float Impulse;
 
     [SerializeField] private float _damage;
     [SerializeField] private float _speed;
@@ -52,6 +52,6 @@ public class Projectile : MonoBehaviour
     private void HitEnemy(Collider2D enemy)
     {
         var enemyController = enemy.GetComponent<EnemyController>();
-        enemyController.Hit(_damage, Impulse);
+        enemyController.Hit(_damage, transform.rotation* (IsInverted ? Vector2.left : Vector2.right) * Impulse);
     }
 }
