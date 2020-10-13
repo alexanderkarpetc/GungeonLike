@@ -13,20 +13,30 @@ namespace Enemy
     private bool _previousRunState;
     private bool _isRunning;
     public bool IsDying;
+    private bool _isAnimating;
+
+    public bool isAnimating
+    {
+      get => _isAnimating;
+      set
+      {
+        _currentTurn = 0;
+        _isAnimating = value;
+      }
+    }
 
     void Update()
     {
-      if(IsDying)
+      if(IsDying || isAnimating)
         return;;
       Animate();
     }
 
     private void Animate()
     {
-      var destination = _aiPath.steeringTarget;
       _isRunning = true;
-      Vector2 direction = destination - transform.position;
-      var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+      var angle = TurnAngle();
       if (angle >= -90 && angle < 10)
       {
         ProcessTurn(EnemyAnimState.downRight);
@@ -46,6 +56,14 @@ namespace Enemy
       }
 
       ProcessTurn(EnemyAnimState.downLeft);
+    }
+
+    public float TurnAngle()
+    {
+      var destination = _aiPath.steeringTarget;
+      Vector2 direction = destination - transform.position;
+      var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+      return angle;
     }
 
     private void ProcessTurn(int direction)

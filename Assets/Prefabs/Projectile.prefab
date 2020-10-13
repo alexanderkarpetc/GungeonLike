@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2407176df5522384f8d5e57b5bc30a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Impulse: {x: 10, y: 10}
   _damage: 1
   _speed: 20
   _enemyHitFx: {fileID: 4224990154401905789, guid: b0cd4638467dbda4fbd4e2eda0ab0929,
