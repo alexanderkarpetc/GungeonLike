@@ -102,7 +102,7 @@ MonoBehaviour:
     type: 3}
   _shootPoint: {fileID: 422198881}
   _damage: 1
-  _shootRate: 0.1
+  _shootRate: 1
   _reloadTime: 2
 --- !u!1 &4700838025997285464
 GameObject:

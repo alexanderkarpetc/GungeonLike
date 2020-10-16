@@ -17,12 +17,20 @@ namespace Enemy
     [SerializeField] private float _hitAnimDuration;
 
     private EnemyState State;
+    private BotBrain _botBrain;
+    public Weapon Weapon;
 
     private void Start()
     {
       _destinationSetter.target = GameObject.Find("Player").transform;
       _aiPath.maxSpeed = speed;
       State = new EnemyState();
+      _botBrain = new BotBrain(gameObject);
+    }
+
+    private void Update()
+    {
+      _botBrain.OnUpdate();
     }
 
     public void Hit(float damage, Vector2 impulse)

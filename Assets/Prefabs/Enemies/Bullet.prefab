@@ -424,6 +424,7 @@ MonoBehaviour:
   _animator: {fileID: 8284064114409565633}
   _turnAnimator: {fileID: 1508823137948543789}
   _hitAnimDuration: 0.5
+  Weapon: {fileID: 7821441315918129931}
 --- !u!1 &8284064114467451515
 GameObject:
   m_ObjectHideFlags: 0
