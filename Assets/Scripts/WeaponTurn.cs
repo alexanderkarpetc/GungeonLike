@@ -18,55 +18,30 @@ namespace Player
     protected SpriteRenderer _rightHandSprite;
     protected SpriteRenderer _leftHandSprite;
     
-    protected Animator _playerAnimator;
     protected float Angle;
 
     private void Start()
     {
       _rightHandSprite = _rightHand.GetComponent<SpriteRenderer>();
       _leftHandSprite = _leftHand.GetComponent<SpriteRenderer>();
-      _playerAnimator = GameObject.Find("Player").GetComponent<Animator>();
-      _leftHand.position = _leftHandPos;
-      _rightHand.position = _rightHandPos;
+      _leftHand.localPosition = _leftHandPos;
+      _rightHand.localPosition = _rightHandPos;
+      OnStart();
     }
+
+    protected virtual void OnStart() { }
 
     void Update()
     {
       TurnGun();
+      ChangeSortingOrder();
       MoveHands();
     }
 
-    protected virtual void TurnGun()
-    {
-      Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-      Angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-      var rot = Quaternion.AngleAxis(Mathf.Abs(Angle) < 90 ? Angle : - 180 + Angle, Vector3.forward);
-      transform.rotation = rot;
-    }
+    protected virtual void TurnGun() { }
 
-    private void MoveHands()
-    {
-      var state = _playerAnimator.GetCurrentAnimatorStateInfo(0);
-      ChangeSortingOrder(state);
+    protected virtual void MoveHands() { }
 
-      if (Mathf.Abs(Angle) < 90)
-      {
-        _leftHand.localPosition = _leftHandPos;
-        _rightHand.position = _secondaryHandPos.position;
-        gameObject.transform.position = _leftHand.position;
-        SpriteUtil.SetXScale(gameObject, 1);
-        Weapon.IsInverted = false;
-      }
-      else
-      {
-        _rightHand.localPosition = _rightHandPos;
-        _leftHand.position = _secondaryHandPos.position;
-        gameObject.transform.position = _rightHand.position;
-        SpriteUtil.SetXScale(gameObject, -1);
-        Weapon.IsInverted = true;
-      }
-    }
-
-    protected virtual void ChangeSortingOrder(AnimatorStateInfo state) { }
+    protected virtual void ChangeSortingOrder() { }
   }
 }

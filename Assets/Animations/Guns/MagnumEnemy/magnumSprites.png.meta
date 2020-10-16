@@ -1,0 +1,428 @@
+fileFormatVersion: 2
+guid: 5113b2197179d2540adf47c48faaaa8f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1710282610622454965
+    second: magnusSprites_0
+  - first:
+      213: -1491462868371206966
+    second: magnusSprites_1
+  - first:
+      213: -7177648250734646800
+    second: magnusSprites_2
+  - first:
+      213: 8263528733462976460
+    second: magnusSprites_3
+  - first:
+      213: -2629727060545039018
+    second: magnusSprites_4
+  - first:
+      213: 5241440174973463374
+    second: magnusSprites_5
+  - first:
+      213: -3764756107097817242
+    second: magnusSprites_6
+  - first:
+      213: -3372137640831751360
+    second: magnusSprites_7
+  - first:
+      213: -5444404764477037674
+    second: magnusSprites_8
+  - first:
+      213: 6072801501502231510
+    second: magnusSprites_9
+  - first:
+      213: -4468651502931219462
+    second: magnusSprites_10
+  - first:
+      213: 8139819873080643535
+    second: magnusSprites_11
+  - first:
+      213: -6887351662961936937
+    second: magnumFire1
+  - first:
+      213: -342284696049039215
+    second: magnumFire2
+  - first:
+      213: 3047312306014996240
+    second: magnumFire3
+  - first:
+      213: -509468780822946617
+    second: magnumFire4
+  - first:
+      213: 7875799695088257292
+    second: magnumIdle
+  - first:
+      213: 123515533719522307
+    second: magnumReload1
+  - first:
+      213: -2541706350657419536
+    second: magnumReload2
+  - first:
+      213: 5474214899766769097
+    second: magnumReload3
+  - first:
+      213: 7761786145067545256
+    second: magnumShoot1
+  - first:
+      213: -3423819735509965677
+    second: magnumShoot2
+  - first:
+      213: 7615653284249582692
+    second: magnumShoot3
+  - first:
+      213: 8114701419968866501
+    second: magnumShoot4
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 18
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: magnumFire1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 7
+        width: 16
+        height: 13
+      alignment: 9
+      pivot: {x: 0.07500756, y: 0.18398014}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d535fd37263b60a0800000000000000
+      internalID: -6887351662961936937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magnumFire2
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 7
+        width: 15
+        height: 13
+      alignment: 9
+      pivot: {x: 0.09389598, y: 0.19487733}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198c1f7e1e5ff3bf0800000000000000
+      internalID: -342284696049039215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magnumFire3
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 6
+        width: 14
+        height: 14
+      alignment: 9
+      pivot: {x: 0.10536412, y: 0.1660774}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01743bf956a3a4a20800000000000000
+      internalID: 3047312306014996240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magnumFire4
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 9
+        width: 12
+        height: 11
+      alignment: 9
+      pivot: {x: 0.122229256, y: 0.24242878}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc95e6d7d00ee8f0800000000000000
+      internalID: -509468780822946617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magnumIdle
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 7
+        width: 17
+        height: 13
+      alignment: 9
+      pivot: {x: 0.083340816, y: 0.19487733}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c098ddb48167c4d60800000000000000
+      internalID: 7875799695088257292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magnumReload1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1
+        width: 16
+        height: 19
+      alignment: 9
+      pivot: {x: 0.2697959, y: 0.17939167}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c489739b0d6b100800000000000000
+      internalID: 123515533719522307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magnumReload2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1
+        width: 16
+        height: 19
+      alignment: 9
+      pivot: {x: 0.27865028, y: 0.18684766}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6c5b56a8b0abcd0800000000000000
+      internalID: -2541706350657419536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magnumReload3
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 7
+        width: 9
+        height: 13
+      alignment: 9
+      pivot: {x: 0.26389396, y: 0.89230114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c5bfbc927158fb40800000000000000
+      internalID: 5474214899766769097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magnumShoot1
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 7
+        width: 16
+        height: 13
+      alignment: 9
+      pivot: {x: 0.09271622, y: 0.17308286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2bc4f006767bb60800000000000000
+      internalID: 7761786145067545256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magnumShoot2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 4
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.15469456, y: 0.15469354}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394e4f937162c70d0800000000000000
+      internalID: -3423819735509965677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magnumShoot3
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 4
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.14584064, y: 0.16354755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46cbb34005c30b960800000000000000
+      internalID: 7615653284249582692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magnumShoot4
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 7
+        width: 17
+        height: 13
+      alignment: 9
+      pivot: {x: 0.08334261, y: 0.19487733}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c82a9ba2f53d9070800000000000000
+      internalID: 8114701419968866501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

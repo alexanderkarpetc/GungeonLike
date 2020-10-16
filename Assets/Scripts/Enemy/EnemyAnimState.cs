@@ -16,5 +16,10 @@ namespace Enemy
     public static readonly int hitRightUp = Animator.StringToHash("hitRightUp");
     public static readonly int hitRightDown = Animator.StringToHash("hitRightDown");
 
+    public static readonly string UpRight = "UpRight";
+    public static readonly string UpLeft = "UpLeft";
+    public static readonly string IdleBack = "IdleBack";
+    public static readonly string HitLeftUp = "HitLeftUp";
+    public static readonly string HitRightUp = "HitRightUp";
   }
 }
