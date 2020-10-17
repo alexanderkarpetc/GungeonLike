@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422198880}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.479, y: 0.144, z: 0}
+  m_LocalPosition: {x: 0.875, y: 0.365, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4700838025113585318}
@@ -103,6 +103,7 @@ MonoBehaviour:
   _shootPoint: {fileID: 422198881}
   _damage: 1
   _shootRate: 1
+  _shootDelay: 0.5
   _magazineSize: 6
   _animator: {fileID: 4700838025113585313}
 --- !u!1 &4700838025997285464

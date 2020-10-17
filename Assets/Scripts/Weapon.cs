@@ -11,6 +11,7 @@ public class Weapon : MonoBehaviour
   [SerializeField] private Transform _shootPoint;
   [SerializeField] private float _damage;
   [SerializeField] private float _shootRate;
+  [SerializeField] private float _shootDelay;
   [SerializeField] private int _magazineSize;
   [SerializeField] private Animator _animator;
   
@@ -36,12 +37,19 @@ public class Weapon : MonoBehaviour
     if (!(Time.time >= _nextShotTime) || _reloading) 
       return;
       
+   StartCoroutine(ShootCoroutine());
+  }
+
+  private IEnumerator ShootCoroutine()
+  {
+    _nextShotTime = Time.time + _shootRate;
     _animator.SetTrigger(Shoot);
+    yield return new WaitForSeconds(_shootDelay);
     var go = Instantiate(_projectile, _shootPoint.position, transform.rotation);
     var projectile = go.GetComponent<Projectile>();
     projectile.IsInverted = IsInverted;
     projectile.IsPlayerBullet = IsPlayers;
-    _nextShotTime = Time.time + _shootRate;
+    projectile.Damage = _damage;
     bulletsLeft--;
   }
 

@@ -10,12 +10,13 @@ public class Projectile : MonoBehaviour
 
     public float Impulse;
 
-    [SerializeField] private float _damage;
     [SerializeField] private float _speed;
     [SerializeField] private GameObject _enemyHitFx;
     [SerializeField] private GameObject _envHitFx;
     public bool IsInverted;
     public bool IsPlayerBullet;
+    public float Damage;
+
     void Update()
     {
         transform.Translate(Time.deltaTime * _speed * (IsInverted ? Vector2.left : Vector2.right));
@@ -52,6 +53,6 @@ public class Projectile : MonoBehaviour
     private void HitEnemy(Collider2D enemy)
     {
         var enemyController = enemy.GetComponent<EnemyController>();
-        enemyController.Hit(_damage, transform.rotation* (IsInverted ? Vector2.left : Vector2.right) * Impulse);
+        enemyController.Hit(Damage, transform.rotation* (IsInverted ? Vector2.left : Vector2.right) * Impulse);
     }
 }
