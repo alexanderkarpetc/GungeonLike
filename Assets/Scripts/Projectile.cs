@@ -7,19 +7,17 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     private static List<string> _envTags = new List<string> {"Obstacle", "Environment"};
-
-    public float Impulse;
-
-    [SerializeField] private float _speed;
     [SerializeField] private GameObject _enemyHitFx;
     [SerializeField] private GameObject _envHitFx;
-    public bool IsInverted;
-    public bool IsPlayerBullet;
-    public float Damage;
+    [HideInInspector] public bool IsInverted;
+    [HideInInspector] public bool IsPlayerBullet;
+    [HideInInspector] public float Damage;
+    [HideInInspector] public float Speed;
+    [HideInInspector] public float Impulse;
 
     void Update()
     {
-        transform.Translate(Time.deltaTime * _speed * (IsInverted ? Vector2.left : Vector2.right));
+        transform.Translate(Time.deltaTime * Speed * (IsInverted ? Vector2.left : Vector2.right));
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

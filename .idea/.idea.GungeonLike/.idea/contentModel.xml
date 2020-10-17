@@ -244,7 +244,10 @@
           <e p="Projectile.cs" t="Include" />
           <e p="SceneInitializer.cs" t="Include" />
           <e p="SpriteUtil.cs" t="Include" />
-          <e p="Weapon.cs" t="Include" />
+          <e p="Weapons" t="Include">
+            <e p="Shotgun.cs" t="Include" />
+            <e p="Weapon.cs" t="Include" />
+          </e>
           <e p="WeaponTurn.cs" t="Include" />
         </e>
       </e>

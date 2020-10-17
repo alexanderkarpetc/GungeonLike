@@ -30,7 +30,8 @@ namespace Enemy
 
     private void Update()
     {
-      _botBrain.OnUpdate();
+      if(!_turnAnimator.IsDying)
+        _botBrain.OnUpdate();
     }
 
     public void Hit(float damage, Vector2 impulse)

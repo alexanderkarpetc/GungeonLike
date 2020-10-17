@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1269866929858603299}
   - component: {fileID: 1269866929858603300}
   m_Layer: 9
-  m_Name: BlueProjectile
+  m_Name: ShotgunShell
   m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2407176df5522384f8d5e57b5bc30a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Impulse: 0
-  _enemyHitFx: {fileID: 4224990154401905789, guid: c391b9231532bd64e8dc967973a60108,
+  Impulse: 2
+  _enemyHitFx: {fileID: 4224990154401905789, guid: b0cd4638467dbda4fbd4e2eda0ab0929,
     type: 3}
   _envHitFx: {fileID: 4224990154401905789, guid: ff6dfb4ef83bfd54fa8a393cd6ad7b86,
     type: 3}
@@ -91,7 +91,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.3
 --- !u!1 &1269866930913174064
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,7 +162,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4358868869944597501, guid: 688272210464e274cad02a7e380cda58,
+  m_Sprite: {fileID: -8711317218088726958, guid: 5d05b3736d9bc644793df4d3db98c0d4,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

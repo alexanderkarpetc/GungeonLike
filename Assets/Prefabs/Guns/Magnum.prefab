@@ -104,6 +104,7 @@ MonoBehaviour:
   _damage: 1
   _shootRate: 1
   _shootDelay: 0.5
+  _bulletSpeed: 5
   _magazineSize: 6
   _animator: {fileID: 4700838025113585313}
 --- !u!1 &4700838025997285464

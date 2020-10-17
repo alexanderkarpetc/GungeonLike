@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1269866929858603301}
   - component: {fileID: 1269866929858603299}
   - component: {fileID: 1269866929858603300}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Projectile
   m_TagString: Projectile
   m_Icon: {fileID: 0}
@@ -46,15 +46,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2407176df5522384f8d5e57b5bc30a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Impulse: 2
-  _damage: 1
-  _speed: 20
+  Impulse: 0.5
   _enemyHitFx: {fileID: 4224990154401905789, guid: b0cd4638467dbda4fbd4e2eda0ab0929,
     type: 3}
   _envHitFx: {fileID: 4224990154401905789, guid: ff6dfb4ef83bfd54fa8a393cd6ad7b86,
     type: 3}
   IsInverted: 0
   IsPlayerBullet: 0
+  Damage: 0
+  Speed: 0
 --- !u!50 &1269866929858603299
 Rigidbody2D:
   serializedVersion: 4
@@ -102,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1269866930913174031}
   - component: {fileID: 1269866930913174030}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: View
   m_TagString: Untagged
   m_Icon: {fileID: 0}
