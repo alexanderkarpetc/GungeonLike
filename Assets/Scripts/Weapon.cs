@@ -37,7 +37,7 @@ public class Weapon : MonoBehaviour
     if (!(Time.time >= _nextShotTime) || _reloading) 
       return;
       
-   StartCoroutine(ShootCoroutine());
+    StartCoroutine(ShootCoroutine());
   }
 
   private IEnumerator ShootCoroutine()
