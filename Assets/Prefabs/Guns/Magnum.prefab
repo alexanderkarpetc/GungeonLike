@@ -75,7 +75,7 @@ Animator:
   m_GameObject: {fileID: 4700838025113585319}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: de772893c05cbf9449c24c0730b93d9d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2dfe46cf802d3de4d98d7c10caaa3599, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -103,7 +103,8 @@ MonoBehaviour:
   _shootPoint: {fileID: 422198881}
   _damage: 1
   _shootRate: 1
-  _reloadTime: 2
+  _magazineSize: 6
+  _animator: {fileID: 4700838025113585313}
 --- !u!1 &4700838025997285464
 GameObject:
   m_ObjectHideFlags: 0
