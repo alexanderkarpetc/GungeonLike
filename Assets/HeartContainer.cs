@@ -1,4 +1,5 @@
-﻿using Player;
+﻿using DefaultNamespace;
+using Player;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,7 +14,7 @@ public class HeartContainer : MonoBehaviour
   void Start()
   {
     _player = GameObject.Find("Player").GetComponent<PlayerController>();
-    _playerState = _player.GetState();
+    _playerState = AppModel.Player();
     _playerState.OnHealthChanged += ReDraw;
     ReDraw();
   }

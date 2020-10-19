@@ -8,6 +8,7 @@ namespace Player
     private int _maxHp;
     private int _currentHp;
     public event Action OnHealthChanged;
+    public event Action OnDamageTake;
     public PlayerState()
     {
       _currentHp = 3;
@@ -29,6 +30,7 @@ namespace Player
     {
       _currentHp--;
       OnHealthChanged.NullSafeInvoke();
+      OnDamageTake.NullSafeInvoke();
     }
     
     public void IncreaseMaxHp()

@@ -12,9 +12,9 @@ namespace Player
     [SerializeField] private float Speed;
     [SerializeField] private PlayerTurnAnimator playerTurnAnimator;
     [SerializeField] private Rigidbody2D _rigidbody;
+    [SerializeField] private SpriteRenderer _body;
     private int _verticalMove;
     private int _horizontalMove;
-    private PlayerState _state = new PlayerState();
     private bool _isInvincible;
 
     private void Update()
@@ -22,10 +22,6 @@ namespace Player
       ReadInput();
     }
 
-    public PlayerState GetState()
-    {
-      return _state;
-    }
     private void ReadInput()
     {
       var a = Input.GetKey(KeyCode.A) ? 1 : 0;
@@ -53,11 +49,23 @@ namespace Player
     private IEnumerator ApplyHit()
     {
       _isInvincible = true;
-      _state.DealDamage();
+      var state = AppModel.Player();
+      state.DealDamage();
+      if (state.GetHp() <= 0)
+        Die();
       // ScreenBlink
-      // Make transparent
+      var bodyColor = _body.color;
+      bodyColor.a = 0.5f;
+      _body.color = bodyColor;
       yield return new WaitForSeconds(1f);
+      bodyColor.a = 1;
+      _body.color = bodyColor;
       _isInvincible = false;
+    }
+
+    private void Die()
+    {
+      Destroy(gameObject);
     }
   }
 }

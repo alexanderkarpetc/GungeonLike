@@ -288,6 +288,7 @@ MonoBehaviour:
   Speed: 6
   playerTurnAnimator: {fileID: 3688945083984600635}
   _rigidbody: {fileID: 7375126048374487353}
+  _body: {fileID: 8463245576065121774}
 --- !u!114 &3688945083984600635
 MonoBehaviour:
   m_ObjectHideFlags: 0
