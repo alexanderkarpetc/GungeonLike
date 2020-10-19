@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEngine.WSA;
@@ -7,8 +8,6 @@ using UnityEngine.WSA;
 public class RoomPlacer : MonoBehaviour
 {
   [SerializeField] GameObject[] RoomObj;
-  [SerializeField] GameObject CorridorUpDown;
-  [SerializeField] GameObject CorridorLeftRight;
   [SerializeField] TileBase floor;
 
   public Vector2 roomDimensions = new Vector2(1, 1);
@@ -23,7 +22,7 @@ public class RoomPlacer : MonoBehaviour
     _rooms = rooms;
     Preprocess();
     DoPlace();
-    PostProcess();
+    // PostProcess();
   }
 
   private void Preprocess()
@@ -42,61 +41,57 @@ public class RoomPlacer : MonoBehaviour
 
       var pos = new Vector3(room.gridPos.x * (roomDimensions.x + gutterSize.x),
         room.gridPos.y * (roomDimensions.y + gutterSize.y), 0);
-      var index = Random.Range(0, RoomObj.Length - 1);
-      var go = Instantiate(RoomObj[index], pos, Quaternion.identity, _parentObj.transform);
+      var roomObj = FindSuitableRoom(room);
+      var go = Instantiate(roomObj, pos, Quaternion.identity, _parentObj.transform);
       roomObjects.Add(room, go);
     }
   }
 
-  private void PostProcess()
+  private GameObject FindSuitableRoom(Room room)
   {
-    foreach (var roomObject in roomObjects)
+    var allRooms = RoomObj.ToList();
+    var suitableRooms = allRooms.Where(obj =>
     {
-      var tilemapMain = roomObject.Value.transform.Find("Main").GetComponent<Tilemap>();
-      var tilemapRoof = roomObject.Value.transform.Find("Roof").GetComponent<Tilemap>();
-      var tilemapWall = roomObject.Value.transform.Find("Wall").GetComponent<Tilemap>();
-      var cellBounds = tilemapMain.cellBounds;
-      var center = cellBounds.min + cellBounds.max;
-      var size = cellBounds.size;
-      if (roomObject.Key.doorBot)
+      var chars = obj.name.ToLower().Where(char.IsLetter).ToList();
+      if (room.doorDown)
       {
-        SetFloor(tilemapRoof,   tilemapWall, tilemapMain, center.x - 1 ,(center.y - size.y) / 2);
-        SetFloor(tilemapRoof,  tilemapWall, tilemapMain, center.x - 2 ,(center.y - size.y) / 2);
+        if (!CheckRoomHasLetter(chars, 'd'))
+          return false;
       }
-      if (roomObject.Key.doorTop)
+      if (room.doorUp)
       {
-        SetFloor(tilemapRoof,   tilemapWall, tilemapMain, center.x-1 ,(center.y + size.y) / 2 - 1);
-        SetFloor(tilemapRoof,  tilemapWall, tilemapMain, center.x - 2 ,(center.y + size.y) / 2 - 1);
-        SetFloor(tilemapRoof,   tilemapWall, tilemapMain, center.x-1 ,(center.y + size.y) / 2 - 2);
-        SetFloor(tilemapRoof,  tilemapWall, tilemapMain, center.x - 2 ,(center.y + size.y) / 2 - 2);
-        var offset = new Vector3(center.x-1, center.y+ size.y/2 -2,0);
-        Instantiate(CorridorUpDown, roomObject.Value.transform.position + offset, Quaternion.identity, roomObject.Value.transform);
+        if (!CheckRoomHasLetter(chars, 'u'))
+          return false;
       }
-      if (roomObject.Key.doorRight)
+      if (room.doorLeft)
       {
-        SetFloor(tilemapRoof,  tilemapWall, tilemapMain, -center.x+ size.x/2 ,-1);
-        SetFloor(tilemapRoof,   tilemapWall, tilemapMain, -center.x+ size.x/2 ,0);
-        SetFloor(tilemapRoof,   tilemapWall, tilemapMain, -center.x+ size.x/2 ,1);
-        
-        var offset = new Vector3(-center.x+ size.x/2, 0,0);
-        Instantiate(CorridorLeftRight, roomObject.Value.transform.position + offset, Quaternion.identity, roomObject.Value.transform);
+        if (!CheckRoomHasLetter(chars, 'l'))
+          return false;
       }
-      if (roomObject.Key.doorLeft)
+      if (room.doorRight)
       {
-        SetFloor(tilemapRoof,   tilemapWall, tilemapMain, center.x - size.x / 2 + 2 ,1);
-        SetFloor(tilemapRoof,   tilemapWall, tilemapMain, center.x - size.x / 2 + 2 ,0);
-        SetFloor(tilemapRoof,  tilemapWall, tilemapMain, center.x - size.x / 2 + 2,-1);
+        if (!CheckRoomHasLetter(chars, 'r'))
+          return false;
       }
+
+      if (chars.Count == 0)
+        return true;
+      else
+        return false;
+    }).ToList();
+
+    var index = Random.Range(0, suitableRooms.Count -1);
+    return suitableRooms[index];
+    bool CheckRoomHasLetter(List<char> chars, char letter)
+    {
+      if (!chars.Contains(letter))
+        return false;
+      chars.Remove(letter);
+      return true;
     }
   }
 
-  private void SetFloor(Tilemap tilemapRoof, Tilemap tilemapWall, Tilemap tilemapMain, int x, int y)
-  {
-    tilemapRoof.SetTile(new Vector3Int(x, y, 0), null);
-    tilemapWall.SetTile(new Vector3Int(x, y, 0), null);
-    // tilemapMain.SetTile(new Vector3Int(x, y, 0), floor);
-  }
-  
+
   private static void InitParentIfNeed()
   {
     var levelParent = GameObject.Find("Level");

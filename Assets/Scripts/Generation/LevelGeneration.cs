@@ -167,8 +167,8 @@ namespace DefaultNamespace
           if (rooms[x, y] == null)
             continue;
 
-          rooms[x, y].doorBot = (rooms.SafeGet(x, y - 1) != null);
-          rooms[x, y].doorTop = (rooms.SafeGet(x, y + 1) != null);
+          rooms[x, y].doorDown = (rooms.SafeGet(x, y - 1) != null);
+          rooms[x, y].doorUp = (rooms.SafeGet(x, y + 1) != null);
           rooms[x, y].doorLeft = (rooms.SafeGet(x - 1, y) != null);
           rooms[x, y].doorRight = (rooms.SafeGet(x + 1, y) != null);
         }

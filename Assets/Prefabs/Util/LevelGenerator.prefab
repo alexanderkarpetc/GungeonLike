@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c12b4cecf72345ec93d675f1ced170a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _numberOfRooms: 5
-  roomsPlacementOffset: {x: 2, y: 2}
+  _numberOfRooms: 10
+  roomsPlacementOffset: {x: 3, y: 3}
   _roomPlacer: {fileID: 8460477540873949919}
   mapRoot: {fileID: 8460477540873949917}
 --- !u!114 &8460477540873949919
@@ -62,10 +62,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomObj:
   - {fileID: 874448859247282575, guid: df0b73d1b9b2f6a4790b2d622af1ebf1, type: 3}
-  CorridorUpDown: {fileID: 874448859247282575, guid: e4647db66c30e474f8ddc4bce8c4b5e1,
-    type: 3}
-  CorridorLeftRight: {fileID: 874448859247282575, guid: 9d4ac143f3c985740912734190d081f7,
-    type: 3}
+  - {fileID: 874448859247282575, guid: 7e48716b96b86e94887e8c5218f21989, type: 3}
+  - {fileID: 874448859247282575, guid: 9d3a2d51e49de27499e9058dc95a0989, type: 3}
+  - {fileID: 874448859247282575, guid: c7a96a664d976f44fa0a0e7fe425792c, type: 3}
+  - {fileID: 874448859247282575, guid: 874509e7c1605874db1c85e1e987b6d1, type: 3}
+  - {fileID: 874448859247282575, guid: 3f1926b09f2b6ff45b1be4a5d7360cc0, type: 3}
+  - {fileID: 874448859247282575, guid: 51b03f99cbf798e4daee7a973000554e, type: 3}
+  - {fileID: 874448859247282575, guid: eb04454158a023a4b8096f2acab84988, type: 3}
+  - {fileID: 874448859247282575, guid: b32ab2e4a459a15459a7192ccfc93584, type: 3}
+  - {fileID: 874448859247282575, guid: 678d28f6389cf0e44b6756013567f44d, type: 3}
+  - {fileID: 874448859247282575, guid: 9855ba8e8c1b9464eb51773d97aeb62e, type: 3}
+  - {fileID: 874448859247282575, guid: 281413802605a7f4499be55cbd59d848, type: 3}
+  - {fileID: 874448859247282575, guid: d67c4ec3119431a47a1d21a4da93c95e, type: 3}
+  - {fileID: 874448859247282575, guid: 41b3cbb993353e64490de40c17f5d668, type: 3}
   floor: {fileID: 11400000, guid: be49c8d73d1354345b31400492323299, type: 2}
-  roomDimensions: {x: 25, y: 19}
+  roomDimensions: {x: 21, y: 22}
   gutterSize: {x: 4, y: 4}
