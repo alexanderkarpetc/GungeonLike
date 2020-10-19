@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Enemy;
+using Player;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
@@ -45,7 +46,8 @@ public class Projectile : MonoBehaviour
 
     private void HitPlayer(Collider2D player)
     {
-        
+        var playerController = player.GetComponent<PlayerController>();
+        playerController.Hit();
     }
 
     private void HitEnemy(Collider2D enemy)

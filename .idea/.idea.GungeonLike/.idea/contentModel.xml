@@ -210,6 +210,7 @@
             <e p="UnityReferenceHelper.cs" t="Include" />
           </e>
         </e>
+        <e p="HeartContainer.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="AnimationAutoDestroy.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
@@ -228,6 +229,7 @@
               <e p="EnemyState.cs" t="Include" />
             </e>
           </e>
+          <e p="Extensions.cs" t="Include" />
           <e p="Generation" t="Include">
             <e p="LevelGeneration.cs" t="Include" />
             <e p="Room.cs" t="Include" />
@@ -238,6 +240,7 @@
             <e p="PlayerAnimState.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
             <e p="PlayerShooting.cs" t="Include" />
+            <e p="PlayerState.cs" t="Include" />
             <e p="PlayerTurnAnimator.cs" t="Include" />
             <e p="PlayerWeaponTurn.cs" t="Include" />
           </e>
