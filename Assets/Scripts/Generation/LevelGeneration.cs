@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 
 namespace DefaultNamespace
 {
@@ -13,13 +13,14 @@ namespace DefaultNamespace
     [SerializeField] private RoomPlacer _roomPlacer;
     public Transform mapRoot;
 
-    Room[,] rooms;
+    RoomState[,] rooms;
     private readonly List<Vector2> _takenPositions = new List<Vector2>();
     private int _gridSizeX;
     private int _gridSizeY;
 
     const float RandomCompareStart = 0.2f;
     const float RandomCompareEnd = 0.01f;
+
     void Start()
     {
       if (_numberOfRooms >= (roomsPlacementOffset.x * 2) * (roomsPlacementOffset.y * 2))
@@ -29,21 +30,33 @@ namespace DefaultNamespace
 
       _gridSizeX = Mathf.RoundToInt(roomsPlacementOffset.x); //note: these are half-extents
       _gridSizeY = Mathf.RoundToInt(roomsPlacementOffset.y);
-      CreateLevel();// tmp
+      CreateLevel(); // tmp
     }
 
     public void CreateLevel()
     {
       CreateRooms();
       SetRoomDoors();
+      DefineBossRoom();
       _roomPlacer.Place(rooms);
     }
 
+    private void DefineBossRoom()
+    {
+      var suitableRooms = new List<RoomState>();
+      foreach (var room in rooms)
+      {
+        if(room != null && NumberOfNeighbors(room) == 1)
+          suitableRooms.Add(room);
+      }
+
+      suitableRooms[Random.Range(0, suitableRooms.Count - 1)].Kind = RoomState.RoomKind.Boss;
+    }
     private void CreateRooms()
     {
       //setup
-      rooms = new Room[_gridSizeX * 2, _gridSizeY * 2];
-      rooms[_gridSizeX, _gridSizeY] = new Room(Vector2.zero, 1);
+      rooms = new RoomState[_gridSizeX * 2, _gridSizeY * 2];
+      rooms[_gridSizeX, _gridSizeY] = new RoomState(Vector2.zero, RoomState.RoomKind.Start);
       _takenPositions.Add(Vector2.zero);
       Vector2 checkPos;
 
@@ -67,7 +80,7 @@ namespace DefaultNamespace
         }
 
         //finalize position
-        rooms[(int) checkPos.x + _gridSizeX, (int) checkPos.y + _gridSizeY] = new Room(checkPos, 0);
+        rooms[(int) checkPos.x + _gridSizeX, (int) checkPos.y + _gridSizeY] = new RoomState(checkPos, RoomState.RoomKind.Normal);
         _takenPositions.Add(checkPos);
       }
     }
@@ -77,27 +90,33 @@ namespace DefaultNamespace
       var x = 0;
       var y = 0;
       var checkingPos = Vector2.zero;
-      while (_takenPositions.Contains(checkingPos) || x >= _gridSizeX || x < -_gridSizeX || y >= _gridSizeY ||  y < -_gridSizeY)
+      while (_takenPositions.Contains(checkingPos) || x >= _gridSizeX || x < -_gridSizeX || y >= _gridSizeY ||
+             y < -_gridSizeY)
       {
         var index = Mathf.RoundToInt(Random.value * (_takenPositions.Count - 1)); // pick a random room
         x = (int) _takenPositions[index].x;
         y = (int) _takenPositions[index].y;
-        var up = Random.value < 0.5f; 
-        var positive = Random.value < 0.5f; 
+        var up = Random.value < 0.5f;
+        var positive = Random.value < 0.5f;
         if (up)
         {
-           y += positive ? 1 : -1;
+          y += positive ? 1 : -1;
         }
         else
         {
-            x += positive ? 1 : -1;
+          x += positive ? 1 : -1;
         }
+
         checkingPos = new Vector2(x, y);
-      } 
+      }
 
       return checkingPos;
     }
 
+    private int NumberOfNeighbors(RoomState roomState)
+    {
+      return (roomState.doorDown ? 1 : 0) + (roomState.doorUp ? 1 : 0) + (roomState.doorLeft ? 1 : 0) + (roomState.doorRight ? 1 : 0);
+    }
     private int NumberOfNeighbors(Vector2 checkingPos)
     {
       var neighbors = 0; // start at zero, add 1 for each side there is already a room
@@ -115,6 +134,7 @@ namespace DefaultNamespace
 
       return neighbors;
     }
+
     private Vector2 SelectiveNewPosition()
     {
       // method differs from the above in the two commented ways
@@ -122,7 +142,8 @@ namespace DefaultNamespace
       var x = 0;
       var y = 0;
       var checkingPos = Vector2.zero;
-      while (_takenPositions.Contains(checkingPos) || x >= _gridSizeX || x < -_gridSizeX || y >= _gridSizeY || y < -_gridSizeY)
+      while (_takenPositions.Contains(checkingPos) || x >= _gridSizeX || x < -_gridSizeX || y >= _gridSizeY ||
+             y < -_gridSizeY)
       {
         iteration = 0;
         var index = 0;
@@ -178,9 +199,9 @@ namespace DefaultNamespace
 
   public static class Utils
   {
-    public static Room SafeGet(this Room[,] rooms, int x, int y)
+    public static RoomState SafeGet(this RoomState[,] rooms, int x, int y)
     {
-      if(x<0|| rooms.GetLength(0)<=x || y<0|| rooms.GetLength(1)<=y)
+      if (x < 0 || rooms.GetLength(0) <= x || y < 0 || rooms.GetLength(1) <= y)
         return null;
       return rooms[x, y];
     }
