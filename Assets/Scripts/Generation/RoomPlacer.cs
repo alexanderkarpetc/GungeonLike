@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEngine.WSA;
@@ -50,45 +51,20 @@ public class RoomPlacer : MonoBehaviour
   private GameObject FindSuitableRoom(Room room)
   {
     var allRooms = RoomObj.ToList();
+    var sb = new StringBuilder();
+    sb.Append(room.doorDown ? "d" : "");
+    sb.Append(room.doorUp ? "u" : "");
+    sb.Append(room.doorLeft ? "l" : "");
+    sb.Append(room.doorRight ? "r" : "");
+    var roomDoors = sb.ToString().ToCharArray(); 
     var suitableRooms = allRooms.Where(obj =>
     {
       var chars = obj.name.ToLower().Where(char.IsLetter).ToList();
-      if (room.doorDown)
-      {
-        if (!CheckRoomHasLetter(chars, 'd'))
-          return false;
-      }
-      if (room.doorUp)
-      {
-        if (!CheckRoomHasLetter(chars, 'u'))
-          return false;
-      }
-      if (room.doorLeft)
-      {
-        if (!CheckRoomHasLetter(chars, 'l'))
-          return false;
-      }
-      if (room.doorRight)
-      {
-        if (!CheckRoomHasLetter(chars, 'r'))
-          return false;
-      }
-
-      if (chars.Count == 0)
-        return true;
-      else
-        return false;
+      return chars.All(roomDoors.Contains) && chars.Count == roomDoors.Length;
     }).ToList();
 
     var index = Random.Range(0, suitableRooms.Count -1);
     return suitableRooms[index];
-    bool CheckRoomHasLetter(List<char> chars, char letter)
-    {
-      if (!chars.Contains(letter))
-        return false;
-      chars.Remove(letter);
-      return true;
-    }
   }
 
 
