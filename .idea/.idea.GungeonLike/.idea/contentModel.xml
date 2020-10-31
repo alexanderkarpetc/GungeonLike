@@ -234,10 +234,14 @@
           <e p="Extensions.cs" t="Include" />
           <e p="Generation" t="Include">
             <e p="LevelGeneration.cs" t="Include" />
-            <e p="Room.cs" t="Include" />
             <e p="RoomPlacer.cs" t="Include" />
+            <e p="RoomSetup.cs" t="Include" />
           </e>
           <e p="IUpdatable.cs" t="Include" />
+          <e p="Level" t="Include">
+            <e p="RoomController.cs" t="Include" />
+            <e p="RoomState.cs" t="Include" />
+          </e>
           <e p="Player" t="Include">
             <e p="PlayerAnimState.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
@@ -249,6 +253,7 @@
           <e p="Projectile.cs" t="Include" />
           <e p="SceneInitializer.cs" t="Include" />
           <e p="SpriteUtil.cs" t="Include" />
+          <e p="Util.cs" t="Include" />
           <e p="Weapons" t="Include">
             <e p="Shotgun.cs" t="Include" />
             <e p="Weapon.cs" t="Include" />

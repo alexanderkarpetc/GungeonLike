@@ -13,7 +13,7 @@ namespace DefaultNamespace
     [SerializeField] private RoomPlacer _roomPlacer;
     public Transform mapRoot;
 
-    RoomState[,] rooms;
+    RoomSetup[,] rooms;
     private readonly List<Vector2> _takenPositions = new List<Vector2>();
     private int _gridSizeX;
     private int _gridSizeY;
@@ -43,20 +43,20 @@ namespace DefaultNamespace
 
     private void DefineBossRoom()
     {
-      var suitableRooms = new List<RoomState>();
+      var suitableRooms = new List<RoomSetup>();
       foreach (var room in rooms)
       {
         if(room != null && NumberOfNeighbors(room) == 1)
           suitableRooms.Add(room);
       }
 
-      suitableRooms[Random.Range(0, suitableRooms.Count - 1)].Kind = RoomState.RoomKind.Boss;
+      suitableRooms[Random.Range(0, suitableRooms.Count - 1)].Kind = RoomSetup.RoomKind.Boss;
     }
     private void CreateRooms()
     {
       //setup
-      rooms = new RoomState[_gridSizeX * 2, _gridSizeY * 2];
-      rooms[_gridSizeX, _gridSizeY] = new RoomState(Vector2.zero, RoomState.RoomKind.Start);
+      rooms = new RoomSetup[_gridSizeX * 2, _gridSizeY * 2];
+      rooms[_gridSizeX, _gridSizeY] = new RoomSetup(Vector2.zero, RoomSetup.RoomKind.Start);
       _takenPositions.Add(Vector2.zero);
       Vector2 checkPos;
 
@@ -80,7 +80,7 @@ namespace DefaultNamespace
         }
 
         //finalize position
-        rooms[(int) checkPos.x + _gridSizeX, (int) checkPos.y + _gridSizeY] = new RoomState(checkPos, RoomState.RoomKind.Normal);
+        rooms[(int) checkPos.x + _gridSizeX, (int) checkPos.y + _gridSizeY] = new RoomSetup(checkPos, RoomSetup.RoomKind.Normal);
         _takenPositions.Add(checkPos);
       }
     }
@@ -113,9 +113,9 @@ namespace DefaultNamespace
       return checkingPos;
     }
 
-    private int NumberOfNeighbors(RoomState roomState)
+    private int NumberOfNeighbors(RoomSetup roomSetup)
     {
-      return (roomState.doorDown ? 1 : 0) + (roomState.doorUp ? 1 : 0) + (roomState.doorLeft ? 1 : 0) + (roomState.doorRight ? 1 : 0);
+      return (roomSetup.doorDown ? 1 : 0) + (roomSetup.doorUp ? 1 : 0) + (roomSetup.doorLeft ? 1 : 0) + (roomSetup.doorRight ? 1 : 0);
     }
     private int NumberOfNeighbors(Vector2 checkingPos)
     {
@@ -199,7 +199,7 @@ namespace DefaultNamespace
 
   public static class Utils
   {
-    public static RoomState SafeGet(this RoomState[,] rooms, int x, int y)
+    public static RoomSetup SafeGet(this RoomSetup[,] rooms, int x, int y)
     {
       if (x < 0 || rooms.GetLength(0) <= x || y < 0 || rooms.GetLength(1) <= y)
         return null;

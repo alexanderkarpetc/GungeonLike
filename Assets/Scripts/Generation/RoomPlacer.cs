@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DefaultNamespace;
+using Level;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEngine.WSA;
@@ -20,8 +22,8 @@ public class RoomPlacer : MonoBehaviour
   public Vector2 roomDimensions = new Vector2(1, 1);
   public Vector2 gutterSize = new Vector2(1, 1);
 
-  private RoomState[,] _rooms;
-  private Dictionary<RoomState, GameObject> roomObjects = new Dictionary<RoomState, GameObject>();
+  private RoomSetup[,] _rooms;
+  private Dictionary<RoomSetup, GameObject> roomObjects = new Dictionary<RoomSetup, GameObject>();
   private static GameObject _parentObj;
 
   private void Start()
@@ -29,12 +31,12 @@ public class RoomPlacer : MonoBehaviour
     RoomObj = Room1Door.Concat(Room2Door).Concat(Room3Door).Concat(Room4Door).ToList();
   }
 
-  public void Place(RoomState[,] rooms)
+  public void Place(RoomSetup[,] rooms)
   {
     _rooms = rooms;
     Preprocess();
     DoPlace();
-    // PostProcess();
+    PostProcess();
   }
 
   private void Preprocess()
@@ -43,7 +45,7 @@ public class RoomPlacer : MonoBehaviour
 
   private void DoPlace()
   {
-    InitParentIfNeed();
+    _parentObj = Util.InitParentIfNeed("Level");
     foreach (var room in _rooms)
     {
       if (room == null)
@@ -59,18 +61,18 @@ public class RoomPlacer : MonoBehaviour
     }
   }
 
-  private GameObject FindSuitableRoom(RoomState roomState)
+  private GameObject FindSuitableRoom(RoomSetup roomSetup)
   {
     List<GameObject> allRooms;
-    switch (roomState.Kind)
+    switch (roomSetup.Kind)
     {
-      case RoomState.RoomKind.Start:
+      case RoomSetup.RoomKind.Start:
         allRooms = RoomObj.ToList();
         break;
-      case RoomState.RoomKind.Normal:
+      case RoomSetup.RoomKind.Normal:
         allRooms = RoomObj.ToList();
         break;
-      case RoomState.RoomKind.Boss:
+      case RoomSetup.RoomKind.Boss:
         allRooms = BossRooms.ToList();
         break;
       default:
@@ -78,10 +80,10 @@ public class RoomPlacer : MonoBehaviour
     }
 
     var sb = new StringBuilder();
-    sb.Append(roomState.doorDown ? "d" : "");
-    sb.Append(roomState.doorUp ? "u" : "");
-    sb.Append(roomState.doorLeft ? "l" : "");
-    sb.Append(roomState.doorRight ? "r" : "");
+    sb.Append(roomSetup.doorDown ? "d" : "");
+    sb.Append(roomSetup.doorUp ? "u" : "");
+    sb.Append(roomSetup.doorLeft ? "l" : "");
+    sb.Append(roomSetup.doorRight ? "r" : "");
     var roomDoors = sb.ToString().ToCharArray();
     var suitableRooms = allRooms.Where(obj =>
     {
@@ -92,16 +94,13 @@ public class RoomPlacer : MonoBehaviour
     var index = Random.Range(0, suitableRooms.Count - 1);
     return suitableRooms[index];
   }
-
-
-  private static void InitParentIfNeed()
+  
+  private void PostProcess()
   {
-    var levelParent = GameObject.Find("Level");
-    if (levelParent == null)
+    foreach (var room in roomObjects)
     {
-      levelParent = new GameObject("Level");
+      var roomController = room.Value.AddComponent<RoomController>();
+      roomController.setup = room.Key;
     }
-
-    _parentObj = levelParent;
   }
 }
