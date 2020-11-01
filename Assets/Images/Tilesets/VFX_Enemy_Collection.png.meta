@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: 5d05b3736d9bc644793df4d3db98c0d4
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8385835530765473452
+    second: RevolverDrum
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -85,7 +88,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: RevolverDrum
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 853
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459efdbc3078f9b80800000000000000
+      internalID: -8385835530765473452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

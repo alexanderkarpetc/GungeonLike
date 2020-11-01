@@ -1,4 +1,5 @@
 ﻿using System;
+using GamePlay.Weapons;
 using UnityEngine;
 
 namespace GamePlay.Player
@@ -9,10 +10,18 @@ namespace GamePlay.Player
     private int _currentHp;
     public event Action OnHealthChanged;
     public event Action OnDamageTake;
+    public Weapon Weapon => _weapon;
+
+    private Weapon _weapon;
     public PlayerState()
     {
       _currentHp = 3;
       _maxHp = 3;
+    }
+
+    public void SetWeapon(Weapon weapon)
+    {
+      _weapon = weapon;
     }
 
     public int GetHp()
