@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Linq;
 using UnityEngine;
 
 namespace GamePlay.Weapons
@@ -7,6 +8,10 @@ namespace GamePlay.Weapons
   {
     public bool IsInverted;
     public bool IsDoubleHanded;
+    public int MagazineSize;
+    public Sprite _uiImage;
+    [HideInInspector] public int bulletsLeft;
+
     [HideInInspector] public bool IsPlayers;
 
     [SerializeField] protected GameObject _projectile;
@@ -16,18 +21,18 @@ namespace GamePlay.Weapons
     [SerializeField] protected float _shootDelay;
     [SerializeField] protected float _bulletSpeed;
     [SerializeField] protected float _impulse;
-    [SerializeField] protected int _magazineSize;
     [SerializeField] protected Animator _animator;
 
-    protected int bulletsLeft;
     protected float _nextShotTime;
-    protected bool _reloading;
+    public bool reloading;
+    public float reloadingTime;
     private static readonly int Reload = Animator.StringToHash("Reload");
     private static readonly int Shoot = Animator.StringToHash("Shoot");
 
     private void Start()
     {
-      bulletsLeft = _magazineSize;
+      bulletsLeft = MagazineSize;
+      reloadingTime = _animator.runtimeAnimatorController.animationClips.First(x=>x.name.Equals("Reload")).averageDuration;
     }
 
     public void TryShoot()
@@ -39,7 +44,7 @@ namespace GamePlay.Weapons
         return;
       }
 
-      if (!(Time.time >= _nextShotTime) || _reloading)
+      if (!(Time.time >= _nextShotTime) || reloading)
         return;
 
       StartCoroutine(ShootCoroutine());
@@ -70,11 +75,11 @@ namespace GamePlay.Weapons
 
     private IEnumerator DoReload()
     {
-      _reloading = true;
+      reloading = true;
       _animator.SetTrigger(Reload);
-      yield return new WaitForSeconds(_animator.GetCurrentAnimatorClipInfo(0).Length);
-      bulletsLeft = _magazineSize;
-      _reloading = false;
+      yield return new WaitForSeconds(reloadingTime);
+      bulletsLeft = MagazineSize;
+      reloading = false;
     }
     public static Vector2 RadianToVector2(float radian)
     {

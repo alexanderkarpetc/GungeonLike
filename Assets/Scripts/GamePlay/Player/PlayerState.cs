@@ -11,7 +11,7 @@ namespace GamePlay.Player
     public event Action OnHealthChanged;
     public event Action OnDamageTake;
     public Weapon Weapon => _weapon;
-
+    public Backpack Backpack = new Backpack();
     private Weapon _weapon;
     public PlayerState()
     {

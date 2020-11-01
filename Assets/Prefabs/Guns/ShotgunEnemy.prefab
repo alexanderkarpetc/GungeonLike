@@ -97,6 +97,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsInverted: 0
+  IsDoubleHanded: 0
+  MagazineSize: 2
+  _uiImage: {fileID: 0}
+  bulletsLeft: 0
   IsPlayers: 0
   _projectile: {fileID: 1269866929858603303, guid: c4615c392e64d3147b25cb0b8d559062,
     type: 3}
@@ -106,7 +110,6 @@ MonoBehaviour:
   _shootDelay: 0.5
   _bulletSpeed: 5
   _impulse: 0
-  _magazineSize: 2
   _animator: {fileID: 4700838025113585313}
   BulletsCount: 5
   DispersionAngle: 90
