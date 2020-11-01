@@ -54,7 +54,7 @@ namespace GamePlay
     private void HitEnemy(Collider2D enemy)
     {
       var enemyController = enemy.GetComponent<EnemyController>();
-      enemyController.Hit(Damage, transform.rotation * (Vector2.right) * Impulse);
+      enemyController.Hit(Damage, transform.rotation * Direction.normalized * Impulse);
     }
   }
 }

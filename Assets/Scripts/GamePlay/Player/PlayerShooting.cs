@@ -8,17 +8,6 @@ namespace GamePlay.Player
     [HideInInspector] public Weapon Weapon;
     [SerializeField] public Transform _weaponSlot;
 
-    private void Start()
-    {
-      GetWeapon();
-    }
-
-    private void GetWeapon()
-    {
-      Weapon = _weaponSlot.GetChild(0).GetComponent<Weapon>();
-      Weapon.IsPlayers = true;
-    }
-
     void Update()
     {
       CheckShoot();
@@ -26,6 +15,11 @@ namespace GamePlay.Player
 
     private void CheckShoot()
     {
+      if (Weapon == null)
+      {
+        Weapon = _weaponSlot.GetChild(0).GetComponent<Weapon>();
+        Weapon.IsPlayers = true;
+      }
       if (Input.GetMouseButton(0))
       {
         Weapon.TryShoot();

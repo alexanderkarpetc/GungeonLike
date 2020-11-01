@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using GamePlay.Weapons;
 using UnityEngine;
 
 namespace GamePlay.Player
@@ -9,9 +11,16 @@ namespace GamePlay.Player
     [SerializeField] private PlayerTurnAnimator playerTurnAnimator;
     [SerializeField] private Rigidbody2D _rigidbody;
     [SerializeField] private SpriteRenderer _body;
+    [SerializeField] private Weapon _startingWeapon;
     private int _verticalMove;
     private int _horizontalMove;
     private bool _isInvincible;
+    private PlayerInitializer _initializer = new PlayerInitializer();
+    
+    private void Start()
+    {
+      _initializer.Init(_startingWeapon);
+    }
 
     private void Update()
     {

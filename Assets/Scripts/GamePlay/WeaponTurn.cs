@@ -9,7 +9,7 @@ namespace GamePlay
     [SerializeField] protected Transform _secondaryHandPos;
     [SerializeField] protected Vector3 _leftHandPos;
     [SerializeField] protected Vector3 _rightHandPos;
-    [SerializeField] protected Weapon Weapon;
+    [SerializeField] public Weapon Weapon;
 
     public Transform _rightHand;
     public Transform _leftHand;

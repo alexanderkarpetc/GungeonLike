@@ -26,15 +26,11 @@ namespace GamePlay.Enemy
       if (state.IsName(EnemyAnimState.UpRight) || state.IsName(EnemyAnimState.UpLeft) ||
           state.IsName(EnemyAnimState.IdleBack) || state.IsName(EnemyAnimState.HitLeftUp)|| state.IsName(EnemyAnimState.HitRightUp))
       {
-        _body.sortingOrder = 1;
-        _rightHandSprite.sortingOrder = 2;
-        _leftHandSprite.sortingOrder = 2;
+        _body.sortingOrder = -2;
       }
       else
       {
-        _body.sortingOrder = -2;
-        _rightHandSprite.sortingOrder = -2;
-        _leftHandSprite.sortingOrder = -2;
+        _body.sortingOrder = 2;
       }
     }
     protected override void MoveHands()

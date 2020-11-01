@@ -6,6 +6,7 @@ namespace GamePlay.Weapons
   public class Weapon : MonoBehaviour
   {
     public bool IsInverted;
+    public bool IsDoubleHanded;
     [HideInInspector] public bool IsPlayers;
 
     [SerializeField] protected GameObject _projectile;

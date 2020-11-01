@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsInverted: 0
+  IsDoubleHanded: 1
   IsPlayers: 0
   _projectile: {fileID: 1269866929858603303, guid: 3f3976499f8fb1e49ba68f0eedbf575d,
     type: 3}
