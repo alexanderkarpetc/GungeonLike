@@ -55,13 +55,16 @@ namespace GamePlay.Weapons
 
     protected virtual void SpawnProjectiles()
     {
-      var go = Instantiate(_projectile, _shootPoint.position, transform.rotation);
+      var go = Instantiate(_projectile, _shootPoint.position, Quaternion.identity);
       var projectile = go.GetComponent<Projectile>();
-      projectile.IsInverted = IsInverted;
       projectile.IsPlayerBullet = IsPlayers;
       projectile.Damage = _damage;
       projectile.Speed = _bulletSpeed;
       projectile.Impulse = _impulse;
+
+      projectile.Direction = DegreeToVector2(transform.rotation.eulerAngles.z);
+      if (IsInverted)
+        projectile.Direction *= -1;
     }
 
     private IEnumerator DoReload()
@@ -71,6 +74,15 @@ namespace GamePlay.Weapons
       yield return new WaitForSeconds(_animator.GetCurrentAnimatorClipInfo(0).Length);
       bulletsLeft = _magazineSize;
       _reloading = false;
+    }
+    public static Vector2 RadianToVector2(float radian)
+    {
+      return new Vector2(Mathf.Cos(radian), Mathf.Sin(radian));
+    }
+  
+    public static Vector2 DegreeToVector2(float degree)
+    {
+      return RadianToVector2(degree * Mathf.Deg2Rad);
     }
   }
 }

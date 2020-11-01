@@ -50,11 +50,11 @@ MonoBehaviour:
     type: 3}
   _envHitFx: {fileID: 4224990154401905789, guid: ff6dfb4ef83bfd54fa8a393cd6ad7b86,
     type: 3}
-  IsInverted: 0
   IsPlayerBullet: 0
   Damage: 0
   Speed: 0
   Impulse: 2
+  Direction: {x: 0, y: 0}
 --- !u!50 &1269866929858603299
 Rigidbody2D:
   serializedVersion: 4

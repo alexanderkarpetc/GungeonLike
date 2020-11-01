@@ -46,15 +46,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2407176df5522384f8d5e57b5bc30a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Impulse: 0
   _enemyHitFx: {fileID: 4224990154401905789, guid: c391b9231532bd64e8dc967973a60108,
     type: 3}
   _envHitFx: {fileID: 4224990154401905789, guid: ff6dfb4ef83bfd54fa8a393cd6ad7b86,
     type: 3}
-  IsInverted: 0
   IsPlayerBullet: 0
   Damage: 0
   Speed: 0
+  Impulse: 0
+  Direction: {x: 0, y: 0}
 --- !u!50 &1269866929858603299
 Rigidbody2D:
   serializedVersion: 4

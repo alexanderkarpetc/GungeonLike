@@ -13,13 +13,15 @@ namespace GamePlay.Weapons
       
       for (var i = 0; i < BulletsCount; i++)
       {
-        var go = Instantiate(_projectile, _shootPoint.position, Quaternion.Euler(0,0,currentRotation));
-        currentRotation -= angleShift;
+        var go = Instantiate(_projectile, _shootPoint.position, Quaternion.identity);
         var projectile = go.GetComponent<Projectile>();
-        projectile.IsInverted = IsInverted;
         projectile.IsPlayerBullet = IsPlayers;
         projectile.Damage = _damage;
         projectile.Speed = _bulletSpeed;
+        projectile.Direction = DegreeToVector2(currentRotation);
+        if (IsInverted)
+          projectile.Direction *= -1;
+        currentRotation -= angleShift;
       }
     }
   }
