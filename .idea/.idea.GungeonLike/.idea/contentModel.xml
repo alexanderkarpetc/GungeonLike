@@ -218,55 +218,57 @@
           </e>
           <e p="Readme.txt" t="Include" />
         </e>
-        <e p="HeartContainer.cs" t="Include" />
-        <e p="HudController.cs" t="Include" />
         <e p="Scripts" t="Include">
-          <e p="AnimationAutoDestroy.cs" t="Include" />
-          <e p="AppModel.cs" t="Include" />
-          <e p="CameraFollow.cs" t="Include" />
-          <e p="Enemy" t="Include">
-            <e p="Brain" t="Include">
-              <e p="BotBrain.cs" t="Include" />
-              <e p="BotPart.cs" t="Include" />
-              <e p="BotShooting.cs" t="Include" />
-              <e p="TargetFinder.cs" t="Include" />
-            </e>
-            <e p="BulletEnemyTurnAnimator.cs" t="Include" />
-            <e p="EnemyAnimState.cs" t="Include" />
-            <e p="EnemyController.cs" t="Include" />
-            <e p="EnemyWeaponTurn.cs" t="Include" />
-            <e p="State" t="Include">
-              <e p="EnemyState.cs" t="Include" />
-            </e>
-          </e>
           <e p="Extensions.cs" t="Include" />
+          <e p="GamePlay" t="Include">
+            <e p="AnimationAutoDestroy.cs" t="Include" />
+            <e p="AppModel.cs" t="Include" />
+            <e p="CameraFollow.cs" t="Include" />
+            <e p="Enemy" t="Include">
+              <e p="Brain" t="Include">
+                <e p="BotBrain.cs" t="Include" />
+                <e p="BotPart.cs" t="Include" />
+                <e p="BotShooting.cs" t="Include" />
+                <e p="TargetFinder.cs" t="Include" />
+              </e>
+              <e p="BulletEnemyTurnAnimator.cs" t="Include" />
+              <e p="EnemyAnimState.cs" t="Include" />
+              <e p="EnemyController.cs" t="Include" />
+              <e p="EnemyWeaponTurn.cs" t="Include" />
+              <e p="State" t="Include">
+                <e p="EnemyState.cs" t="Include" />
+              </e>
+            </e>
+            <e p="HeartContainer.cs" t="Include" />
+            <e p="HudController.cs" t="Include" />
+            <e p="IUpdatable.cs" t="Include" />
+            <e p="Level" t="Include">
+              <e p="RoomController.cs" t="Include" />
+              <e p="RoomState.cs" t="Include" />
+            </e>
+            <e p="Player" t="Include">
+              <e p="PlayerAnimState.cs" t="Include" />
+              <e p="PlayerController.cs" t="Include" />
+              <e p="PlayerShooting.cs" t="Include" />
+              <e p="PlayerState.cs" t="Include" />
+              <e p="PlayerTurnAnimator.cs" t="Include" />
+              <e p="PlayerWeaponTurn.cs" t="Include" />
+            </e>
+            <e p="Projectile.cs" t="Include" />
+            <e p="SceneInitializer.cs" t="Include" />
+            <e p="SpriteUtil.cs" t="Include" />
+            <e p="Weapons" t="Include">
+              <e p="Shotgun.cs" t="Include" />
+              <e p="Weapon.cs" t="Include" />
+            </e>
+            <e p="WeaponTurn.cs" t="Include" />
+          </e>
           <e p="Generation" t="Include">
             <e p="LevelGeneration.cs" t="Include" />
             <e p="RoomPlacer.cs" t="Include" />
             <e p="RoomSetup.cs" t="Include" />
           </e>
-          <e p="IUpdatable.cs" t="Include" />
-          <e p="Level" t="Include">
-            <e p="RoomController.cs" t="Include" />
-            <e p="RoomState.cs" t="Include" />
-          </e>
-          <e p="Player" t="Include">
-            <e p="PlayerAnimState.cs" t="Include" />
-            <e p="PlayerController.cs" t="Include" />
-            <e p="PlayerShooting.cs" t="Include" />
-            <e p="PlayerState.cs" t="Include" />
-            <e p="PlayerTurnAnimator.cs" t="Include" />
-            <e p="PlayerWeaponTurn.cs" t="Include" />
-          </e>
-          <e p="Projectile.cs" t="Include" />
-          <e p="SceneInitializer.cs" t="Include" />
-          <e p="SpriteUtil.cs" t="Include" />
           <e p="Util.cs" t="Include" />
-          <e p="Weapons" t="Include">
-            <e p="Shotgun.cs" t="Include" />
-            <e p="Weapon.cs" t="Include" />
-          </e>
-          <e p="WeaponTurn.cs" t="Include" />
         </e>
       </e>
       <e p="AstarPathfindingProject.csproj" t="IncludeRecursive" />
