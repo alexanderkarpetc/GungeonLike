@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using DefaultNamespace;
 using UnityEngine;
 
@@ -8,10 +9,19 @@ namespace GamePlay
   {
     [SerializeField] private GameObject _dmgPanel;
     [SerializeField] private float _blinkDuration;
+    [SerializeField] private GameObject _console;
 
     private void Start()
     {
       AppModel.Player().OnDamageTake += ScreenBlink;
+    }
+
+    private void Update()
+    {
+      if (Input.GetKeyDown(KeyCode.BackQuote))
+      {
+        _console.SetActive(!_console.activeSelf);
+      }
     }
 
     private void ScreenBlink()

@@ -99,7 +99,8 @@ MonoBehaviour:
   IsInverted: 0
   IsDoubleHanded: 0
   MagazineSize: 6
-  _uiImage: {fileID: 0}
+  _uiImage: {fileID: 8114701419968866501, guid: 5113b2197179d2540adf47c48faaaa8f,
+    type: 3}
   bulletsLeft: 0
   IsPlayers: 0
   _projectile: {fileID: 1269866929858603303, guid: 3f3976499f8fb1e49ba68f0eedbf575d,
@@ -111,6 +112,8 @@ MonoBehaviour:
   _bulletSpeed: 5
   _impulse: 0
   _animator: {fileID: 4700838025113585313}
+  reloading: 0
+  reloadingTime: 0
 --- !u!1 &4700838025997285464
 GameObject:
   m_ObjectHideFlags: 0
