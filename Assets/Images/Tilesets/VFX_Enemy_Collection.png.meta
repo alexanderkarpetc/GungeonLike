@@ -1,13 +1,7 @@
 fileFormatVersion: 2
 guid: 5d05b3736d9bc644793df4d3db98c0d4
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -8385835530765473452
-    second: EnemyStandartBullet
-  - first:
-      213: -8711317218088726958
-    second: EnemyBulletBigger
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -91,49 +85,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: EnemyStandartBullet
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 1037
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 459efdbc3078f9b80800000000000000
-      internalID: -8385835530765473452
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnemyBulletBigger
-      rect:
-        serializedVersion: 2
-        x: 1481
-        y: 2005
-        width: 12
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 25ec31a052f2b1780800000000000000
-      internalID: -8711317218088726958
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []

@@ -268,6 +268,10 @@
             <e p="RoomPlacer.cs" t="Include" />
             <e p="RoomSetup.cs" t="Include" />
           </e>
+          <e p="Import" t="Include">
+            <e p="JsonParserScript.cs" t="Include" />
+            <e p="JsonToTpsheetParser.cs" t="Include" />
+          </e>
           <e p="Util.cs" t="Include" />
         </e>
       </e>
