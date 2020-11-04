@@ -6,11 +6,11 @@ namespace GamePlay.Weapons
 {
   public class Weapon : MonoBehaviour
   {
-    public bool IsInverted;
     public bool IsDoubleHanded;
     public int MagazineSize;
     public Sprite _uiImage;
     [HideInInspector] public int bulletsLeft;
+    [HideInInspector] public bool IsInverted;
 
     [HideInInspector] public bool IsPlayers;
 
@@ -26,8 +26,8 @@ namespace GamePlay.Weapons
     protected float _nextShotTime;
     public bool reloading;
     public float reloadingTime;
-    private static readonly int Reload = Animator.StringToHash("Reload");
-    private static readonly int Shoot = Animator.StringToHash("Shoot");
+    private static readonly int ReloadAnim = Animator.StringToHash("Reload");
+    private static readonly int ShootAnim = Animator.StringToHash("Shoot");
 
     private void Start()
     {
@@ -39,7 +39,7 @@ namespace GamePlay.Weapons
     {
       if (bulletsLeft <= 0)
       {
-        StartCoroutine(DoReload());
+        Reload();
 
         return;
       }
@@ -50,10 +50,15 @@ namespace GamePlay.Weapons
       StartCoroutine(ShootCoroutine());
     }
 
+    public void Reload()
+    {
+      StartCoroutine(DoReload());
+    }
+
     private IEnumerator ShootCoroutine()
     {
       _nextShotTime = Time.time + _shootRate;
-      _animator.SetTrigger(Shoot);
+      _animator.SetTrigger(ShootAnim);
       yield return new WaitForSeconds(_shootDelay);
       SpawnProjectiles();
       bulletsLeft--;
@@ -76,7 +81,7 @@ namespace GamePlay.Weapons
     private IEnumerator DoReload()
     {
       reloading = true;
-      _animator.SetTrigger(Reload);
+      _animator.SetTrigger(ReloadAnim);
       yield return new WaitForSeconds(reloadingTime);
       bulletsLeft = MagazineSize;
       reloading = false;

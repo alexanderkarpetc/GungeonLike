@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422198880}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.807, y: 0, z: 0}
+  m_LocalPosition: {x: 1.075, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4700838025113585318}
@@ -40,9 +40,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4700838025113585318}
   - component: {fileID: 4700838025113585313}
-  - component: {fileID: 7701770505401930465}
+  - component: {fileID: 1712927347}
   m_Layer: 0
-  m_Name: ShotgunEnemy
+  m_Name: Ak47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ Animator:
   m_GameObject: {fileID: 4700838025113585319}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 94377e095e29cf64c8325eda4fff1f16, type: 2}
+  m_Controller: {fileID: 9100000, guid: 077507ed34f93bc45a0468c03bd86588, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -84,7 +84,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7701770505401930465
+--- !u!114 &1712927347
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,29 +93,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 4700838025113585319}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01f555cf8fde45ab956dbbb652d6cd2b, type: 3}
+  m_Script: {fileID: 11500000, guid: 694c9e7cb2f8898408a38a4c17b7fca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsInverted: 0
-  IsDoubleHanded: 0
-  MagazineSize: 2
-  _uiImage: {fileID: 6943097915660606747, guid: 19f3e2a9b7fedf642a1819fffa7aabb0,
+  ShortName: 47
+  IsDoubleHanded: 1
+  MagazineSize: 30
+  _uiImage: {fileID: -9016371849305481163, guid: 6fbeb321059df2344b25dd3f03791c46,
     type: 3}
   bulletsLeft: 0
+  IsInverted: 0
   IsPlayers: 0
-  _projectile: {fileID: 1269866929858603303, guid: c4615c392e64d3147b25cb0b8d559062,
+  _projectile: {fileID: 1269866929858603303, guid: 3f3976499f8fb1e49ba68f0eedbf575d,
     type: 3}
   _shootPoint: {fileID: 422198881}
   _damage: 1
-  _shootRate: 2
-  _shootDelay: 0.5
-  _bulletSpeed: 5
-  _impulse: 0
+  _shootRate: 0.1
+  _shootDelay: 0
+  _bulletSpeed: 10
+  _impulse: 0.5
   _animator: {fileID: 4700838025113585313}
   reloading: 0
   reloadingTime: 0
-  BulletsCount: 5
-  DispersionAngle: 90
 --- !u!1 &4700838025997285464
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,7 +185,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -5318915980995067207, guid: 19f3e2a9b7fedf642a1819fffa7aabb0,
+  m_Sprite: {fileID: 4627038102986004866, guid: 6fbeb321059df2344b25dd3f03791c46,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
