@@ -9,10 +9,10 @@ namespace GamePlay.Weapons
     public bool IsDoubleHanded;
     public int MagazineSize;
     public Sprite _uiImage;
-    [HideInInspector] public int bulletsLeft;
     [HideInInspector] public bool IsInverted;
 
-    [HideInInspector] public bool IsPlayers;
+    public bool IsPlayers;
+    [HideInInspector] public WeaponState State;
 
     [SerializeField] protected GameObject _projectile;
     [SerializeField] protected Transform _shootPoint;
@@ -31,13 +31,16 @@ namespace GamePlay.Weapons
 
     private void Start()
     {
-      bulletsLeft = MagazineSize;
+      if (!IsPlayers)
+      {
+        State = new WeaponState{bulletsLeft = MagazineSize};
+      }
       reloadingTime = _animator.runtimeAnimatorController.animationClips.First(x=>x.name.Equals("Reload")).averageDuration;
     }
 
     public void TryShoot()
     {
-      if (bulletsLeft <= 0)
+      if (State.bulletsLeft <= 0)
       {
         Reload();
 
@@ -61,7 +64,7 @@ namespace GamePlay.Weapons
       _animator.SetTrigger(ShootAnim);
       yield return new WaitForSeconds(_shootDelay);
       SpawnProjectiles();
-      bulletsLeft--;
+      State.bulletsLeft--;
     }
 
     protected virtual void SpawnProjectiles()
@@ -83,7 +86,7 @@ namespace GamePlay.Weapons
       reloading = true;
       _animator.SetTrigger(ReloadAnim);
       yield return new WaitForSeconds(reloadingTime);
-      bulletsLeft = MagazineSize;
+      State.bulletsLeft = MagazineSize;
       reloading = false;
     }
     public static Vector2 RadianToVector2(float radian)

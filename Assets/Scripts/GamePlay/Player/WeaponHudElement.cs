@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using GamePlay.Weapons;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,19 +11,30 @@ namespace GamePlay.Player
     [SerializeField] private Image _weapon;
     [SerializeField] private Image _magazine;
 
+    private Weapon _currentWeapon;
     private bool _reloadStarted;
+    private Coroutine _reload;
 
     private void Update()
     {
       var weapon = AppModel.Player().Weapon;
-      _weapon.sprite = weapon._uiImage;
-      if (!weapon.reloading)
-        _magazine.fillAmount = (float) weapon.bulletsLeft / weapon.MagazineSize;
+      if (_currentWeapon != weapon)
+      {
+        if (_reload != null)
+        {
+          _reloadStarted = false;
+          StopCoroutine(_reload);
+        }
+        _currentWeapon = weapon;
+      }
+      _weapon.sprite = _currentWeapon._uiImage;
+      if (!_currentWeapon.reloading)
+        _magazine.fillAmount = (float) _currentWeapon.State.bulletsLeft / _currentWeapon.MagazineSize;
       else
       {
         if (_reloadStarted)
           return;
-        StartCoroutine(Reload());
+        _reload = StartCoroutine(Reload());
       }
     }
 
@@ -38,6 +50,7 @@ namespace GamePlay.Player
         yield return null;
       }
 
+      _reload = null;
       _reloadStarted = false;
     }
   }
