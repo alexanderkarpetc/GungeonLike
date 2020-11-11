@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 2215793121671682649}
   - component: {fileID: 2215793121671682651}
   - component: {fileID: 2215793121671682648}
+  - component: {fileID: 2935388362033553556}
   m_Layer: 0
   m_Name: Pedestal
   m_TagString: Untagged
@@ -160,10 +161,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Item: {fileID: 0}
-  _itemSprites:
-  - {fileID: -9016371849305481163, guid: 6fbeb321059df2344b25dd3f03791c46, type: 3}
-  - {fileID: 7875799695088257292, guid: 5113b2197179d2540adf47c48faaaa8f, type: 3}
-  - {fileID: -5318915980995067207, guid: 19f3e2a9b7fedf642a1819fffa7aabb0, type: 3}
   _itemSprite: {fileID: 2215793121051982357}
 --- !u!61 &2215793121671682648
 BoxCollider2D:
@@ -175,7 +172,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.000000059604645, y: -0.037592888}
@@ -191,6 +188,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9449011, y: 1.0200844}
   m_EdgeRadius: 0
+--- !u!50 &2935388362033553556
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2215793121671682654}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2215793122826061166
 GameObject:
   m_ObjectHideFlags: 0
