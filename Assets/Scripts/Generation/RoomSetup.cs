@@ -15,4 +15,9 @@ public class RoomSetup {
 		GridPos = gridPos;
 		Kind = kind;
 	}
+
+	public override string ToString()
+	{
+		return $"RoomSetup doorUp:{doorUp}, doorDown:{doorDown}, doorLeft:{doorLeft}, doorRight:{doorRight}";
+	}
 }

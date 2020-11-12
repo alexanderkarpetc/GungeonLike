@@ -3,5 +3,7 @@
   public class RoomState
   {
     public bool IsCleaned;
+    public bool IsVisited;
+    public bool IsClosed;
   }
 }

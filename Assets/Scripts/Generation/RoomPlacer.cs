@@ -101,6 +101,16 @@ public class RoomPlacer : MonoBehaviour
     {
       var roomController = room.Value.AddComponent<RoomController>();
       roomController.setup = room.Key;
+      SetCollider(room);
     }
+  }
+
+  private static void SetCollider(KeyValuePair<RoomSetup, GameObject> room)
+  {
+    var boxCollider = room.Value.AddComponent<BoxCollider2D>();
+    boxCollider.isTrigger = true;
+    var roofCollider = room.Value.transform.Find("Roof").GetComponent<Collider2D>();
+    boxCollider.offset = roofCollider.offset;
+    boxCollider.size = roofCollider.bounds.extents * 2;
   }
 }
