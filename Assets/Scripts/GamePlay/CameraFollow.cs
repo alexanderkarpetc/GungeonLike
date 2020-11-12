@@ -9,7 +9,7 @@ namespace GamePlay
 
     void Start()
     {
-      _player = GameObject.Find("Player")?.transform;
+      _player = AppModel.PlayerTransform();
     }
 
     void Update()

@@ -16,7 +16,7 @@ namespace GamePlay.Player
 
     protected override void OnStart()
     {
-      _playerAnimator = GameObject.Find("Player").GetComponent<Animator>();
+      _playerAnimator = AppModel.PlayerGameObj().GetComponent<Animator>();
     }
 
     protected override void MoveHands()

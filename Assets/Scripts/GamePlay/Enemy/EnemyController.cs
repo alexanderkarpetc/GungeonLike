@@ -23,7 +23,7 @@ namespace GamePlay.Enemy
 
     private void Start()
     {
-      _destinationSetter.target = GameObject.Find("Player").transform;
+      _destinationSetter.target = AppModel.PlayerTransform();
       _aiPath.maxSpeed = speed;
       State = new EnemyState();
       _botBrain = new BotBrain(gameObject);
