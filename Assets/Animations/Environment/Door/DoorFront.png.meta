@@ -1,0 +1,800 @@
+fileFormatVersion: 2
+guid: a56696b222d341e4a9bea8dd38f4dd6f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -269605117359059410
+    second: steel_bullet_plate_down_001
+  - first:
+      213: -7711386514518925406
+    second: steel_bullet_plate_down_002
+  - first:
+      213: 1346484876676103807
+    second: steel_bullet_plate_down_003
+  - first:
+      213: 3124641784277346597
+    second: steel_bullet_plate_down_004
+  - first:
+      213: -1005020959992722118
+    second: steel_bullet_plate_down_005
+  - first:
+      213: -2235158169446544092
+    second: steel_bullet_plate_down_006
+  - first:
+      213: -8974087294731403310
+    second: steel_bullet_plate_down_007
+  - first:
+      213: -1388204371468209786
+    second: steel_bullet_plate_down_008
+  - first:
+      213: -4202575393321807777
+    second: steel_bullet_plate_up_001
+  - first:
+      213: -4688998798510541149
+    second: steel_bullet_plate_up_002
+  - first:
+      213: -3882279860205232049
+    second: steel_bullet_plate_up_003
+  - first:
+      213: -2759581708710199636
+    second: steel_bullet_plate_up_004
+  - first:
+      213: -2587769810330913016
+    second: steel_bullet_plate_up_005
+  - first:
+      213: -736242912010444051
+    second: steel_bullet_plate_up_006
+  - first:
+      213: -8715114947811729179
+    second: steel_bullet_plate_up_007
+  - first:
+      213: -2066714272741119226
+    second: steel_bullet_plate_up_008
+  - first:
+      213: -2402451044183273722
+    second: steel_bullet_plate_up_009
+  - first:
+      213: -2230624081473193628
+    second: steel_bullet_plate_up_015
+  - first:
+      213: -6666941301131676658
+    second: steel_bullet_plate_up_020
+  - first:
+      213: -5942027956829611367
+    second: steel_bullet_plate_up_025
+  - first:
+      213: -8538383308437765058
+    second: steel_bullet_plate_up_030
+  - first:
+      213: -6157354741728526942
+    second: steel_bullet_plate_up_035
+  - first:
+      213: 955454887596938152
+    second: steel_bullet_plate_up_040
+  - first:
+      213: -6907700981228060417
+    second: steel_bullet_plate_up_045
+  - first:
+      213: -4707206556904419426
+    second: steel_bullet_plate_up_050
+  - first:
+      213: 8675637166284608412
+    second: steel_bullet_plate_up_055
+  - first:
+      213: 5646609978694510065
+    second: steel_bullet_plate_up_060
+  - first:
+      213: -7470278987534488940
+    second: steel_bullet_plate_up_065
+  - first:
+      213: 8045248921502342155
+    second: steel_bullet_plate_up_070
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 18
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: steel_bullet_plate_down_001
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 54
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2e8f2ef29b224cf0800000000000000
+      internalID: -269605117359059410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_down_002
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 83
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2af9c5c52d6abf490800000000000000
+      internalID: -7711386514518925406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_down_003
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 216
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ef6b18cdcafa210800000000000000
+      internalID: 1346484876676103807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_down_004
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 216
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 529a132d525fc5b20800000000000000
+      internalID: 3124641784277346597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_down_005
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 216
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3dcfcff2c27d02f0800000000000000
+      internalID: -1005020959992722118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_down_006
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 216
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d835dbc7f1bf0e0800000000000000
+      internalID: -2235158169446544092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_down_007
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 216
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df3036f623a57380800000000000000
+      internalID: -8974087294731403310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_down_008
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 216
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6813efaaa7b1cbce0800000000000000
+      internalID: -1388204371468209786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_up_001
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 216
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f50914b22f37da5c0800000000000000
+      internalID: -4202575393321807777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_up_002
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 216
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a6bb86af645deeb0800000000000000
+      internalID: -4688998798510541149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_up_003
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 175
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4060dd490f5f1ac0800000000000000
+      internalID: -3882279860205232049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_up_004
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 134
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caeb9ab8e0ff3b9d0800000000000000
+      internalID: -2759581708710199636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_up_005
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 93
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 807febe6115661cd0800000000000000
+      internalID: -2587769810330913016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_up_006
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 52
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de2e739e8f658c5f0800000000000000
+      internalID: -736242912010444051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_up_007
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 11
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e02cfe2121bd0780800000000000000
+      internalID: -8715114947811729179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_up_008
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 177
+        width: 32
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60b2901a15e8153e0800000000000000
+      internalID: -2066714272741119226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_up_009
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 175
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60f80390187c8aed0800000000000000
+      internalID: -2402451044183273722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_up_015
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 175
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 469bb5c573b3b01e0800000000000000
+      internalID: -2230624081473193628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_up_020
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 175
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e047aa7a5344a73a0800000000000000
+      internalID: -6666941301131676658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_up_025
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 175
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a1bb33e0da98da0800000000000000
+      internalID: -5942027956829611367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_up_030
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 175
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3441788e91918980800000000000000
+      internalID: -8538383308437765058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_up_035
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 134
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ad34374c7eac8aa0800000000000000
+      internalID: -6157354741728526942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_up_040
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 129
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a350267825724d00800000000000000
+      internalID: 955454887596938152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_up_045
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 40
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff0c84f5e8ae220a0800000000000000
+      internalID: -6907700981228060417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_up_050
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f825b8394acaeb0800000000000000
+      internalID: -4707206556904419426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_up_055
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 101
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c931298890e066870800000000000000
+      internalID: 8675637166284608412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_up_060
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 73
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f5234dcbd9cc5e40800000000000000
+      internalID: 5646609978694510065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_up_065
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 36
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a21fe07dc345890800000000000000
+      internalID: -7470278987534488940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steel_bullet_plate_up_070
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 3
+        width: 32
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0cddbfb44776af60800000000000000
+      internalID: 8045248921502342155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

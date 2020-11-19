@@ -15,7 +15,7 @@ namespace GamePlay
 
     void Start()
     {
-      _player = GameObject.Find("Player").GetComponent<PlayerController>();
+      _player = AppModel.PlayerGameObj().GetComponent<PlayerController>();
       _playerState = AppModel.Player();
       _playerState.OnHealthChanged += ReDraw;
       ReDraw();

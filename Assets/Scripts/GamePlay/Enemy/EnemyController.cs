@@ -17,7 +17,7 @@ namespace GamePlay.Enemy
     [SerializeField] private BulletEnemyTurnAnimator _turnAnimator;
     [SerializeField] private float _hitAnimDuration;
 
-    private EnemyState State;
+    public EnemyState State;
     private BotBrain _botBrain;
     public Weapon Weapon;
 

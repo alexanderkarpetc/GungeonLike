@@ -6,7 +6,7 @@ namespace GamePlay.Enemy.Brain
   {
     public TargetFinder(BotBrain brain) : base(brain)
     {
-      brain.Target = GameObject.Find("Player");
+      brain.Target = AppModel.PlayerGameObj();
     }
 
     public override void OnUpdate() { }

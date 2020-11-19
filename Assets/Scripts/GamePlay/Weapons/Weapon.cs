@@ -98,5 +98,10 @@ namespace GamePlay.Weapons
     {
       return RadianToVector2(degree * Mathf.Deg2Rad);
     }
+
+    public int GetPower()
+    {
+      return (int)(_damage / _shootRate + MagazineSize / reloadingTime);
+    }
   }
 }

@@ -5,6 +5,27 @@ TextureImporter:
   - first:
       213: -8385835530765473452
     second: RevolverDrum
+  - first:
+      213: -8711317218088726958
+    second: Enemy_spawn_5
+  - first:
+      213: -1537245825246840373
+    second: Enemy_spawn_4
+  - first:
+      213: -6482055907181764311
+    second: VFX_Enemy_Collection_3
+  - first:
+      213: 4394759125069312846
+    second: Enemy_spawn_0
+  - first:
+      213: -3641390022446488403
+    second: Enemy_spawn_2
+  - first:
+      213: -1726205899431333651
+    second: Enemy_spawn_3
+  - first:
+      213: 3803986301362226957
+    second: Enemy_spawn_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -98,7 +119,7 @@ TextureImporter:
         width: 80
         height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -106,6 +127,153 @@ TextureImporter:
       bones: []
       spriteID: 459efdbc3078f9b80800000000000000
       internalID: -8385835530765473452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_spawn_5
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 1346
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ec31a052f2b1780800000000000000
+      internalID: -8711317218088726958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_spawn_4
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 1286
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9b5bd011b9aaae0800000000000000
+      internalID: -1537245825246840373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Enemy_Collection_3
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1100
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921653eee7c1b06a0800000000000000
+      internalID: -6482055907181764311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_spawn_0
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 925
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43b92bc3225dfc30800000000000000
+      internalID: 4394759125069312846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_spawn_2
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 924
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4ec67411f277dc0800000000000000
+      internalID: -3641390022446488403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_spawn_3
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 721
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0363b51e84b08e0800000000000000
+      internalID: -1726205899431333651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_spawn_1
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 679
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07c52ff2697ac430800000000000000
+      internalID: 3803986301362226957
       vertices: []
       indices: 
       edges: []

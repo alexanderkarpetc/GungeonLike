@@ -17,6 +17,7 @@ public class RoomPlacer : MonoBehaviour
   [SerializeField] GameObject[] Room3Door;
   [SerializeField] GameObject[] Room4Door;
   [SerializeField] GameObject[] BossRooms;
+  [SerializeField] private GameObject _astar;
 
   private List<GameObject> RoomObj;
   public Vector2 roomDimensions = new Vector2(1, 1);
@@ -101,8 +102,11 @@ public class RoomPlacer : MonoBehaviour
     {
       var roomController = room.Value.AddComponent<RoomController>();
       roomController.setup = room.Key;
+      roomController.State = new RoomState();
       SetCollider(room);
     }
+
+    InitAstar();
   }
 
   private static void SetCollider(KeyValuePair<RoomSetup, GameObject> room)
@@ -111,6 +115,12 @@ public class RoomPlacer : MonoBehaviour
     boxCollider.isTrigger = true;
     var roofCollider = room.Value.transform.Find("Roof").GetComponent<Collider2D>();
     boxCollider.offset = roofCollider.offset;
-    boxCollider.size = roofCollider.bounds.extents * 2;
+    boxCollider.size = roofCollider.bounds.extents * 2 - new Vector3(1, 0);
+    room.Value.tag = "Environment";
+  }
+      
+  private void InitAstar()
+  {
+    Instantiate(_astar);
   }
 }

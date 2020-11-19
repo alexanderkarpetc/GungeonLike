@@ -15,8 +15,10 @@ namespace GamePlay.Enemy.Brain
     }
     public override void OnUpdate()
     {
+      if(Brain.Target == null)
+        return;
       var raycast = Physics2D.LinecastAll(Brain.Owner.transform.position, Brain.Target.transform.position)
-        .Where(x=>!x.collider.CompareTag("Projectile") && !x.collider.CompareTag("Enemy"));
+        .Where(x=>!x.collider.CompareTag("Projectile") && !x.collider.CompareTag("Enemy") && !x.collider.CompareTag("Environment"));
       if (raycast.First().collider.CompareTag("Player"))
         TryShoot();
     }

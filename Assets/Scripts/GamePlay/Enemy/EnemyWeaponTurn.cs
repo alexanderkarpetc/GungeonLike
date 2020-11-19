@@ -9,7 +9,7 @@ namespace GamePlay.Enemy
 
     protected override void OnStart()
     {
-      _player = GameObject.Find("Player");
+      _player = AppModel.PlayerGameObj();
     }
 
     protected override void TurnGun()

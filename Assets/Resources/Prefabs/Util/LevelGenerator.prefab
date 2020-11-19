@@ -84,5 +84,6 @@ MonoBehaviour:
   - {fileID: 874448859247282575, guid: e8af74b23e2597f43bada5432361315f, type: 3}
   - {fileID: 874448859247282575, guid: 273c041801c958d4886bf1313f7ba4ff, type: 3}
   - {fileID: 874448859247282575, guid: 508ade58b88849b48ab9fd35afce42be, type: 3}
+  _astar: {fileID: 3590234156923928649, guid: 0f121b3a4b952a641ba00eb135ecad6a, type: 3}
   roomDimensions: {x: 21, y: 22}
   gutterSize: {x: 4, y: 4}
