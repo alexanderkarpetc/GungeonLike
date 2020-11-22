@@ -70,6 +70,7 @@ namespace GamePlay.Weapons
     protected virtual void SpawnProjectiles()
     {
       var go = Instantiate(_projectile, _shootPoint.position, Quaternion.identity);
+      go.transform.SetParent(AppModel.BulletContainer().transform);
       var projectile = go.GetComponent<Projectile>();
       projectile.IsPlayerBullet = IsPlayers;
       projectile.Damage = _damage;

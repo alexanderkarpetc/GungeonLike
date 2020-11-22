@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using GamePlay.Enemy.Brain;
 using GamePlay.Enemy.State;
 using GamePlay.Weapons;
@@ -20,7 +21,7 @@ namespace GamePlay.Enemy
     public EnemyState State;
     private BotBrain _botBrain;
     public Weapon Weapon;
-
+    public Action<EnemyController> OnDeath;
     private void Start()
     {
       _destinationSetter.target = AppModel.PlayerTransform();
@@ -41,15 +42,21 @@ namespace GamePlay.Enemy
       StartCoroutine(HitImpulse(impulse));
       if (!_turnAnimator.IsDying && State.Hp <= 0)
       {
-        StopProcesses();
-        _turnAnimator.IsDying = true;
-        _animator.SetTrigger(EnemyAnimState.die);
-        Invoke(nameof(DestroyView), 1);
-        AppModel.Drop().CheckDrop(transform, 10);
+        Death();
         return;
       }
 
       StartCoroutine(HitAnimation());
+    }
+
+    private void Death()
+    {
+      StopProcesses();
+      _turnAnimator.IsDying = true;
+      _animator.SetTrigger(EnemyAnimState.die);
+      Invoke(nameof(DestroyView), 1);
+      AppModel.Drop().CheckDrop(transform, 10);
+      OnDeath(this);
     }
 
     private IEnumerator HitImpulse(Vector2 impulse)

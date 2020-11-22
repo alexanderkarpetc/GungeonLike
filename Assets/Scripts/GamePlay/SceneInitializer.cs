@@ -14,12 +14,20 @@ namespace GamePlay
     void Awake()
     {
       InitCamera();
+      InitContainers();
       if(_initplayer)
         InitPlayer();
       else
       {
         AppModel.SetPlayer(GameObject.Find("Player"));
       }
+    }
+
+    private void InitContainers()
+    {
+      var bullets = new GameObject("Bullets");
+      var fxs = new GameObject("Fx");
+      AppModel.SetContainers(bullets, fxs);
     }
 
     private void InitCamera()

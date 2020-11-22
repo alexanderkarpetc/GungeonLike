@@ -26,8 +26,9 @@ namespace GamePlay
       // Hit ENV
       if (_envTags.Contains(collision.collider.tag))
       {
-        Instantiate(_envHitFx, transform.position,
+        var fx = Instantiate(_envHitFx, transform.position,
           Quaternion.LookRotation(Vector3.forward, collision.GetContact(0).normal));
+        fx.transform.SetParent(AppModel.FxContainer().transform);
         Destroy(gameObject);
       }
 

@@ -19,6 +19,8 @@ namespace GamePlay
     private static EnemyFactory _enemyFactory;
     private static GameObject _playerGameObj;
     private static SpawnPoint _spawnPointPrefab;
+    private static GameObject _bulletContainer;
+    private static GameObject _fxContainer;
 
 
     public static PlayerState Player()
@@ -56,5 +58,20 @@ namespace GamePlay
       return _spawnPointPrefab ? _spawnPointPrefab : _spawnPointPrefab = Resources.Load<SpawnPoint>("Prefabs/Env/Secondary/SpawnPoint");
     }
 
+    public static GameObject BulletContainer()
+    {
+      return _bulletContainer;
+    }
+    
+    public static GameObject FxContainer()
+    {
+      return _fxContainer;
+    }
+
+    public static void SetContainers(GameObject bullets, GameObject fxs)
+    {
+      _bulletContainer = bullets;
+      _fxContainer = fxs;
+    }
   }
 }

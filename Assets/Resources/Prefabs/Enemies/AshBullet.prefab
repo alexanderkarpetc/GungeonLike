@@ -418,7 +418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _destinationSetter: {fileID: 2270374981625696082}
-  _rigidbody: {fileID: 0}
+  _rigidbody: {fileID: 8337688368576467293}
   _aiPath: {fileID: 4739193085893968551}
   speed: 2
   _animator: {fileID: 8284064114409565633}
