@@ -29,6 +29,10 @@ namespace GamePlay
         var fx = Instantiate(_envHitFx, transform.position,
           Quaternion.LookRotation(Vector3.forward, collision.GetContact(0).normal));
         fx.transform.SetParent(AppModel.FxContainer().transform);
+        if (collision.collider.CompareTag("Environment"))
+        {
+          collision.collider.GetComponent<Level.Environment>().DealDamage(Damage);
+        }
         Destroy(gameObject);
       }
 
