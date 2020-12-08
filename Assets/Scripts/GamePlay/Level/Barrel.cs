@@ -19,20 +19,20 @@ namespace GamePlay.Level
 
     private void DamageSurroundings()
     {
-      var hits = Physics2D.CircleCastAll(transform.position, Radius, Vector2.right);
+      var hits = Physics2D.OverlapCircleAll(transform.position, Radius);
       foreach (var hit in hits)
       {
-        if (hit.collider.CompareTag("Enemy"))
+        if (hit.CompareTag("Enemy"))
         {
-          hit.collider.GetComponent<EnemyController>().Hit(Damage, Vector2.zero);
+          hit.GetComponent<EnemyController>().Hit(Damage, Vector2.zero);
         }
-        if (hit.collider.CompareTag("Player"))
+        if (hit.CompareTag("Player"))
         {
-          hit.collider.GetComponent<PlayerController>().Hit();
+          hit.GetComponent<PlayerController>().Hit();
         }
-        if (hit.collider.CompareTag("Environment"))
+        if (hit.CompareTag("Environment"))
         {
-            var environment = hit.collider.GetComponent<Environment>();
+            var environment = hit.GetComponent<Environment>();
             if(!environment.IsDestroying)
               environment.DealDamage(Damage);
 
