@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: -8007826441157147351
     second: PedestalItem
+  - first:
+      213: -6138674564106887945
+    second: Barrel_front
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,6 +109,27 @@ TextureImporter:
       bones: []
       spriteID: 92509df674c7ed090800000000000000
       internalID: -8007826441157147351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barrel_front
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 544
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fcdeae020c0fcaa0800000000000000
+      internalID: -6138674564106887945
       vertices: []
       indices: 
       edges: []
