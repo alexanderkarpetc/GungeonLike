@@ -1,0 +1,10 @@
+:texture=spritesheet.png
+
+shop_door_vertical_north_right_001.png;1;48;16;35; 0.5;0.5; 0;0;0;0; 0;0;0;0;0;0;0;0;0; 0;0;0;0;0;0;0
+shop_door_vertical_north_right_002.png;19;46;20;37; 0.5;0.5; 0;0;0;0; 0;0;0;0;0;0;0;0;0; 0;0;0;0;0;0;0
+shop_door_vertical_north_right_003.png;41;42;20;41; 0.5;0.5; 0;0;0;0; 0;0;0;0;0;0;0;0;0; 0;0;0;0;0;0;0
+shop_door_vertical_north_right_004.png;63;43;10;40; 0.5;0.5; 0;0;0;0; 0;0;0;0;0;0;0;0;0; 0;0;0;0;0;0;0
+shop_door_vertical_north_right_005.png;1;1;10;40; 0.5;0.5; 0;0;0;0; 0;0;0;0;0;0;0;0;0; 0;0;0;0;0;0;0
+shop_door_vertical_north_right_006.png;13;1;10;40; 0.5;0.5; 0;0;0;0; 0;0;0;0;0;0;0;0;0; 0;0;0;0;0;0;0
+shop_door_vertical_north_right_007.png;25;1;8;40; 0.5;0.5; 0;0;0;0; 0;0;0;0;0;0;0;0;0; 0;0;0;0;0;0;0
+shop_door_vertical_north_right_008.png;63;1;8;40; 0.5;0.5; 0;0;0;0; 0;0;0;0;0;0;0;0;0; 0;0;0;0;0;0;0
