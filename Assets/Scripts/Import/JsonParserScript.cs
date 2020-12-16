@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class JsonParserScript : MonoBehaviour
 {
+    [SerializeField] private bool _isGungeonStrucure;
     void Start()
     {
         var files = Directory.GetFiles(Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
@@ -14,7 +15,7 @@ public class JsonParserScript : MonoBehaviour
         {
             var fileInfo = new FileInfo(file);
             if(fileInfo.Extension.Equals(".json"))
-                JsonToTpsheetParser.Parse(file);
+                JsonToTpsheetParser.Parse(file, _isGungeonStrucure);
         }
     }
 }
