@@ -23,8 +23,8 @@ public class RoomPlacer : MonoBehaviour
   public Vector2 roomDimensions = new Vector2(1, 1);
   public Vector2 gutterSize = new Vector2(1, 1);
 
-  private RoomSetup[,] _rooms;
-  private Dictionary<RoomSetup, GameObject> roomObjects = new Dictionary<RoomSetup, GameObject>();
+  private MazeRoomSetup[,] _rooms;
+  private Dictionary<MazeRoomSetup, GameObject> roomObjects = new Dictionary<MazeRoomSetup, GameObject>();
   private static GameObject _parentObj;
 
   private void Start()
@@ -32,7 +32,7 @@ public class RoomPlacer : MonoBehaviour
     RoomObj = Room1Door.Concat(Room2Door).Concat(Room3Door).Concat(Room4Door).ToList();
   }
 
-  public void Place(RoomSetup[,] rooms)
+  public void Place(MazeRoomSetup[,] rooms)
   {
     _rooms = rooms;
     Preprocess();
@@ -62,18 +62,18 @@ public class RoomPlacer : MonoBehaviour
     }
   }
 
-  private GameObject FindSuitableRoom(RoomSetup roomSetup)
+  private GameObject FindSuitableRoom(MazeRoomSetup mazeRoomSetup)
   {
     List<GameObject> allRooms;
-    switch (roomSetup.Kind)
+    switch (mazeRoomSetup.Kind)
     {
-      case RoomSetup.RoomKind.Start:
+      case MazeRoomSetup.RoomKind.Start:
         allRooms = RoomObj.ToList();
         break;
-      case RoomSetup.RoomKind.Normal:
+      case MazeRoomSetup.RoomKind.Normal:
         allRooms = RoomObj.ToList();
         break;
-      case RoomSetup.RoomKind.Boss:
+      case MazeRoomSetup.RoomKind.Boss:
         allRooms = BossRooms.ToList();
         break;
       default:
@@ -81,10 +81,10 @@ public class RoomPlacer : MonoBehaviour
     }
 
     var sb = new StringBuilder();
-    sb.Append(roomSetup.doorDown ? "d" : "");
-    sb.Append(roomSetup.doorUp ? "u" : "");
-    sb.Append(roomSetup.doorLeft ? "l" : "");
-    sb.Append(roomSetup.doorRight ? "r" : "");
+    sb.Append(mazeRoomSetup.doorDown ? "d" : "");
+    sb.Append(mazeRoomSetup.doorUp ? "u" : "");
+    sb.Append(mazeRoomSetup.doorLeft ? "l" : "");
+    sb.Append(mazeRoomSetup.doorRight ? "r" : "");
     var roomDoors = sb.ToString().ToCharArray();
     var suitableRooms = allRooms.Where(obj =>
     {
@@ -100,7 +100,7 @@ public class RoomPlacer : MonoBehaviour
   {
     foreach (var room in roomObjects)
     {
-      var roomController = room.Value.AddComponent<RoomController>();
+      var roomController = room.Value.AddComponent<MazeRoomController>();
       roomController.setup = room.Key;
       roomController.State = new RoomState();
       SetCollider(room);
@@ -109,7 +109,7 @@ public class RoomPlacer : MonoBehaviour
     InitAstar();
   }
 
-  private static void SetCollider(KeyValuePair<RoomSetup, GameObject> room)
+  private static void SetCollider(KeyValuePair<MazeRoomSetup, GameObject> room)
   {
     var boxCollider = room.Value.AddComponent<BoxCollider2D>();
     boxCollider.isTrigger = true;

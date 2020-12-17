@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections;
-using DefaultNamespace;
+﻿using System.Collections;
 using UnityEngine;
 
-namespace GamePlay
+namespace GamePlay.Player
 {
   public class HudController : MonoBehaviour
   {

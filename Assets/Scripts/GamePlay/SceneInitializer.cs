@@ -21,6 +21,9 @@ namespace GamePlay
       {
         AppModel.SetPlayer(GameObject.Find("Player"));
       }
+      var straightLevelController = GameObject.Find("StraightLevelController");
+      if(straightLevelController != null)
+        DoStraightLevelLogic(straightLevelController.GetComponent<StraightLevelController>());
     }
 
     private void InitContainers()
@@ -36,13 +39,18 @@ namespace GamePlay
       mainCamera.GetComponent<Camera>().backgroundColor = cameraColor;
       var cameraFollow = mainCamera.AddComponent<CameraFollow>();
       cameraFollow.Speed = cameraSpeed;
-      Instantiate(HUD);
+      AppModel.InitHud(Instantiate(HUD).GetComponent<HudController>());
     }
 
     private void InitPlayer()
     {
       var playerGo = Instantiate(_player).gameObject;
       AppModel.SetPlayer(playerGo);
+    }
+    
+    private void DoStraightLevelLogic(StraightLevelController straightLevelController)
+    {
+      straightLevelController.ProcessNextRoom();
     }
   }
 }

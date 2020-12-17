@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class RoomSetup {
+public class MazeRoomSetup {
 	public enum RoomKind
 	{
 		Start = 1,
@@ -11,7 +11,7 @@ public class RoomSetup {
 	public Vector2 GridPos;
 	public bool doorUp, doorDown, doorLeft, doorRight;
 	public RoomKind Kind;
-	public RoomSetup(Vector2 gridPos, RoomKind kind){
+	public MazeRoomSetup(Vector2 gridPos, RoomKind kind){
 		GridPos = gridPos;
 		Kind = kind;
 	}

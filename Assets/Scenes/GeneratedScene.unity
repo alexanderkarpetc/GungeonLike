@@ -340,7 +340,7 @@ PrefabInstance:
     - target: {fileID: 8460477540873949916, guid: fe82d9f6c773be04e9215857ed75cd03,
         type: 3}
       propertyPath: m_Name
-      value: LevelGenerator
+      value: MazeGenerator
       objectReference: {fileID: 0}
     - target: {fileID: 8460477540873949917, guid: fe82d9f6c773be04e9215857ed75cd03,
         type: 3}

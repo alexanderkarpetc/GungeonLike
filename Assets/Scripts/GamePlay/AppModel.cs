@@ -21,6 +21,8 @@ namespace GamePlay
     private static SpawnPoint _spawnPointPrefab;
     private static GameObject _bulletContainer;
     private static GameObject _fxContainer;
+    private static HudController _hud;
+    public static StraightLevelController StraightRoomController;
 
 
     public static PlayerState Player()
@@ -72,6 +74,16 @@ namespace GamePlay
     {
       _bulletContainer = bullets;
       _fxContainer = fxs;
+    }
+
+    public static void InitHud(HudController hud)
+    {
+      _hud = hud;
+    }
+    
+    public static HudController Hud()
+    {
+      return _hud;
     }
   }
 }

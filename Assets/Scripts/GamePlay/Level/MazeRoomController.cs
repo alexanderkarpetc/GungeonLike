@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using DefaultNamespace;
 using GamePlay.Enemy;
-using Pathfinding.Examples;
 using UnityEngine;
-using Random = Unity.Mathematics.Random;
 
 namespace GamePlay.Level
 {
-  public class RoomController : MonoBehaviour
+  public class MazeRoomController : MonoBehaviour
   {
-    public RoomSetup setup;
+    public MazeRoomSetup setup;
     public RoomState State;
-    public GameObject Fog;
     private Vector3 _posUp;
     private Vector3 _posDown;
     private Vector3 _posLeft;
@@ -37,7 +32,7 @@ namespace GamePlay.Level
       if(!other.CompareTag("Player"))
         return;
       Destroy(gameObject.GetComponent<Collider2D>());
-      if (!State.IsCleaned && !State.IsVisited && setup.Kind != RoomSetup.RoomKind.Start)
+      if (!State.IsCleaned && !State.IsVisited && setup.Kind != MazeRoomSetup.RoomKind.Start)
       {
         CloseDoors();
         SpawnEnemies();
