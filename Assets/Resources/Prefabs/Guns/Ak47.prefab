@@ -96,14 +96,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 694c9e7cb2f8898408a38a4c17b7fca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShortName: 47
   IsDoubleHanded: 1
   MagazineSize: 30
   _uiImage: {fileID: -9016371849305481163, guid: 6fbeb321059df2344b25dd3f03791c46,
     type: 3}
-  bulletsLeft: 0
   IsInverted: 0
   IsPlayers: 0
+  Type: 1
   _projectile: {fileID: 1269866929858603303, guid: 3f3976499f8fb1e49ba68f0eedbf575d,
     type: 3}
   _shootPoint: {fileID: 422198881}

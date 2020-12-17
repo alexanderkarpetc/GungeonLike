@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using GamePlay.Common;
 using GamePlay.Enemy.Brain;
 using GamePlay.Enemy.State;
 using GamePlay.Weapons;
@@ -13,7 +14,6 @@ namespace GamePlay.Enemy
     [SerializeField] private AIDestinationSetter _destinationSetter;
     [SerializeField] private Rigidbody2D _rigidbody;
     [SerializeField] private AIPath _aiPath;
-    [SerializeField] private float speed;
     [SerializeField] private Animator _animator;
     [SerializeField] private BulletEnemyTurnAnimator _turnAnimator;
     [SerializeField] private float _hitAnimDuration;
@@ -25,7 +25,7 @@ namespace GamePlay.Enemy
     private void Start()
     {
       _destinationSetter.target = AppModel.PlayerTransform();
-      _aiPath.maxSpeed = speed;
+      _aiPath.maxSpeed = StaticData.EnemyBulletSpeedBase;
       State = new EnemyState();
       _botBrain = new BotBrain(gameObject);
     }

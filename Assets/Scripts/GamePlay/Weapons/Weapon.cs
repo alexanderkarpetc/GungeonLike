@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Linq;
+using GamePlay.Common;
 using UnityEngine;
 
 namespace GamePlay.Weapons
@@ -14,9 +15,9 @@ namespace GamePlay.Weapons
     public bool IsPlayers;
     [HideInInspector] public WeaponState State;
 
+    [SerializeField] protected WeaponType Type;
     [SerializeField] protected GameObject _projectile;
     [SerializeField] protected Transform _shootPoint;
-    [SerializeField] protected float _damage;
     [SerializeField] protected float _shootRate;
     [SerializeField] protected float _shootDelay;
     [SerializeField] protected float _bulletSpeed;
@@ -73,7 +74,7 @@ namespace GamePlay.Weapons
       go.transform.SetParent(AppModel.BulletContainer().transform);
       var projectile = go.GetComponent<Projectile>();
       projectile.IsPlayerBullet = IsPlayers;
-      projectile.Damage = _damage;
+      projectile.Damage = WeaponStaticData.WeaponDamage[Type];
       projectile.Speed = _bulletSpeed;
       projectile.Impulse = _impulse;
 
@@ -102,7 +103,7 @@ namespace GamePlay.Weapons
 
     public int GetPower()
     {
-      return (int)(_damage / _shootRate + MagazineSize / reloadingTime);
+      return (int)(WeaponStaticData.WeaponDamage[Type] / _shootRate + MagazineSize / reloadingTime);
     }
   }
 }

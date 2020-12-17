@@ -23,7 +23,13 @@ namespace GamePlay
     {
       _currentRoomIndex++;
       if (_currentRoom != null)
+      {
         Destroy(_currentRoom);
+        foreach (Transform child in AppModel.Drop().GetDropped())
+        {
+          Destroy(child.gameObject);
+        }
+      }
       var nextRoom = predefinedRooms[_currentRoomIndex];
       _currentRoom = Instantiate(nextRoom);
       _currentRoom.AddComponent<StraightRoomController>();

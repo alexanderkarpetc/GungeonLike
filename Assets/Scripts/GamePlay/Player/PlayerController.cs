@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using GamePlay.Common;
 using GamePlay.Weapons;
 using UnityEngine;
 
@@ -7,7 +8,6 @@ namespace GamePlay.Player
 {
   public class PlayerController : MonoBehaviour
   {
-    [SerializeField] private float Speed;
     [SerializeField] private PlayerTurnAnimator playerTurnAnimator;
     [SerializeField] private Rigidbody2D _rigidbody;
     [SerializeField] private SpriteRenderer _body;
@@ -42,7 +42,7 @@ namespace GamePlay.Player
 
     private void Move()
     {
-      _rigidbody.velocity = new Vector2(_horizontalMove, _verticalMove).normalized * Speed;
+      _rigidbody.velocity = new Vector2(_horizontalMove, _verticalMove).normalized * StaticData.PlayerSpeedBase * AppModel.Player().SpeedMultiplier;
     }
 
     public void Hit()
