@@ -64,7 +64,7 @@ namespace GamePlay.Enemy
       _animator.SetTrigger(EnemyAnimState.die);
       Invoke(nameof(DestroyView), 1);
       AppModel.Drop().CheckDrop(transform, 10);
-      OnDeath(this);
+      OnDeath?.Invoke(this);
     }
 
     private IEnumerator HitImpulse(Vector2 impulse)

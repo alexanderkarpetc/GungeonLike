@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using GamePlay.Enemy;
 using GamePlay.Player;
 using UnityEngine;
@@ -36,16 +37,19 @@ namespace GamePlay
         Destroy(gameObject);
       }
 
-      if (IsPlayerBullet && collision.collider.CompareTag("Enemy"))
-      {
-        Instantiate(_enemyHitFx, transform.position, transform.rotation);
-        HitEnemy(collision.collider);
-        Destroy(gameObject);
-      }
-
       if (!IsPlayerBullet && collision.collider.CompareTag("Player"))
       {
         HitPlayer(collision.collider);
+        Destroy(gameObject);
+      }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+      if (IsPlayerBullet && other.CompareTag("Enemy"))
+      {
+        Instantiate(_enemyHitFx, transform.position, transform.rotation);
+        HitEnemy(other);
         Destroy(gameObject);
       }
     }
