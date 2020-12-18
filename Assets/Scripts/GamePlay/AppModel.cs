@@ -8,7 +8,7 @@ namespace GamePlay
   {
     static AppModel()
     {
-      random.InitState();
+      random.InitState((uint)System.DateTime.Now.Millisecond);
     }
 
     public static Unity.Mathematics.Random random = new Unity.Mathematics.Random();

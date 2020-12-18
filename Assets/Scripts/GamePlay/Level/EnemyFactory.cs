@@ -20,7 +20,7 @@ namespace GamePlay.Level
 
     public EnemySetup GetRandomEnemy()
     {
-      var index = AppModel.random.NextInt(0, EnemySetups.Count - 1);
+      var index = AppModel.random.NextInt(0, EnemySetups.Count);
       return EnemySetups[index];
     }
   }
