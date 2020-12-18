@@ -4,11 +4,11 @@ using UnityEngine;
 
 namespace GamePlay.Enemy.Brain
 {
-  public class BotShooting : BotPart
+  public class BulletBotShooting : BotPart
   {
     private Weapon _weapon;
     private EnemyController _controller;
-    public BotShooting(BotBrain brain) : base(brain)
+    public BulletBotShooting(BotBrain brain) : base(brain)
     {
       _controller = Owner.GetComponent<EnemyController>();
       _weapon = _controller.Weapon;

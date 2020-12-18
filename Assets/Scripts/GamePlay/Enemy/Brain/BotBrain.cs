@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using GamePlay.Common;
+using UnityEngine;
 
 namespace GamePlay.Enemy.Brain
 {
@@ -6,20 +8,31 @@ namespace GamePlay.Enemy.Brain
   {
     public GameObject Target;
     public GameObject Owner;
-    private BotShooting _shooting;
-    private TargetFinder _targetFinder;
+    public EnemyController _enemyController;
+
+    protected List<BotPart> _parts = new List<BotPart>();
+    protected BulletBotShooting _shooting;
+    protected TargetFinder _targetFinder;
 
     public BotBrain(GameObject owner)
     {
       Owner = owner;
-      _shooting = new BotShooting(this);
+      _shooting = new BulletBotShooting(this);
       _targetFinder = new TargetFinder(this);
+      _parts.Add(_shooting);
+      _parts.Add(_targetFinder);
+      _enemyController = owner.GetComponent<EnemyController>();
     }
 
-    public void OnUpdate()
+    public virtual void OnUpdate()
     {
-      _targetFinder.OnUpdate();
-      _shooting.OnUpdate();
+      _parts.ForEach(x=> x.OnUpdate());
+    }
+
+    public virtual void OnCreate()
+    {
+      _enemyController.GetDestinationSetter().target = AppModel.PlayerTransform();
+      _enemyController.GetAiPath().maxSpeed = StaticData.EnemyBulletSpeedBase;
     }
   }
 }

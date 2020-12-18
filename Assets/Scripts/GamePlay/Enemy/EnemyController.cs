@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using GamePlay.Common;
 using GamePlay.Enemy.Brain;
 using GamePlay.Enemy.State;
@@ -11,6 +12,14 @@ namespace GamePlay.Enemy
 {
   public class EnemyController : MonoBehaviour
   {
+    public static Func<EnemyType, GameObject, BotBrain> BotBrainByType = (type, gameObj) =>
+    {
+      if (type == EnemyType.Cubulon)
+        return new CubulonBrain(gameObj);
+
+      return new BotBrain(gameObj);
+    };
+    [SerializeField] protected EnemyType Type;
     [SerializeField] private AIDestinationSetter _destinationSetter;
     [SerializeField] private Rigidbody2D _rigidbody;
     [SerializeField] private AIPath _aiPath;
@@ -24,10 +33,9 @@ namespace GamePlay.Enemy
     public Action<EnemyController> OnDeath;
     private void Start()
     {
-      _destinationSetter.target = AppModel.PlayerTransform();
-      _aiPath.maxSpeed = StaticData.EnemyBulletSpeedBase;
       State = new EnemyState();
-      _botBrain = new BotBrain(gameObject);
+      _botBrain = BotBrainByType(Type, gameObject);
+      _botBrain.OnCreate();
     }
 
     private void Update()
@@ -104,6 +112,16 @@ namespace GamePlay.Enemy
     public void DestroyView()
     {
       Destroy(gameObject);
+    }
+
+    public AIDestinationSetter GetDestinationSetter()
+    {
+      return _destinationSetter;
+    }
+
+    public AIPath GetAiPath()
+    {
+      return _aiPath;
     }
   }
 }

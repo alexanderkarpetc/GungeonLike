@@ -14,7 +14,7 @@ namespace GamePlay.Level
       var enemies = Resources.LoadAll("Prefabs/Enemies", typeof(EnemyController));
       foreach (EnemyController enemy in enemies)
       {
-        EnemySetups.Add(new EnemySetup(enemy, enemy.Weapon.GetPower()));
+        EnemySetups.Add(new EnemySetup(enemy, enemy.Weapon?.GetPower() ?? 0));
       }
     }
 

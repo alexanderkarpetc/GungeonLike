@@ -1,0 +1,1088 @@
+fileFormatVersion: 2
+guid: b0dedc861b34abc4488e8b3e30fb67b5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8787526106982906768
+    second: cubulon_attack_left_001.png
+  - first:
+      213: -1033210764238142886
+    second: cubulon_attack_left_002.png
+  - first:
+      213: 6756067753026574242
+    second: cubulon_attack_left_003.png
+  - first:
+      213: 8917845229664054429
+    second: cubulon_attack_left_004.png
+  - first:
+      213: 3702018600225516468
+    second: cubulon_attack_left_005.png
+  - first:
+      213: -2604087737509456520
+    second: cubulon_attack_left_006.png
+  - first:
+      213: 7074060416644258001
+    second: cubulon_attack_left_007.png
+  - first:
+      213: 1818809605143301506
+    second: cubulon_attack_left_008.png
+  - first:
+      213: -4928818841158555815
+    second: cubulon_attack_left_009.png
+  - first:
+      213: 495189799795428951
+    second: cubulon_attack_right_001.png
+  - first:
+      213: -5223353100337695179
+    second: cubulon_attack_right_002.png
+  - first:
+      213: -2903019656683994133
+    second: cubulon_attack_right_003.png
+  - first:
+      213: 2609901213694248517
+    second: cubulon_attack_right_004.png
+  - first:
+      213: -9031400718544874822
+    second: cubulon_attack_right_005.png
+  - first:
+      213: -1612084763587599259
+    second: cubulon_attack_right_006.png
+  - first:
+      213: 6169886535010379745
+    second: cubulon_attack_right_007.png
+  - first:
+      213: -5336712783367627711
+    second: cubulon_attack_right_008.png
+  - first:
+      213: 7604654586812739078
+    second: cubulon_attack_right_009.png
+  - first:
+      213: -7069498696165932915
+    second: cubulon_back_left_001.png
+  - first:
+      213: -3579809130410199932
+    second: cubulon_back_left_002.png
+  - first:
+      213: 6807889389990801406
+    second: cubulon_back_left_003.png
+  - first:
+      213: -4914849841644523777
+    second: cubulon_die_001.png
+  - first:
+      213: 1310584193703685292
+    second: cubulon_die_002.png
+  - first:
+      213: -153533685979525777
+    second: cubulon_die_003.png
+  - first:
+      213: 1084763791402468577
+    second: cubulon_die_004.png
+  - first:
+      213: -6433947313569177719
+    second: cubulon_die_005.png
+  - first:
+      213: -4401028324047025890
+    second: cubulon_die_006.png
+  - first:
+      213: 3656290361285281427
+    second: cubulon_front_left_001.png
+  - first:
+      213: 5845159962989262120
+    second: cubulon_front_left_002.png
+  - first:
+      213: -5889473824054488160
+    second: cubulon_front_left_003.png
+  - first:
+      213: 2144012421847661380
+    second: cubulon_front_right_001.png
+  - first:
+      213: -1196745351377742934
+    second: cubulon_front_right_002.png
+  - first:
+      213: -5932483571213078918
+    second: cubulon_front_right_003.png
+  - first:
+      213: 4798695638940568796
+    second: cubulon_hit_left_001.png
+  - first:
+      213: -5319233925601576095
+    second: cubulon_hit_left_002.png
+  - first:
+      213: 8220215871562245369
+    second: cubulon_hit_left_003.png
+  - first:
+      213: 8780989782553388192
+    second: cubulon_hit_left_004.png
+  - first:
+      213: -7072259406439187685
+    second: cubulon_hit_right_001.png
+  - first:
+      213: 8239005348368344617
+    second: cubulon_hit_right_002.png
+  - first:
+      213: 7960375058986654533
+    second: cubulon_hit_right_003.png
+  - first:
+      213: -3983197936741731449
+    second: cubulon_hit_right_004.png
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 18
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cubulon_attack_left_001.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 153
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09bff2d9f6093f970800000000000000
+      internalID: 8787526106982906768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_attack_left_002.png
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 153
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a52c97bb84c49a1f0800000000000000
+      internalID: -1033210764238142886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_attack_left_003.png
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 153
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a7de9183df52cd50800000000000000
+      internalID: 6756067753026574242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_attack_left_004.png
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 153
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ca904dcfc82cb70800000000000000
+      internalID: 8917845229664054429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_attack_left_005.png
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 150
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bba4528d46306330800000000000000
+      internalID: 3702018600225516468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_attack_left_006.png
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 155
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8755cc1fffb6cdbd0800000000000000
+      internalID: -2604087737509456520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_attack_left_007.png
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 157
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d89bbd087c1c2260800000000000000
+      internalID: 7074060416644258001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_attack_left_008.png
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 138
+        width: 28
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d82ac03b5bd3910800000000000000
+      internalID: 1818809605143301506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_attack_left_009.png
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 133
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 957ed72c061599bb0800000000000000
+      internalID: -4928818841158555815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_attack_right_001.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 111
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75e0431df744fd600800000000000000
+      internalID: 495189799795428951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_attack_right_002.png
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 111
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536bfed970ce287b0800000000000000
+      internalID: -5223353100337695179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_attack_right_003.png
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 111
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be3cf5bc00766b7d0800000000000000
+      internalID: -2903019656683994133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_attack_right_004.png
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 111
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5464b15735b383420800000000000000
+      internalID: 2609901213694248517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_attack_right_005.png
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 108
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2dcea95e40aa280800000000000000
+      internalID: -9031400718544874822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_attack_right_006.png
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 113
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 564aa8ed279b0a9e0800000000000000
+      internalID: -1612084763587599259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_attack_right_007.png
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 115
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e762c73d17df9550800000000000000
+      internalID: 6169886535010379745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_attack_right_008.png
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 96
+        width: 28
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14c1617afff20f5b0800000000000000
+      internalID: -5336712783367627711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_attack_right_009.png
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 91
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ea4863e09298960800000000000000
+      internalID: 7604654586812739078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_back_left_001.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 69
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8041f2446814ed90800000000000000
+      internalID: -7069498696165932915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_back_left_002.png
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 71
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48433320096f15ec0800000000000000
+      internalID: -3579809130410199932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_back_left_003.png
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 68
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff6d88945b7a7e50800000000000000
+      internalID: 6807889389990801406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_die_001.png
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 64
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffea468eb12facbb0800000000000000
+      internalID: -4914849841644523777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_die_002.png
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 52
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac23f16161203210800000000000000
+      internalID: 1310584193703685292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_die_003.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d42221de98eddf0800000000000000
+      internalID: -153533685979525777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_die_004.png
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1
+        width: 47
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e400c3cbeadd0f00800000000000000
+      internalID: 1084763791402468577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_die_005.png
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 2
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98f512fb10706b6a0800000000000000
+      internalID: -6433947313569177719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_die_006.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 8
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e198eb29e086ce2c0800000000000000
+      internalID: -4401028324047025890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_front_left_001.png
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 69
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 396081436b0cdb230800000000000000
+      internalID: 3656290361285281427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_front_left_002.png
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 155
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8257f41740e2e1150800000000000000
+      internalID: 5845159962989262120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_front_left_003.png
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 132
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a35543c2c2644ea0800000000000000
+      internalID: -5889473824054488160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_front_right_001.png
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 110
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44b314e20ff01cd10800000000000000
+      internalID: 2144012421847661380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_front_right_002.png
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 90
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa3978c817e446fe0800000000000000
+      internalID: -1196745351377742934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_front_right_003.png
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 67
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ee006af959bada0800000000000000
+      internalID: -5932483571213078918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_hit_left_001.png
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 45
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdcc4405244689240800000000000000
+      internalID: 4798695638940568796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_hit_left_002.png
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 23
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16bbf4b5de84e26b0800000000000000
+      internalID: -5319233925601576095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_hit_left_003.png
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 1
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f4ee7958c2141270800000000000000
+      internalID: 8220215871562245369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_hit_left_004.png
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 153
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a4ed6dfea75cd970800000000000000
+      internalID: 8780989782553388192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_hit_right_001.png
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 131
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1bf6cf4a894add90800000000000000
+      internalID: -7072259406439187685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_hit_right_002.png
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 109
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 926e90456b3d65270800000000000000
+      internalID: 8239005348368344617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_hit_right_003.png
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 87
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b57c5b0fee87e60800000000000000
+      internalID: 7960375058986654533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubulon_hit_right_004.png
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 65
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783b0769496d8b8c0800000000000000
+      internalID: -3983197936741731449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
