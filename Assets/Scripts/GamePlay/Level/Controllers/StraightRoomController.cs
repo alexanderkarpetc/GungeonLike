@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using GamePlay.Enemy;
 using UnityEngine;
 
-namespace GamePlay.Level
+namespace GamePlay.Level.Controllers
 {
   public class StraightRoomController : MonoBehaviour
   {

@@ -8,6 +8,7 @@ namespace GamePlay
 {
   public class Projectile : MonoBehaviour
   {
+    public GameObject Owner;
     private static List<string> _envTags = new List<string> {"Obstacle", "Environment"};
     [SerializeField] private GameObject _enemyHitFx;
     [SerializeField] private GameObject _envHitFx;
@@ -24,6 +25,9 @@ namespace GamePlay
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+      // Hit self
+      if(collision.collider.gameObject == Owner)
+        return;
       // Hit ENV
       if (_envTags.Contains(collision.collider.tag))
       {

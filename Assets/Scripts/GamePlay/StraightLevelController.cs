@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using GamePlay.Level;
+using GamePlay.Level.Controllers;
 using GamePlay.Player;
 using UnityEngine;
 

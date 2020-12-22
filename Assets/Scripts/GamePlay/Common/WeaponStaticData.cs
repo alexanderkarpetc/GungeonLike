@@ -14,5 +14,6 @@ namespace GamePlay.Common
     };
     public static List<WeaponType> AutomaticWeapons = new List<WeaponType> {WeaponType.Ak47};
     public static List<WeaponType> OneHandedWeapons = new List<WeaponType> {WeaponType.SpecialPistol};
+    public static float TurretBulletSpeed = 7;
   }
 }
