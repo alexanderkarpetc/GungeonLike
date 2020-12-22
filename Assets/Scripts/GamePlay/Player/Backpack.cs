@@ -28,7 +28,9 @@ namespace GamePlay.Player
       var weapon = GameObject.Instantiate(newWeapon, weaponSlot);
       weapon.State = newWeapon.State;
       AppModel.Player().SetWeapon(weapon);
-      weaponSlot.GetComponent<PlayerWeaponTurn>().Weapon = weapon;
+      var playerWeaponTurn = weaponSlot.GetComponent<PlayerWeaponTurn>();
+      playerWeaponTurn.Weapon = weapon;
+      playerWeaponTurn.ReInit();
     }
 
     public void NextWeapon()

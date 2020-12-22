@@ -13,5 +13,6 @@ namespace GamePlay.Common
       {WeaponType.ShotGun, 1},
     };
     public static List<WeaponType> AutomaticWeapons = new List<WeaponType> {WeaponType.Ak47};
+    public static List<WeaponType> OneHandedWeapons = new List<WeaponType> {WeaponType.SpecialPistol};
   }
 }

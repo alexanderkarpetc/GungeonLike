@@ -1,11 +1,13 @@
-﻿using UnityEngine;
+﻿using GamePlay.Common;
+using UnityEngine;
 
 namespace GamePlay.Player
 {
   public class PlayerWeaponTurn : WeaponTurn
   {
     private Animator _playerAnimator;
-    
+    private bool _isOneHanded;
+
     protected override void TurnGun()
     {
       Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
@@ -21,11 +23,10 @@ namespace GamePlay.Player
 
     protected override void MoveHands()
     {
-
       if (Mathf.Abs(Angle) < 90)
       {
         _leftHand.localPosition = _leftHandPos;
-        gameObject.transform.position = _leftHand.position;
+        gameObject.transform.position = _isOneHanded ? _rightHand.position : _leftHand.position;
         SpriteUtil.SetXScale(gameObject, 1);
         Weapon.IsInverted = false;
         if(_secondaryHandPos != null)
@@ -34,7 +35,7 @@ namespace GamePlay.Player
       else
       {
         _rightHand.localPosition = _rightHandPos;
-        gameObject.transform.position = _rightHand.position;
+        gameObject.transform.position = _isOneHanded ? _leftHand.position : _rightHand.position;
         SpriteUtil.SetXScale(gameObject, -1);
         Weapon.IsInverted = true;
         if(_secondaryHandPos != null)
@@ -56,6 +57,11 @@ namespace GamePlay.Player
       {
         _body.sortingOrder = 2;
       }
+    }
+
+    public void ReInit()
+    {
+      _isOneHanded = WeaponStaticData.OneHandedWeapons.Contains(Weapon.Type);
     }
   }
 }
