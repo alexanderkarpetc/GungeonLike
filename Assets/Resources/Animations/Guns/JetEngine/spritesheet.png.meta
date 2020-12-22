@@ -1,0 +1,536 @@
+fileFormatVersion: 2
+guid: 38f6e6ee44ddb694bbd6d178873619bb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5462049215342589187
+    second: jet_engine_charge_001.png
+  - first:
+      213: 8379017943709110478
+    second: jet_engine_charge_002.png
+  - first:
+      213: -2128054833235158996
+    second: jet_engine_charge_003.png
+  - first:
+      213: -1358067395474745961
+    second: jet_engine_charge_004.png
+  - first:
+      213: 7620930451872061845
+    second: jet_engine_charge_005.png
+  - first:
+      213: -7137431560691609652
+    second: jet_engine_charge_006.png
+  - first:
+      213: 6368807966627557621
+    second: jet_engine_charge_007.png
+  - first:
+      213: -8934845457465584473
+    second: jet_engine_charge_008.png
+  - first:
+      213: -4258543687609397756
+    second: jet_engine_empty_001.png
+  - first:
+      213: -5836918995278246823
+    second: jet_engine_fire_001.png
+  - first:
+      213: 8062397728364564839
+    second: jet_engine_fire_002.png
+  - first:
+      213: -4852090198810378827
+    second: jet_engine_fire_003.png
+  - first:
+      213: -8869206318401889786
+    second: jet_engine_fire_004.png
+  - first:
+      213: 8489265116657665532
+    second: jet_engine_fire_005.png
+  - first:
+      213: -9221500489301797350
+    second: jet_engine_idle_001.png
+  - first:
+      213: 8929580844539002727
+    second: jet_engine_idle_002.png
+  - first:
+      213: 2843128045793234960
+    second: jet_engine_idle_003.png
+  - first:
+      213: -3261829793595748154
+    second: jet_engine_idle_004.png
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jet_engine_charge_001.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 71
+        width: 23
+        height: 15
+      alignment: 9
+      pivot: {x: 0.25910988, y: 0.2083964}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 305323a72d81dcb40800000000000000
+      internalID: 5462049215342589187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jet_engine_charge_002.png
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 71
+        width: 23
+        height: 15
+      alignment: 9
+      pivot: {x: 0.25277072, y: 0.23755696}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec0d7650d60484470800000000000000
+      internalID: 8379017943709110478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jet_engine_charge_003.png
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 70
+        width: 22
+        height: 16
+      alignment: 9
+      pivot: {x: 0.25478762, y: 0.21750927}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2817727761a772e0800000000000000
+      internalID: -2128054833235158996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jet_engine_charge_004.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 52
+        width: 22
+        height: 16
+      alignment: 9
+      pivot: {x: 0.2614151, y: 0.21750903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79510bf26ec272de0800000000000000
+      internalID: -1358067395474745961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jet_engine_charge_005.png
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 52
+        width: 21
+        height: 16
+      alignment: 9
+      pivot: {x: 0.28476852, y: 0.21750903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5999ac95edbf2c960800000000000000
+      internalID: 7620930451872061845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jet_engine_charge_006.png
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 52
+        width: 21
+        height: 16
+      alignment: 9
+      pivot: {x: 0.27088276, y: 0.19928384}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccf8050bfcfb2fc90800000000000000
+      internalID: -7137431560691609652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jet_engine_charge_007.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 33
+        width: 19
+        height: 17
+      alignment: 9
+      pivot: {x: 0.3158292, y: 0.19981968}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f0738d2a1d826850800000000000000
+      internalID: 6368807966627557621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jet_engine_charge_008.png
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 33
+        width: 19
+        height: 17
+      alignment: 9
+      pivot: {x: 0.33885053, y: 0.20839624}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a450c0356d010480800000000000000
+      internalID: -8934845457465584473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jet_engine_empty_001.png
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 35
+        width: 23
+        height: 15
+      alignment: 9
+      pivot: {x: 0.2654492, y: 0.22783636}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40e4f8f241d96e4c0800000000000000
+      internalID: -4258543687609397756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jet_engine_fire_001.png
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 18
+        width: 24
+        height: 15
+      alignment: 9
+      pivot: {x: 0.27522197, y: 0.2181165}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95cc5bf59191ffea0800000000000000
+      internalID: -5836918995278246823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jet_engine_fire_002.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 24
+        height: 15
+      alignment: 9
+      pivot: {x: 0.26914695, y: 0.22783655}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 761161d740463ef60800000000000000
+      internalID: 8062397728364564839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jet_engine_fire_003.png
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1
+        width: 24
+        height: 15
+      alignment: 9
+      pivot: {x: 0.26914707, y: 0.23755665}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bdb0c1fba9e9acb0800000000000000
+      internalID: -4852090198810378827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jet_engine_fire_004.png
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 1
+        width: 24
+        height: 15
+      alignment: 9
+      pivot: {x: 0.26307216, y: 0.23755665}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60a510038df3ae480800000000000000
+      internalID: -8869206318401889786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jet_engine_fire_005.png
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 71
+        width: 24
+        height: 15
+      alignment: 9
+      pivot: {x: 0.22662131, y: 0.23755696}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5ce7245adefc570800000000000000
+      internalID: 8489265116657665532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jet_engine_idle_001.png
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 54
+        width: 23
+        height: 15
+      alignment: 9
+      pivot: {x: 0.24643144, y: 0.2083964}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a16531f9926a60080800000000000000
+      internalID: -9221500489301797350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jet_engine_idle_002.png
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 37
+        width: 23
+        height: 15
+      alignment: 9
+      pivot: {x: 0.28446695, y: 0.23755671}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f31e7977e3ceb70800000000000000
+      internalID: 8929580844539002727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jet_engine_idle_003.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 20
+        width: 23
+        height: 15
+      alignment: 9
+      pivot: {x: 0.28446695, y: 0.19867605}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 010d474e4e1d47720800000000000000
+      internalID: 2843128045793234960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jet_engine_idle_004.png
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 3
+        width: 23
+        height: 15
+      alignment: 9
+      pivot: {x: 0.290806, y: 0.21811625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c090faa517abb2d0800000000000000
+      internalID: -3261829793595748154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: fcd28446dd92a38449d5d69f3c2ec6fc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

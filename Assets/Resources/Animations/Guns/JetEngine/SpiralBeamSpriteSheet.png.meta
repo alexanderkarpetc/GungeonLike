@@ -1,0 +1,896 @@
+fileFormatVersion: 2
+guid: 9ba5560c58e18e34f948e30ce8f8c3c6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2216793487519903691
+    second: spiral_beam_charge_001.png
+  - first:
+      213: -7760452414342605423
+    second: spiral_beam_charge_002.png
+  - first:
+      213: -7143428431724424340
+    second: spiral_beam_charge_003.png
+  - first:
+      213: 3966803585700875682
+    second: spiral_beam_charge_004.png
+  - first:
+      213: 2425802594887908825
+    second: spiral_beam_charge_005.png
+  - first:
+      213: 9080763733054527494
+    second: spiral_beam_charge_006.png
+  - first:
+      213: -3090771927032394203
+    second: spiral_beam_charge_007.png
+  - first:
+      213: -7788423336324994142
+    second: spiral_beam_charge_008.png
+  - first:
+      213: -5775643082287482564
+    second: spiral_beam_charge_009.png
+  - first:
+      213: 7434007067879354206
+    second: spiral_beam_charge_010.png
+  - first:
+      213: -5805653154853850489
+    second: spiral_beam_charge_011.png
+  - first:
+      213: -502617939600377567
+    second: spiral_beam_charge_012.png
+  - first:
+      213: 8454163579878519293
+    second: spiral_beam_charge_013.png
+  - first:
+      213: -2106908547234748917
+    second: spiral_beam_charge_014.png
+  - first:
+      213: -6575607683636312938
+    second: spiral_beam_charge_015.png
+  - first:
+      213: -8823011617992870011
+    second: spiral_beam_charge_016.png
+  - first:
+      213: 6005813048582699662
+    second: spiral_beam_charge_017.png
+  - first:
+      213: -1490688125489784768
+    second: spiral_beam_flare_001.png
+  - first:
+      213: 8701995544870588716
+    second: spiral_beam_flare_002.png
+  - first:
+      213: -2096213277174296111
+    second: spiral_beam_flare_003.png
+  - first:
+      213: 6273146200191611222
+    second: spiral_beam_flare_004.png
+  - first:
+      213: 2204976499980798993
+    second: spiral_beam_flare_005.png
+  - first:
+      213: 1549540024287160852
+    second: spiral_beam_flare_006.png
+  - first:
+      213: 1113649521064427648
+    second: spiral_beam_impact_001.png
+  - first:
+      213: -5654088461044971259
+    second: spiral_beam_impact_002.png
+  - first:
+      213: 2202105438714645749
+    second: spiral_beam_impact_003.png
+  - first:
+      213: -5180770923635628514
+    second: spiral_beam_impact_004.png
+  - first:
+      213: -7533339887633723873
+    second: spiral_beam_middle_001.png
+  - first:
+      213: 8487954177328288226
+    second: spiral_beam_middle_002.png
+  - first:
+      213: 5699095502047954546
+    second: spiral_beam_middle_003.png
+  - first:
+      213: -526089789029118596
+    second: spiral_beam_middle_004.png
+  - first:
+      213: 7108794796323286528
+    second: spiral_beam_middle_005.png
+  - first:
+      213: -7262173511259385209
+    second: spiral_beam_middle_006.png
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 18
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spiral_beam_charge_001.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 137
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5301af3711e5c31e0800000000000000
+      internalID: -2216793487519903691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_charge_002.png
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 137
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19559c255a55d4490800000000000000
+      internalID: -7760452414342605423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_charge_003.png
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 137
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c63d3a850b17ddc90800000000000000
+      internalID: -7143428431724424340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_charge_004.png
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 137
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ad427b18daec0730800000000000000
+      internalID: 3966803585700875682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_charge_005.png
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 137
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ddb38b8b9e2aa120800000000000000
+      internalID: 2425802594887908825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_charge_006.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 103
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60817f5d08a550e70800000000000000
+      internalID: 9080763733054527494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_charge_007.png
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 103
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e0c77de4f5b15d0800000000000000
+      internalID: -3090771927032394203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_charge_008.png
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 103
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ab6cfd8d36f9e390800000000000000
+      internalID: -7788423336324994142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_charge_009.png
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 103
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c39ffc2a73bc8dfa0800000000000000
+      internalID: -5775643082287482564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_charge_010.png
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 103
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f21ba8a06ea2760800000000000000
+      internalID: 7434007067879354206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_charge_011.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 69
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7827fcf173d2e6fa0800000000000000
+      internalID: -5805653154853850489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_charge_012.png
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 69
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 129716c95a75609f0800000000000000
+      internalID: -502617939600377567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_charge_013.png
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 69
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df134bbdbf8335570800000000000000
+      internalID: 8454163579878519293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_charge_014.png
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 69
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b06a6d3d6d1c2c2e0800000000000000
+      internalID: -2106908547234748917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_charge_015.png
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 69
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 694478a96afbeb4a0800000000000000
+      internalID: -6575607683636312938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_charge_016.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 35
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 587f3640ead5e8580800000000000000
+      internalID: -8823011617992870011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_charge_017.png
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 35
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a7d24c52fe85350800000000000000
+      internalID: 6005813048582699662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_flare_001.png
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 52
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048d9414c03005be0800000000000000
+      internalID: -1490688125489784768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_flare_002.png
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 52
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c211b09c7d2b3c870800000000000000
+      internalID: 8701995544870588716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_flare_003.png
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 52
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d191907121c8e2e0800000000000000
+      internalID: -2096213277174296111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_flare_004.png
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 35
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65133868b31be0750800000000000000
+      internalID: 6273146200191611222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_flare_005.png
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 35
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c807bb176a99e10800000000000000
+      internalID: 2204976499980798993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_flare_006.png
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 35
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41ae2e83172118510800000000000000
+      internalID: 1549540024287160852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_impact_001.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080445bc65a747f00800000000000000
+      internalID: 1113649521064427648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_impact_002.png
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50987c65084a881b0800000000000000
+      internalID: -5654088461044971259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_impact_003.png
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fcca80ba337f8e10800000000000000
+      internalID: 2202105438714645749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_impact_004.png
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e16a60a3b443a18b0800000000000000
+      internalID: -5180770923635628514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_middle_001.png
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 18
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1e8f491943347790800000000000000
+      internalID: -7533339887633723873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_middle_002.png
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 1
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e112796a554bc570800000000000000
+      internalID: 8487954177328288226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_middle_003.png
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 154
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 276489cf921471f40800000000000000
+      internalID: 5699095502047954546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_middle_004.png
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 137
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d85fccf14f2b8f0800000000000000
+      internalID: -526089789029118596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_middle_005.png
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 120
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00eaef7043387a260800000000000000
+      internalID: 7108794796323286528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiral_beam_middle_006.png
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 103
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 782122c0ba3973b90800000000000000
+      internalID: -7262173511259385209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

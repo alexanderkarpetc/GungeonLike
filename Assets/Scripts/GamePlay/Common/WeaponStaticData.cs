@@ -13,7 +13,8 @@ namespace GamePlay.Common
       {WeaponType.ShotGun, 1},
     };
     public static List<WeaponType> AutomaticWeapons = new List<WeaponType> {WeaponType.Ak47};
-    public static List<WeaponType> OneHandedWeapons = new List<WeaponType> {WeaponType.SpecialPistol};
+    public static List<WeaponType> SemiAutoWeapons = new List<WeaponType> {WeaponType.SpecialPistol, WeaponType.Magnum, WeaponType.ShotGun};
+    public static List<WeaponType> ChargeWeapons = new List<WeaponType> {WeaponType.JetEngine};
     public static float TurretBulletSpeed = 7;
   }
 }

@@ -25,12 +25,12 @@ namespace GamePlay.Weapons
     [SerializeField] protected Animator _animator;
 
     protected float _nextShotTime;
-    public bool reloading;
-    public float reloadingTime;
+    [HideInInspector] public bool reloading;
+    [HideInInspector] public float reloadingTime;
     private static readonly int ReloadAnim = Animator.StringToHash("Reload");
     private static readonly int ShootAnim = Animator.StringToHash("Shoot");
 
-    private void Start()
+    protected virtual void Start()
     {
       if (!IsPlayers)
       {
@@ -39,7 +39,7 @@ namespace GamePlay.Weapons
       reloadingTime = _animator.runtimeAnimatorController.animationClips.First(x=>x.name.Equals("Reload")).averageDuration;
     }
 
-    public void TryShoot()
+    public virtual void TryShoot()
     {
       if (State.bulletsLeft <= 0)
       {

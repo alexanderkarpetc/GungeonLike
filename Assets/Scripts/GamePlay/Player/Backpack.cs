@@ -30,7 +30,6 @@ namespace GamePlay.Player
       AppModel.Player().SetWeapon(weapon);
       var playerWeaponTurn = weaponSlot.GetComponent<PlayerWeaponTurn>();
       playerWeaponTurn.Weapon = weapon;
-      playerWeaponTurn.ReInit();
     }
 
     public void NextWeapon()

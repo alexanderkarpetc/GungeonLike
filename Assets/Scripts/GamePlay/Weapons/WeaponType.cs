@@ -5,6 +5,7 @@
     #region Self
     Ak47 = 1,
     SpecialPistol = 2,
+    JetEngine = 3,
 
     
 
