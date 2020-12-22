@@ -1,4 +1,5 @@
-﻿using GamePlay.Weapons;
+﻿using GamePlay.Common;
+using GamePlay.Weapons;
 using UnityEngine;
 
 namespace GamePlay.Player
@@ -20,7 +21,11 @@ namespace GamePlay.Player
         Weapon = _weaponSlot.GetChild(0).GetComponent<Weapon>();
         Weapon.IsPlayers = true;
       }
-      if (Input.GetMouseButton(0))
+      if (WeaponStaticData.AutomaticWeapons.Contains(Weapon.Type) && Input.GetMouseButton(0))
+      {
+        Weapon.TryShoot();
+      }      
+      if (!WeaponStaticData.AutomaticWeapons.Contains(Weapon.Type) && Input.GetMouseButtonDown(0))
       {
         Weapon.TryShoot();
       }

@@ -13,9 +13,9 @@ namespace GamePlay.Weapons
     [HideInInspector] public bool IsInverted;
 
     public bool IsPlayers;
+    public WeaponType Type;
     [HideInInspector] public WeaponState State;
 
-    [SerializeField] protected WeaponType Type;
     [SerializeField] protected GameObject _projectile;
     [SerializeField] protected Transform _shootPoint;
     [SerializeField] protected float _shootRate;

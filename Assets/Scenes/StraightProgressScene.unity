@@ -352,13 +352,13 @@ PrefabInstance:
         type: 3}
       propertyPath: predefinedRooms.Array.data[1]
       value: 
-      objectReference: {fileID: 874448859247282575, guid: bbeacc5f210f6704bb3c2afd4841287e,
+      objectReference: {fileID: 874448859247282575, guid: f7288f5854392d24bbf59056c3e282f5,
         type: 3}
     - target: {fileID: 1617681212236386957, guid: f7af31bf187fd0847a63f7931565f60a,
         type: 3}
       propertyPath: predefinedRooms.Array.data[2]
       value: 
-      objectReference: {fileID: 874448859247282575, guid: f7288f5854392d24bbf59056c3e282f5,
+      objectReference: {fileID: 874448859247282575, guid: bbeacc5f210f6704bb3c2afd4841287e,
         type: 3}
     - target: {fileID: 7664012131924736528, guid: f7af31bf187fd0847a63f7931565f60a,
         type: 3}

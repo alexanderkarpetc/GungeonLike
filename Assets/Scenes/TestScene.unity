@@ -5563,6 +5563,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 233269338329237814, guid: 5a83a17654fbbec4c8249cc7ffd96779,
+        type: 3}
+      propertyPath: _isGungeonStrucure
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5574415502661984666, guid: 5a83a17654fbbec4c8249cc7ffd96779,
         type: 3}
       propertyPath: m_Name

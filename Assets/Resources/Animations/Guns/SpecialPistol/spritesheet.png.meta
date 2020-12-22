@@ -1,0 +1,464 @@
+fileFormatVersion: 2
+guid: d7a426b8d06eb02498c3d6bd1b212466
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8940329782202404704
+    second: 38_specia2_idle_001.png
+  - first:
+      213: 8440151023288586821
+    second: 38_special2_fire_001.png
+  - first:
+      213: 5553981911717611954
+    second: 38_special2_fire_002.png
+  - first:
+      213: -2539972296181773152
+    second: 38_special2_fire_003.png
+  - first:
+      213: -8492073591123936496
+    second: 38_special2_fire_004.png
+  - first:
+      213: 5553231702744139312
+    second: 38_special2_reload_001.png
+  - first:
+      213: -7726698560441495285
+    second: 38_special2_reload_002.png
+  - first:
+      213: -5316011632744574124
+    second: 38_special_fire_001.png
+  - first:
+      213: 5640122116127538484
+    second: 38_special_fire_002.png
+  - first:
+      213: 4098035673477888879
+    second: 38_special_fire_003.png
+  - first:
+      213: 4545842418648199944
+    second: 38_special_fire_004.png
+  - first:
+      213: 1802365850826939836
+    second: 38_special_idle_001.png
+  - first:
+      213: -4053272746773753808
+    second: 38_special_reload_001.png
+  - first:
+      213: -2796373241491453196
+    second: 38_special_reload_002.png
+  - first:
+      213: 1400064804893722803
+    second: 38_special_reload_003.png
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 18
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 38_specia2_idle_001.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 48
+        width: 15
+        height: 11
+      alignment: 9
+      pivot: {x: 0.15141611, y: 0.2623291}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a0faf45e619de380800000000000000
+      internalID: -8940329782202404704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 38_special2_fire_001.png
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 48
+        width: 15
+        height: 11
+      alignment: 9
+      pivot: {x: 0.16482314, y: 0.30803508}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54214c943a0712570800000000000000
+      internalID: 8440151023288586821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 38_special2_fire_002.png
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 44
+        width: 10
+        height: 15
+      alignment: 9
+      pivot: {x: 0.15811959, y: 0.23185857}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b98fd85f15b31d40800000000000000
+      internalID: 5553981911717611954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 38_special2_fire_003.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 27
+        width: 10
+        height: 15
+      alignment: 9
+      pivot: {x: 0.138009, y: 0.23185845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac80ca67a430ccd0800000000000000
+      internalID: -2539972296181773152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 38_special2_fire_004.png
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 31
+        width: 15
+        height: 11
+      alignment: 9
+      pivot: {x: 0.16482328, y: 0.30803508}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01bf492df08162a80800000000000000
+      internalID: -8492073591123936496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 38_special2_reload_001.png
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 31
+        width: 17
+        height: 11
+      alignment: 9
+      pivot: {x: 0.19834092, y: 0.49085894}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0368085bfca011d40800000000000000
+      internalID: 5553231702744139312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 38_special2_reload_002.png
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 18
+        width: 17
+        height: 11
+      alignment: 9
+      pivot: {x: 0.19242589, y: 0.509141}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b01dc5ad89045c490800000000000000
+      internalID: -7726698560441495285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 38_special_fire_001.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 18
+        width: 15
+        height: 11
+      alignment: 9
+      pivot: {x: 0.15811971, y: 0.30803508}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4535a60e59bb936b0800000000000000
+      internalID: -5316011632744574124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 38_special_fire_002.png
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 44
+        width: 10
+        height: 15
+      alignment: 9
+      pivot: {x: 0.13800888, y: 0.23856202}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43d3b959e2db54e40800000000000000
+      internalID: 5640122116127538484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 38_special_fire_003.png
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 27
+        width: 10
+        height: 15
+      alignment: 9
+      pivot: {x: 0.13800888, y: 0.23185845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b37829bb52fd830800000000000000
+      internalID: 4098035673477888879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 38_special_fire_004.png
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 14
+        width: 15
+        height: 11
+      alignment: 9
+      pivot: {x: 0.16482314, y: 0.32631734}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 803bd684893161f30800000000000000
+      internalID: 4545842418648199944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 38_special_idle_001.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 15
+        height: 11
+      alignment: 9
+      pivot: {x: 0.16482319, y: 0.31717646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd95d5213a430910800000000000000
+      internalID: 1802365850826939836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 38_special_reload_001.png
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1
+        width: 17
+        height: 11
+      alignment: 9
+      pivot: {x: 0.21017063, y: 0.490859}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03057c679e1efb7c0800000000000000
+      internalID: -4053272746773753808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 38_special_reload_002.png
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1
+        width: 17
+        height: 11
+      alignment: 9
+      pivot: {x: 0.1983407, y: 0.5091414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa8e794a594139d0800000000000000
+      internalID: -2796373241491453196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 38_special_reload_003.png
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 52
+        width: 9
+        height: 7
+      alignment: 9
+      pivot: {x: 0.12013245, y: 0.3132586}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b8873ea5870e6310800000000000000
+      internalID: 1400064804893722803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2b3e4c7a6a8b35d4abe3632649b45147
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

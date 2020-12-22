@@ -8,8 +8,10 @@ namespace GamePlay.Common
     public static Dictionary<WeaponType, float> WeaponDamage = new Dictionary<WeaponType, float>
     {
       {WeaponType.Ak47, 1},
+      {WeaponType.SpecialPistol, 1},
       {WeaponType.Magnum, 1},
       {WeaponType.ShotGun, 1},
     };
+    public static List<WeaponType> AutomaticWeapons = new List<WeaponType> {WeaponType.Ak47};
   }
 }
