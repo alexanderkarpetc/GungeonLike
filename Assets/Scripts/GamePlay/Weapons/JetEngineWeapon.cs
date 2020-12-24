@@ -21,6 +21,7 @@ namespace GamePlay.Weapons
     private float _chargeTime = 1;
     private int _maxSegmentsCount = 10;
     private State _currentState;
+    private int _smallSegmentIndex;
 
     private float _charged = 0;
     private List<GameObject> _middleSegments = new List<GameObject>();
@@ -55,7 +56,7 @@ namespace GamePlay.Weapons
           var impact = Instantiate(_impactSegment, transform);
           _impactObj = impact;
         }
-        SetVisibleSegments(count);
+        SetVisibleSegments(count - 1, count - length / _middleSegmentLength);
         _impactObj.transform.localPosition = new Vector3(length, 0, 0) + _shootPoint.localPosition;
       }
     }
@@ -95,12 +96,15 @@ namespace GamePlay.Weapons
       _middleSegments.Clear();
     }
     
-    private void SetVisibleSegments(int count)
+    private void SetVisibleSegments(int count, float middleSegmentLengthWithdraw)
     {
+      _middleSegments[_smallSegmentIndex].transform.localScale = new Vector3(1,1,1);
       for (var i = 0; i < _middleSegments.Count; i++)
       {
         _middleSegments[i].transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = (i <= count);
       }
+      _middleSegments[count].transform.localScale = new Vector3(1-middleSegmentLengthWithdraw,1,1);
+      _smallSegmentIndex = count;
     }
   }
 }
