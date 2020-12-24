@@ -1,18 +1,28 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
+using GamePlay.Common;
+using GamePlay.Enemy;
 using UnityEngine;
 
-public class JetEngineImpact : MonoBehaviour
+namespace GamePlay.Weapons
 {
-    // Start is called before the first frame update
-    void Start()
+  public class JetEngineImpact : MonoBehaviour
+  {
+    public Weapon Weapon;
+    private void OnTriggerStay2D(Collider2D other)
     {
-        
-    }
+      if (other.CompareTag("Environment"))
+      {
+        other.GetComponent<Level.Environment>().DealDamage(WeaponStaticData.JetEngineDamage);
+      }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+      if (other.CompareTag("Enemy"))
+      {
+        var enemyController = other.GetComponent<EnemyController>();
+        var direction = Weapon.DegreeToVector2(transform.rotation.eulerAngles.z);
+        if (Weapon.IsInverted)
+          direction *= -1;
+        enemyController.Hit(WeaponStaticData.JetEngineDamage, direction.normalized * WeaponStaticData.JetEngineImpulse);
+      }
     }
+  }
 }

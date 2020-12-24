@@ -44,6 +44,8 @@ namespace GamePlay.Weapons
         var hit = Physics2D.RaycastAll(transform.position, direction)
           .First(x => !x.collider.CompareTag("Player") && !x.collider.CompareTag("Projectile"));
         var length = Vector2.Distance(hit.point, _shootPoint.position);
+        if (length > _maxSegmentsCount * _middleSegmentLength)
+          length = _maxSegmentsCount * _middleSegmentLength;
         var count = (int) Math.Round(length / _middleSegmentLength);
         if (_middleSegments.Count == 0)
         {
@@ -54,6 +56,7 @@ namespace GamePlay.Weapons
             _middleSegments.Add(instance);
           }
           var impact = Instantiate(_impactSegment, transform);
+          impact.GetComponent<JetEngineImpact>().Weapon = this;
           _impactObj = impact;
         }
         SetVisibleSegments(count - 1, count - length / _middleSegmentLength);
@@ -98,13 +101,17 @@ namespace GamePlay.Weapons
     
     private void SetVisibleSegments(int count, float middleSegmentLengthWithdraw)
     {
+      if (middleSegmentLengthWithdraw < 0)
+        middleSegmentLengthWithdraw = 0;
       _middleSegments[_smallSegmentIndex].transform.localScale = new Vector3(1,1,1);
       for (var i = 0; i < _middleSegments.Count; i++)
       {
         _middleSegments[i].transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = (i <= count);
       }
-      _middleSegments[count].transform.localScale = new Vector3(1-middleSegmentLengthWithdraw,1,1);
+      if(count<0)
+        return;
       _smallSegmentIndex = count;
+      _middleSegments[count].transform.localScale = new Vector3(1-middleSegmentLengthWithdraw,1,1);
     }
   }
 }

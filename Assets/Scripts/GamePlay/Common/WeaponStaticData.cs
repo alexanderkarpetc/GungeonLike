@@ -16,5 +16,7 @@ namespace GamePlay.Common
     public static List<WeaponType> SemiAutoWeapons = new List<WeaponType> {WeaponType.SpecialPistol, WeaponType.Magnum, WeaponType.ShotGun};
     public static List<WeaponType> ChargeWeapons = new List<WeaponType> {WeaponType.JetEngine};
     public static float TurretBulletSpeed = 7;
+    public static float JetEngineDamage = 0.1f;
+    public static float JetEngineImpulse = 0.1f;
   }
 }
