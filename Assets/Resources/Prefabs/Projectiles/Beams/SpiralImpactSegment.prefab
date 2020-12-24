@@ -10,8 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2198543048620501244}
   - component: {fileID: 3136851291856034568}
+  - component: {fileID: 5739944626009164759}
+  - component: {fileID: 2176879578824371189}
   m_Layer: 0
-  m_Name: SpiralMidSegment
+  m_Name: SpiralImpactSegment
   m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,7 +44,7 @@ Animator:
   m_GameObject: {fileID: 3401075597386017145}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e61ab777a987701438424fa212a89e8b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 418a11c9867dc114c948bfaa272d0118, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -51,6 +53,34 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5739944626009164759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3401075597386017145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5dda9cf0e0678743a1c582f3198373f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!58 &2176879578824371189
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3401075597386017145}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.83
 --- !u!1 &6637683542988223348
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,7 +151,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7533339887633723873, guid: 9ba5560c58e18e34f948e30ce8f8c3c6,
+  m_Sprite: {fileID: 1113649521064427648, guid: 9ba5560c58e18e34f948e30ce8f8c3c6,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

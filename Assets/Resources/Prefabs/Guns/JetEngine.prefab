@@ -101,7 +101,7 @@ MonoBehaviour:
   _uiImage: {fileID: -9221500489301797350, guid: 38f6e6ee44ddb694bbd6d178873619bb,
     type: 3}
   IsInverted: 0
-  IsPlayers: 0
+  IsPlayers: 1
   Type: 3
   _projectile: {fileID: 0}
   _shootPoint: {fileID: 422198881}
@@ -113,6 +113,8 @@ MonoBehaviour:
   reloading: 0
   reloadingTime: 0
   _middleSegment: {fileID: 3401075597386017145, guid: be9ebbe718d169f43bee7a053beb7eac,
+    type: 3}
+  _impactSegment: {fileID: 3401075597386017145, guid: b7b205c2c897ae94db89ce7b61cadace,
     type: 3}
 --- !u!1 &4700838025997285464
 GameObject:

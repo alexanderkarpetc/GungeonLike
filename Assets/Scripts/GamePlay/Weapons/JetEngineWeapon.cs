@@ -15,6 +15,7 @@ namespace GamePlay.Weapons
     }
 
     [SerializeField] private GameObject _middleSegment;
+    [SerializeField] private GameObject _impactSegment;
 
     private float _middleSegmentLength = 27f / 18f;
     private float _chargeTime = 1;
@@ -23,6 +24,7 @@ namespace GamePlay.Weapons
 
     private float _charged = 0;
     private List<GameObject> _middleSegments = new List<GameObject>();
+    private GameObject _impactObj;
     private static readonly int Idle = Animator.StringToHash("Idle");
     private static readonly int Shooting = Animator.StringToHash("Shoot");
     private static readonly int Charging = Animator.StringToHash("Charging");
@@ -35,6 +37,13 @@ namespace GamePlay.Weapons
     {
       if (_currentState == State.Shooting)
       {
+        var direction = IsInverted
+          ? DegreeToVector2(transform.rotation.eulerAngles.z) * new Vector2(-1, -1)
+          : DegreeToVector2(transform.rotation.eulerAngles.z);
+        var hit = Physics2D.RaycastAll(transform.position, direction)
+          .First(x => !x.collider.CompareTag("Player") && !x.collider.CompareTag("Projectile"));
+        var length = Vector2.Distance(hit.point, _shootPoint.position);
+        var count = (int) Math.Round(length / _middleSegmentLength);
         if (_middleSegments.Count == 0)
         {
           for (var i = 0; i < _maxSegmentsCount; i++)
@@ -43,16 +52,11 @@ namespace GamePlay.Weapons
             instance.transform.localPosition = new Vector3(i * _middleSegmentLength, 0, 0) + _shootPoint.localPosition;
             _middleSegments.Add(instance);
           }
+          var impact = Instantiate(_impactSegment, transform);
+          _impactObj = impact;
         }
-
-        var direction = IsInverted
-          ? DegreeToVector2(transform.rotation.eulerAngles.z) * new Vector2(-1, -1)
-          : DegreeToVector2(transform.rotation.eulerAngles.z);
-        var hit = Physics2D.RaycastAll(transform.position, direction)
-          .First(x => !x.collider.CompareTag("Player") && !x.collider.CompareTag("Projectile"));
-        var length = Vector2.Distance(hit.point, _shootPoint.position);
-        var count = (int) Math.Round(length / _middleSegmentLength);
         SetVisibleSegments(count);
+        _impactObj.transform.localPosition = new Vector3(length, 0, 0) + _shootPoint.localPosition;
       }
     }
 
@@ -74,6 +78,8 @@ namespace GamePlay.Weapons
     public void StopCharge()
     {
       ClearSegments();
+      Destroy(_impactObj);
+      _impactObj = null;
       if (_charged != 0 && _currentState != State.Idle)
       {
         _animator.SetTrigger(Idle);
@@ -93,7 +99,7 @@ namespace GamePlay.Weapons
     {
       for (var i = 0; i < _middleSegments.Count; i++)
       {
-        _middleSegments[i].transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = (i < count);
+        _middleSegments[i].transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = (i <= count);
       }
     }
   }
