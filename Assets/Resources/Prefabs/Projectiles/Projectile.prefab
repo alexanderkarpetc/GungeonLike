@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2407176df5522384f8d5e57b5bc30a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Owner: {fileID: 0}
   _enemyHitFx: {fileID: 4224990154401905789, guid: b0cd4638467dbda4fbd4e2eda0ab0929,
     type: 3}
   _envHitFx: {fileID: 4224990154401905789, guid: ff6dfb4ef83bfd54fa8a393cd6ad7b86,
@@ -86,7 +87,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

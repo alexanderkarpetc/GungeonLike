@@ -23,33 +23,30 @@ namespace GamePlay
       transform.Translate(Time.deltaTime * Speed * Direction);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
       // Hit self
-      if(collision.collider.gameObject == Owner)
+      if(other.gameObject == Owner)
         return;
       // Hit ENV
-      if (_envTags.Contains(collision.collider.tag))
+      if (_envTags.Contains(other.tag))
       {
+        var hit = Physics2D.Raycast(transform.position, transform.forward);
         var fx = Instantiate(_envHitFx, transform.position,
-          Quaternion.LookRotation(Vector3.forward, collision.GetContact(0).normal));
+          Quaternion.LookRotation(Vector3.forward, Direction*new Vector2(-1,-1)));
         fx.transform.SetParent(AppModel.FxContainer().transform);
-        if (collision.collider.CompareTag("Environment"))
+        if (other.CompareTag("Environment"))
         {
-          collision.collider.GetComponent<Level.Environment>().DealDamage(Damage);
+          other.GetComponent<Level.Environment>().DealDamage(Damage);
         }
         Destroy(gameObject);
       }
-
-      if (!IsPlayerBullet && collision.collider.CompareTag("Player"))
+      if (!IsPlayerBullet && other.CompareTag("Player"))
       {
-        HitPlayer(collision.collider);
+        HitPlayer(other);
         Destroy(gameObject);
       }
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
+      
       if (IsPlayerBullet && other.CompareTag("Enemy"))
       {
         Instantiate(_enemyHitFx, transform.position, transform.rotation);
