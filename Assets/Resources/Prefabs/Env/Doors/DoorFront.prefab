@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3782928775678874300}
   - component: {fileID: 3782928775678874301}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 3782928776641485220}
   - component: {fileID: 3782928776641485223}
   - component: {fileID: 5910069115970316254}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DoorFront
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
