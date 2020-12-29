@@ -8,6 +8,7 @@ namespace GamePlay.Player
     [SerializeField] private GameObject _dmgPanel;
     [SerializeField] private float _blinkDuration;
     [SerializeField] private GameObject _console;
+    [SerializeField] private GameObject _skillTree;
 
     private void Start()
     {
@@ -20,6 +21,16 @@ namespace GamePlay.Player
       {
         _console.SetActive(!_console.activeSelf);
       }
+    }
+
+    public void OpenSkillTree()
+    {
+      _skillTree.SetActive(true);
+    }
+    
+    public void CloseSkillTree()
+    {
+      _skillTree.SetActive(true);
     }
 
     private void ScreenBlink()
