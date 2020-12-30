@@ -7,6 +7,7 @@ namespace GamePlay.Player
   {
     public void Init(Weapon startingWeapon)
     {
+      AppModel.Player().AddSkillPoint();
       AppModel.Player().Backpack.AddWeapon(startingWeapon);
     }
   }

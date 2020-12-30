@@ -1,4 +1,5 @@
 ﻿using GamePlay.Player;
+using Import;
 using UnityEngine;
 
 namespace GamePlay
@@ -15,6 +16,7 @@ namespace GamePlay
     {
       InitCamera();
       InitContainers();
+      BalanceLoader.LoadBalance();
       if(_initplayer)
         InitPlayer();
       else

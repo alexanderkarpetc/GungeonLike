@@ -21,16 +21,10 @@ namespace GamePlay.Player
       {
         _console.SetActive(!_console.activeSelf);
       }
-    }
-
-    public void OpenSkillTree()
-    {
-      _skillTree.SetActive(true);
-    }
-    
-    public void CloseSkillTree()
-    {
-      _skillTree.SetActive(true);
+      if (Input.GetKeyDown(KeyCode.Escape))
+      {
+        _skillTree.SetActive(!_skillTree.activeSelf);
+      }
     }
 
     private void ScreenBlink()

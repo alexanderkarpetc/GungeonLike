@@ -1,4 +1,7 @@
-﻿namespace GamePlay.Common
+﻿using System.Collections.Generic;
+using GamePlay.Player;
+
+namespace GamePlay.Common
 {
   public static class StaticData
   {
@@ -7,5 +10,8 @@
     public static float EnemyCubulonSpeedBase = 5;
     public static int EnemyCubulonShotsCount = 30;
     public static float EnemyCubulonShotSpeed = 7;
+    
+    
+    public static List<Skill> Skills;
   }
 }
