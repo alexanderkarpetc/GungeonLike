@@ -13,5 +13,10 @@ namespace GamePlay.Common
     
     
     public static List<Skill> Skills;
+
+    public static int RequiredXp(int level)
+    {
+      return 1000;
+    }
   }
 }

@@ -12,6 +12,8 @@ namespace GamePlay.Player
     private int _maxHp;
     private int _currentHp;
     private int _skillsPoints;
+    private int _level = 1;
+    private int _exp = 0;
 
     public event Action OnHealthChanged;
     public event Action OnDamageTake;
@@ -19,6 +21,8 @@ namespace GamePlay.Player
     public Backpack Backpack = new Backpack();
     public float SpeedMultiplier = 1f;
     public List<Skill> Skills = new List<Skill>();
+    public int Level => _level;
+    public int Exp => _exp;
     private Weapon _weapon;
     public PlayerState()
     {
@@ -80,6 +84,22 @@ namespace GamePlay.Player
     {
       var skillsOfKind = StaticData.Skills.Where(x => x.BranchKind == kind).ToList();
       return skillsOfKind.First(x => !Skills.Contains(x));
+    }
+
+    private void LevelUp()
+    {
+      _level++;
+      _skillsPoints++;
+    }
+
+    public void AddExp(int exp)
+    {
+      _exp += exp;
+      if (_exp >= StaticData.RequiredXp(_level))
+      {
+        _exp -= StaticData.RequiredXp(_level);
+        LevelUp();
+      }
     }
   }
 }

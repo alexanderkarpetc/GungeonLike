@@ -21,12 +21,15 @@ namespace GamePlay.UI
       foreach (var skillInfo in skills)
       {
         var skillObj = Instantiate(_obj, transform);
-        var separator = Instantiate(_separator, transform);
-        separator.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -index*126);
-        index++;
         var skillItem = skillObj.GetComponent<SkillItem>();
         skillItem.Init(skillInfo, _skillTree);
         _items.Add(skillItem);
+        if (skills.Last() != skillInfo)
+        {
+          var separator = Instantiate(_separator, transform);
+          separator.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -index*126);
+          index++;
+        }
       }
     }
 
