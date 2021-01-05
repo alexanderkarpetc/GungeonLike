@@ -175,13 +175,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 64abef60f61fdf64e8944fc43aae9a09, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -409,7 +409,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 64abef60f61fdf64e8944fc43aae9a09, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -565,8 +565,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1af32c904f2d29e488affd80e020d5f7, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -929,7 +929,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8348747539043659937}
   m_Layer: 5
-  m_Name: LeftArea
+  m_Name: RightArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1024,6 +1024,8 @@ MonoBehaviour:
   - {fileID: 5498997430836603086}
   - {fileID: 1608639943356618873}
   - {fileID: 8091114570588219891}
+  _normal: {fileID: 0}
+  _grey: {fileID: 2100000, guid: fad7b29ac94996343b74ecd665de1726, type: 2}
 --- !u!1 &8531251368576431647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1089,7 +1091,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 64abef60f61fdf64e8944fc43aae9a09, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0

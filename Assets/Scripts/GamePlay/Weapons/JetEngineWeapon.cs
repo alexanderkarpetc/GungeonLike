@@ -42,7 +42,9 @@ namespace GamePlay.Weapons
           ? DegreeToVector2(transform.rotation.eulerAngles.z) * new Vector2(-1, -1)
           : DegreeToVector2(transform.rotation.eulerAngles.z);
         var hit = Physics2D.RaycastAll(transform.position, direction)
-          .First(x => !x.collider.CompareTag("Player") && !x.collider.CompareTag("Projectile"));
+          .First(x => !x.collider.CompareTag("Player") && 
+                      !x.collider.CompareTag("Projectile") &&
+                      !x.collider.CompareTag("Finish"));
         var length = Vector2.Distance(hit.point, _shootPoint.position);
         if (length > _maxSegmentsCount * _middleSegmentLength)
           length = _maxSegmentsCount * _middleSegmentLength;

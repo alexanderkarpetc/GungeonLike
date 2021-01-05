@@ -8,6 +8,8 @@ namespace GamePlay.UI
   public class SkillItem : MonoBehaviour
   {
     private static Color _picked = new Color(0.345098f, 0.8235294f, 0.17f);
+    private static Color _normalColor = new Color(0.3960f, 0.466f, 0.5137f);
+    private static Color _hoverColor = new Color(0.3761f, 0.5936f, 0.7452f);
 
     private enum State
     {
@@ -18,7 +20,11 @@ namespace GamePlay.UI
 
     [SerializeField] private Image _image;
     [SerializeField] private Image _border;
+    [SerializeField] private GameObject _hover;
     [SerializeField] private GameObject _available;
+    [SerializeField] private Material _normal;
+    [SerializeField] private Material _grey;
+
     private Skill _skill;
     private State _state;
     private SkillTree _skillTree;
@@ -67,11 +73,14 @@ namespace GamePlay.UI
         _image.color = tempColor;
       }
 
-      _available.SetActive(_state == State.Enabled);
       if (_state == State.Picked)
       {
         _border.color = _picked;
+        _image.material = _normal;
       }
+
+      _available.SetActive(_state == State.Enabled);
+      GetComponent<Button>().enabled = _state == State.Enabled;
     }
 
     public void Select()
@@ -79,6 +88,7 @@ namespace GamePlay.UI
       if (_state != State.Enabled)
         return;
 
+      _hover.SetActive(false);
       _skillTree.Select(_skill);
       UpdateState();
     }
@@ -86,6 +96,18 @@ namespace GamePlay.UI
     public void Hover()
     {
       _skillTree.Hover(_skill);
+      if (_state != State.Enabled)
+        return;
+      _hover.SetActive(true);
+      _border.color = _hoverColor;
+    }
+
+    public void PointerExit()
+    {
+      if (_state != State.Enabled)
+        return;
+      _hover.SetActive(false);
+      _border.color = _normalColor;
     }
   }
 }
