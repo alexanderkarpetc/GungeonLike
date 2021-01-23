@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 4700838025113585313}
   - component: {fileID: 1712927347}
   m_Layer: 0
-  m_Name: SpecialPistol
+  m_Name: Crossbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ Animator:
   m_GameObject: {fileID: 4700838025113585319}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e8fb7d2459f29a047a719176223323a5, type: 2}
+  m_Controller: {fileID: 9100000, guid: c0e3edd023243c343a24b5d7f2f3c94d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -97,19 +97,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDoubleHanded: 0
-  MagazineSize: 6
-  _uiImage: {fileID: -8940329782202404704, guid: d7a426b8d06eb02498c3d6bd1b212466,
+  MagazineSize: 1
+  _uiImage: {fileID: -7892913890075609483, guid: aacbfcb63b89208429f8223e4e2e4ebb,
     type: 3}
   IsInverted: 0
   IsPlayers: 1
-  Type: 2
+  Type: 4
   _projectile: {fileID: 1269866929858603303, guid: 3f3976499f8fb1e49ba68f0eedbf575d,
     type: 3}
   _shootPoint: {fileID: 422198881}
-  _shootRate: 0.2
-  _shootDelay: 0
+  _shootRate: 1
+  _shootDelay: 0.2
   _bulletSpeed: 15
-  _impulse: 0.3
+  _impulse: 1
   _animator: {fileID: 4700838025113585313}
   reloading: 0
   reloadingTime: 0
@@ -183,7 +183,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -8940329782202404704, guid: d7a426b8d06eb02498c3d6bd1b212466,
+  m_Sprite: {fileID: -7892913890075609483, guid: aacbfcb63b89208429f8223e4e2e4ebb,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

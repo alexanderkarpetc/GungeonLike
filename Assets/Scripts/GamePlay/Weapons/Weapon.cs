@@ -66,6 +66,7 @@ namespace GamePlay.Weapons
       yield return new WaitForSeconds(_shootDelay);
       SpawnProjectiles();
       State.bulletsLeft--;
+      Reload();
     }
 
     protected virtual void SpawnProjectiles()

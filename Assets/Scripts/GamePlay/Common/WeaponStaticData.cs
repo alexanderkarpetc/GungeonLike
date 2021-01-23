@@ -11,9 +11,10 @@ namespace GamePlay.Common
       {WeaponType.SpecialPistol, 1},
       {WeaponType.Magnum, 1},
       {WeaponType.ShotGun, 1},
+      {WeaponType.Crossbow, 10},
     };
     public static List<WeaponType> AutomaticWeapons = new List<WeaponType> {WeaponType.Ak47};
-    public static List<WeaponType> SemiAutoWeapons = new List<WeaponType> {WeaponType.SpecialPistol, WeaponType.Magnum, WeaponType.ShotGun};
+    public static List<WeaponType> SemiAutoWeapons = new List<WeaponType> {WeaponType.SpecialPistol, WeaponType.Magnum, WeaponType.ShotGun, WeaponType.Crossbow};
     public static List<WeaponType> ChargeWeapons = new List<WeaponType> {WeaponType.JetEngine};
     public static float TurretBulletSpeed = 7;
     public static float JetEngineDamage = 0.1f;
