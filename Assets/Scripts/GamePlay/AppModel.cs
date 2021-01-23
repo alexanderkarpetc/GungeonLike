@@ -1,4 +1,5 @@
 ﻿using GamePlay.Level;
+using GamePlay.Level.Controllers;
 using GamePlay.Player;
 using UnityEngine;
 
@@ -23,6 +24,7 @@ namespace GamePlay
     private static GameObject _fxContainer;
     private static HudController _hud;
     public static StraightLevelController StraightRoomController;
+    public static StraightRoomController CurrentRoom;
 
 
     public static PlayerState Player()

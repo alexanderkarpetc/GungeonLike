@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-namespace GamePlay.Enemy.Brain
+﻿namespace GamePlay.Enemy.Brain.Parts
 {
   public class TargetFinder : BotPart
   {

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using GamePlay.Common;
+using GamePlay.Enemy.Brain.Parts;
 using UnityEngine;
 
 namespace GamePlay.Enemy.Brain

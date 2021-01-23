@@ -2,7 +2,7 @@
 using GamePlay.Weapons;
 using UnityEngine;
 
-namespace GamePlay.Enemy.Brain
+namespace GamePlay.Enemy.Brain.Parts
 {
   public class BulletBotShooting : BotPart
   {

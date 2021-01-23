@@ -16,6 +16,8 @@ namespace GamePlay.Enemy
     {
       if (type == EnemyType.Cubulon)
         return new CubulonBrain(gameObj);
+      if (type == EnemyType.WormEnemy)
+        return new WormBossBrain(gameObj);
 
       return new BotBrain(gameObj);
     };
@@ -71,11 +73,11 @@ namespace GamePlay.Enemy
     {
       _aiPath.canMove = false;
       _rigidbody.AddForce(impulse, ForceMode2D.Impulse);
-      yield return new WaitForSeconds(0.3f);
+      yield return new WaitForSeconds(_hitAnimDuration);
       _aiPath.canMove = true;
     }
 
-    private IEnumerator HitAnimation()
+    protected virtual IEnumerator HitAnimation()
     {
       _turnAnimator.isAnimating = true;
       var angle = _turnAnimator.TurnAngle();

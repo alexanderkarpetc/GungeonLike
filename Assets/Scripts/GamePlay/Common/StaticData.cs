@@ -10,6 +10,7 @@ namespace GamePlay.Common
     public static float EnemyCubulonSpeedBase = 5;
     public static int EnemyCubulonShotsCount = 30;
     public static float EnemyCubulonShotSpeed = 7;
+    public static float WormBossSpeedBase = 20;
     
     
     public static List<Skill> Skills;

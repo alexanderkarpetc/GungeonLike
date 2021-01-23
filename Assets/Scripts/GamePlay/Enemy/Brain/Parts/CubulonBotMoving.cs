@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace GamePlay.Enemy.Brain
+namespace GamePlay.Enemy.Brain.Parts
 {
   public class CubulonBotMoving : BotPart
   {

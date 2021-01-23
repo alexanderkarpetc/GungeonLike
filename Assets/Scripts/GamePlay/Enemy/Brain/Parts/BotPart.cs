@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace GamePlay.Enemy.Brain
+namespace GamePlay.Enemy.Brain.Parts
 {
   public abstract class BotPart : IUpdatable
   {
