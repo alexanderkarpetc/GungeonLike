@@ -24,6 +24,8 @@ namespace GamePlay.Player
     public int Level => _level;
     public int Exp => _exp;
     private Weapon _weapon;
+    public event Action OnSkillLearned;
+
     public PlayerState()
     {
       _currentHp = 3;
@@ -68,6 +70,7 @@ namespace GamePlay.Player
     {
       _skillsPoints--;
       Skills.Add(skill);
+      OnSkillLearned?.Invoke();
     }
     
     public int GetSkillPoints()

@@ -1,7 +1,7 @@
 Name;Impact;Description;Icon;BranchNumber
 SharpShooter;20;Increase Automatic weapon firerate for {0};molecule;1
 Gunslinger;20;Increase Pistol damage for {0};quantum;1
-SharpShooter;20;Increase Automatic weapon firerate for {0};heat;1
+Gunzerker;20;Increase Automatic weapon firerate for {0};heat;1
 SharpShooter;20;Increase Pistol damage for {0};islam;1
 SharpShooter;20;Increase Automatic weapon firerate for {0};jain;1
 SharpShooter;20;Increase Pistol damage for {0};star;1

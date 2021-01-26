@@ -4,6 +4,7 @@
   {
     Gunslinger = 1, // Pistol damage
     SharpShooter = 2, //Automatic weapon firerate
+    Gunzerker = 3, // Automatic weapon firerate
   }
   public class Skill
   {

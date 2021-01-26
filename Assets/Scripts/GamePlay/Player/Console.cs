@@ -26,6 +26,9 @@ namespace GamePlay.Player
         case "addgun":
           TryAddGun(text[1]);
           break;
+        case "skillpoint":
+          AppModel.Player().AddSkillPoint();
+          break;
         default:
           Debug.LogError("No SUCH command " + text[0]);
           break;
