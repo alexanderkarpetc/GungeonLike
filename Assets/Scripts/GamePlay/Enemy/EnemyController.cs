@@ -46,9 +46,12 @@ namespace GamePlay.Enemy
         _botBrain.OnUpdate();
     }
 
-    public void Hit(float damage, Vector2 impulse)
+    public void DealDamage(float damage)
     {
       State.Hp -= damage;
+    }
+    public void OnHit(Vector2 impulse)
+    {
       StartCoroutine(HitImpulse(impulse));
       if (!_turnAnimator.IsDying && State.Hp <= 0)
       {

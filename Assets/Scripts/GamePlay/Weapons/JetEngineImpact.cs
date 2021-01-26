@@ -21,7 +21,7 @@ namespace GamePlay.Weapons
         var direction = Weapon.DegreeToVector2(transform.rotation.eulerAngles.z);
         if (Weapon.IsInverted)
           direction *= -1;
-        enemyController.Hit(WeaponStaticData.JetEngineDamage, direction.normalized * WeaponStaticData.JetEngineImpulse);
+        DamageManager.Hit(enemyController, Weapon, direction.normalized * WeaponStaticData.JetEngineImpulse);
       }
     }
   }

@@ -1,4 +1,5 @@
-﻿using GamePlay.Enemy;
+﻿using GamePlay.Common;
+using GamePlay.Enemy;
 using GamePlay.Player;
 using UnityEngine;
 
@@ -6,9 +7,9 @@ namespace GamePlay.Level
 {
   public class Barrel : Environment
   {
+    [SerializeField] public float Damage;
     [SerializeField] private GameObject BoomFx;
     [SerializeField] private float Radius;
-    [SerializeField] private float Damage;
     protected override void DoDestroy()
     {
       Instantiate(BoomFx, transform.position, Quaternion.Euler(0,0,90));
@@ -24,11 +25,11 @@ namespace GamePlay.Level
       {
         if (hit.CompareTag("Enemy"))
         {
-          hit.GetComponent<EnemyController>().Hit(Damage, Vector2.zero);
+          DamageManager.Hit(hit.GetComponent<EnemyController>(), this);
         }
         if (hit.CompareTag("Player"))
         {
-          hit.GetComponent<PlayerController>().Hit();
+          DamageManager.HitPlayer(hit.GetComponent<PlayerController>());
         }
         if (hit.CompareTag("Environment"))
         {

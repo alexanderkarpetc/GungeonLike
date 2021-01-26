@@ -17,7 +17,7 @@ namespace GamePlay.Weapons
         var go = Instantiate(_projectile, _shootPoint.position, Quaternion.identity);
         var projectile = go.GetComponent<Projectile>();
         projectile.IsPlayerBullet = IsPlayers;
-        projectile.Damage = WeaponStaticData.WeaponDamage[Type];
+        projectile.Weapon = this;
         projectile.Speed = _bulletSpeed;
         projectile.Direction = DegreeToVector2(currentRotation);
         if (IsInverted)

@@ -27,6 +27,7 @@ namespace GamePlay.Weapons
     protected float _nextShotTime;
     [HideInInspector] public bool reloading;
     [HideInInspector] public float reloadingTime;
+    [HideInInspector] public float BaseDamage;
     private static readonly int ReloadAnim = Animator.StringToHash("Reload");
     private static readonly int ShootAnim = Animator.StringToHash("Shoot");
 
@@ -37,6 +38,7 @@ namespace GamePlay.Weapons
         State = new WeaponState{bulletsLeft = MagazineSize};
       }
       reloadingTime = _animator.runtimeAnimatorController.animationClips.First(x=>x.name.Equals("Reload")).averageDuration;
+      BaseDamage  = WeaponStaticData.WeaponDamage[Type];
     }
 
     public virtual void TryShoot()
@@ -66,7 +68,10 @@ namespace GamePlay.Weapons
       yield return new WaitForSeconds(_shootDelay);
       SpawnProjectiles();
       State.bulletsLeft--;
-      Reload();
+      if (State.bulletsLeft <= 0)
+      {
+        Reload();
+      }
     }
 
     protected virtual void SpawnProjectiles()
@@ -75,7 +80,7 @@ namespace GamePlay.Weapons
       go.transform.SetParent(AppModel.BulletContainer().transform);
       var projectile = go.GetComponent<Projectile>();
       projectile.IsPlayerBullet = IsPlayers;
-      projectile.Damage = WeaponStaticData.WeaponDamage[Type];
+      projectile.Weapon = this;
       projectile.Speed = _bulletSpeed;
       projectile.Impulse = _impulse;
 

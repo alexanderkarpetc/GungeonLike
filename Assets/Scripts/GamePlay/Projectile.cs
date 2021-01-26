@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using GamePlay.Common;
 using GamePlay.Enemy;
 using GamePlay.Player;
+using GamePlay.Weapons;
 using UnityEngine;
 
 namespace GamePlay
@@ -13,10 +15,10 @@ namespace GamePlay
     [SerializeField] private GameObject _enemyHitFx;
     [SerializeField] private GameObject _envHitFx;
     [HideInInspector] public bool IsPlayerBullet;
-    [HideInInspector] public float Damage;
     [HideInInspector] public float Speed;
     [HideInInspector] public float Impulse;
     [HideInInspector] public Vector2 Direction;
+    [HideInInspector] public Weapon Weapon;
 
     void Update()
     {
@@ -37,7 +39,7 @@ namespace GamePlay
         fx.transform.SetParent(AppModel.FxContainer().transform);
         if (other.CompareTag("Environment"))
         {
-          other.GetComponent<Level.Environment>().DealDamage(Damage);
+          DamageManager.Hit(other.GetComponent<Level.Environment>(), Weapon);
         }
         Destroy(gameObject);
       }
@@ -55,16 +57,15 @@ namespace GamePlay
       }
     }
 
-    private void HitPlayer(Collider2D player)
+    private void HitPlayer(Collider2D other)
     {
-      var playerController = player.GetComponent<PlayerController>();
-      playerController.Hit();
+      DamageManager.HitPlayer(other.GetComponent<PlayerController>());
     }
 
     private void HitEnemy(Collider2D enemy)
     {
       var enemyController = enemy.GetComponent<EnemyController>();
-      enemyController.Hit(Damage, transform.rotation * Direction.normalized * Impulse);
+      DamageManager.Hit(enemyController, Weapon, transform.rotation * Direction.normalized * Impulse);
     }
   }
 }
