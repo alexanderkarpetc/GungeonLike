@@ -51,7 +51,8 @@ namespace GamePlay
       
       if (IsPlayerBullet && other.CompareTag("Enemy"))
       {
-        Instantiate(_enemyHitFx, transform.position, transform.rotation);
+        if (_enemyHitFx != null)
+          Instantiate(_enemyHitFx, transform.position, transform.rotation);
         HitEnemy(other);
         Destroy(gameObject);
       }

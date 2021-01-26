@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422198880}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.075, y: 0, z: 0}
+  m_LocalPosition: {x: 0.656, y: 0.051, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4700838025113585318}
@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4700838025113585318}
   - component: {fileID: 4700838025113585313}
-  - component: {fileID: 1712927347}
+  - component: {fileID: 319142879064639624}
   m_Layer: 0
   m_Name: Crossbow
   m_TagString: Untagged
@@ -84,7 +84,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1712927347
+--- !u!114 &319142879064639624
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4700838025113585319}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 694c9e7cb2f8898408a38a4c17b7fca6, type: 3}
+  m_Script: {fileID: 11500000, guid: babbd2a5a3e04e509b81d2d8f7b8b8f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   IsDoubleHanded: 0
@@ -103,16 +103,17 @@ MonoBehaviour:
   IsInverted: 0
   IsPlayers: 1
   Type: 4
-  _projectile: {fileID: 1269866929858603303, guid: 3f3976499f8fb1e49ba68f0eedbf575d,
+  _projectile: {fileID: 1269866929858603303, guid: 910cc53621d98e347ad97678ee2322ac,
     type: 3}
   _shootPoint: {fileID: 422198881}
   _shootRate: 1
   _shootDelay: 0.2
-  _bulletSpeed: 15
-  _impulse: 1
+  _bulletSpeed: 30
+  _impulse: 3
   _animator: {fileID: 4700838025113585313}
   reloading: 0
   reloadingTime: 0
+  BaseDamage: 0
 --- !u!1 &4700838025997285464
 GameObject:
   m_ObjectHideFlags: 0
