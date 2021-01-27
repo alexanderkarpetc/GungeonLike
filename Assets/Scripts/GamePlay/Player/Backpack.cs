@@ -10,6 +10,7 @@ namespace GamePlay.Player
     private int _currentWeaponIndex = -1;
     public int gold;
     public int keys;
+    public Dictionary<AmmoKind, int> Ammo;
 
     public void AddWeapon(Weapon newWeapon)
     {

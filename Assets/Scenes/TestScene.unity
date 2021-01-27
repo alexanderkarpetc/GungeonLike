@@ -128,6 +128,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5014539121441640379, guid: e239729d4f0a1704a9da51d493d6fecd,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5791542341773708708, guid: e239729d4f0a1704a9da51d493d6fecd,
         type: 3}
       propertyPath: m_IsTrigger
@@ -996,7 +1001,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _startingWeapon
       value: 
-      objectReference: {fileID: 1712927347, guid: b330192fe2cc1ea40916a7acf7776290,
+      objectReference: {fileID: 319142879064639624, guid: b330192fe2cc1ea40916a7acf7776290,
         type: 3}
     - target: {fileID: 8463245576141808203, guid: 4c611336d3095fe47af6484ed94ffa3d,
         type: 3}

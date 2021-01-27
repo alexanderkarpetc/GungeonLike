@@ -19,5 +19,10 @@ namespace GamePlay.Common
     public static float TurretBulletSpeed = 7;
     public static float JetEngineDamage = 0.1f;
     public static float JetEngineImpulse = 0.1f;
+    public static int PistolAmmoCapacity = 50;
+    public static int RiffleAmmoCapacity = 100;
+    public static int ShellAmmoCapacity = 20;
+    public static int EnergyAmmoCapacity = 500;
+    public static int BoltAmmoCapacity = 30;
   }
 }

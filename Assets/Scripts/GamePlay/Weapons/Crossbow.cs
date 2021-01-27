@@ -36,7 +36,7 @@ namespace GamePlay.Weapons
       projectile.IsPlayerBullet = IsPlayers;
       projectile.Weapon = this;
       projectile.Speed = _hasSightSkill ? _bulletSpeed * 2 : _bulletSpeed;
-      projectile.Impulse = _impulse;
+      projectile.Impulse = _hasSightSkill ? _impulse * 2 : _impulse;
 
       projectile.Direction = Vector2.right;
       projectile.transform.rotation = Quaternion.Euler(0,0, transform.rotation.eulerAngles.z);
