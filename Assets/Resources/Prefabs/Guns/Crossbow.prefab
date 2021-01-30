@@ -104,6 +104,7 @@ MonoBehaviour:
   IsInverted: 0
   IsPlayers: 1
   Type: 4
+  AmmoKind: 5
   _projectile: {fileID: 1269866929858603303, guid: 910cc53621d98e347ad97678ee2322ac,
     type: 3}
   _shootPoint: {fileID: 422198881}

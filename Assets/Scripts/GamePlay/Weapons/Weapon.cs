@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Linq;
 using GamePlay.Common;
+using GamePlay.Player;
 using UnityEngine;
 
 namespace GamePlay.Weapons
@@ -14,6 +15,7 @@ namespace GamePlay.Weapons
 
     public bool IsPlayers;
     public WeaponType Type;
+    public AmmoKind AmmoKind;
     [HideInInspector] public WeaponState State;
 
     [SerializeField] protected GameObject _projectile;
@@ -35,7 +37,7 @@ namespace GamePlay.Weapons
     {
       if (!IsPlayers)
       {
-        State = new WeaponState{bulletsLeft = MagazineSize};
+        State = new WeaponState{bulletsLeft = Mathf.Min(MagazineSize, AppModel.Player().Backpack.Ammo[AmmoKind])};
       }
       reloadingTime = _animator.runtimeAnimatorController.animationClips.First(x=>x.name.Equals("Reload")).averageDuration;
       BaseDamage  = WeaponStaticData.WeaponDamage[Type];
@@ -58,11 +60,15 @@ namespace GamePlay.Weapons
 
     public void Reload()
     {
+      if (IsPlayers && AppModel.Player().Backpack.Ammo[AmmoKind] == 0)
+        return;
       StartCoroutine(DoReload());
     }
 
     private IEnumerator ShootCoroutine()
     {
+      if (IsPlayers)
+        AppModel.Player().Backpack.Ammo[AmmoKind]--;
       _nextShotTime = Time.time + _shootRate;
       _animator.SetTrigger(ShootAnim);
       yield return new WaitForSeconds(_shootDelay);
@@ -94,7 +100,8 @@ namespace GamePlay.Weapons
       reloading = true;
       _animator.SetTrigger(ReloadAnim);
       yield return new WaitForSeconds(reloadingTime);
-      State.bulletsLeft = MagazineSize;
+      if(IsPlayers)
+        State.bulletsLeft = Mathf.Min(MagazineSize, AppModel.Player().Backpack.Ammo[AmmoKind]);
       reloading = false;
     }
     public static Vector2 RadianToVector2(float radian)

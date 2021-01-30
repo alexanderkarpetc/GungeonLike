@@ -103,6 +103,7 @@ MonoBehaviour:
   IsInverted: 0
   IsPlayers: 1
   Type: 3
+  AmmoKind: 4
   _projectile: {fileID: 0}
   _shootPoint: {fileID: 422198881}
   _shootRate: 0
@@ -112,6 +113,7 @@ MonoBehaviour:
   _animator: {fileID: 4700838025113585313}
   reloading: 0
   reloadingTime: 0
+  BaseDamage: 0
   _middleSegment: {fileID: 3401075597386017145, guid: be9ebbe718d169f43bee7a053beb7eac,
     type: 3}
   _impactSegment: {fileID: 3401075597386017145, guid: b7b205c2c897ae94db89ce7b61cadace,
