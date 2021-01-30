@@ -5,6 +5,7 @@ namespace GamePlay.Player
   public class PlayerInteract : MonoBehaviour
   {
     public Interactable Interactable;
+    [SerializeField] private GameObject _interactObj;
 
     private void Update()
     {
@@ -13,6 +14,7 @@ namespace GamePlay.Player
 
     private void CheckInteract()
     {
+      _interactObj.SetActive(Interactable != null);
       if (Input.GetKey(KeyCode.E))
         Interactable?.Interact();
     }

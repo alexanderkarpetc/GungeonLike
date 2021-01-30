@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using GamePlay.Enemy;
 using GamePlay.Weapons;
 using UnityEngine;
@@ -12,7 +13,8 @@ namespace GamePlay.Level
     public List<EnemySetup> BossSetups = new List<EnemySetup>();
     public EnemyFactory()
     {
-      var enemies = Resources.LoadAll("Prefabs/Enemies", typeof(EnemyController));
+      var enemies = Resources.LoadAll("Prefabs/Enemies", typeof(EnemyController))
+        .Where(x => x.GetType() != typeof(BossController));
       foreach (EnemyController enemy in enemies)
       {
         EnemySetups.Add(new EnemySetup(enemy, enemy.Weapon?.GetPower() ?? 0));
@@ -20,7 +22,7 @@ namespace GamePlay.Level
       var bosses = Resources.LoadAll("Prefabs/Enemies/Boss", typeof(EnemyController));
       foreach (EnemyController boss in bosses)
       {
-        EnemySetups.Add(new EnemySetup(boss, 100));
+        BossSetups.Add(new EnemySetup(boss, 100));
       }
     }
 
