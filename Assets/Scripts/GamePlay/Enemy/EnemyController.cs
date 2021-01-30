@@ -68,7 +68,8 @@ namespace GamePlay.Enemy
       _turnAnimator.IsDying = true;
       _animator.SetTrigger(EnemyAnimState.die);
       Invoke(nameof(DestroyView), 1);
-      AppModel.Drop().CheckDrop(transform, 10);
+      AppModel.Drop().CheckDrop(transform, Type);
+      AppModel.Player().AddExp(Type);
       OnDeath?.Invoke(this);
     }
 

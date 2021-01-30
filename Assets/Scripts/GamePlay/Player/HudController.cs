@@ -13,6 +13,9 @@ namespace GamePlay.Player
     private void Start()
     {
       AppModel.Player().OnDamageTake += ScreenBlink;
+      _skillTree.SetActive(false);
+      _console.SetActive(false);
+      _dmgPanel.SetActive(false);
     }
 
     private void Update()

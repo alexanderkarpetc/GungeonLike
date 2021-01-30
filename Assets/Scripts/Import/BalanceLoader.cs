@@ -11,6 +11,7 @@ namespace Import
     public static void LoadBalance()
     {
       ReadSkills();
+      ReadLevels();
     }
 
     private static void ReadSkills()
@@ -32,6 +33,18 @@ namespace Import
       }
 
       StaticData.Skills = skills;
+    }
+    
+    private static void ReadLevels()
+    {
+      var lines = File.ReadAllLines("Assets/Balance/Levels.csv");
+      var exps = new List<int>();
+      for (var i = 1; i < lines.Length; i++)
+      {
+        exps.Add(int.Parse(lines[i]));
+      }
+
+      StaticData.Levels = exps;
     }
   }
 }

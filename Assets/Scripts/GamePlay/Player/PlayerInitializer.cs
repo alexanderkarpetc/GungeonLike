@@ -9,9 +9,6 @@ namespace GamePlay.Player
   {
     public void Init(Weapon startingWeapon)
     {
-      AppModel.Player().AddSkillPoint();
-      AppModel.Player().AddSkillPoint();
-      AppModel.Player().AddSkillPoint();
       AppModel.Player().Backpack.AddWeapon(startingWeapon);
       AppModel.Player().Backpack.Ammo = new Dictionary<AmmoKind, int>
       {
@@ -20,7 +17,6 @@ namespace GamePlay.Player
         {AmmoKind.Shell, WeaponStaticData.ShellAmmoCapacity},
         {AmmoKind.Energy, WeaponStaticData.EnergyAmmoCapacity},
         {AmmoKind.Bolt, WeaponStaticData.BoltAmmoCapacity},
-        
       };
     }
   }

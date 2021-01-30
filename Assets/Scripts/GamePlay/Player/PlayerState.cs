@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using GamePlay.Common;
+using GamePlay.Enemy;
 using GamePlay.Weapons;
 using UnityEngine;
 
@@ -103,6 +104,11 @@ namespace GamePlay.Player
         _exp -= StaticData.RequiredXp(_level);
         LevelUp();
       }
+    }
+
+    public void AddExp(EnemyType type)
+    {
+      AddExp(100);
     }
   }
 }

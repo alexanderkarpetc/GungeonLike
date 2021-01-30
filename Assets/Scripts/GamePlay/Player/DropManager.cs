@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using DefaultNamespace;
+using GamePlay.Enemy;
 using GamePlay.Level;
 using GamePlay.Weapons;
 using UnityEngine;
@@ -23,7 +24,7 @@ namespace GamePlay.Player
       _pedestalPref = Resources.Load("Prefabs/Pedestal", typeof(Pedestal)) as Pedestal;
     }
 
-    public void CheckDrop(Transform transform, int importance)
+    public void CheckDrop(Transform transform, EnemyType enemyType)
     {
       if(_parentObj == null)
         _parentObj = Util.InitParentIfNeed("Drop");
