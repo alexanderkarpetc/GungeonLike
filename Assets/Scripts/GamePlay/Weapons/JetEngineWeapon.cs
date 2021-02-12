@@ -7,7 +7,7 @@ namespace GamePlay.Weapons
 {
   public class JetEngineWeapon : Weapon
   {
-    private enum State
+    private enum ShootingState
     {
       Idle = 1,
       Charging = 2,
@@ -20,7 +20,7 @@ namespace GamePlay.Weapons
     private float _middleSegmentLength = 27f / 18f;
     private float _chargeTime = 1;
     private int _maxSegmentsCount = 10;
-    private State _currentState;
+    private ShootingState _currentState;
     private int _smallSegmentIndex;
 
     private float _charged = 0;
@@ -36,7 +36,7 @@ namespace GamePlay.Weapons
 
     private void Update()
     {
-      if (_currentState == State.Shooting)
+      if (_currentState == ShootingState.Shooting)
       {
         var direction = IsInverted
           ? DegreeToVector2(transform.rotation.eulerAngles.z) * new Vector2(-1, -1)
@@ -69,15 +69,15 @@ namespace GamePlay.Weapons
     public void StartCharge()
     {
       _charged = Math.Min(1, _charged + Time.deltaTime);
-      if (_charged >= _chargeTime && _currentState != State.Shooting)
+      if (_charged >= _chargeTime && _currentState != ShootingState.Shooting)
       {
         _animator.SetTrigger(Shooting);
-        _currentState = State.Shooting;
+        _currentState = ShootingState.Shooting;
       }
-      else if (_charged < _chargeTime && _currentState != State.Charging)
+      else if (_charged < _chargeTime && _currentState != ShootingState.Charging)
       {
         _animator.SetTrigger(Charging);
-        _currentState = State.Charging;
+        _currentState = ShootingState.Charging;
       }
     }
 
@@ -86,10 +86,10 @@ namespace GamePlay.Weapons
       ClearSegments();
       Destroy(_impactObj);
       _impactObj = null;
-      if (_charged != 0 && _currentState != State.Idle)
+      if (_charged != 0 && _currentState != ShootingState.Idle)
       {
         _animator.SetTrigger(Idle);
-        _currentState = State.Idle;
+        _currentState = ShootingState.Idle;
       }
 
       _charged = 0;

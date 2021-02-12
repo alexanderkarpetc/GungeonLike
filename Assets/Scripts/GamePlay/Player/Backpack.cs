@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using GamePlay.Common;
 using GamePlay.Weapons;
 using UnityEngine;
 
@@ -47,6 +48,14 @@ namespace GamePlay.Player
         return;
       _currentWeaponIndex = _currentWeaponIndex == 0 ?_weapons.Count - 1 : _currentWeaponIndex - 1;
       SelectWeapon(_weapons[_currentWeaponIndex]);
+    }
+
+    public void AddAmmo(Dictionary<AmmoKind,int> ammo)
+    {
+      foreach (var pair in ammo)
+      {
+        Ammo[pair.Key] = Mathf.Clamp(pair.Value+Ammo[pair.Key], 0, WeaponStaticData.AmmoCapacity[pair.Key]);
+      }
     }
   }
 }

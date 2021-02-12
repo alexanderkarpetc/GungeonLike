@@ -1,0 +1,488 @@
+fileFormatVersion: 2
+guid: 335b4e95653a62047b593e53152480bf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3145194127794050436
+    second: ammobox_pickup_001.png
+  - first:
+      213: -4173314448058344187
+    second: ammobox_pickup_002.png
+  - first:
+      213: 532225263583916032
+    second: ammobox_pickup_003.png
+  - first:
+      213: 3363223494095675557
+    second: ammobox_pickup_004.png
+  - first:
+      213: -3463548636683602149
+    second: ammobox_pickup_005.png
+  - first:
+      213: -4339431436302210668
+    second: ammobox_pickup_006.png
+  - first:
+      213: 9217812988553335114
+    second: ammobox_pickup_007.png
+  - first:
+      213: 1980931702039735008
+    second: ammobox_pickup_008.png
+  - first:
+      213: -1263491716736505583
+    second: ammobox_pickup_009.png
+  - first:
+      213: 8334059581587155778
+    second: ammobox_pickup_010.png
+  - first:
+      213: -6725391431225356144
+    second: ammobox_pickup_011.png
+  - first:
+      213: -245191210754024356
+    second: ammobox_pickup_012.png
+  - first:
+      213: 8690192878802634221
+    second: ammobox_pickup_013.png
+  - first:
+      213: -2040394217758187511
+    second: ammobox_pickup_014.png
+  - first:
+      213: 3198752884066649786
+    second: ammobox_pickup_015.png
+  - first:
+      213: -4553796555521476127
+    second: ammobox_pickup_016.png
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 18
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ammobox_pickup_001.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 55
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7ae03fca960a54d0800000000000000
+      internalID: -3145194127794050436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammobox_pickup_002.png
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 53
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50d1a73ee986516c0800000000000000
+      internalID: -4173314448058344187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammobox_pickup_003.png
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 53
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0007860be08d26700800000000000000
+      internalID: 532225263583916032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammobox_pickup_004.png
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 53
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a022d1e2f19cae20800000000000000
+      internalID: 3363223494095675557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammobox_pickup_005.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 37
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b177f289dd00fefc0800000000000000
+      internalID: -3463548636683602149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammobox_pickup_006.png
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 35
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4992b08991e37c3c0800000000000000
+      internalID: -4339431436302210668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammobox_pickup_007.png
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 35
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4114b433104cef70800000000000000
+      internalID: 9217812988553335114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammobox_pickup_008.png
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 35
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea636833eead7b10800000000000000
+      internalID: 1980931702039735008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammobox_pickup_009.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 19
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 119a5475afc277ee0800000000000000
+      internalID: -1263491716736505583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammobox_pickup_010.png
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 17
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b6171a80788a370800000000000000
+      internalID: 8334059581587155778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammobox_pickup_011.png
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 17
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0905b5e302c9aa2a0800000000000000
+      internalID: -6725391431225356144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammobox_pickup_012.png
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 17
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5c55f494e7e89cf0800000000000000
+      internalID: -245191210754024356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammobox_pickup_013.png
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 55
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de509a27164c99870800000000000000
+      internalID: 8690192878802634221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammobox_pickup_014.png
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 37
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90023c8f4401fa3e0800000000000000
+      internalID: -2040394217758187511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammobox_pickup_015.png
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 19
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab68c03ecc0446c20800000000000000
+      internalID: 3198752884066649786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ammobox_pickup_016.png
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e9beb8e82aadc0c0800000000000000
+      internalID: -4553796555521476127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

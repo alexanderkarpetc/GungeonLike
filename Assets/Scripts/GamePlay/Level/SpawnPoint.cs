@@ -16,7 +16,7 @@ namespace GamePlay.Level
     public void Spawn()
     {
       var enemy = Instantiate(SpawnObject, transform.position, Quaternion.identity);
-      OnSpawn(enemy);
+      OnSpawn.NullSafeInvoke(enemy);
       Destroy(gameObject);
     }
   }

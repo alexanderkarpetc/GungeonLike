@@ -9,6 +9,7 @@ namespace GamePlay.Player
     [SerializeField] private float _blinkDuration;
     [SerializeField] private GameObject _console;
     [SerializeField] private GameObject _skillTree;
+    [SerializeField] private GameObject _devPanel;
 
     private void Start()
     {
@@ -16,7 +17,9 @@ namespace GamePlay.Player
       _skillTree.SetActive(false);
       _console.SetActive(false);
       _dmgPanel.SetActive(false);
+      _devPanel.SetActive(false);
     }
+    public GameObject DevPanel => _devPanel;
 
     private void Update()
     {

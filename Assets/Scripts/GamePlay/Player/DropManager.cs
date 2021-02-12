@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using DefaultNamespace;
+using GamePlay.Common;
 using GamePlay.Enemy;
 using GamePlay.Level;
 using GamePlay.Weapons;
@@ -11,7 +12,8 @@ namespace GamePlay.Player
   public class DropManager
   {
     public List<Weapon> AllGuns = new List<Weapon>(); 
-    private Pedestal _pedestalPref;
+    private PickableItemView _pedestal;
+    private PickableItemView _ammoBox;
     private GameObject _parentObj;
 
     public DropManager()
@@ -21,15 +23,45 @@ namespace GamePlay.Player
       {
         AllGuns.Add(gun as Weapon);
       }
-      _pedestalPref = Resources.Load("Prefabs/Pedestal", typeof(Pedestal)) as Pedestal;
+      _pedestal = Resources.Load("Prefabs/Player/Pedestal", typeof(PickableItemView)) as PickableItemView;
+      _ammoBox = Resources.Load("Prefabs/Player/AmmoBox", typeof(PickableItemView)) as PickableItemView;
     }
 
     public void CheckDrop(Transform transform, EnemyType enemyType)
     {
       if(_parentObj == null)
         _parentObj = Util.InitParentIfNeed("Drop");
-      var pedestal = Object.Instantiate(_pedestalPref, transform.position, Quaternion.identity, _parentObj.transform);
-      pedestal.Item = AllGuns.First();
+      if ((int)enemyType >= 100)
+      {
+        var pedestal = Object.Instantiate(_pedestal, transform.position, Quaternion.identity, _parentObj.transform);
+        pedestal.Weapon = AllGuns.First();
+      }
+      else
+      {
+        var pedestal = Object.Instantiate(_ammoBox, transform.position, Quaternion.identity, _parentObj.transform);
+        var deficientAmmo = FindDeficientAmmo(3);
+        pedestal.Ammo = new Dictionary<AmmoKind, int>
+        {
+          {deficientAmmo[0], WeaponStaticData.GetAmmoAmountForKind(deficientAmmo[0])},
+          {deficientAmmo[1], WeaponStaticData.GetAmmoAmountForKind(deficientAmmo[1])},
+          {deficientAmmo[2], WeaponStaticData.GetAmmoAmountForKind(deficientAmmo[2])},
+        };
+      }
+
+    }
+
+    private List<AmmoKind> FindDeficientAmmo(int quantity)
+    {
+      var kindToPercent = new Dictionary<AmmoKind, float>();
+      foreach (var ammo in AppModel.Player().Backpack.Ammo)
+      {
+        kindToPercent.Add(ammo.Key, (float) ammo.Value / WeaponStaticData.AmmoCapacity[ammo.Key]);
+      }
+
+      var percentagesList = kindToPercent.ToList();
+      percentagesList.Sort((x,y)=> x.Value.CompareTo(y.Value));
+
+      return percentagesList.Select(x=>x.Key).Take(quantity).ToList();
     }
 
     public Transform GetDropped()
