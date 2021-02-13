@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using GamePlay.Common;
 using GamePlay.Weapons;
 using UnityEngine;
@@ -12,6 +13,7 @@ namespace GamePlay.Player
     public int gold;
     public int keys;
     public Dictionary<AmmoKind, int> Ammo;
+    public event Action<Dictionary<AmmoKind, int>> OnAmmoChange;
 
     public void AddWeapon(Weapon newWeapon)
     {
@@ -56,6 +58,8 @@ namespace GamePlay.Player
       {
         Ammo[pair.Key] = Mathf.Clamp(pair.Value+Ammo[pair.Key], 0, WeaponStaticData.AmmoCapacity[pair.Key]);
       }
+
+      OnAmmoChange.NullSafeInvoke(ammo);
     }
   }
 }
