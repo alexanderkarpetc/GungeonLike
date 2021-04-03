@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 8447501335556419674}
   - component: {fileID: 9071150672601966869}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: DmgPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
