@@ -11,7 +11,16 @@ namespace GamePlay.Level
   {
     [HideInInspector] public Weapon Weapon;
     [HideInInspector] public Dictionary<AmmoKind, int> Ammo;
+    public ResourcePack ResourceValue;
+
     private int _index;
+
+    [Serializable]
+    public class ResourcePack
+    {
+      public ResourceKind resourceKind;
+      public int amount;
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -24,6 +33,10 @@ namespace GamePlay.Level
         if (!Ammo.IsNullOrEmpty())
         {
           AppModel.Player().Backpack.AddAmmo(Ammo);
+        }
+        if (ResourceValue != null)
+        {
+          AppModel.Player().Backpack.AddResource(new Tuple<ResourceKind, int>(ResourceValue.resourceKind, ResourceValue.amount));
         }
         Destroy(gameObject);
       }

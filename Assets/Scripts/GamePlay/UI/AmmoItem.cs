@@ -62,5 +62,10 @@ namespace GamePlay.UI
     {
       _value.text = AppModel.Player().Backpack.Ammo[_kind].ToString();
     }
+
+    private void OnDestroy()
+    {
+      AppModel.Player().Backpack.OnAmmoChange -= OnAmmoChange;
+    }
   }
 }

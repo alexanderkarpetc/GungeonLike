@@ -10,10 +10,24 @@ namespace GamePlay.Player
   {
     private readonly List<Weapon> _weapons = new List<Weapon>();
     private int _currentWeaponIndex = -1;
-    public int gold;
-    public int keys;
     public Dictionary<AmmoKind, int> Ammo;
+
+    private Dictionary<ResourceKind, int> _resources;
     public event Action<Dictionary<AmmoKind, int>> OnAmmoChange;
+    public event Action<Tuple<ResourceKind, int>> OnResourcesChange;
+
+    public Dictionary<ResourceKind, int> Resources
+    {
+      get => _resources;
+      set
+      {
+        _resources = value;
+        foreach (var valuePair in _resources)
+        {
+          OnResourcesChange.NullSafeInvoke(new Tuple<ResourceKind, int>(valuePair.Key, valuePair.Value));
+        }
+      }
+    }
 
     public void AddWeapon(Weapon newWeapon)
     {
@@ -60,6 +74,18 @@ namespace GamePlay.Player
       }
 
       OnAmmoChange.NullSafeInvoke(ammo);
+    }
+    
+    public void AddResource(Tuple<ResourceKind, int> resource)
+    {
+      Resources[resource.Item1] = resource.Item2 + Resources.GetValueOrDefault(resource.Item1);
+      OnResourcesChange.NullSafeInvoke(resource);
+    }
+    
+    public void WithdrawResource(Tuple<ResourceKind, int> resource)
+    {
+      Resources[resource.Item1] = Resources.GetValueOrDefault(resource.Item1) - resource.Item2;
+      OnResourcesChange.NullSafeInvoke(resource);
     }
   }
 }

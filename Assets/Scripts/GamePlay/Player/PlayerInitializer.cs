@@ -18,6 +18,10 @@ namespace GamePlay.Player
         {AmmoKind.Energy, WeaponStaticData.AmmoCapacity[AmmoKind.Energy] / 3},
         {AmmoKind.Bolt, WeaponStaticData.AmmoCapacity[AmmoKind.Bolt] / 3},
       };
+      AppModel.Player().Backpack.Resources = new Dictionary<ResourceKind, int>
+      {
+        {ResourceKind.Coins, 10},
+      };
     }
   }
 }

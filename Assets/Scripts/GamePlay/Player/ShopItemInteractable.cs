@@ -1,10 +1,12 @@
-﻿namespace GamePlay.Player
+﻿using System;
+
+namespace GamePlay.Player
 {
   public class ShopItemInteractable : Interactable
   {
     public override void Interact()
     {
-      // todo: BUY
+      throw new Exception();
     }
   }
 }
