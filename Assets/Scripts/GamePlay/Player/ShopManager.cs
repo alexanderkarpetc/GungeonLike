@@ -23,10 +23,10 @@ namespace GamePlay.Player
       _shopItem = Resources.Load("Prefabs/Player/ShopItem", typeof(ShopItemView)) as ShopItemView;
     }
 
-    public ShopItemView GetRandomWeapon()
+    public ShopItemView SpawnRandomWeapon()
     {
       var shopItem = Object.Instantiate(_shopItem, Vector3.zero, Quaternion.identity, _parentObj.transform);
-      var weapon = AppModel.DropManager().AllGuns.Random();
+      var weapon = AppModel.DropManager().GetAbsentWeapon();
       shopItem.SetData(weapon);
       return shopItem;
     }

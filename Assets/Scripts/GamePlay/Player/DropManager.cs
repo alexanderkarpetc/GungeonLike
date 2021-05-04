@@ -3,6 +3,7 @@ using System.Linq;
 using DefaultNamespace;
 using GamePlay.Common;
 using GamePlay.Enemy;
+using GamePlay.Extensions;
 using GamePlay.Level;
 using GamePlay.Weapons;
 using UnityEngine;
@@ -49,6 +50,11 @@ namespace GamePlay.Player
           {deficientAmmo[2], AppModel.WeaponData().GetAmmoAmountForKind(deficientAmmo[2])},
         };
       }
+    }
+
+    public Weapon GetAbsentWeapon()
+    {
+      return AllGuns.Where(x => !AppModel.Player().Backpack.GetWeapons().Contains(x)).ToList().Random();
     }
 
     private List<AmmoKind> FindDeficientAmmo(int quantity)

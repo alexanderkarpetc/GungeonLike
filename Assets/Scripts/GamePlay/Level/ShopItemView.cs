@@ -20,8 +20,9 @@ namespace GamePlay.Level
       _sprite.sprite = weapon._uiImage;
       _interactable = new ShopItemInteractable
       {
-        _price = price,
-        _weapon = weapon
+        Price = price,
+        Weapon = weapon,
+        View = gameObject
       };
     }
 

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using GamePlay.Weapons;
 
 namespace GamePlay.Extensions
 {
@@ -9,6 +10,7 @@ namespace GamePlay.Extensions
     {
       var i = AppModel.random.NextInt(0, list.Count);
       return list[i];
-    }
+    }    
+    
   }
 }

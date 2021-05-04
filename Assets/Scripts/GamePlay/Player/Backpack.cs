@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using GamePlay.Common;
 using GamePlay.Weapons;
 using UnityEngine;
@@ -34,6 +35,10 @@ namespace GamePlay.Player
       return _resources[ResourceKind.Coins];
     }
 
+    public List<Weapon> GetWeapons()
+    {
+      return _weapons.ToList();
+    }
     public void AddWeapon(Weapon newWeapon)
     {
       _weapons.Add(newWeapon);

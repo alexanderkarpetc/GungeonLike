@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using GamePlay.Player;
+using UnityEngine;
 
 namespace GamePlay.Level
 {
@@ -12,8 +13,11 @@ namespace GamePlay.Level
     }
     public void SpawnRandomShopGun()
     {
-      var randomWeapon = AppModel.ItemManager().GetRandomWeapon();
-      var randomWeaponGo = Instantiate(randomWeapon, Vector3.zero, Quaternion.identity);
+      AppModel.ItemManager().SpawnRandomWeapon();
+    }
+    public void AddMoney()
+    {
+      AppModel.Player().Backpack.AddResource(ResourceKind.Coins, 20);
     }
   }
 }
