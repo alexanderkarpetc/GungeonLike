@@ -16,9 +16,9 @@ namespace GamePlay.UI
       _value.text = AppModel.Player().Backpack.Resources[_kind].ToString();
     }
 
-    private void OnResourcesChange(Tuple<ResourceKind, int> resourceChange)
+    private void OnResourcesChange(ResourceKind kind, int value)
     {
-      if(resourceChange.Item1 == _kind)
+      if (kind == _kind)
         _value.text = AppModel.Player().Backpack.Resources[_kind].ToString();
     }
     private void OnDestroy()

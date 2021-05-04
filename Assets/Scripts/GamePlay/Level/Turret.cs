@@ -22,7 +22,7 @@ namespace GamePlay.Level
       var go = Instantiate(_projectile, _shootPoint.position, Quaternion.identity);
       go.transform.SetParent(AppModel.BulletContainer().transform);
       var projectile = go.GetComponent<Projectile>();
-      projectile.Speed = WeaponStaticData.TurretBulletSpeed;
+      projectile.Speed = AppModel.WeaponData().TurretBulletSpeed;
       projectile.Direction = Weapon.DegreeToVector2(transform.rotation.eulerAngles.z);
       projectile.Owner = gameObject;
     }

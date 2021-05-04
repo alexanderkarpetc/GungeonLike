@@ -14,6 +14,7 @@ namespace GamePlay.Player
     public List<Weapon> AllGuns = new List<Weapon>(); 
     private PickableItemView _pedestal;
     private PickableItemView _ammoBox;
+    private PickableItemView _coin;
     private GameObject _parentObj;
 
     public DropManager()
@@ -25,9 +26,10 @@ namespace GamePlay.Player
       }
       _pedestal = Resources.Load("Prefabs/Player/Pedestal", typeof(PickableItemView)) as PickableItemView;
       _ammoBox = Resources.Load("Prefabs/Player/AmmoBox", typeof(PickableItemView)) as PickableItemView;
+      _coin = Resources.Load("Prefabs/Player/Resource", typeof(PickableItemView)) as PickableItemView;
     }
 
-    public void CheckDrop(Transform transform, EnemyType enemyType)
+    public void DropOnEnemyDeath(Transform transform, EnemyType enemyType)
     {
       if(_parentObj == null)
         _parentObj = Util.InitParentIfNeed("Drop");
@@ -42,12 +44,11 @@ namespace GamePlay.Player
         var deficientAmmo = FindDeficientAmmo(3);
         pedestal.Ammo = new Dictionary<AmmoKind, int>
         {
-          {deficientAmmo[0], WeaponStaticData.GetAmmoAmountForKind(deficientAmmo[0])},
-          {deficientAmmo[1], WeaponStaticData.GetAmmoAmountForKind(deficientAmmo[1])},
-          {deficientAmmo[2], WeaponStaticData.GetAmmoAmountForKind(deficientAmmo[2])},
+          {deficientAmmo[0], AppModel.WeaponData().GetAmmoAmountForKind(deficientAmmo[0])},
+          {deficientAmmo[1], AppModel.WeaponData().GetAmmoAmountForKind(deficientAmmo[1])},
+          {deficientAmmo[2], AppModel.WeaponData().GetAmmoAmountForKind(deficientAmmo[2])},
         };
       }
-
     }
 
     private List<AmmoKind> FindDeficientAmmo(int quantity)
@@ -55,7 +56,7 @@ namespace GamePlay.Player
       var kindToPercent = new Dictionary<AmmoKind, float>();
       foreach (var ammo in AppModel.Player().Backpack.Ammo)
       {
-        kindToPercent.Add(ammo.Key, (float) ammo.Value / WeaponStaticData.AmmoCapacity[ammo.Key]);
+        kindToPercent.Add(ammo.Key, (float) ammo.Value / AppModel.WeaponData().AmmoCapacity[ammo.Key]);
       }
 
       var percentagesList = kindToPercent.ToList();

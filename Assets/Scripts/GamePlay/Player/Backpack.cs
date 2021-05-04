@@ -14,7 +14,7 @@ namespace GamePlay.Player
 
     private Dictionary<ResourceKind, int> _resources;
     public event Action<Dictionary<AmmoKind, int>> OnAmmoChange;
-    public event Action<Tuple<ResourceKind, int>> OnResourcesChange;
+    public event Action<ResourceKind, int> OnResourcesChange;
 
     public Dictionary<ResourceKind, int> Resources
     {
@@ -24,9 +24,14 @@ namespace GamePlay.Player
         _resources = value;
         foreach (var valuePair in _resources)
         {
-          OnResourcesChange.NullSafeInvoke(new Tuple<ResourceKind, int>(valuePair.Key, valuePair.Value));
+          OnResourcesChange.NullSafeInvoke(valuePair.Key, valuePair.Value);
         }
       }
+    }
+
+    public int GetCoins()
+    {
+      return _resources[ResourceKind.Coins];
     }
 
     public void AddWeapon(Weapon newWeapon)
@@ -70,22 +75,22 @@ namespace GamePlay.Player
     {
       foreach (var pair in ammo)
       {
-        Ammo[pair.Key] = Mathf.Clamp(pair.Value+Ammo[pair.Key], 0, WeaponStaticData.AmmoCapacity[pair.Key]);
+        Ammo[pair.Key] = Mathf.Clamp(pair.Value+Ammo[pair.Key], 0, AppModel.WeaponData().AmmoCapacity[pair.Key]);
       }
 
       OnAmmoChange.NullSafeInvoke(ammo);
     }
     
-    public void AddResource(Tuple<ResourceKind, int> resource)
+    public void AddResource(ResourceKind kind, int amount)
     {
-      Resources[resource.Item1] = resource.Item2 + Resources.GetValueOrDefault(resource.Item1);
-      OnResourcesChange.NullSafeInvoke(resource);
+      Resources[kind] = amount + Resources.GetValueOrDefault(kind);
+      OnResourcesChange.NullSafeInvoke(kind, amount);
     }
     
-    public void WithdrawResource(Tuple<ResourceKind, int> resource)
+    public void WithdrawResource(ResourceKind kind, int amount)
     {
-      Resources[resource.Item1] = Resources.GetValueOrDefault(resource.Item1) - resource.Item2;
-      OnResourcesChange.NullSafeInvoke(resource);
+      Resources[kind] = Resources.GetValueOrDefault(kind) - amount;
+      OnResourcesChange.NullSafeInvoke(kind, amount);
     }
   }
 }

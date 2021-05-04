@@ -8,16 +8,12 @@
     JetEngine = 3,
     Crossbow = 4,
 
-    
-
     #endregion
 
-
     #region Enemy
-    Magnum = 101,
-    ShotGun = 102
+    EnemyMagnum = 101,
+    EnemyShotGun = 102
     
-
     #endregion
   }
 }

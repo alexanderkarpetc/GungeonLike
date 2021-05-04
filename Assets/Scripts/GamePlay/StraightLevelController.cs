@@ -26,7 +26,7 @@ namespace GamePlay
       if (_currentRoom != null)
       {
         Destroy(_currentRoom);
-        foreach (Transform child in AppModel.Drop().GetDropped())
+        foreach (Transform child in AppModel.DropManager().GetDropped())
         {
           Destroy(child.gameObject);
         }

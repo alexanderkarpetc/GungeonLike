@@ -12,7 +12,7 @@ namespace GamePlay.Weapons
     {
       if (other.CompareTag("Environment"))
       {
-        other.GetComponent<Level.Environment>().DealDamage(WeaponStaticData.JetEngineDamage);
+        other.GetComponent<Level.Environment>().DealDamage(AppModel.WeaponData().JetEngineDamage);
       }
 
       if (other.CompareTag("Enemy"))
@@ -21,7 +21,7 @@ namespace GamePlay.Weapons
         var direction = Weapon.DegreeToVector2(transform.rotation.eulerAngles.z);
         if (Weapon.IsInverted)
           direction *= -1;
-        DamageManager.Hit(enemyController, Weapon, direction.normalized * WeaponStaticData.JetEngineImpulse);
+        DamageManager.Hit(enemyController, Weapon, direction.normalized * AppModel.WeaponData().JetEngineImpulse);
       }
     }
   }

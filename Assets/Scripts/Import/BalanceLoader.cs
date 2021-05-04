@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using GamePlay;
 using GamePlay.Common;
 using GamePlay.Player;
+using GamePlay.Weapons;
 
 namespace Import
 {
@@ -12,6 +14,7 @@ namespace Import
     {
       ReadSkills();
       ReadLevels();
+      ReadWeapons();
     }
 
     private static void ReadSkills()
@@ -45,6 +48,26 @@ namespace Import
       }
 
       StaticData.Levels = exps;
+    }  
+    
+    private static void ReadWeapons()
+    {
+      var lines = File.ReadAllLines("Assets/Balance/Weapons.csv");
+      var infos = new Dictionary<WeaponType, WeaponInfo>();
+      for (var i = 1; i < lines.Length; i++)
+      {
+        var weaponLine = lines[i].Split(';');
+        var weaponInfo = new WeaponInfo()
+        {
+          Id = int.Parse(weaponLine[0]),
+          Type = (WeaponType) Enum.Parse(typeof(WeaponType), weaponLine[1]),
+          Damage = float.Parse(weaponLine[2]),
+          Price = int.Parse(weaponLine[3]),
+        };
+        infos.Add(weaponInfo.Type, weaponInfo);
+      }
+
+      AppModel.WeaponData().WeaponInfos = infos;
     }
   }
 }

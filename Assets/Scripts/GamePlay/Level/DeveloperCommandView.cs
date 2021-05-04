@@ -10,5 +10,10 @@ namespace GamePlay.Level
       var spawnPoint = Instantiate(AppModel.SpawnPointPrefab(), Vector3.zero, Quaternion.identity);
       spawnPoint.SpawnObject = randomEnemy.EnemyObject;
     }
+    public void SpawnRandomShopGun()
+    {
+      var randomWeapon = AppModel.ItemManager().GetRandomWeapon();
+      var randomWeaponGo = Instantiate(randomWeapon, Vector3.zero, Quaternion.identity);
+    }
   }
 }

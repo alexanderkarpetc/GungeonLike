@@ -4,17 +4,10 @@ using GamePlay.Weapons;
 
 namespace GamePlay.Common
 {
-  public static class WeaponStaticData
+  public class WeaponStaticData
   {
-    public static Dictionary<WeaponType, float> WeaponDamage = new Dictionary<WeaponType, float>
-    {
-      {WeaponType.Ak47, 1},
-      {WeaponType.SpecialPistol, 1},
-      {WeaponType.Magnum, 1},
-      {WeaponType.ShotGun, 1},
-      {WeaponType.Crossbow, 10},
-    };
-    public static Dictionary<AmmoKind, int> AmmoCapacity = new Dictionary<AmmoKind, int>
+    public Dictionary<WeaponType, WeaponInfo> WeaponInfos = new Dictionary<WeaponType, WeaponInfo>();
+    public Dictionary<AmmoKind, int> AmmoCapacity = new Dictionary<AmmoKind, int>
     {
       {AmmoKind.Pistol, 50},
       {AmmoKind.Riffle, 100},
@@ -22,7 +15,7 @@ namespace GamePlay.Common
       {AmmoKind.Bolt, 30},
       {AmmoKind.Energy, 500},
     };
-    public static Dictionary<AmmoKind, int> AmmoFillAmount = new Dictionary<AmmoKind, int>
+    public Dictionary<AmmoKind, int> AmmoFillAmount = new Dictionary<AmmoKind, int>
     {
       {AmmoKind.Pistol, 10},
       {AmmoKind.Riffle, 20},
@@ -30,16 +23,21 @@ namespace GamePlay.Common
       {AmmoKind.Bolt, 5},
       {AmmoKind.Energy, 50},
     };
-    public static List<WeaponType> AutomaticWeapons = new List<WeaponType> {WeaponType.Ak47};
-    public static List<WeaponType> SemiAutoWeapons = new List<WeaponType> {WeaponType.SpecialPistol, WeaponType.Magnum, WeaponType.ShotGun, WeaponType.Crossbow};
-    public static List<WeaponType> ChargeWeapons = new List<WeaponType> {WeaponType.JetEngine};
-    public static float TurretBulletSpeed = 7;
-    public static float JetEngineDamage = 0.1f;
-    public static float JetEngineImpulse = 0.1f;
+    public List<WeaponType> AutomaticWeapons = new List<WeaponType> {WeaponType.Ak47};
+    public List<WeaponType> SemiAutoWeapons = new List<WeaponType> {WeaponType.SpecialPistol, WeaponType.EnemyMagnum, WeaponType.EnemyShotGun, WeaponType.Crossbow};
+    public List<WeaponType> ChargeWeapons = new List<WeaponType> {WeaponType.JetEngine};
+    public float TurretBulletSpeed = 7;
+    public float JetEngineDamage = 0.1f;
+    public float JetEngineImpulse = 0.1f;
 
-    public static int GetAmmoAmountForKind(AmmoKind ammoKind)
+    public int GetAmmoAmountForKind(AmmoKind ammoKind)
     {
       return AmmoFillAmount[ammoKind];
+    }
+    
+    public WeaponInfo GetWeaponInfo(WeaponType type)
+    {
+      return WeaponInfos[type];
     }
   }
 }

@@ -36,7 +36,7 @@ namespace GamePlay.Level
         }
         if (ResourceValue != null)
         {
-          AppModel.Player().Backpack.AddResource(new Tuple<ResourceKind, int>(ResourceValue.resourceKind, ResourceValue.amount));
+          AppModel.Player().Backpack.AddResource(ResourceValue.resourceKind, ResourceValue.amount);
         }
         Destroy(gameObject);
       }

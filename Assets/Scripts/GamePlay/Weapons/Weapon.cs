@@ -40,7 +40,7 @@ namespace GamePlay.Weapons
         State = new WeaponState{bulletsLeft = Mathf.Min(MagazineSize, AppModel.Player().Backpack.Ammo[AmmoKind])};
       }
       reloadingTime = _animator.runtimeAnimatorController.animationClips.First(x=>x.name.Equals("Reload")).averageDuration;
-      BaseDamage  = WeaponStaticData.WeaponDamage[Type];
+      BaseDamage  = AppModel.WeaponData().GetWeaponInfo(Type).Damage;
     }
 
     public virtual void TryShoot()
@@ -116,7 +116,7 @@ namespace GamePlay.Weapons
 
     public int GetPower()
     {
-      return (int)(WeaponStaticData.WeaponDamage[Type] / _shootRate + MagazineSize / reloadingTime);
+      return (int)(AppModel.WeaponData().GetWeaponInfo(Type).Damage / _shootRate + MagazineSize);
     }
   }
 }

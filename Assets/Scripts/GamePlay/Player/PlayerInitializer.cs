@@ -12,11 +12,11 @@ namespace GamePlay.Player
       AppModel.Player().Backpack.AddWeapon(startingWeapon);
       AppModel.Player().Backpack.Ammo = new Dictionary<AmmoKind, int>
       {
-        {AmmoKind.Pistol, WeaponStaticData.AmmoCapacity[AmmoKind.Pistol] / 3},
-        {AmmoKind.Riffle, WeaponStaticData.AmmoCapacity[AmmoKind.Riffle] / 3},
-        {AmmoKind.Shell, WeaponStaticData.AmmoCapacity[AmmoKind.Shell] / 3},
-        {AmmoKind.Energy, WeaponStaticData.AmmoCapacity[AmmoKind.Energy] / 3},
-        {AmmoKind.Bolt, WeaponStaticData.AmmoCapacity[AmmoKind.Bolt] / 3},
+        {AmmoKind.Pistol, AppModel.WeaponData().AmmoCapacity[AmmoKind.Pistol] / 3},
+        {AmmoKind.Riffle, AppModel.WeaponData().AmmoCapacity[AmmoKind.Riffle] / 3},
+        {AmmoKind.Shell, AppModel.WeaponData().AmmoCapacity[AmmoKind.Shell] / 3},
+        {AmmoKind.Energy, AppModel.WeaponData().AmmoCapacity[AmmoKind.Energy] / 3},
+        {AmmoKind.Bolt, AppModel.WeaponData().AmmoCapacity[AmmoKind.Bolt] / 3},
       };
       AppModel.Player().Backpack.Resources = new Dictionary<ResourceKind, int>
       {
