@@ -100,8 +100,7 @@ namespace GamePlay.Weapons
       reloading = true;
       _animator.SetTrigger(ReloadAnim);
       yield return new WaitForSeconds(reloadingTime);
-      if(IsPlayers)
-        State.bulletsLeft = Mathf.Min(MagazineSize, AppModel.Player().Backpack.Ammo[AmmoKind]);
+      State.bulletsLeft = IsPlayers ? Mathf.Min(MagazineSize, AppModel.Player().Backpack.Ammo[AmmoKind]) : MagazineSize;
       reloading = false;
     }
     public static Vector2 RadianToVector2(float radian)
