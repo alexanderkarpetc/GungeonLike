@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3568815835329447593}
   - component: {fileID: 893133719246390868}
   - component: {fileID: 3802778938886819087}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Globus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8164666751694419133}
   - component: {fileID: 6847953355521147332}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}

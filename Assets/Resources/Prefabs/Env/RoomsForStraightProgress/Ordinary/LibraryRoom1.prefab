@@ -6928,7 +6928,7 @@ MonoBehaviour:
   - {fileID: 4989570883606149724}
   - {fileID: 4989570883606149724}
   exits:
-  - {fileID: 0}
+  - {fileID: 1310757175012357769}
   enemies: []
   controlPoints: []
   kind: 0
@@ -9922,6 +9922,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1989807467611396839}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1310757175012357769 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 697365171886255214, guid: db1c72ad4ec61814b89b5d21368a02f7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989807467611396839}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78bccd209d4cf2040b905ba350243d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3249461123884262823
 PrefabInstance:
   m_ObjectHideFlags: 0

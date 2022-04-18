@@ -33,7 +33,6 @@ namespace GamePlay
       // Hit ENV
       if (_envTags.Contains(other.tag))
       {
-        var hit = Physics2D.Raycast(transform.position, transform.forward);
         var fx = Instantiate(_envHitFx, transform.position,
           Quaternion.LookRotation(Vector3.forward, Direction*new Vector2(-1,-1)));
         fx.transform.SetParent(AppModel.FxContainer().transform);

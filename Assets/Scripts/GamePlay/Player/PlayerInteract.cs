@@ -16,12 +16,12 @@ namespace GamePlay.Player
     {
       _interactObj.SetActive(Interactable != null);
       if (Input.GetKey(KeyCode.E))
-        Interactable?.Interact(_interactObj);
+        Interactable?.Interact(this);
     }
   }
 
   public abstract class Interactable
   {
-    public abstract void Interact(GameObject interactObj);
+    public abstract void Interact(PlayerInteract playerInteract);
   }
 }

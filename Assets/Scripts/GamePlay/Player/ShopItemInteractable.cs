@@ -11,7 +11,7 @@ namespace GamePlay.Player
     public Weapon Weapon;
     public GameObject View;
 
-    public override void Interact(GameObject interactObj)
+    public override void Interact(PlayerInteract playerInteract)
     {
       if (AppModel.Player().Backpack.GetCoins() < Price)
       {
@@ -21,6 +21,7 @@ namespace GamePlay.Player
       AppModel.Player().Backpack.WithdrawResource(ResourceKind.Coins, Price);
       AppModel.Player().Backpack.AddWeapon(Weapon);
       GameObject.Destroy(View);
+      playerInteract.Interactable = null;
     }
   }
 }

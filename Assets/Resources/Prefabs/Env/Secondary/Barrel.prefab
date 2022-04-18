@@ -49,9 +49,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 3
   IsDestroying: 0
+  Damage: 50
   BoomFx: {fileID: 8852081176880956201, guid: 78125da19f870bb4993ab05c2b512d36, type: 3}
   Radius: 2
-  Damage: 20
 --- !u!50 &8320255628129186651
 Rigidbody2D:
   serializedVersion: 4
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  uniqueID: 7744813114505532116
+  uniqueID: 8157758620307119873
   updateError: 1
   checkTime: 1
 --- !u!1 &8320255628992551309
@@ -151,6 +151,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
