@@ -1,6 +1,6 @@
 Id;Type;Damage;Price
-1;Ak47;1;15
-2;SpecialPistol;1;999
+1;Ak47;3;15
+2;SpecialPistol;4;999
 3;JetEngine;1;50
 4;Crossbow;10;30
 5;EnemyMagnum;1;999

@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace GamePlay.Level
 {
-  public class Turret : MonoBehaviour
+  public class Turret : Environment
   {
     [SerializeField] private GameObject _projectile;
     [SerializeField] private Transform _shootPoint;

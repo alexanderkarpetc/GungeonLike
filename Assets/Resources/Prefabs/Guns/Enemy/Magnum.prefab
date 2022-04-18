@@ -109,7 +109,7 @@ MonoBehaviour:
   _shootPoint: {fileID: 422198881}
   _shootRate: 1
   _shootDelay: 0.5
-  _bulletSpeed: 5
+  _bulletSpeed: 8
   _impulse: 0
   _animator: {fileID: 4700838025113585313}
   reloading: 0
@@ -161,6 +161,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

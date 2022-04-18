@@ -18,6 +18,9 @@ namespace GamePlay.Level
       }
     }
 
-    protected virtual void DoDestroy() { }
+    protected virtual void DoDestroy()
+    {
+      Destroy(gameObject);
+    }
   }
 }

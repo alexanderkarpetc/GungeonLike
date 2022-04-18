@@ -9,7 +9,7 @@ namespace GamePlay
     [SerializeField] private Color cameraColor = Color.black;
     [SerializeField] private GameObject HUD;
     [SerializeField] private float cameraSpeed;
-    [SerializeField] private PlayerController _player;
+    [SerializeField] private PlayerController _playerController;
     [SerializeField] private bool _initplayer;
 
     void Awake()
@@ -23,6 +23,7 @@ namespace GamePlay
       {
         AppModel.SetPlayer(GameObject.Find("Player"));
       }
+      _playerController.Init();
       var straightLevelController = GameObject.Find("StraightLevelController");
       if(straightLevelController != null)
         DoStraightLevelLogic(straightLevelController.GetComponent<StraightLevelController>());
@@ -46,9 +47,8 @@ namespace GamePlay
 
     private void InitPlayer()
     {
-      var playerGo = Instantiate(_player).gameObject;
+      var playerGo = Instantiate(_playerController).gameObject;
       AppModel.SetPlayer(playerGo);
-      _player.Init();
     }
     
     private void DoStraightLevelLogic(StraightLevelController straightLevelController)

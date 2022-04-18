@@ -46,7 +46,6 @@ MonoBehaviour:
   cameraColor: {r: 0, g: 0, b: 0, a: 1}
   HUD: {fileID: 4391151259705971787, guid: 4ba72a025eea1b745822e29868a63db3, type: 3}
   cameraSpeed: 7
-  _player: {fileID: 8463245576141808200, guid: 4c611336d3095fe47af6484ed94ffa3d, type: 3}
+  _playerController: {fileID: 8463245576141808200, guid: 4c611336d3095fe47af6484ed94ffa3d,
+    type: 3}
   _initplayer: 0
-  _astar: {fileID: 3590234156923928649, guid: 0f121b3a4b952a641ba00eb135ecad6a, type: 3}
-  _isGenerated: 1
