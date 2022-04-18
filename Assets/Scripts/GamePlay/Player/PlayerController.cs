@@ -17,7 +17,7 @@ namespace GamePlay.Player
     private bool _isInvincible;
     private PlayerInitializer _initializer = new PlayerInitializer();
     
-    private void Start()
+    public void Init()
     {
       _initializer.Init(_startingWeapon);
     }

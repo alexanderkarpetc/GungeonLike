@@ -48,6 +48,7 @@ namespace GamePlay
     {
       var playerGo = Instantiate(_player).gameObject;
       AppModel.SetPlayer(playerGo);
+      _player.Init();
     }
     
     private void DoStraightLevelLogic(StraightLevelController straightLevelController)

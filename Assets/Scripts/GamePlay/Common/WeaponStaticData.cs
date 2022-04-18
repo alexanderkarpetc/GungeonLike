@@ -9,9 +9,9 @@ namespace GamePlay.Common
     public Dictionary<WeaponType, WeaponInfo> WeaponInfos = new Dictionary<WeaponType, WeaponInfo>();
     public Dictionary<AmmoKind, int> AmmoCapacity = new Dictionary<AmmoKind, int>
     {
-      {AmmoKind.Pistol, 50},
-      {AmmoKind.Riffle, 100},
-      {AmmoKind.Shell, 20},
+      {AmmoKind.Pistol, 200},
+      {AmmoKind.Riffle, 300},
+      {AmmoKind.Shell, 30},
       {AmmoKind.Bolt, 30},
       {AmmoKind.Energy, 500},
     };
