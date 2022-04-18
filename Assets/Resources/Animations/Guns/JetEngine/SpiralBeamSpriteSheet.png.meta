@@ -122,6 +122,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -131,8 +133,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -153,9 +155,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -888,6 +893,40 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      spiral_beam_charge_010.png: 7434007067879354206
+      spiral_beam_charge_012.png: -502617939600377567
+      spiral_beam_middle_002.png: 8487954177328288226
+      spiral_beam_flare_003.png: -2096213277174296111
+      spiral_beam_flare_004.png: 6273146200191611222
+      spiral_beam_middle_005.png: 7108794796323286528
+      spiral_beam_charge_004.png: 3966803585700875682
+      spiral_beam_charge_002.png: -7760452414342605423
+      spiral_beam_flare_002.png: 8701995544870588716
+      spiral_beam_flare_001.png: -1490688125489784768
+      spiral_beam_charge_013.png: 8454163579878519293
+      spiral_beam_charge_009.png: -5775643082287482564
+      spiral_beam_impact_002.png: -5654088461044971259
+      spiral_beam_middle_003.png: 5699095502047954546
+      spiral_beam_charge_001.png: -2216793487519903691
+      spiral_beam_charge_011.png: -5805653154853850489
+      spiral_beam_impact_004.png: -5180770923635628514
+      spiral_beam_middle_004.png: -526089789029118596
+      spiral_beam_impact_001.png: 1113649521064427648
+      spiral_beam_charge_003.png: -7143428431724424340
+      spiral_beam_charge_014.png: -2106908547234748917
+      spiral_beam_impact_003.png: 2202105438714645749
+      spiral_beam_charge_005.png: 2425802594887908825
+      spiral_beam_charge_015.png: -6575607683636312938
+      spiral_beam_charge_007.png: -3090771927032394203
+      spiral_beam_flare_005.png: 2204976499980798993
+      spiral_beam_charge_017.png: 6005813048582699662
+      spiral_beam_charge_008.png: -7788423336324994142
+      spiral_beam_charge_006.png: 9080763733054527494
+      spiral_beam_flare_006.png: 1549540024287160852
+      spiral_beam_middle_001.png: -7533339887633723873
+      spiral_beam_middle_006.png: -7262173511259385209
+      spiral_beam_charge_016.png: -8823011617992870011
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,0 +1,5 @@
+version: 2
+tpsheetFileNames:
+textureFileNames:
+normalmapFileNames:
+enableDebugOutput: 0

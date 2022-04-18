@@ -773,6 +773,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -782,8 +784,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -804,9 +806,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -6096,6 +6101,257 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      castle_warp_wing_001: 9114391863068087958
+      flower_shard_002: -3045064589548989944
+      Pie_explode__004: 8540033632126761519
+      Knife_gold_001: 4827336508846088014
+      Red_book_001: -3567632868057918511
+      sconce_side_001: -5826812774500526695
+      sconce_side_burst_001: 2356646909963176542
+      sconce_side_flame_003: -275954206700751404
+      Salad_shard_002: 727707516572531608
+      Wine_glass_001: -8029460456872486699
+      Pig_head_002: 2764251187514714038
+      Apple_001: -5790679418346039108
+      burner_001: 4204524012926774829
+      green_leaf_waft_004: -5163755466973247149
+      Wafting_paper_008: -1977875429437275191
+      feather_001: -3592015186259049795
+      Wafting_paper_011: 4839588253771424678
+      Cheese_wheel_004: -5061788845717839942
+      Knife_silver_001: 6389827129783958094
+      Wafting_paper_005: -8628041140289206384
+      Pig_head_003: 668340727368084850
+      Mini_table_001: -2635719689676460880
+      Candelabra_candle_002: 7111964845083134634
+      Bread_large_004: -2226889721955033885
+      Globe_shard_004: 1507743469942041413
+      sconce_side_004: -8033014473764950041
+      Wine_flute_003: 1571917045017044511
+      Chicken_explode_004: -8210871436044153251
+      Chicken_Leg_001: -2716521142253579106
+      Wine_stuffs_shard_001: -4258869723081060303
+      ink_feather_001: -7721567452696824890
+      Wafting_paper_006: 4475952650421215815
+      Salad_001: -6432394252586549403
+      Serving_cover_001: 477884998534847978
+      Fish_shard_large_002: -7883438199207757809
+      Plate_or_Bowl_002: -6600700429548006746
+      candle_wall_horizontal_003: 4220287473249023464
+      Wafting_paper_001: -8510156063227536657
+      Wafting_paper_003: 8273028898730425487
+      Green_book_flip_open_002: 7240707518294261262
+      Bread_large_003: 8333467288458778937
+      Bread_small_003: 6549840258830586280
+      Red_book_flip_open_006: -9016190291130951412
+      inkwell_001: -2685243470012177864
+      Bread_shard_large_001: -7498822140564098387
+      Urn_005: 5062036764673299071
+      Decanter_001: -2104250868136852974
+      Chicken_explode_003: 8649174548360045727
+      Candelabra_shard_001: -5958891988443291819
+      Blue_book_flip_open_006: 7785183865115628691
+      Urn_shard_003: -8585411654312339350
+      Candelabra_idle_001: -8806659687490243868
+      flower_001: -5619985170879837516
+      Globe_shard_002: 1385595391105580016
+      sconce_side_flame_001: 2023718066817652090
+      Decanter_003: -4599817441945079177
+      Urn_003: 9163479773845863371
+      sconce_wall_burst_002: -8809173593131298637
+      Salad_shard_001: 165020929940667227
+      Plate_or_Bowl_001: 5418178901213510455
+      sconce_side_002: -2265547906678308784
+      Fish_shard_small_001: 2537267066783956136
+      Blue_book_face_down_001: -2503959438611525617
+      Green_book_003: -3550487695273014404
+      Serving_plate_large_001: -8943174284615816522
+      Bread_large_002: -2868222440615430131
+      Cheese_wheel_001: -4853595479442377729
+      Urn_shard_small_001: -5521513691099259154
+      Globe_002: 5624613739123730955
+      Fish_003: -9093587015167188970
+      sconce_wall_flame_004: 442262661727360678
+      flower_stem_001: -3864212556240071039
+      Plate_shard_001: -2554686030472579520
+      telescope_burst_001: -8172959984884168455
+      Green_book_004: 9049250103013562212
+      Pie_shard_003: 7917141422380787884
+      Globe_001: -891984103274049403
+      Green_book_flip_open_001: 7529124085311179754
+      Wine_bottle_003: 3472718063028579528
+      Book_Stack_tower_002: 4688589245566538843
+      sconce_wall_burst_001: 4189361800476757976
+      sconce_wall_flame_003: -1020366791386010620
+      Blue_book_003: -2923239998000341371
+      Bread_large_001: -7167660710815469225
+      Fish_004: 3476034826980044211
+      Pie_shard_001: 4363048739025481414
+      Plate_or_Bowl_003: -4717634623063374057
+      Fish_vert_002: -3113051824439621524
+      Cheese_wheel_003: 5553523405443080547
+      castle_wall_bit_05: 5648999999373381653
+      Pie_explode__002: 3169928384815707313
+      Wafting_paper_009: 430630860909517726
+      Serving_plate_001: 3484169124421712956
+      Wine_glass_003: -1562571107080937192
+      sconce_side_003: 3079154504503082706
+      green_leaf_waft_005: -3487440874119136341
+      Wafting_paper_002: 9171691079670909208
+      telescope_001: -2905168363032634555
+      Book_Stack_tower_003: 2112804213382764597
+      castle_wall_bit_01: 2462671814820814974
+      Red_book_flip_open_001: -7708847835196451639
+      Pie_explode__007: -4437895198416647924
+      castle_wall_bit_03: 2260547048448751652
+      candle_wall_horizontal_001: -352333533022658023
+      Red_book_flip_open_003: -6570884414449729188
+      Bread_shard_001: 3720679449570722716
+      flower_stem_005: 2912774104339167740
+      Fish_shard_large_001: -2285012129328578583
+      Fish_001: 6704472118661594890
+      Pie_explode__003: 6358002306977441027
+      Globe_shard_001: 9026317824522505713
+      Fish_vert_001: 8402792305798728230
+      Plate_shard_002: -8010480947324182424
+      green_leaf_waft_003: -2088796040108056983
+      candle_wall_horizontal_002: 2266375162870203143
+      Red_book_face_down_001: 7590445232016564352
+      Urn_shard_small_003: 8041468403386691059
+      green_bush_001: -5778228587093613777
+      Green_book_flip_open_004: -6042550950708377923
+      woodblock_warp_wing_001: -5248268953942486903
+      green_leaf_waft_001: 6662636415201664856
+      Urn_shard_001: 7139855982845232073
+      green_leaf_waft_002: 135324820033131161
+      Wafting_paper_004: 6821473609892011209
+      Red_book_004: 4631309088502124979
+      candle_wall_vertical_001: 5533091767741003204
+      green_leaf_waft_007: 454107634987006646
+      Fish_shard_small_002: 4376067496897248901
+      Cheese_wheel_shard_003: -8058078194121543042
+      flower_stem_002: 6007393166768196424
+      Apple_003: -1070413464414937210
+      Pie_explode__001: -3018736409961943768
+      Blue_book: 5654427973615692094
+      Red_book_flip_open_005: 8424605001498748032
+      Green_book_flip_open_006: -1435828526679083144
+      Wine_glass_002: -320592607830483943
+      sconce_wall_001: -1354068454100968228
+      green_leaf_waft_006: -6087151094699618085
+      Plate_shard_003: 2275936343944299508
+      Wine_flute_002: -1286309882943480420
+      Urn_shard_002: 6549612557972353695
+      Spoon_gold_001: -1732841072310736652
+      Book_Stack_tower_001: 9064788175487522846
+      green_bush_flowers_001: -1518594744691769080
+      telescope_burst_002: -2416262637730582388
+      Blue_book_004: 8668838652957272630
+      Red_book_flip_open_002: -446206974566526849
+      flask_shard_001: -2766489429945653094
+      flower_stem_004: 5324291799925125908
+      Blue_book_flip_open_003: 1437737539488606021
+      Wine_flute_001: 6926196750635896110
+      Blue_book_flip_open_004: 1604009867033144116
+      Chicken_shard_002: -8555598013962501542
+      castle_wall_bit_02: 3886789915104026810
+      Chicken_explode_001: -2402756417511206131
+      candle_wall_vertical_003: -4891731744596436150
+      Blue_book_002: 6253038597672441620
+      Cheese_slice_001: -2571695384150644970
+      Green_book_flip_open_005: 3195581447033697393
+      Fish_002: -5608990943908463928
+      Pie_shard_002: -2668583667420521337
+      Pig_head_004: -5936766278707010337
+      Cheese_wheel_002: 8971848607606909369
+      flower_006: -7314425884691396702
+      Green_book_face_down_001: -4360424304429690760
+      telescope_shard_001: -5541665283350544936
+      Urn_001: 9016793700261909070
+      Cheese_wheel_shard_001: 2801545612329389499
+      Pie_shard_004: 901812024407536885
+      Pie_explode__006: 1496800763058492249
+      Wine_bottle_002: -1595857266134391575
+      flower_shard_003: -5339377568693755603
+      Red_book_002: -8687712640588082789
+      sconce_wall_004: -471283348809302150
+      Bread_small_004: 2086519815595073192
+      burner_bottles_burst_001: -2698339525233134055
+      Red_book_flip_open_004: 4206779320055996504
+      flower_002: -6687577435813420319
+      Wine_bottle_004: 2024789565930975614
+      flower_005: -1721946923419943547
+      flower_stem_006: 5323217364685681903
+      Candelabra_knocked_over_001: 1971011359087949354
+      burner_bottles_001: 7138841997623937615
+      flower_stem_003: 4471687585955488230
+      flower_003: -8517945213098129842
+      Green_book_flip_open_003: 9116919862794892906
+      Wine_bottle_shard_002: -82479797711907521
+      Red_book_003: 5549510642402154102
+      flower_shard_001: 4043304866723413117
+      Book_Stack_pile_002: 6362114631996076259
+      telescope_shard_003: -2628351894580582348
+      Spoon_silver_001: -5616687277966329936
+      Blue_book_001: 4536769287177771230
+      Wine_bottle_001: 2159205653454471036
+      Urn_002: 7152157134720612907
+      Candelabra_shard_002: 7801382575047183456
+      Decanter_002: 4011652285897826327
+      Wine_stuffs_shard_003: -7587559147414017296
+      Wafting_Paper_shard_001: 1963305956194575771
+      Apple_core_001: -2480755064483239021
+      Urn_004: 7901062946525502042
+      flask_shard_002: 1471377808702557225
+      sconce_side_burst_002: -3015821136792681833
+      Fish_vert_003: 4423031867576339576
+      flask_burst_001: -4304171119857667230
+      Candelabra_candle_003: 2548093794071058367
+      Candelabra_candle_001: 4546889901426601798
+      flask_001: -6758918302724679527
+      Wine_bottle_shard_001: -6694291621431822719
+      Chicken_shard_001: -605773943734466592
+      Green_book_001: -9000500018698105817
+      Bread_small_001: -3067220343338222786
+      Book_Stack_pile_001: -8425034181598483819
+      Candelabra_candle_004: -6231974195718140851
+      sconce_wall_003: 7218691850834406321
+      sconce_side_flame_004: -8630267046741710494
+      Bread_small_002: -4375979760875274128
+      Cheese_slice_002: -2504587275126789929
+      Globe_shard_003: 7215927304337182337
+      castle_wall_bit_04: -4556618917390144847
+      Fish_vert_004: -8849990428717814520
+      Wine_stuffs_shard_002: -3655046723052329907
+      Urn_006: 8760021219904001754
+      sconce_wall_flame_002: 7293451494306440002
+      sconce_wall_flame_001: 5186078145632284841
+      flower_004: 9086018170066453859
+      Wafting_paper_007: 4662134139586916262
+      telescope_shard_002: 4498815739761651805
+      Chicken_explode_002: -7856229913954149245
+      Pig_head_001: -472245560187336838
+      Serving_cover_large_001: 2091123750451994082
+      Apple_002: 5209696956186705565
+      Book_Stack_tower_004: -5790449296397663434
+      Green_book_002: -5711820870123193900
+      Cheese_wheel_shard_002: -8248517233557945195
+      Blue_book_flip_open_005: 7463362501128978728
+      Pie_explode__005: -5096936357162777476
+      sconce_side_flame_002: 2531025247013738455
+      Wafting_paper_010: -7668966262328952541
+      Blue_book_flip_open_002: -8105592864727586248
+      Blue_book_flip_open_001: -627601315882761710
+      green_bush_stem_001: -1199608496790123429
+      Table_cloth_001: 6890208043529091317
+      sconce_wall_002: -5858469735695416668
+      Wafting_Paper_shard_002: -6350254655231187714
+      candle_wall_vertical_002: 8947651242549758884
+      Bread_shard_002: 5449966077896780305
+      Wine_stain_001: 2970819628189281797
+      Urn_shard_004: 3409449626246069322
+      Urn_shard_small_002: 7298288776590392389
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

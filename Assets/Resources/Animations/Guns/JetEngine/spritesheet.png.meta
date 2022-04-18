@@ -77,6 +77,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -86,8 +88,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -108,9 +110,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -528,6 +533,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      jet_engine_charge_006.png: -7137431560691609652
+      jet_engine_fire_003.png: -4852090198810378827
+      jet_engine_charge_003.png: -2128054833235158996
+      jet_engine_charge_004.png: -1358067395474745961
+      jet_engine_idle_004.png: -3261829793595748154
+      jet_engine_charge_001.png: 5462049215342589187
+      jet_engine_idle_001.png: -9221500489301797350
+      jet_engine_idle_002.png: 8929580844539002727
+      jet_engine_fire_002.png: 8062397728364564839
+      jet_engine_fire_005.png: 8489265116657665532
+      jet_engine_fire_004.png: -8869206318401889786
+      jet_engine_empty_001.png: -4258543687609397756
+      jet_engine_charge_002.png: 8379017943709110478
+      jet_engine_fire_001.png: -5836918995278246823
+      jet_engine_charge_008.png: -8934845457465584473
+      jet_engine_charge_007.png: 6368807966627557621
+      jet_engine_idle_003.png: 2843128045793234960
+      jet_engine_charge_005.png: 7620930451872061845
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

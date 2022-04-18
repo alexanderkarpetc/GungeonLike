@@ -146,6 +146,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -155,8 +157,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -177,9 +179,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -1080,6 +1085,48 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      cubulon_front_right_001.png: 2144012421847661380
+      cubulon_die_002.png: 1310584193703685292
+      cubulon_attack_left_008.png: 1818809605143301506
+      cubulon_back_left_003.png: 6807889389990801406
+      cubulon_front_right_003.png: -5932483571213078918
+      cubulon_attack_right_005.png: -9031400718544874822
+      cubulon_back_left_001.png: -7069498696165932915
+      cubulon_attack_left_004.png: 8917845229664054429
+      cubulon_hit_left_001.png: 4798695638940568796
+      cubulon_attack_right_008.png: -5336712783367627711
+      cubulon_attack_right_004.png: 2609901213694248517
+      cubulon_die_001.png: -4914849841644523777
+      cubulon_front_left_003.png: -5889473824054488160
+      cubulon_attack_right_006.png: -1612084763587599259
+      cubulon_attack_right_003.png: -2903019656683994133
+      cubulon_attack_right_007.png: 6169886535010379745
+      cubulon_attack_left_002.png: -1033210764238142886
+      cubulon_front_left_002.png: 5845159962989262120
+      cubulon_attack_left_007.png: 7074060416644258001
+      cubulon_attack_right_002.png: -5223353100337695179
+      cubulon_die_003.png: -153533685979525777
+      cubulon_attack_left_006.png: -2604087737509456520
+      cubulon_front_left_001.png: 3656290361285281427
+      cubulon_attack_left_005.png: 3702018600225516468
+      cubulon_attack_left_001.png: 8787526106982906768
+      cubulon_hit_right_001.png: -7072259406439187685
+      cubulon_hit_right_002.png: 8239005348368344617
+      cubulon_back_left_002.png: -3579809130410199932
+      cubulon_attack_right_009.png: 7604654586812739078
+      cubulon_die_006.png: -4401028324047025890
+      cubulon_hit_left_003.png: 8220215871562245369
+      cubulon_front_right_002.png: -1196745351377742934
+      cubulon_hit_left_004.png: 8780989782553388192
+      cubulon_hit_right_003.png: 7960375058986654533
+      cubulon_hit_right_004.png: -3983197936741731449
+      cubulon_die_004.png: 1084763791402468577
+      cubulon_attack_left_003.png: 6756067753026574242
+      cubulon_attack_right_001.png: 495189799795428951
+      cubulon_die_005.png: -6433947313569177719
+      cubulon_hit_left_002.png: -5319233925601576095
+      cubulon_attack_left_009.png: -4928818841158555815
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

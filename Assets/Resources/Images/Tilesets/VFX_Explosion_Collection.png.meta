@@ -776,6 +776,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -785,8 +787,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -807,9 +809,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -6120,6 +6125,258 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      poison_explosion_004: -3642446678255032058
+      box_sparks_002: 4034459637080755548
+      poison_explosion_007: 2835938756616684471
+      frost_explosion_small_001: 6245197116858376916
+      energy_explosion_small_001: 8234676209002201368
+      keybullet_explosion_ver1_001: -387024859410685138
+      torch_sparks_001: -4420499793411988860
+      explosion_ring_cloud_025: 1196445523370099155
+      explosion_big_new_013: -1684875482814329025
+      box_sparks_005: -6264242240285318948
+      largest_explosion_ring_014: 8797241796289050894
+      explosion_ring_cloud_018: -4444311259939865022
+      explosion_ring_cloud_015: -8553311067653077395
+      frost_explosion_small_007: -1552664179400801945
+      explosion_newtiny_008: -8058690954913408728
+      explosion_newtiny_010: -5856369459943147214
+      explosion_nuke_006: 987315562072667979
+      frost_explosion_small_011: -6698259274617794170
+      explosion_ring_cloud_017: -8351230585555363113
+      robotech_impact_cloud_014: 3464794899812003659
+      explosion_big_new_009: -8862462222222797538
+      explosion_nuke_009: 8965060429355356246
+      robotech_impact_cloud_015: -8334346530213482872
+      box_sparks_006: 7484716075102069589
+      explosion_small_ver1_004: -5978936573168203791
+      explosion_tiny_005: 51335428168966109
+      explosion_small_ver1_011: 8518499326726228179
+      chandelier_dust_explosion_007: 1810305735762425225
+      chandelier_dust_explosion_006: -4354920506150567847
+      energy_explosion_small_003: -4875144833228973824
+      explosion_ring_cloud_026: -7663090196984365170
+      explosion_ring_cloud_023: 8797840444990061153
+      explosion_newtiny_007: 5623897888144487227
+      explosion_big_new_012: -4268067797829668389
+      explosion_ring_cloud_013: -8253697537987219145
+      fireworks_005: 8521213626300192776
+      robotech_impact_cloud_011: -8440712123140463679
+      chandelier_dust_explosion_002: -1651400462302641080
+      explosion_nuke_003: -7376764317166711085
+      explosion_small_ver1_007: 5140577351966404749
+      chandelier_dust_explosion_005: -466521466401849682
+      explosion_nuke_016: -4744241911403438272
+      explosion_ring_cloud_012: -8115783241969073705
+      frost_explosion_small_010: 5641777727455685961
+      chest_sparks_003: -3469642411328735745
+      largest_explosion_ring_005: -1983600895005387871
+      chest_sparks_005: 9041973977445549562
+      torch_sparks_002: 5872283547916100969
+      explosion_big_new_010: 490755935679860285
+      explosion_ring_cloud_019: 7923804015417773900
+      explosion_ring_cloud_004: -7903070847464828344
+      explosion_small_ver1_013: 4932729907621339337
+      explosion_newtiny_001: 4773502515075295542
+      explosion_small_ver1_016: -4019965353151966338
+      frost_explosion_small_006: -3017721739187270757
+      explosion_nuke_015: 796769556691617325
+      explosion_nuke_010: 344288068663586530
+      frost_explosion_small_012: -6012125058814148410
+      explosion_tiny_009: -292343131900507390
+      largest_explosion_ring_013: -1631877069003346169
+      largest_explosion_ring_016: -5458934113259072865
+      explosion_nuke_007: -7023251096115372582
+      robotech_impact_cloud_013: 1189583554091983660
+      keybullet_explosion_002: 2918493563286814491
+      explosion_big_new_003: -2392395040494562666
+      explosion_ring_cloud_011: 4735609753943913605
+      chandelier_dust_explosion_004: 8785145681854750189
+      explosion_newtiny_003: -9032411326306691504
+      energy_explosion_pink_010: 7833981354806511261
+      keybullet_explosion_ver1_002: 27257806332877170
+      explosion_ring_cloud_002: -5518853141259518219
+      explosion_tiny_012: -5183978447767144071
+      frost_explosion_small_015: 4488049008699745251
+      energy_explosion_small_009: 7350147349727942827
+      explosion_ring_cloud_016: 7020779098410490361
+      box_sparks_001: -4085644175761683159
+      largest_explosion_ring_015: -9190368591637682704
+      energy_explosion_pink_007: 4397131200532681957
+      explosion_big_new_005: 7549206789032600297
+      electric_explosion_003: -5973499780308463305
+      robotech_impact_cloud_009: 3051497811379441185
+      energy_explosion_pink_003: 769943533286317374
+      box_sparks_007: 8875607248876544564
+      frost_explosion_small_009: 6360526041397302711
+      explosion_tiny_007: 8103571926687566208
+      robotech_impact_cloud_004: -3336905298623269020
+      energy_explosion_pink_011: -5409588342107055343
+      explosion_big_new_014: 8942744199516748055
+      explosion_ring_cloud_020: -1105498701290866564
+      fireworks_006: -6033773114856360842
+      poison_explosion_005: 8168405991240151106
+      explosion_ring_cloud_005: -7907440214010729640
+      explosion_ring_cloud_009: -5740551625542218401
+      energy_explosion_pink_009: 4835289391054229981
+      poison_explosion_002: -2716328694586697546
+      explosion_big_new_007: -1257778387699487918
+      keybullet_explosion_005: -3519185055032621767
+      fireworks_003: -8956129588247561534
+      keybullet_explosion_ver1_008: -2562779919939308675
+      explosion_tiny_008: -9147068128290621769
+      frost_explosion_small_018: -1721533874791871603
+      explosion_newtiny_004: 3743811873780263467
+      explosion_small_ver1_014: 6435259901948540326
+      electric_explosion_002: -6375574824241136315
+      robotech_missile_explosion_005: 1141538275199414032
+      largest_explosion_ring_017: 1941364301987939313
+      energy_explosion_pink_004: 5632376952936837141
+      frost_explosion_small_017: 6876793873567780114
+      keybullet_explosion_004: -7546521093157985518
+      explosion_newtiny_006: -322129516456310598
+      robotech_impact_cloud_001: 6234635511528549168
+      fireworks_007: -2558130799428573668
+      explosion_nuke_011: 2856802597679336362
+      keybullet_explosion_009: -8908588786321290870
+      explosion_tiny_010: -8646633591001912371
+      electric_explosion_006: -2862136494396381326
+      explosion_tiny_004: 6479873896509481898
+      explosion_small_ver1_017: -7882021586725061275
+      explosion_ring_cloud_006: -606400433004155441
+      explosion_small_ver1_005: 5545544904718125628
+      poison_explosion_003: -7707638730996788727
+      robotech_missile_explosion_006: 3196537023354734515
+      largest_explosion_ring_002: 8512620411863418172
+      explosion_ring_cloud_010: -4061271420620673657
+      electric_explosion_007: -5700263321742058510
+      keybullet_explosion_007: 1469903039286059127
+      keybullet_explosion_ver1_-001: -9005322248036082708
+      frost_explosion_small_013: 3645218361946303911
+      poison_explosion_006: -8452353428188992829
+      robotech_missile_explosion_002: 2737717211405854536
+      energy_explosion_small_008: 7632075604463476480
+      chest_sparks_004: 5575584649570282643
+      explosion_big_new_001: 3192293440899511278
+      explosion_big_new_006: 3958478872507185534
+      chandelier_dust_explosion_003: -3204053569080386086
+      keybullet_explosion_001: -4086601084870989622
+      frost_explosion_small_004: -4331988747818674283
+      box_sparks_004: 7150282603339761377
+      explosion_nuke_001: 2108918534416549720
+      keybullet_explosion_ver1_005: 2372110325258875023
+      frost_explosion_small_014: 3173807662972103276
+      largest_explosion_ring_018: -4334125844678909025
+      explosion_small_ver1_009: -6448981676621747602
+      keybullet_explosion_003: 585498338103267357
+      largest_explosion_ring_009: -9022759457928707536
+      explosion_small_ver1_015: -3645634894126864479
+      explosion_nuke_008: -4431102891343085143
+      torch_sparks_004: 8279655025493164202
+      explosion_ring_cloud_001: -6723977274612644792
+      explosion_ring_cloud_027: -5822474225294400038
+      largest_explosion_ring_006: -8235979859270845342
+      energy_explosion_pink_001: -3226434691966777766
+      explosion_ring_cloud_021: -6028175783319207722
+      keybullet_explosion_ver1_-002: 9098172733715145492
+      robotech_missile_explosion_003: -1581466208076639548
+      explosion_tiny_006: 9080272922215569557
+      torch_sparks_005: -8349571096737965857
+      torch_sparks_007: -7968948643036456522
+      explosion_ring_cloud_007: 4305891270435576636
+      keybullet_explosion_ver1_004: 4569057985400763963
+      chest_sparks_002: 4513682641924669212
+      electric_explosion_005: 7743270196275464654
+      explosion_big_new_004: -7207681409853201466
+      electric_explosion_009: 6525002125146514736
+      frost_explosion_small_008: -9116022587918667131
+      explosion_tiny_003: 8457379140488745885
+      explosion_nuke_002: -8578915718654788972
+      keybullet_explosion_ver1_010: -8378394101758980485
+      chest_sparks_001: -1863229110218932901
+      robotech_impact_cloud_006: 7873240274909366342
+      largest_explosion_ring_012: 1395860892419770280
+      fireworks_002: -3792063169930640478
+      keybullet_explosion_006: -1338597881108013597
+      explosion_nuke_014: 965365735455934103
+      frost_explosion_small_005: -2377235276414174862
+      keybullet_explosion_008: -331824072304543008
+      explosion_big_new_015: -8660498635976399779
+      largest_explosion_ring_004: 7050616705665826759
+      explosion_big_new_016: -8933361678449180350
+      robotech_impact_cloud_008: -5293895984443110404
+      energy_explosion_small_007: -4462719752720276938
+      explosion_big_new_011: -859575286184869127
+      keybullet_explosion_ver1_009: -5203451890363492524
+      electric_explosion_008: -5080548221636325737
+      explosion_small_ver1_012: -4730831438224608045
+      explosion_ring_cloud_024: -86364041858598621
+      largest_explosion_ring_001: 4231638262029607024
+      robotech_missile_explosion_001: -4595921101378504653
+      energy_explosion_pink_006: -7063290620811888342
+      box_sparks_003: -501214531158765159
+      robotech_impact_cloud_007: 325897719196178135
+      explosion_small_ver1_008: 7994517171437672025
+      robotech_impact_cloud_003: -3843421503733505501
+      explosion_big_new_008: 1936040687584013721
+      robotech_missile_explosion_004: -431655690218702867
+      explosion_ring_cloud_028: 1715410017347556768
+      explosion_nuke_004: -5525393632777100163
+      energy_explosion_pink_005: -7108108544172353433
+      robotech_impact_cloud_010: 3519356584454189751
+      electric_explosion_001: 6204660489448415304
+      keybullet_explosion_ver1_003: 7377810030735024917
+      explosion_tiny_002: 5678080044663192892
+      explosion_ring_cloud_008: 2614159145470709374
+      frost_explosion_small_016: -3531939798254212340
+      torch_sparks_006: -6029185726809462266
+      electric_explosion_010: -5341829135899545626
+      explosion_small_ver1_003: -3303072861029050845
+      explosion_ring_cloud_003: -574855378294471433
+      chandelier_dust_explosion_001: 204628431345327236
+      explosion_nuke_013: 5861916728386627896
+      largest_explosion_ring_011: 1064764890397353762
+      keybullet_explosion_010: -5274475238290708967
+      largest_explosion_ring_007: -5314253955404173332
+      fireworks_001: 3283503068452612295
+      fireworks_004: -2443122518177991570
+      explosion_newtiny_009: 8873360740468422718
+      robotech_impact_cloud_012: 1875914099804321148
+      explosion_ring_cloud_014: 295392820193110081
+      energy_explosion_pink_002: 1653950685643407838
+      explosion_small_ver1_001: -2819034444666179948
+      explosion_big_new_002: 4916903735076445283
+      keybullet_explosion_ver1_006: -7916365811196320629
+      explosion_nuke_005: 910071816442787524
+      largest_explosion_ring_003: 4659460382237897561
+      largest_explosion_ring_008: -2225835173149713182
+      explosion_tiny_011: 4262392353194589204
+      explosion_tiny_001: -642774018646192170
+      package_projectile_005: 9065493883255271312
+      frost_explosion_small_003: -6169656464803820249
+      explosion_nuke_012: -1840227160410168867
+      energy_explosion_pink_008: 7178553950011435620
+      robotech_impact_cloud_002: 8020745377983068058
+      torch_sparks_003: -8063737746068778601
+      energy_explosion_small_002: -2932310712138501857
+      explosion_newtiny_002: -4377183131664554668
+      chandelier_dust_explosion_008: -5624455038688950206
+      frost_explosion_small_002: 2347108416578745444
+      robotech_impact_cloud_005: 7202423935938154127
+      explosion_small_ver1_010: -2465147698031292903
+      explosion_tiny_013: -7399626382091200802
+      poison_explosion_001: -7350092583531024785
+      energy_explosion_small_005: -5167239517708891923
+      energy_explosion_small_004: 291114362735522173
+      keybullet_explosion_ver1_007: -3832051765740341059
+      energy_explosion_small_006: -6083232811134093345
+      explosion_small_ver1_006: -149297060342398701
+      explosion_ring_cloud_022: 4637997361237074492
+      electric_explosion_004: 8802849784363819950
+      largest_explosion_ring_010: 2327136867252965645
+      explosion_small_ver1_002: -4275298094140332540
+      explosion_newtiny_005: 8810621296855888018
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

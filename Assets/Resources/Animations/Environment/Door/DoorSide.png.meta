@@ -101,6 +101,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,8 +112,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -132,9 +134,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -720,6 +725,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      steel_bullet_plate_side_up_045: -8845157187894672673
+      steel_bullet_plate_side_up_065: 1109597981297011533
+      steel_bullet_plate_side_up_035: 3742993835546915610
+      steel_bullet_plate_side_up_005: -4378698714501752435
+      steel_bullet_plate_side_up_040: 2682532505278367139
+      steel_bullet_plate_side_up_002: 1579486589723086670
+      steel_bullet_plate_side_up_004: 2282517142209562295
+      steel_bullet_plate_side_down_003: -8247695224346623034
+      steel_bullet_plate_side_up_025: -6823299052063942911
+      steel_bullet_plate_side_up_055: 4216479456533526789
+      steel_bullet_plate_side_up_020: 7801672191210343723
+      steel_bullet_plate_side_up_070: 7767141733880675961
+      steel_bullet_plate_side_up_006: 288247479371135934
+      steel_bullet_plate_side_down_002: -2720991066972708969
+      steel_bullet_plate_side_up_003: -5116307427911126491
+      steel_bullet_plate_side_up_008: 6673387905179498723
+      steel_bullet_plate_side_up_015: 1368548613084978888
+      steel_bullet_plate_side_up_009: 7511858717457913312
+      steel_bullet_plate_side_up_007: -3409676162444506465
+      steel_bullet_plate_side_up_001: -6124096932314457349
+      steel_bullet_plate_side_up_030: -5536376945696046292
+      steel_bullet_plate_side_up_050: -2078647337232310996
+      steel_bullet_plate_side_down_001: -2320070172372385928
+      steel_bullet_plate_side_up_060: -6009753308228802892
+      steel_bullet_plate_side_down_004: -3344268396793559399
+      steel_bullet_plate_side_down_005: 6679449399352700421
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

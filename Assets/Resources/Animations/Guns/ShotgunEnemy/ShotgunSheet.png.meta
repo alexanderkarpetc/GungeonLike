@@ -59,6 +59,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -68,8 +70,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -90,9 +92,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -384,6 +389,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      shotgun_shoot_3: -8851677187594826007
+      shotgun_shoot_1: -2654463980296530609
+      shotgun_shoot_enemy_2: 4357015482220511883
+      shotgun_shoot_enemy_1: 1805358161830442136
+      shotgun_shoot_2: -3509134062667884262
+      shotgun_shoot_enemy_0: 6943097915660606747
+      shotgun_shoot_5: 4109481576314260350
+      shotgun_shoot_0: 1330193471858455252
+      shotgun_recoil_1: 7557323836934565910
+      shotgun_recoil_0: -1326079529113178482
+      shotgun_shoot_4: -3945743722112480083
+      Shotgun_idle: -5318915980995067207
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

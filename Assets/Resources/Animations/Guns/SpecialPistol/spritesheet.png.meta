@@ -68,6 +68,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -77,8 +79,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -99,9 +101,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -456,6 +461,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      38_special_reload_002.png: -2796373241491453196
+      38_special_fire_002.png: 5640122116127538484
+      38_special_reload_003.png: 1400064804893722803
+      38_special_idle_001.png: 1802365850826939836
+      38_special2_fire_004.png: -8492073591123936496
+      38_special_fire_004.png: 4545842418648199944
+      38_specia2_idle_001.png: -8940329782202404704
+      38_special2_fire_001.png: 8440151023288586821
+      38_special_fire_003.png: 4098035673477888879
+      38_special2_fire_002.png: 5553981911717611954
+      38_special2_reload_001.png: 5553231702744139312
+      38_special_reload_001.png: -4053272746773753808
+      38_special2_reload_002.png: -7726698560441495285
+      38_special_fire_001.png: -5316011632744574124
+      38_special2_fire_003.png: -2539972296181773152
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

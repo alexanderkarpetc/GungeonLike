@@ -71,6 +71,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -80,8 +82,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -102,9 +104,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -480,6 +485,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ammobox_pickup_006.png: -4339431436302210668
+      ammobox_pickup_004.png: 3363223494095675557
+      ammobox_pickup_015.png: 3198752884066649786
+      ammobox_pickup_016.png: -4553796555521476127
+      ammobox_pickup_010.png: 8334059581587155778
+      ammobox_pickup_001.png: -3145194127794050436
+      ammobox_pickup_002.png: -4173314448058344187
+      ammobox_pickup_003.png: 532225263583916032
+      ammobox_pickup_013.png: 8690192878802634221
+      ammobox_pickup_007.png: 9217812988553335114
+      ammobox_pickup_014.png: -2040394217758187511
+      ammobox_pickup_011.png: -6725391431225356144
+      ammobox_pickup_012.png: -245191210754024356
+      ammobox_pickup_005.png: -3463548636683602149
+      ammobox_pickup_008.png: 1980931702039735008
+      ammobox_pickup_009.png: -1263491716736505583
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
