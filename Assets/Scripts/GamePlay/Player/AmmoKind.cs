@@ -6,6 +6,7 @@
     Riffle = 2,
     Shell = 3,
     Energy = 4,
-    Bolt = 5
+    Bolt = 5,
+    Bomb = 6,
   }
 }

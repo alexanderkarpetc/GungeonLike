@@ -11,9 +11,9 @@ namespace GamePlay
   public class Projectile : MonoBehaviour
   {
     public GameObject Owner;
-    private static List<string> _envTags = new List<string> {"Obstacle", "Environment"};
+    protected static List<string> _envTags = new List<string> {"Obstacle", "Environment"};
     [SerializeField] private GameObject _enemyHitFx;
-    [SerializeField] private GameObject _envHitFx;
+    [SerializeField] protected GameObject _envHitFx;
     [HideInInspector] public bool IsPlayerBullet;
     [HideInInspector] public float Speed;
     [HideInInspector] public float Impulse;
@@ -25,7 +25,7 @@ namespace GamePlay
       transform.Translate(Time.deltaTime * Speed * Direction);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    protected virtual void OnTriggerEnter2D(Collider2D other)
     {
       // Hit self
       if(other.gameObject == Owner)
@@ -57,12 +57,12 @@ namespace GamePlay
       }
     }
 
-    private void HitPlayer(Collider2D other)
+    protected void HitPlayer(Collider2D other)
     {
       DamageManager.HitPlayer(other.GetComponent<PlayerController>());
     }
 
-    private void HitEnemy(Collider2D enemy)
+    protected void HitEnemy(Collider2D enemy)
     {
       var enemyController = enemy.GetComponent<EnemyController>();
       DamageManager.Hit(enemyController, Weapon, transform.rotation * Direction.normalized * Impulse);

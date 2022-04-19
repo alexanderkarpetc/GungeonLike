@@ -8,6 +8,7 @@
     JetEngine = 3,
     Crossbow = 4,
     PulseRifle = 5,
+    RocketLauncher = 6,
 
     #endregion
 

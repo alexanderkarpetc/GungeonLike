@@ -17,6 +17,7 @@ namespace GamePlay.Player
         {AmmoKind.Shell, AppModel.WeaponData().AmmoCapacity[AmmoKind.Shell] / 3},
         {AmmoKind.Energy, AppModel.WeaponData().AmmoCapacity[AmmoKind.Energy] / 3},
         {AmmoKind.Bolt, AppModel.WeaponData().AmmoCapacity[AmmoKind.Bolt] / 3},
+        {AmmoKind.Bomb, AppModel.WeaponData().AmmoCapacity[AmmoKind.Bomb] / 5},
       };
       AppModel.Player().Backpack.Resources = new Dictionary<ResourceKind, int>
       {

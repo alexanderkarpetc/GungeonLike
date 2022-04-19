@@ -14,6 +14,7 @@ namespace GamePlay.Common
       {AmmoKind.Shell, 30},
       {AmmoKind.Bolt, 30},
       {AmmoKind.Energy, 500},
+      {AmmoKind.Bomb, 15},
     };
     public Dictionary<AmmoKind, int> AmmoFillAmount = new Dictionary<AmmoKind, int>
     {
@@ -22,6 +23,7 @@ namespace GamePlay.Common
       {AmmoKind.Shell, 6},
       {AmmoKind.Bolt, 5},
       {AmmoKind.Energy, 50},
+      {AmmoKind.Bomb, 2},
     };
     public float TurretBulletSpeed = 7;
     public float JetEngineDamage = 0.1f;
