@@ -59,10 +59,9 @@ namespace Import
         var weaponLine = lines[i].Split(';');
         var weaponInfo = new WeaponInfo()
         {
-          Id = int.Parse(weaponLine[0]),
-          Type = (WeaponType) Enum.Parse(typeof(WeaponType), weaponLine[1]),
-          Damage = float.Parse(weaponLine[2]),
-          Price = int.Parse(weaponLine[3]),
+          Type = (WeaponType) Enum.Parse(typeof(WeaponType), weaponLine[0]),
+          Damage = float.Parse(weaponLine[1]),
+          Price = int.Parse(weaponLine[2]),
         };
         infos.Add(weaponInfo.Type, weaponInfo);
       }

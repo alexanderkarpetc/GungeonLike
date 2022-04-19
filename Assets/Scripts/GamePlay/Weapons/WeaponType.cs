@@ -7,6 +7,7 @@
     SpecialPistol = 2,
     JetEngine = 3,
     Crossbow = 4,
+    PulseRifle = 5,
 
     #endregion
 

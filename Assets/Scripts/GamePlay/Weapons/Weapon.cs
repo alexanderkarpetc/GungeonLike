@@ -15,6 +15,7 @@ namespace GamePlay.Weapons
 
     public bool IsPlayers;
     public WeaponType Type;
+    public WeaponShootingType ShootingType;
     public AmmoKind AmmoKind;
     [HideInInspector] public WeaponState State;
 

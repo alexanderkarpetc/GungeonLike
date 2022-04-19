@@ -23,22 +23,22 @@ namespace GamePlay.Player
         Weapon.IsPlayers = true;
       }
 
-      if (AppModel.WeaponData().AutomaticWeapons.Contains(Weapon.Type) && Input.GetMouseButton(0))
+      if (Weapon.ShootingType == WeaponShootingType.SemiAuto && Input.GetMouseButtonDown(0))
       {
         Weapon.TryShoot();
         return;
       }      
-      if (AppModel.WeaponData().SemiAutoWeapons.Contains(Weapon.Type) && Input.GetMouseButtonDown(0))
+      if (Weapon.ShootingType == WeaponShootingType.Automatic && Input.GetMouseButton(0))
       {
         Weapon.TryShoot();
         return;
       }
-      if (AppModel.WeaponData().ChargeWeapons.Contains(Weapon.Type) && Input.GetMouseButton(0))
+      if (Weapon.ShootingType == WeaponShootingType.Charged && Input.GetMouseButton(0))
       {
         ((JetEngineWeapon)Weapon).StartCharge();
         return;
       }
-      if (AppModel.WeaponData().ChargeWeapons.Contains(Weapon.Type) && !Input.GetMouseButton(0))
+      if (Weapon.ShootingType == WeaponShootingType.Charged && !Input.GetMouseButton(0))
       {
         ((JetEngineWeapon)Weapon).StopCharge();
         return;

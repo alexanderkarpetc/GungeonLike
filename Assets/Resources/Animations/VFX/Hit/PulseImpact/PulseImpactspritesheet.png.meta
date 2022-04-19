@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 24112a67693b9044d81427beaab91919
+guid: 0c5a39fb673da3949b47994f8eef20af
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -80,34 +80,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pulse_rifle_fire_001.png
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 40
-        width: 25
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e70ebc4ac5e8794b86768a7dc67fd52
-      internalID: -773725346
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pulse_rifle_fire_002.png
+      name: pulse_impact_vertical_001.png
       rect:
         serializedVersion: 2
         x: 1
         y: 28
-        width: 26
-        height: 10
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,20 +94,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4dd2eed42d085ef44875d7b9147866fc
-      internalID: 1600188819
+      spriteID: 032b9b0135b52554ea7415a7c28c865c
+      internalID: -2073802887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pulse_rifle_fire_003.png
+      name: pulse_impact_vertical_003.png
       rect:
         serializedVersion: 2
-        x: 1
-        y: 13
-        width: 25
-        height: 13
+        x: 9
+        y: 14
+        width: 20
+        height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,20 +115,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e78af61410947c4da9b1e8b7b40e828
-      internalID: -2006977193
+      spriteID: 40bc36c24bb784746b686bdb1cfd5011
+      internalID: -2074314113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pulse_rifle_fire_004.png
+      name: pulse_impact_vertical_004.png
       rect:
         serializedVersion: 2
-        x: 28
-        y: 40
-        width: 25
-        height: 13
+        x: 31
+        y: 10
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,62 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eccff7e473a299a4484f774efb35f895
-      internalID: 1931493770
+      spriteID: 6bdca199d0ac4ae4197273001ea5d4cb
+      internalID: -726643665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pulse_rifle_fire_005.png
-      rect:
-        serializedVersion: 2
-        x: 29
-        y: 25
-        width: 25
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38da8220554fd594584aca2434b6dfbe
-      internalID: 1197667776
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pulse_rifle_idle_001.png
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 13
-        width: 26
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1467b08a4c731040b6ff8877f1c7b31
-      internalID: -1170577780
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pulse_rifle_idle_002.png
+      name: pulse_projectile_001.png
       rect:
         serializedVersion: 2
         x: 1
         y: 1
-        width: 26
-        height: 10
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,8 +157,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5d0df4f03bc01a4ea95ae84365d6eac
-      internalID: 132539879
+      spriteID: 58bba4880fd3ab549a5da6b80b6772b6
+      internalID: -2085681804
       vertices: []
       indices: 
       edges: []
@@ -229,7 +166,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 90072e5413bfd004bb932a8af08e7ce9
+    spriteID: cf7286743644e9d41a34bb3299434556
     internalID: 0
     vertices: []
     indices: 
@@ -237,13 +174,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pulse_rifle_fire_002.png: 1600188819
-      pulse_rifle_fire_001.png: -773725346
-      pulse_rifle_fire_004.png: 1931493770
-      pulse_rifle_fire_005.png: 1197667776
-      pulse_rifle_fire_003.png: -2006977193
-      pulse_rifle_idle_001.png: -1170577780
-      pulse_rifle_idle_002.png: 132539879
+      pulse_impact_vertical_001.png: -2073802887
+      pulse_impact_vertical_003.png: -2074314113
+      pulse_projectile_001.png: -2085681804
+      pulse_impact_vertical_004.png: -726643665
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
