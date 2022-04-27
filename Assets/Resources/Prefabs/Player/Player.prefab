@@ -515,8 +515,7 @@ MonoBehaviour:
   playerTurnAnimator: {fileID: 3688945083984600635}
   _rigidbody: {fileID: 7375126048374487353}
   _body: {fileID: 8463245576065121774}
-  _startingWeapon: {fileID: 5740059248520269720, guid: cc0afd25e9f5e0a44b37e0ab2778f628,
-    type: 3}
+  _startingWeapon: {fileID: 1712927347, guid: 02dac79d2ed7c094799836c1418fa78d, type: 3}
 --- !u!114 &3688945083984600635
 MonoBehaviour:
   m_ObjectHideFlags: 0
