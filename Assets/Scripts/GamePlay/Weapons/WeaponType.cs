@@ -9,6 +9,7 @@
     Crossbow = 4,
     PulseRifle = 5,
     RocketLauncher = 6,
+    SniperRifle = 7,
 
     #endregion
 
