@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using UnityEditor.Animations;
 using UnityEngine;
 
@@ -20,6 +21,7 @@ namespace GamePlay.Level
         private static readonly int WestFlip = Animator.StringToHash("WestFlip");
         private static readonly int NorthFlip = Animator.StringToHash("NorthFlip");
         private static readonly int SouthFlip = Animator.StringToHash("SouthFlip");
+        private static readonly int Break = Animator.StringToHash("Break");
 
         public void ChooseSide(TableSide? side)
         {
@@ -28,6 +30,13 @@ namespace GamePlay.Level
             _rightOut.SetActive(_currentSide == TableSide.Right);
             _topOut.SetActive(_currentSide == TableSide.Top);
             _botOut.SetActive(_currentSide == TableSide.Bot);
+        }
+
+        protected override void DoDestroy()
+        {
+            _animator.SetTrigger(Break);
+            var destroyTime = _animator.runtimeAnimatorController.animationClips.First(x=>x.name.Equals("EastBreak")).averageDuration;
+            Destroy(gameObject, destroyTime * 2);
         }
 
         public void Flip()
