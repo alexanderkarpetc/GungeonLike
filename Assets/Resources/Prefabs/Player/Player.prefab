@@ -44,7 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de764e93e17f4e7888dd25d917311158, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _body: {fileID: 8463245576065121774}
   _secondaryHandPos: {fileID: 0}
   _leftHandPos: {x: -0.225, y: -0.3, z: 0}
   _rightHandPos: {x: 0.225, y: -0.3, z: 0}
@@ -161,7 +160,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 03b9df264dee26d41882b1a1c370fc08, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -692,7 +691,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 03b9df264dee26d41882b1a1c370fc08, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

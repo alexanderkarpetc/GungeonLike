@@ -104,6 +104,8 @@ MonoBehaviour:
   _uiImage: {fileID: -9221500489301797350, guid: 38f6e6ee44ddb694bbd6d178873619bb,
     type: 3}
   IsInverted: 0
+  Body: {fileID: 4700838025997285466}
+  SecondHandPos: {fileID: 8938371636009332708}
   IsPlayers: 1
   Type: 3
   ShootingType: 2

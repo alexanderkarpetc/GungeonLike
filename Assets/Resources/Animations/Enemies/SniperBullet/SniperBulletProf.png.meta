@@ -1,0 +1,2300 @@
+fileFormatVersion: 2
+guid: 632b8fa7b6b6b43459c67a29c5d4cf70
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 18
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: prof_rifle_die_front_left_001
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 15
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97797ad39c446743b762225c584a2ac
+      internalID: 1682671462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_die_front_left_002
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 15
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b92f7292dda19e4e83f80a920206f07
+      internalID: -1286311514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_die_front_left_003
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 194
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9517c4ff70a86a41af37ec93c03ecb9
+      internalID: 1347417867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_die_front_left_004
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 118
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9664f005de5b342b5e2470d295b1e9
+      internalID: -595725778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_die_front_left_005
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 2
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9691e57addd90b14c8a16f053d992137
+      internalID: -422368185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_die_front_right_001
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 54
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e83e092237ade847ba5496f58f3b3a9
+      internalID: 449133899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_die_front_right_002
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 201
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7107e2b127ddfe242a65b9817ce57559
+      internalID: -348974404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_die_front_right_003
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 182
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d64fe0222b8f314f8ede852d404d525
+      internalID: -1791714135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_die_front_right_004
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 179
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5cd29e1e4797f48bc15c60f279cb03
+      internalID: 944394125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_die_front_right_005
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 2
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234e9d10b3862494797a85d2bebe570c
+      internalID: 1241899273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_hit_left_001
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 220
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc896ece4328fea46ae0183c5da89b14
+      internalID: 894354627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_hit_right_001
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 183
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee385802ba9e564aa988be9c39f92b4
+      internalID: 1964748860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_idle_back_001
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 67
+        width: 12
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477fd59bac31ccc458af1a49080492d7
+      internalID: 1970006455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_idle_back_002
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 72
+        width: 12
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8dbdde6c644684dbd99bdbc1e1e326
+      internalID: -596185570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_idle_front_001
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 29
+        width: 12
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1df46abfc96f354ba7c8095dc873494
+      internalID: 379684466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_idle_front_002
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 35
+        width: 12
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf81e7b229059443ba365a2d7450886
+      internalID: -488387212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_back_left_001
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 220
+        width: 12
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074b4af32075db14586fb4a511593315
+      internalID: 1500738770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_back_left_002
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 219
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aaba46a22ed6a94a888ffda21baa806
+      internalID: 431770870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_back_left_003
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 88
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e2c2338c259aa4dbbb04582f6134bf
+      internalID: 2084149074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_back_left_004
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 183
+        width: 12
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b966ab67b5528c48ab9ecc01dde83f4
+      internalID: 829979462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_back_left_005
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 226
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df1c2b9327c43542955705eb72ec4f1
+      internalID: 86497887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_back_left_006
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 61
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b2f19ebd196c84b8296429f41115c1
+      internalID: 58564837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_back_right_001
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 146
+        width: 12
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a742583f665e7eb4d89b5d78836afe6e
+      internalID: 798076045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_back_right_002
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 181
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c3cf54ffd3688b4f98292bc442181ba
+      internalID: 1780634805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_back_right_003
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 158
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee8a5f7eb0a1c04e905581be9b0f568
+      internalID: 837560503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_back_right_004
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 149
+        width: 12
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198cf622dcf8f4344b43182fc1fef45b
+      internalID: -1908778744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_back_right_005
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 127
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf82c3f7c5bad9448e94226317719a4
+      internalID: 1038672242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_back_right_006
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e5bc5cedde45f4fbf81e513f0105eb
+      internalID: 133558473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_front_left_001
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 109
+        width: 12
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c12d39c4c7de4448a3e32058c28880a
+      internalID: 2091525930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_front_left_002
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 143
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90923375f571fb40a57dbf3dc87a1fc
+      internalID: 1287382267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_front_left_003
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 24
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bdef2ca6c50054459cb00a76719837a
+      internalID: -1049884459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_front_left_004
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 67
+        width: 12
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58fd2802c82dde8478bdff9bd4343272
+      internalID: 1861578459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_front_left_005
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 160
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b79b9da2a04ef418dba9de6a6fd924
+      internalID: 1444890147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_front_left_006
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 133
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d6f60b1bd06d749a038ae9761f1b44
+      internalID: 1861842797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_front_right_001
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 72
+        width: 12
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7062b08de112d514a9ef8f59c7090e9c
+      internalID: -1940373085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_front_right_002
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 105
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a5930e792ab394bb4a6539910a3303
+      internalID: 821387647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_front_right_003
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 191
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb47c45cb8269a9468bfabdae6d30e9b
+      internalID: -784974552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_front_right_004
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 35
+        width: 12
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9cb8ec5e4a6d034a81111e7de287397
+      internalID: -1680233277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_front_right_005
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 195
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7443f909ef0fb3244a9006399c6736af
+      internalID: 370205832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_move_front_right_006
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 2
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706367973622ae749a0f23d728c1b3af
+      internalID: -2119457729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_pitfall_001
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 77
+        width: 12
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7281d0f033a3ef64993db7c09769aee1
+      internalID: 166600580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_pitfall_002
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 70
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45a93fad66d9214fa818999321339e2
+      internalID: -1118334445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_pitfall_003
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 227
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd30bdaa392e0ad42beff458f5fa4f41
+      internalID: 78844181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_pitfall_004
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866e630518d6b824c90c4474a4a311dc
+      internalID: -1755314465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_pitfall_005
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 118
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e375f3ca982ab48b6a27b88521a93a
+      internalID: -136687302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_spawn_001
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 244
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b41b0a298110c54b9c5ffe9f702a08f
+      internalID: -909133903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_spawn_002
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 226
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a588d9b5007b00f4bb616e216f6a2f16
+      internalID: 150971115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_spawn_003
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 29
+        width: 12
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320045930b7cc2e41a5f3d3a21213f0c
+      internalID: 1816637104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prof_rifle_spawn_004
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 29
+        width: 12
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09070a515b26c8740ae5f44b228ddb8b
+      internalID: 484969007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_die_left_001
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 45
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4f6776ed1b8b646bc3d89c668e26e7
+      internalID: 2052627973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_die_left_002
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 48
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066264052fd70a44c94fe2f90c2bb590
+      internalID: -1981261250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_die_left_003
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 71
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3138f60bca69d4896cd09ad6f1b45a
+      internalID: -1497557223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_die_left_004
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 93
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac32e6746d174b04da18aa55d4fdc541
+      internalID: 1441749464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_die_left_005
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 26
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103938f54563a5347a6259c1f23ee78c
+      internalID: -1415415915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_die_right_001
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 84
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8e983a431e45748a32c05934712925
+      internalID: -1989914897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_die_right_002
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 4
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d09cc33c368334a97cee0322ca0699
+      internalID: -1196471316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_die_right_003
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 235
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4bfb8a058e45b74fa7c965612913860
+      internalID: -1518510205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_die_right_004
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 36
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed16f0fa8b5858346862ea9dbd8db0d7
+      internalID: 674492219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_die_right_005
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 213
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec222f532c7c954480e558a8cc64034
+      internalID: 1128832769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_hit_left_001
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 222
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab9d465ad17c2442aa50597c1c7b65e
+      internalID: -942500215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_hit_right_001
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 41
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b627c90daf59e41856227bc97d4f06
+      internalID: -554715036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_idle_back_001
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 220
+        width: 12
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20222ed00063d24b809862482d30a7c
+      internalID: -2059669024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_idle_back_002
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 185
+        width: 12
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd6c4c47c681244d818ca4aca0004f2
+      internalID: -447924761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_idle_front_001
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 183
+        width: 12
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf53c9d197133a64ab38ed81842d4b60
+      internalID: -652058553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_idle_front_002
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 221
+        width: 12
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2534cedbbe3fb034f9ece1037a7bbee6
+      internalID: -1847445491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_idle_front_003
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 149
+        width: 12
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c35ce9102d988a4f93bbe962547c675
+      internalID: 1560185318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_idle_front_004
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 146
+        width: 12
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420b0a9ec05302948a82507031554371
+      internalID: 406329603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_back_left_001
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 72
+        width: 13
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d535eb1b43e332469c85104b336a488
+      internalID: -1990866737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_back_left_002
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 184
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac007f06453ee7d40943c490278ee5a2
+      internalID: -1488047036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_back_left_003
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d63d24c34f16d428c5ed3f74f37cee
+      internalID: -1346087899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_back_left_004
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 109
+        width: 12
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0601eb38f37f5ca418c6986f635b46b4
+      internalID: 1392983580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_back_left_005
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 221
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f59008f71e2d4441a7ed4c9e2b6653c
+      internalID: 384335818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_back_left_006
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 116
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8e421b86449b44aa0ac942462a3e46
+      internalID: 93028363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_back_right_001
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 35
+        width: 13
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c211154bff56da4a97da5eec89963de
+      internalID: -1363831592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_back_right_002
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 221
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8de3e18ed090644833d5e9510c7249
+      internalID: 645006238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_back_right_003
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3821ca712efb2349afca9cc1d13a2ff
+      internalID: -2061477349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_back_right_004
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 72
+        width: 12
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7ca4b7fccf98b4982901828b87505b
+      internalID: 1998353764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_back_right_005
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 112
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314f81dc30cd7e945b9f02202c71c6fe
+      internalID: -612230817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_back_right_006
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 152
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90a615e864cf27418ca35725290675f
+      internalID: 1514726153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_front_left_001
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 146
+        width: 13
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56dc050898ad8ec439a479abdc0608ae
+      internalID: -2139951214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_front_left_002
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 148
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb57f9263c9893e409d19b725980a6f7
+      internalID: 1271993977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_front_left_003
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977e65009cc03a149b36be2df127ad5c
+      internalID: -1698344546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_front_left_004
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 35
+        width: 12
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512e773d0cf45bf4fbe701a4ef36d74d
+      internalID: -1715321020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_front_left_005
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 76
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77393cf99b71ead499b728409d626a95
+      internalID: 843204014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_front_left_006
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 189
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14dd1855dbdb2c41b300c8581200c12
+      internalID: -2349738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_front_right_001
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 109
+        width: 13
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b1af9184d09284aaaba12f5786f960
+      internalID: -487867878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_front_right_002
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 185
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2815f55af80bdc4e95a3e0afb59339b
+      internalID: 356439868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_front_right_003
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6448c640650e0479880f016ced2718
+      internalID: 1396988804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_front_right_004
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 220
+        width: 12
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10350972ee82b38469eb4d0cfe1292e9
+      internalID: -2073025358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_front_right_005
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 112
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57837d3f2f1f2044f84792f489b9d6b0
+      internalID: 223285264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_move_front_right_006
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 8
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b08523b04376d4991195c41998b4fa
+      internalID: 1751841710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_pitfall_001
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 185
+        width: 12
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 397790f8485e9e846bc7a7bad54c932b
+      internalID: -1091751504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_pitfall_002
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 226
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922d6f1805bd5a94fbb37c46d8428f94
+      internalID: -952253269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_pitfall_003
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 222
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35c2dc9e4f202b4cb3af5b764f5b5db
+      internalID: -957170712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_pitfall_004
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4b10f44d8eaf44997d1e9fdbd23139
+      internalID: 971483488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_spawn_001
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 242
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928b052f9275ffd48afe01e2f5029559
+      internalID: -882904181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_spawn_002
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 120
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c377c0af814490645b84e0334af41a6b
+      internalID: -1309718823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_spawn_003
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 146
+        width: 14
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b37814796e654429ba909ccec95a53
+      internalID: -1974994065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: proriflebullet_spawn_004
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 109
+        width: 14
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d28a16d4e7ec744810bbd26e045bd1
+      internalID: 1432702809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: fb9dbdac708a736458f54d30ea0d1b61
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      prof_rifle_move_back_right_005: 1038672242
+      prof_rifle_pitfall_005: -136687302
+      proriflebullet_move_back_right_005: -612230817
+      prof_rifle_die_front_left_002: -1286311514
+      proriflebullet_move_front_right_001: -487867878
+      prof_rifle_move_back_right_004: -1908778744
+      proriflebullet_move_front_left_003: -1698344546
+      proriflebullet_move_front_right_005: 223285264
+      proriflebullet_die_left_004: 1441749464
+      proriflebullet_idle_front_003: 1560185318
+      proriflebullet_move_front_left_006: -2349738
+      prof_rifle_move_front_left_006: 1861842797
+      prof_rifle_move_back_left_003: 2084149074
+      proriflebullet_move_back_left_006: 93028363
+      prof_rifle_die_front_right_004: 944394125
+      prof_rifle_move_front_left_004: 1861578459
+      prof_rifle_pitfall_002: -1118334445
+      prof_rifle_move_front_right_003: -784974552
+      prof_rifle_move_front_left_002: 1287382267
+      prof_rifle_move_back_left_004: 829979462
+      prof_rifle_hit_right_001: 1964748860
+      prof_rifle_die_front_left_005: -422368185
+      proriflebullet_move_back_right_006: 1514726153
+      prof_rifle_hit_left_001: 894354627
+      prof_rifle_move_back_right_006: 133558473
+      prof_rifle_spawn_004: 484969007
+      proriflebullet_move_front_left_002: 1271993977
+      proriflebullet_die_right_001: -1989914897
+      prof_rifle_spawn_003: 1816637104
+      prof_rifle_die_front_right_002: -348974404
+      prof_rifle_move_back_left_005: 86497887
+      proriflebullet_idle_front_001: -652058553
+      prof_rifle_move_front_left_001: 2091525930
+      prof_rifle_pitfall_004: -1755314465
+      prof_rifle_move_back_right_002: 1780634805
+      prof_rifle_idle_back_001: 1970006455
+      proriflebullet_move_back_left_004: 1392983580
+      proriflebullet_move_back_right_004: 1998353764
+      proriflebullet_idle_back_002: -447924761
+      proriflebullet_move_front_left_004: -1715321020
+      prof_rifle_die_front_left_003: 1347417867
+      prof_rifle_die_front_right_003: -1791714135
+      prof_rifle_move_front_right_002: 821387647
+      proriflebullet_move_back_right_003: -2061477349
+      proriflebullet_die_left_003: -1497557223
+      proriflebullet_idle_front_004: 406329603
+      prof_rifle_move_back_left_006: 58564837
+      proriflebullet_die_right_002: -1196471316
+      proriflebullet_move_back_right_001: -1363831592
+      proriflebullet_move_back_left_005: 384335818
+      prof_rifle_pitfall_001: 166600580
+      prof_rifle_move_back_right_001: 798076045
+      proriflebullet_spawn_003: -1974994065
+      proriflebullet_move_back_right_002: 645006238
+      prof_rifle_pitfall_003: 78844181
+      prof_rifle_move_front_left_003: -1049884459
+      proriflebullet_spawn_002: -1309718823
+      proriflebullet_die_left_005: -1415415915
+      proriflebullet_move_front_right_004: -2073025358
+      prof_rifle_spawn_002: 150971115
+      proriflebullet_move_back_left_002: -1488047036
+      proriflebullet_die_left_002: -1981261250
+      proriflebullet_pitfall_002: -952253269
+      proriflebullet_move_front_left_001: -2139951214
+      proriflebullet_pitfall_003: -957170712
+      prof_rifle_die_front_right_001: 449133899
+      prof_rifle_move_back_left_002: 431770870
+      prof_rifle_move_back_right_003: 837560503
+      proriflebullet_move_front_right_002: 356439868
+      prof_rifle_move_front_right_005: 370205832
+      prof_rifle_idle_front_001: 379684466
+      prof_rifle_idle_back_002: -596185570
+      proriflebullet_move_front_right_006: 1751841710
+      proriflebullet_spawn_001: -882904181
+      proriflebullet_hit_right_001: -554715036
+      proriflebullet_idle_front_002: -1847445491
+      proriflebullet_idle_back_001: -2059669024
+      prof_rifle_move_front_right_006: -2119457729
+      prof_rifle_move_front_right_004: -1680233277
+      proriflebullet_move_front_left_005: 843204014
+      prof_rifle_idle_front_002: -488387212
+      proriflebullet_move_back_left_001: -1990866737
+      prof_rifle_die_front_left_004: -595725778
+      prof_rifle_move_back_left_001: 1500738770
+      proriflebullet_die_right_003: -1518510205
+      proriflebullet_move_front_right_003: 1396988804
+      proriflebullet_hit_left_001: -942500215
+      proriflebullet_pitfall_004: 971483488
+      proriflebullet_die_left_001: 2052627973
+      prof_rifle_die_front_left_001: 1682671462
+      proriflebullet_die_right_004: 674492219
+      proriflebullet_move_back_left_003: -1346087899
+      proriflebullet_pitfall_001: -1091751504
+      prof_rifle_move_front_left_005: 1444890147
+      proriflebullet_spawn_004: 1432702809
+      prof_rifle_move_front_right_001: -1940373085
+      prof_rifle_die_front_right_005: 1241899273
+      prof_rifle_spawn_001: -909133903
+      proriflebullet_die_right_005: 1128832769
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

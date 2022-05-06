@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422198880}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.075, y: 0, z: 0}
+  m_LocalPosition: {x: 1.223, y: 0.194, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -103,6 +103,8 @@ MonoBehaviour:
   MagazineSize: 5
   _uiImage: {fileID: -26605806, guid: 6563346cbe9e4af449f0302b309479b1, type: 3}
   IsInverted: 0
+  Body: {fileID: 4700838025997285466}
+  SecondHandPos: {fileID: 8938371636009332708}
   IsPlayers: 1
   Type: 7
   ShootingType: 0

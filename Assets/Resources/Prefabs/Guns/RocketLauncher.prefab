@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422198880}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.075, y: 0, z: 0}
+  m_LocalPosition: {x: 0.484, y: 0.375, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -103,6 +103,8 @@ MonoBehaviour:
   MagazineSize: 1
   _uiImage: {fileID: -559520083, guid: 322ca55fd4d698a4990643ba7e5db5d0, type: 3}
   IsInverted: 0
+  Body: {fileID: 4700838025997285466}
+  SecondHandPos: {fileID: 8938371636009332708}
   IsPlayers: 1
   Type: 6
   ShootingType: 0
@@ -226,7 +228,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4908057340622044188}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.292, y: -0.131, z: 0}
+  m_LocalPosition: {x: 0.072, y: -0.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

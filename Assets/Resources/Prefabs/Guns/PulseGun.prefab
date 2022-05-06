@@ -103,6 +103,7 @@ MonoBehaviour:
   MagazineSize: 0
   _uiImage: {fileID: 1600188819, guid: 24112a67693b9044d81427beaab91919, type: 3}
   IsInverted: 0
+  Body: {fileID: 4700838025997285466}
   IsPlayers: 1
   Type: 5
   ShootingType: 0

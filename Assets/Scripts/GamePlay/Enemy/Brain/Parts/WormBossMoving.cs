@@ -21,7 +21,7 @@ namespace GamePlay.Enemy.Brain.Parts
 
     public override void OnUpdate()
     {
-      var agent = Brain._enemyController.GetAiPath();
+      var agent = Brain.EnemyController.GetAiPath();
       if (targets.Count == 0) return;
       bool search = false;
 

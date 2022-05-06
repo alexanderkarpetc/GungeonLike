@@ -12,6 +12,8 @@ namespace GamePlay.Weapons
     public int MagazineSize;
     public Sprite _uiImage;
     [HideInInspector] public bool IsInverted;
+    public SpriteRenderer Body;
+    public Transform SecondHandPos;
 
     public bool IsPlayers;
     public WeaponType Type;

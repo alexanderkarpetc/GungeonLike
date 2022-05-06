@@ -4,6 +4,7 @@
   {
     BulletEnemy = 1,
     Cubulon = 2,
+    Sniper = 3,
     
     
     //bosses

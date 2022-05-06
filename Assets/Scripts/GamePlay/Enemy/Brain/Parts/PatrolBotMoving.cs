@@ -3,17 +3,17 @@ using UnityEngine;
 
 namespace GamePlay.Enemy.Brain.Parts
 {
-  public class CubulonBotMoving : BotPart
+  public class PatrolBotMoving : BotPart
   {
     private List<Vector2> targets;
     private int index = 0; 
 
-    public CubulonBotMoving(BotBrain brain) : base(brain)
+    public PatrolBotMoving(BotBrain brain) : base(brain)
     {
       targets = FindPoints();
     }
 
-    private List<Vector2> FindPoints()
+    protected virtual List<Vector2> FindPoints()
     {
       var roof = GameObject.Find("Roof").GetComponent<Collider2D>();
       return new List<Vector2>
@@ -27,7 +27,7 @@ namespace GamePlay.Enemy.Brain.Parts
 
     public override void OnUpdate()
     {
-      var agent = Brain._enemyController.GetAiPath();
+      var agent = Brain.EnemyController.GetAiPath();
       if (targets.Count == 0) return;
       bool search = false;
 

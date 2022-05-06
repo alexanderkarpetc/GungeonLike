@@ -9,20 +9,18 @@ namespace GamePlay.Enemy.Brain
   {
     public GameObject Target;
     public GameObject Owner;
-    public EnemyController _enemyController;
+    public EnemyController EnemyController;
 
     protected List<BotPart> _parts = new List<BotPart>();
-    protected BulletBotShooting _shooting;
-    protected TargetFinder _targetFinder;
 
     public BotBrain(GameObject owner)
     {
       Owner = owner;
-      _shooting = new BulletBotShooting(this);
-      _targetFinder = new TargetFinder(this);
-      _parts.Add(_shooting);
-      _parts.Add(_targetFinder);
-      _enemyController = owner.GetComponent<EnemyController>();
+      var shooting = new BulletBotShooting(this);
+      var targetFinder = new TargetFinder(this);
+      _parts.Add(shooting);
+      _parts.Add(targetFinder);
+      EnemyController = owner.GetComponent<EnemyController>();
     }
 
     public virtual void OnUpdate()
@@ -32,8 +30,8 @@ namespace GamePlay.Enemy.Brain
 
     public virtual void OnCreate()
     {
-      _enemyController.GetDestinationSetter().target = AppModel.PlayerTransform();
-      _enemyController.GetAiPath().maxSpeed = StaticData.EnemyBulletSpeedBase;
+      EnemyController.GetDestinationSetter().target = AppModel.PlayerTransform();
+      EnemyController.GetAiPath().maxSpeed = StaticData.EnemyBulletSpeedBase;
     }
   }
 }

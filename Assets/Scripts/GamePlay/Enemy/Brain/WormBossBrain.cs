@@ -16,8 +16,8 @@ namespace GamePlay.Enemy.Brain
 
     public override void OnCreate()
     {
-      _enemyController.GetAiPath().maxSpeed = StaticData.WormBossSpeedBase;
-      _enemyController.State.Hp = 100;
+      EnemyController.GetAiPath().maxSpeed = StaticData.WormBossSpeedBase;
+      EnemyController.State.Hp = 100;
     }
   }
 }

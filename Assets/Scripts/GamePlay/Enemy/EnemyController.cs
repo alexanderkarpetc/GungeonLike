@@ -18,6 +18,8 @@ namespace GamePlay.Enemy
         return new CubulonBrain(gameObj);
       if (type == EnemyType.WormEnemy)
         return new WormBossBrain(gameObj);
+      if (type == EnemyType.Sniper)
+        return new SniperBulletBrain(gameObj);
 
       return new BotBrain(gameObj);
     };

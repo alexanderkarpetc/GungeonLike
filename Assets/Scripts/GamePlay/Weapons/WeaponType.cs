@@ -15,7 +15,8 @@
 
     #region Enemy
     EnemyMagnum = 101,
-    EnemyShotGun = 102
+    EnemyShotGun = 102,
+    EnemySniperRifle = 103,
     
     #endregion
   }

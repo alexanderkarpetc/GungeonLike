@@ -19,28 +19,6 @@ namespace GamePlay.Player
     {
       _playerAnimator = AppModel.PlayerGameObj().GetComponent<Animator>();
     }
-
-    protected override void MoveHands()
-    {
-      if (Mathf.Abs(Angle) < 90)
-      {
-        _leftHand.localPosition = _leftHandPos;
-        gameObject.transform.position = !Weapon.IsDoubleHanded ? _rightHand.position : _leftHand.position;
-        SpriteUtil.SetXScale(gameObject, 1);
-        Weapon.IsInverted = false;
-        if(_secondaryHandPos != null)
-          _rightHand.position = _secondaryHandPos.position;
-      }
-      else
-      {
-        _rightHand.localPosition = _rightHandPos;
-        gameObject.transform.position = !Weapon.IsDoubleHanded ? _leftHand.position : _rightHand.position;
-        SpriteUtil.SetXScale(gameObject, -1);
-        Weapon.IsInverted = true;
-        if(_secondaryHandPos != null)
-          _leftHand.position = _secondaryHandPos.position;
-      }
-    }
     
     protected override void ChangeSortingOrder()
     {
@@ -49,12 +27,16 @@ namespace GamePlay.Player
       if (state.IsName(PlayerAnimState.IdleDown) || state.IsName(PlayerAnimState.RunDown) ||
           state.IsName(PlayerAnimState.IdleDownRight) || state.IsName(PlayerAnimState.RunDownRight))
       {
-        _body.sortingOrder = -2;
+        Weapon.Body.sortingOrder = 2;
+        _leftHandRenderer.sortingOrder = 3;
+        _rightHandRenderer.sortingOrder = 3;
       }
       else if (state.IsName(PlayerAnimState.IdleUp) || state.IsName(PlayerAnimState.RunUp) ||
                state.IsName(PlayerAnimState.IdleUpRight) || state.IsName(PlayerAnimState.RunUpRight))
       {
-        _body.sortingOrder = 2;
+        Weapon.Body.sortingOrder = -2;
+        _leftHandRenderer.sortingOrder = -3;
+        _rightHandRenderer.sortingOrder = -3;
       }
     }
   }

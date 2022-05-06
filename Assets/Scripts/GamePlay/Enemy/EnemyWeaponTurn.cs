@@ -19,6 +19,7 @@ namespace GamePlay.Enemy
       var rot = Quaternion.AngleAxis(Mathf.Abs(Angle) < 90 ? Angle : - 180 + Angle, Vector3.forward);
       transform.rotation = rot;
     }
+
     protected override void ChangeSortingOrder()
     {
       var state = _animator.GetCurrentAnimatorStateInfo(0);
@@ -26,26 +27,15 @@ namespace GamePlay.Enemy
       if (state.IsName(EnemyAnimState.UpRight) || state.IsName(EnemyAnimState.UpLeft) ||
           state.IsName(EnemyAnimState.IdleBack) || state.IsName(EnemyAnimState.HitLeftUp)|| state.IsName(EnemyAnimState.HitRightUp))
       {
-        _body.sortingOrder = -2;
+        Weapon.Body.sortingOrder = -2;
+        _leftHandRenderer.sortingOrder = -3;
+        _rightHandRenderer.sortingOrder = -3;
       }
       else
       {
-        _body.sortingOrder = 2;
-      }
-    }
-    protected override void MoveHands()
-    {
-      if (Mathf.Abs(Angle) < 90)
-      {
-        gameObject.transform.position = _rightHand.position;
-        SpriteUtil.SetXScale(gameObject, 1);
-        Weapon.IsInverted = false;
-      }
-      else
-      {
-        gameObject.transform.position = _leftHand.position;
-        SpriteUtil.SetXScale(gameObject, -1);
-        Weapon.IsInverted = true;
+        Weapon.Body.sortingOrder = 2;
+        _leftHandRenderer.sortingOrder = 3;
+        _rightHandRenderer.sortingOrder = 3;
       }
     }
   }
