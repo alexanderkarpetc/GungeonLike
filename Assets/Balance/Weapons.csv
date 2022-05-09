@@ -7,4 +7,5 @@ PulseRifle;5;50
 RocketLauncher;50;50
 SniperRifle;20;50
 EnemyMagnum;1;999
-EnemyShotGun;1;99
+EnemyShotGun;1;999
+EnemyUzi;3;999

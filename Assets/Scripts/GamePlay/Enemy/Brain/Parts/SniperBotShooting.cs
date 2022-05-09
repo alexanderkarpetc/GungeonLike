@@ -24,7 +24,7 @@ namespace GamePlay.Enemy.Brain.Parts
       if(Brain.Target == null)
         return;
       var raycast = Physics2D.LinecastAll(Brain.Owner.transform.position, AppModel.PlayerGameObj().transform.position)
-        .Where(x=>!x.collider.CompareTag("Projectile") && !x.collider.CompareTag("Enemy") && !x.collider.CompareTag("Environment"));
+        .Where(x=>x.collider.CompareTag("Obstacle") || x.collider.CompareTag("Player"));
       if (!raycast.First().collider.CompareTag("Player"))
       {
         Brain.EnemyController.CurrentTarget = Brain.EnemyController.GetAiPath().destination;
