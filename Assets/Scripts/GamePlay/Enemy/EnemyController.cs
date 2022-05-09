@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using GamePlay.Common;
 using GamePlay.Enemy.Brain;
 using GamePlay.Enemy.State;
@@ -16,6 +17,8 @@ namespace GamePlay.Enemy
     {
       if (type == EnemyType.Cubulon)
         return new CubulonBrain(gameObj);
+      if (type == EnemyType.GrenadeMan)
+        return new GrenadeBrain(gameObj);
       if (type == EnemyType.WormEnemy)
         return new WormBossBrain(gameObj);
       if (type == EnemyType.Sniper)
@@ -72,10 +75,16 @@ namespace GamePlay.Enemy
       StopProcesses();
       _turnAnimator.IsDying = true;
       _animator.SetTrigger(EnemyAnimState.die);
-      Invoke(nameof(DestroyView), 1);
+      var deathDuration = _animator.runtimeAnimatorController.animationClips.First(x=>x.name.Equals("Death")).averageDuration;
+      Invoke(nameof(AfterDeath), deathDuration);
+    }
+
+    private void AfterDeath()
+    {
+      OnDeath?.Invoke(this);
       AppModel.DropManager().DropOnEnemyDeath(transform, Type);
       AppModel.Player().AddExp(Type);
-      OnDeath?.Invoke(this);
+      Destroy(gameObject);
     }
 
     private IEnumerator HitImpulse(Vector2 impulse)
@@ -118,11 +127,6 @@ namespace GamePlay.Enemy
     {
       _aiPath.maxSpeed = 0;
       Destroy(GetComponent<CircleCollider2D>());
-    }
-
-    public void DestroyView()
-    {
-      Destroy(gameObject);
     }
 
     public AIDestinationSetter GetDestinationSetter()

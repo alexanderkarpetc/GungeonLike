@@ -28,21 +28,7 @@ namespace GamePlay.Weapons
 
         private void Explode()
         {
-            var hits = Physics2D.OverlapCircleAll(transform.position, Radius);
-            foreach (var hit in hits)
-            {
-                if (_envTags.Contains(hit.tag))
-                {
-                    if (hit.CompareTag("Environment"))
-                    {
-                        DamageManager.Hit(hit.GetComponent<Level.Environment>(), Weapon);
-                    }
-                }
-                if(hit.CompareTag("Player"))
-                    HitPlayer(hit);
-                if(hit.CompareTag("Enemy"))
-                    HitEnemy(hit);
-            }
+            DamageManager.Explode(transform.position, Radius, Weapon.BaseDamage);
         }
     }
 }

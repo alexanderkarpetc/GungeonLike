@@ -1,0 +1,1002 @@
+fileFormatVersion: 2
+guid: de516e3628720fc4182802f4c354a428
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 18
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: grenade_die_001.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 124
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eba6feda567159745a3e21fd09007a01
+      internalID: 550037066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_die_002.png
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 124
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed2309a3db113bd41966b81ceda3ed62
+      internalID: -1503869688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_die_003.png
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 123
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4acf6ee60938100499f8fc2f4362e4ae
+      internalID: -558088643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_die_004.png
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 120
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f57b30e6fc77d409cc0dd250989e53
+      internalID: -967046054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_hit_back_left_001.png
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 124
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf99b7aacd31734ab94328554f090f1
+      internalID: -689717441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_hit_back_right_001.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 124
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280c26f2de6887849b7fc8d818462101
+      internalID: -1115190005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_hit_front_left_001.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 105
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642158d5e18226442a7df8d11c3116f9
+      internalID: 1511715467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_hit_front_right_001.png
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 105
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9aa990b8f4545d49bfa570e0a025c37
+      internalID: -856123719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_jump_001.png
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 105
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c781ea6c1d059b41bf3710ed88fb514
+      internalID: -1003512174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_jump_002.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 107
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e1986eafa2a854191a8e69adc56946
+      internalID: -1482839613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_jump_back_003.png
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 90
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caef09b6769a87949ad117a785aa32d1
+      internalID: -1280508186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_jump_back_004.png
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 91
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e41937dafddcf1428c5911a397f3e67
+      internalID: 725619351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_jump_back_left_005.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 90
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76730a7944c0a8d41a7863ebc36a5480
+      internalID: 1469009302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_jump_back_left_006.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 76
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844e0c84fe32b5e4694a348a4fc3c94a
+      internalID: 1980776541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_jump_back_left_007.png
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 73
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662b8e916dba4d34c9cf478c417d2467
+      internalID: -35163616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_jump_back_left_008.png
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 78
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7673175e99c142a49a4024c2fa83c014
+      internalID: -1858903080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_back_right_001.png
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 66
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408bf3e4a0d6c8c4ca2954af2c2f989d
+      internalID: -1451227712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_back_right_002.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 66
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582197f8631039f4c85cb1f0832f7c0b
+      internalID: -109743901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_back_right_003.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 45
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677adb73c8a4780449d637eb13ce576f
+      internalID: 209766391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_back_right_004.png
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 46
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d241559df80ea143a1a9a5b3775a0fd
+      internalID: 182041696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_back_right_005.png
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 45
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6bce2d482aa3b44915bccf140d0480
+      internalID: -524431764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_back_right_006.png
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 46
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac0e8e933c9b2f4eb91bbf3182010fe
+      internalID: 1458478424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_back_right_007.png
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1036afef9af91bb4c840b589b81dd816
+      internalID: -2078873613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_back_right_008.png
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 46
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef766d11ea67d0498df0ca6294b9e5c
+      internalID: 841190694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_front_back_left_001.png
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 24
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada9685cc9e6dba4695db1e2c515b577
+      internalID: 861476476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_front_back_left_002.png
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 22
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c3fe8dd7cfec843b588ae1677be40e
+      internalID: 1252424197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_front_back_left_003.png
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 25
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15348f379ce6cf49966bcb6a91cec57
+      internalID: -545777502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_front_back_left_004.png
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 26
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c752bbc776ca4f439b48d2fff93a38e
+      internalID: -1585416723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_front_back_left_005.png
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 122
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1e807a27305e04e8688c12a43c6223
+      internalID: -1237565515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_front_back_left_006.png
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 102
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ce45ca9ec19d943be43d4312e797f8
+      internalID: -183299645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_front_back_left_007.png
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 84
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8b6edc46a6396459bb0cf59a56602f
+      internalID: 1294120901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_front_back_left_008.png
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 64
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb0c1d7dda010c46b71dd6274cc05df
+      internalID: -164762495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_front_left_001.png
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 42
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151ccc685645a3b40bb89c5c563c35f7
+      internalID: -2056149907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_front_left_002.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 18
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b3613355e9ab949ab6c3177a06e296
+      internalID: 420255051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_front_left_003.png
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 21
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df51d3bcc0833984ebf078963af3bc49
+      internalID: -159391616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_front_left_004.png
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 22
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5237e5146affc4b8bd1ba35965a6cd
+      internalID: -60720639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_front_left_005.png
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bc209405ff77040b349830e3d1f98e
+      internalID: -459977251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_front_left_006.png
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 2
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec1a0199177e1343a8e4497ddfea40b
+      internalID: -1108827294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_front_left_007.png
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 4
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5555f622076864dbcd63b0c5a19148
+      internalID: -895751521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grenade_run_front_left_008.png
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 2
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17f7f6cfa39d4e45b9ae99a5fc9ad27
+      internalID: -916560375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      grenade_run_back_right_007.png: -2078873613
+      grenade_run_front_back_left_005.png: -1237565515
+      grenade_jump_001.png: -1003512174
+      grenade_run_front_left_003.png: -159391616
+      grenade_hit_front_right_001.png: -856123719
+      grenade_hit_back_right_001.png: -1115190005
+      grenade_jump_002.png: -1482839613
+      grenade_jump_back_left_006.png: 1980776541
+      grenade_run_front_back_left_004.png: -1585416723
+      grenade_run_front_back_left_003.png: -545777502
+      grenade_run_back_right_004.png: 182041696
+      grenade_jump_back_003.png: -1280508186
+      grenade_jump_back_left_005.png: 1469009302
+      grenade_run_back_right_008.png: 841190694
+      grenade_die_003.png: -558088643
+      grenade_run_back_right_003.png: 209766391
+      grenade_jump_back_left_008.png: -1858903080
+      grenade_run_back_right_001.png: -1451227712
+      grenade_run_front_back_left_006.png: -183299645
+      grenade_hit_back_left_001.png: -689717441
+      grenade_die_004.png: -967046054
+      grenade_run_front_left_002.png: 420255051
+      grenade_run_back_right_005.png: -524431764
+      grenade_run_front_left_005.png: -459977251
+      grenade_run_back_right_002.png: -109743901
+      grenade_run_front_back_left_002.png: 1252424197
+      grenade_die_002.png: -1503869688
+      grenade_jump_back_004.png: 725619351
+      grenade_jump_back_left_007.png: -35163616
+      grenade_run_front_left_008.png: -916560375
+      grenade_die_001.png: 550037066
+      grenade_run_back_right_006.png: 1458478424
+      grenade_run_front_left_001.png: -2056149907
+      grenade_hit_front_left_001.png: 1511715467
+      grenade_run_front_left_004.png: -60720639
+      grenade_run_front_left_006.png: -1108827294
+      grenade_run_front_back_left_008.png: -164762495
+      grenade_run_front_back_left_001.png: 861476476
+      grenade_run_front_back_left_007.png: 1294120901
+      grenade_run_front_left_007.png: -895751521
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

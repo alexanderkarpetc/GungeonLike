@@ -20,25 +20,7 @@ namespace GamePlay.Level
 
     private void DamageSurroundings()
     {
-      var hits = Physics2D.OverlapCircleAll(transform.position, Radius);
-      foreach (var hit in hits)
-      {
-        if (hit.CompareTag("Enemy"))
-        {
-          DamageManager.Hit(hit.GetComponent<EnemyController>(), this);
-        }
-        if (hit.CompareTag("Player"))
-        {
-          DamageManager.HitPlayer(hit.GetComponent<PlayerController>());
-        }
-        if (hit.CompareTag("Environment"))
-        {
-            var environment = hit.GetComponent<Environment>();
-            if(!environment.IsDestroying)
-              environment.DealDamage(Damage);
-
-        }
-      }
+      DamageManager.Explode(transform.position, Radius, Damage);
     }
   }
 }
