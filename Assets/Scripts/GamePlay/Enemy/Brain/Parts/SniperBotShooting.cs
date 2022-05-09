@@ -7,6 +7,8 @@ namespace GamePlay.Enemy.Brain.Parts
 {
   public class SniperBotShooting : BotPart
   {
+    private float _playerNoticeTime = 0.5f;
+    private float _aimTime = 1f;
     private LaserWeapon _weapon;
     private EnemyController _controller;
     private float _enemySawTime;
@@ -31,9 +33,9 @@ namespace GamePlay.Enemy.Brain.Parts
         return;
       }
       _enemySawTime += Time.deltaTime;
-      if (_enemySawTime > 1.5f && !_isAiming)
+      if (_enemySawTime > _playerNoticeTime && !_isAiming)
         StartAim();
-      if (_enemySawTime > 3.5f)
+      if (_enemySawTime > _aimTime + _playerNoticeTime)
         TryShoot();
     }
 
@@ -55,7 +57,7 @@ namespace GamePlay.Enemy.Brain.Parts
 
     private void TryShoot()
     {
-      _enemySawTime = 1.5f;
+      _enemySawTime = _playerNoticeTime;
       _weapon.TryShoot();
     }
   }

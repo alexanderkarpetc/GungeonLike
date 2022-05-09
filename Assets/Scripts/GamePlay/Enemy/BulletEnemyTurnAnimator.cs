@@ -12,7 +12,6 @@ namespace GamePlay.Enemy
 
     private int _currentTurn;
     private bool _previousRunState;
-    private bool _isRunning;
     public bool IsDying;
     private bool _isAnimating;
 
@@ -40,9 +39,19 @@ namespace GamePlay.Enemy
 
     private void Animate()
     {
-      _isRunning = true;
-
       var angle = TurnAngle();
+      if (_aiPath.maxSpeed == 0 && angle is >= 10 and < 170)
+      {
+        ProcessTurn(EnemyAnimState.idleBack);
+        return;
+      }
+
+      if (_aiPath.maxSpeed == 0)
+      {
+        ProcessTurn(EnemyAnimState.idle);
+        return;
+      }
+      
       if (angle >= -90 && angle < 10)
       {
         ProcessTurn(EnemyAnimState.downRight);
@@ -77,17 +86,11 @@ namespace GamePlay.Enemy
       if (_currentTurn == direction)
         return;
       _currentTurn = direction;
-      TurnTo(_isRunning);
+      TurnTo();
     }
 
-    protected void TurnTo(bool isRunning)
+    protected void TurnTo()
     {
-      if (!isRunning)
-      {
-        _animator.SetTrigger(_currentTurn);
-        return;
-      }
-
       _animator.SetTrigger(_currentTurn);
     }
   }
