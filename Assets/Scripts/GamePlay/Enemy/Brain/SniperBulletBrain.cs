@@ -13,7 +13,7 @@ namespace GamePlay.Enemy.Brain
       Owner = owner;
       var shooting = new SniperBotShooting(this);
       var moving = new SmallPatrolBotMoving(this);
-      // _parts.Add(shooting);
+      _parts.Add(shooting);
       _parts.Add(moving);
       EnemyController = owner.GetComponent<EnemyController>();
     }

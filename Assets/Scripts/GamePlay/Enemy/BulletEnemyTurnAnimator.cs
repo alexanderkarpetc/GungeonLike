@@ -1,4 +1,5 @@
-﻿using Pathfinding;
+﻿using System;
+using Pathfinding;
 using UnityEngine;
 
 namespace GamePlay.Enemy
@@ -7,6 +8,8 @@ namespace GamePlay.Enemy
   {
     [SerializeField] private Animator _animator;
     [SerializeField] private AIPath _aiPath;
+    private EnemyController _controller;
+
     private int _currentTurn;
     private bool _previousRunState;
     private bool _isRunning;
@@ -21,6 +24,11 @@ namespace GamePlay.Enemy
         _currentTurn = 0;
         _isAnimating = value;
       }
+    }
+
+    private void Start()
+    {
+      _controller = GetComponent<EnemyController>();
     }
 
     void Update()
@@ -58,7 +66,7 @@ namespace GamePlay.Enemy
 
     public float TurnAngle()
     {
-      var destination = _aiPath.steeringTarget;
+      var destination = _controller.CurrentTarget ?? _aiPath.steeringTarget;
       Vector2 direction = destination - transform.position;
       var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
       return angle;

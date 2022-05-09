@@ -7,6 +7,14 @@ namespace GamePlay.Weapons
     {
         [SerializeField] private GameObject _laserSight;
 
+        public void StartAim()
+        {
+            _laserSight.SetActive(true);
+        }
+        public void StopAim()
+        {
+            _laserSight.SetActive(false);
+        }
         private void Update()
         {
             var direction = IsInverted

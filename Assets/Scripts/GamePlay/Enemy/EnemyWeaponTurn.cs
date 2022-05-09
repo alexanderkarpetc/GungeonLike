@@ -6,15 +6,18 @@ namespace GamePlay.Enemy
   {
     [SerializeField] private Animator _animator;
     private GameObject _player;
+    private EnemyController _controller;
 
     protected override void OnStart()
     {
       _player = AppModel.PlayerGameObj();
+      _controller = transform.parent.GetComponent<EnemyController>();
     }
 
     protected override void TurnGun()
     {
-      Vector2 direction = _player.transform.position - transform.position;
+      var lookingPos = _controller.CurrentTarget ?? _player.transform.position;
+      Vector2 direction = lookingPos - transform.position;
       Angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
       var rot = Quaternion.AngleAxis(Mathf.Abs(Angle) < 90 ? Angle : - 180 + Angle, Vector3.forward);
       transform.rotation = rot;

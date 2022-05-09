@@ -31,10 +31,13 @@ namespace GamePlay.Enemy
     [SerializeField] private BulletEnemyTurnAnimator _turnAnimator;
     [SerializeField] private float _hitAnimDuration;
 
-    public EnemyState State;
-    private BotBrain _botBrain;
-    public Weapon Weapon;
     public Action<EnemyController> OnDeath;
+
+    public EnemyState State;
+    public Weapon Weapon;
+    public Vector3? CurrentTarget;
+    
+    private BotBrain _botBrain;
     private void Start()
     {
       State = new EnemyState();

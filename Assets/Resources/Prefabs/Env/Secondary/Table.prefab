@@ -611,7 +611,7 @@ GameObject:
   - component: {fileID: 8559852439914918474}
   m_Layer: 0
   m_Name: TableInteract
-  m_TagString: Finish
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
