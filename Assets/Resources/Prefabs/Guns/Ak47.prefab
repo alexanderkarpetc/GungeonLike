@@ -106,7 +106,7 @@ MonoBehaviour:
   IsInverted: 0
   Body: {fileID: 4700838025997285466}
   SecondHandPos: {fileID: 8938371636009332708}
-  IsPlayers: 0
+  IsPlayers: 1
   Type: 1
   ShootingType: 1
   AmmoKind: 2
@@ -117,6 +117,7 @@ MonoBehaviour:
   _shootDelay: 0
   _bulletSpeed: 30
   _impulse: 0.5
+  _normalDispersion: 3
   _animator: {fileID: 4700838025113585313}
   reloading: 0
   reloadingTime: 0

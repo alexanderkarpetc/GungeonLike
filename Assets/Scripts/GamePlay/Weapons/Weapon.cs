@@ -27,6 +27,7 @@ namespace GamePlay.Weapons
     [SerializeField] protected float _shootDelay;
     [SerializeField] protected float _bulletSpeed;
     [SerializeField] protected float _impulse;
+    [SerializeField] protected float _normalDispersion;
     [SerializeField] protected Animator _animator;
 
     protected float _nextShotTime;
@@ -93,7 +94,7 @@ namespace GamePlay.Weapons
       projectile.Speed = _bulletSpeed;
       projectile.Impulse = _impulse;
 
-      projectile.Direction = DegreeToVector2(transform.rotation.eulerAngles.z);
+      projectile.Direction = DegreeToVector2(transform.rotation.eulerAngles.z + AppModel.random.NextFloat(-_normalDispersion, _normalDispersion));
       if (IsInverted)
         projectile.Direction *= -1;
     }

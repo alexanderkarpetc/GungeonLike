@@ -114,8 +114,9 @@ MonoBehaviour:
   _shootPoint: {fileID: 422198881}
   _shootRate: 0.3
   _shootDelay: 0.2
-  _bulletSpeed: 8
+  _bulletSpeed: 12
   _impulse: 0
+  _normalDispersion: 8
   _animator: {fileID: 4700838025113585313}
   reloading: 0
   reloadingTime: 0
