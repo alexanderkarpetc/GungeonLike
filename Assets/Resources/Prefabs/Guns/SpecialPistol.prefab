@@ -105,17 +105,19 @@ MonoBehaviour:
     type: 3}
   IsInverted: 0
   Body: {fileID: 4700838025997285466}
+  SecondHandPos: {fileID: 0}
   IsPlayers: 1
   Type: 2
   ShootingType: 0
   AmmoKind: 1
-  _projectile: {fileID: 1269866929858603303, guid: 3f3976499f8fb1e49ba68f0eedbf575d,
+  _projectile: {fileID: 1269866929858603303, guid: df3a34bb77a018a41b65fd2827371fdb,
     type: 3}
   _shootPoint: {fileID: 422198881}
   _shootRate: 0.2
   _shootDelay: 0
   _bulletSpeed: 25
   _impulse: 0.3
+  _normalDispersion: 0
   _animator: {fileID: 4700838025113585313}
   reloading: 0
   reloadingTime: 0

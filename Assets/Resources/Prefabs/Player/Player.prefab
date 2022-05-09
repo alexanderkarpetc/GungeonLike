@@ -44,7 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de764e93e17f4e7888dd25d917311158, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _secondaryHandPos: {fileID: 0}
   _leftHandPos: {x: -0.225, y: -0.3, z: 0}
   _rightHandPos: {x: 0.225, y: -0.3, z: 0}
   Weapon: {fileID: 0}
@@ -514,7 +513,7 @@ MonoBehaviour:
   playerTurnAnimator: {fileID: 3688945083984600635}
   _rigidbody: {fileID: 7375126048374487353}
   _body: {fileID: 8463245576065121774}
-  _startingWeapon: {fileID: 1712927347, guid: 02dac79d2ed7c094799836c1418fa78d, type: 3}
+  _startingWeapon: {fileID: 1712927347, guid: 6d763d9f7ca69714a9e94ce269242f41, type: 3}
 --- !u!114 &3688945083984600635
 MonoBehaviour:
   m_ObjectHideFlags: 0
