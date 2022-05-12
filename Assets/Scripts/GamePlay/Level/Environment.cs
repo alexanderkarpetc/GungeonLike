@@ -6,6 +6,7 @@ namespace GamePlay.Level
   public class Environment : MonoBehaviour
   {
     [SerializeField] private float Health;
+    [SerializeField] protected GameObject DestroyFx;
     public bool IsDestroying;
 
     public void DealDamage(float damage)
@@ -20,6 +21,8 @@ namespace GamePlay.Level
 
     protected virtual void DoDestroy()
     {
+      if(DestroyFx != null)
+        Instantiate(DestroyFx, transform.position, Quaternion.identity);
       Destroy(gameObject);
     }
   }
