@@ -15,10 +15,10 @@ GameObject:
   - component: {fileID: 5673438468746121789}
   - component: {fileID: 4739193085893968551}
   - component: {fileID: 2270374981625696082}
-  - component: {fileID: 1508823137948543789}
   - component: {fileID: 5014539121441640379}
+  - component: {fileID: 7852976357912142494}
   m_Layer: 0
-  m_Name: Cubulon
+  m_Name: GunKnight
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8284064114409565638}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.12, y: -1.52, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -50,7 +50,7 @@ Animator:
   m_GameObject: {fileID: 8284064114409565638}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7ca44b7a51d63594c8f8315957794eed, type: 2}
+  m_Controller: {fileID: 9100000, guid: bdf14262298b3664f8b76316e2186b79, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -72,7 +72,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -94,9 +94,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.27}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1
 --- !u!114 &5673438468746121789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,21 +175,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
---- !u!114 &1508823137948543789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8284064114409565638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef33b47a49744f5dadc69b79879f7dfb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _animator: {fileID: 8284064114409565633}
-  _aiPath: {fileID: 4739193085893968551}
-  IsDying: 0
 --- !u!114 &5014539121441640379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,14 +187,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c52321b4aec9d134994207659dde0969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Type: 2
+  Type: 5
   _destinationSetter: {fileID: 2270374981625696082}
   _rigidbody: {fileID: 8337688368576467293}
   _aiPath: {fileID: 4739193085893968551}
-  enemyAnimator: {fileID: 1508823137948543789}
+  enemyAnimator: {fileID: 7852976357912142494}
   _animator: {fileID: 8284064114409565633}
   _hitAnimDuration: 0.5
   Weapon: {fileID: 0}
+--- !u!114 &7852976357912142494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8284064114409565638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0fb1144bafb4a27b30a8b41df86b195, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 8284064114409565633}
+  _aiPath: {fileID: 4739193085893968551}
 --- !u!1 &8284064114467451515
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,9 +281,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8787526106982906768, guid: b0dedc861b34abc4488e8b3e30fb67b5,
-    type: 3}
+  m_SortingOrder: 3
+  m_Sprite: {fileID: -1292749396, guid: 3d316f81ea0040445b31a83c49692bcb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

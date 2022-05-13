@@ -33,7 +33,7 @@ namespace GamePlay.Common
     {
       enemyController.DealDamage(damage);
       if(impulse != null)
-        enemyController.OnHit(impulse.Value);
+        enemyController.Hit(impulse.Value);
     }
 
     public static void Hit(Environment environment, float damage)

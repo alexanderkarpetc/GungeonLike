@@ -23,6 +23,8 @@ namespace GamePlay.Enemy
         return new WormBossBrain(gameObj);
       if (type == EnemyType.Sniper)
         return new SniperBulletBrain(gameObj);
+      if (type == EnemyType.GunKnight)
+        return new GunKnightBrain(gameObj);
 
       return new BotBrain(gameObj);
     };
@@ -30,8 +32,8 @@ namespace GamePlay.Enemy
     [SerializeField] private AIDestinationSetter _destinationSetter;
     [SerializeField] private Rigidbody2D _rigidbody;
     [SerializeField] private AIPath _aiPath;
+    [SerializeField] private EnemyAnimator enemyAnimator;
     [SerializeField] private Animator _animator;
-    [SerializeField] private BulletEnemyTurnAnimator _turnAnimator;
     [SerializeField] private float _hitAnimDuration;
 
     public Action<EnemyController> OnDeath;
@@ -41,6 +43,8 @@ namespace GamePlay.Enemy
     public Vector3? CurrentTarget;
     
     private BotBrain _botBrain;
+    private bool isDying;
+
     private void Start()
     {
       State = new EnemyState();
@@ -50,7 +54,7 @@ namespace GamePlay.Enemy
 
     private void Update()
     {
-      if(!_turnAnimator.IsDying)
+      if(!isDying)
         _botBrain.OnUpdate();
     }
 
@@ -58,23 +62,23 @@ namespace GamePlay.Enemy
     {
       State.Hp -= damage;
     }
-    public void OnHit(Vector2 impulse)
+    public void Hit(Vector2 impulse)
     {
       StartCoroutine(HitImpulse(impulse));
-      if (!_turnAnimator.IsDying && State.Hp <= 0)
+      if (!isDying && State.Hp <= 0)
       {
         Death();
         return;
       }
 
-      StartCoroutine(HitAnimation());
+      enemyAnimator.Hit(_hitAnimDuration);
     }
 
     private void Death()
     {
       StopProcesses();
-      _turnAnimator.IsDying = true;
-      _animator.SetTrigger(EnemyAnimState.die);
+      isDying = true;
+      enemyAnimator.Die();
       var deathDuration = _animator.runtimeAnimatorController.animationClips.First(x=>x.name.Equals("Death")).averageDuration;
       Invoke(nameof(AfterDeath), deathDuration);
     }
@@ -93,34 +97,6 @@ namespace GamePlay.Enemy
       _rigidbody.AddForce(impulse, ForceMode2D.Impulse);
       yield return new WaitForSeconds(_hitAnimDuration);
       _aiPath.canMove = true;
-    }
-
-    protected virtual IEnumerator HitAnimation()
-    {
-      _turnAnimator.isAnimating = true;
-      var angle = _turnAnimator.TurnAngle();
-      if (angle >= -90 && angle < 10)
-      {
-        _animator.SetTrigger(EnemyAnimState.hitRightDown);
-      }
-
-      else if (angle >= 10 && angle < 90)
-      {
-        _animator.SetTrigger(EnemyAnimState.hitRightUp);
-      }
-
-      else if (angle >= 90 && angle < 170)
-      {
-        _animator.SetTrigger(EnemyAnimState.hitLeftUp);
-      }
-
-      else
-      {
-        _animator.SetTrigger(EnemyAnimState.hitLeftDown);
-      }
-      
-      yield return new WaitForSeconds(_hitAnimDuration);
-      _turnAnimator.isAnimating = false;
     }
 
     private void StopProcesses()

@@ -15,7 +15,6 @@ namespace GamePlay.Enemy.Brain
       var moving = new SmallPatrolBotMoving(this);
       _parts.Add(shooting);
       _parts.Add(moving);
-      EnemyController = owner.GetComponent<EnemyController>();
     }
     public override void OnCreate()
     {

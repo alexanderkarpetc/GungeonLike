@@ -45,8 +45,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab8da9f3235945ecafa725a523b02890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _body: {fileID: 3294361312392601890}
-  _secondaryHandPos: {fileID: 0}
   _leftHandPos: {x: -0.45, y: -0.4, z: 0}
   _rightHandPos: {x: 0.45, y: -0.4, z: 0}
   Weapon: {fileID: 7821441315918129931}
@@ -430,8 +428,8 @@ MonoBehaviour:
   _destinationSetter: {fileID: 2270374981625696082}
   _rigidbody: {fileID: 8337688368576467293}
   _aiPath: {fileID: 4739193085893968551}
+  enemyAnimator: {fileID: 1508823137948543789}
   _animator: {fileID: 8284064114409565633}
-  _turnAnimator: {fileID: 1508823137948543789}
   _hitAnimDuration: 0.5
   Weapon: {fileID: 7821441315918129931}
 --- !u!1 &8284064114467451515
@@ -591,12 +589,6 @@ PrefabInstance:
 --- !u!4 &3294361311626878942 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4700838025113585318, guid: 4defcc20b07f920429d3000689e86ee4,
-    type: 3}
-  m_PrefabInstance: {fileID: 7821441314339428728}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &3294361312392601890 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 4700838025997285466, guid: 4defcc20b07f920429d3000689e86ee4,
     type: 3}
   m_PrefabInstance: {fileID: 7821441314339428728}
   m_PrefabAsset: {fileID: 0}

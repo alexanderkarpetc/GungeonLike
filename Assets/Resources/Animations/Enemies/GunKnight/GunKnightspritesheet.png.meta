@@ -1,0 +1,3202 @@
+fileFormatVersion: 2
+guid: 3d316f81ea0040445b31a83c49692bcb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 18
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gun_knight_attack_back_001.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 572
+        width: 44
+        height: 46
+      alignment: 9
+      pivot: {x: 0.38311893, y: 0.35289598}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d15c03e2ef0b640a18e27f87805e21
+      internalID: -604178061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_back_002.png
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 573
+        width: 46
+        height: 45
+      alignment: 9
+      pivot: {x: 0.3646639, y: 0.39173177}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30e5525f7e0df44aba33cd4f3aa5e98
+      internalID: 716375373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_back_003.png
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 575
+        width: 45
+        height: 43
+      alignment: 9
+      pivot: {x: 0.36767155, y: 0.40558004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd5fa558bfe7844b9e428fcef2c4f17
+      internalID: -1621997675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_back_004.png
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 576
+        width: 44
+        height: 42
+      alignment: 9
+      pivot: {x: 0.39542216, y: 0.3711083}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69267e0a722b00e4eb9661a9402bd3e4
+      internalID: -1567286757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_back_005.png
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 568
+        width: 39
+        height: 50
+      alignment: 9
+      pivot: {x: 0.43059716, y: 0.3700769}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11135e7a99219304187565f7ad19126f
+      internalID: 1114907051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_back_006.png
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 563
+        width: 40
+        height: 55
+      alignment: 9
+      pivot: {x: 0.50000036, y: 0.2834617}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1e761ceaf10b74ea1c40bb4fb8658b
+      internalID: -2001097118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_back_007.png
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 580
+        width: 36
+        height: 38
+      alignment: 9
+      pivot: {x: 0.6052619, y: 0.42164853}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8fadb40aef6bd4ba38d572d98af000
+      internalID: 892977362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_back_008.png
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 580
+        width: 35
+        height: 38
+      alignment: 9
+      pivot: {x: 0.6392037, y: 0.39315635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d455823381ac6479d4ccbf8ee2f05f
+      internalID: 1942963349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_back_009.png
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 582
+        width: 35
+        height: 36
+      alignment: 9
+      pivot: {x: 0.62373656, y: 0.39473808}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1044c90ad74e74ba2a9c5602265d74
+      internalID: -2123634172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_back_010.png
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 572
+        width: 35
+        height: 46
+      alignment: 9
+      pivot: {x: 0.6082694, y: 0.36466384}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c70969a9fc2854890a6cf07e85e68b
+      internalID: 1078824723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_back_011.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 565
+        width: 41
+        height: 53
+      alignment: 9
+      pivot: {x: 0.5066022, y: 0.35700384}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff11954f4f3ec04695cc06b7c60e178
+      internalID: 1956141356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_front_001.png
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 568
+        width: 46
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab01c2de6d65eb4c81ba49ab84bb9a8
+      internalID: 1430244422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_front_002.png
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 577
+        width: 45
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03108993f28934447b75aa580a9c5fd1
+      internalID: -415963340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_front_003.png
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 533
+        width: 43
+        height: 42
+      alignment: 9
+      pivot: {x: 0.44964245, y: 0.40333194}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657e15d90c157714d856b4446b3cab3b
+      internalID: 635986233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_front_004.png
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 531
+        width: 43
+        height: 44
+      alignment: 9
+      pivot: {x: 0.49370557, y: 0.41387662}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f042b5e53dc93bc42b614e39b4e093e7
+      internalID: -2186191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_front_005.png
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 509
+        width: 44
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3b737705e1d77498a4fd878b2d49c7
+      internalID: -1535260378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_front_006.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 469
+        width: 50
+        height: 38
+      alignment: 9
+      pivot: {x: 0.62570876, y: 0.34837744}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f1e1aeabe759b47a5aff4b67b95b9e
+      internalID: 1041477010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_front_007.png
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 457
+        width: 39
+        height: 50
+      alignment: 9
+      pivot: {x: 0.52686095, y: 0.58380556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb0a47ecd42ef945a342b65523f3535
+      internalID: 50369769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_front_008.png
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 450
+        width: 39
+        height: 57
+      alignment: 9
+      pivot: {x: 0.5402914, y: 0.64702725}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081703252a0367c4faa2666495228abd
+      internalID: 751677384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_front_009.png
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 448
+        width: 39
+        height: 59
+      alignment: 9
+      pivot: {x: 0.5537219, y: 0.65092134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08092678c17d4974da759974bbc54199
+      internalID: 1052140918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_front_010.png
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 459
+        width: 39
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5218239}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea50a010fd041cb42912453dc6ad75e0
+      internalID: -757316649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_front_011.png
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 468
+        width: 47
+        height: 39
+      alignment: 9
+      pivot: {x: 0.58915514, y: 0.41941717}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a59984d9e3bc940bfbf4ed9a84dae7
+      internalID: -1292749396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_front_012.png
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 441
+        width: 42
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5748269, y: 0.2301705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af79fa07ff99474a8bc7870f9a1e901
+      internalID: 1826425880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_northeast_006.png
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 435
+        width: 40
+        height: 72
+      alignment: 9
+      pivot: {x: 0.4083374, y: 0.22355694}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc251d948c4a9940b401e67cf167f72
+      internalID: 8829174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_northeast_007.png
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 469
+        width: 45
+        height: 38
+      alignment: 9
+      pivot: {x: 0.32540485, y: 0.40351224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a39d69c99f5f9b4b95135145799cd24
+      internalID: 898339148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_northeast_008.png
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 469
+        width: 44
+        height: 38
+      alignment: 9
+      pivot: {x: 0.30953217, y: 0.40351224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2861bc5a29ae13458dbf689e1b4b79a
+      internalID: 1863968171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_northeast_009.png
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 470
+        width: 43
+        height: 37
+      alignment: 9
+      pivot: {x: 0.2441974, y: 0.38674843}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88fd47fa61239ec4ba6db4c0fd70d703
+      internalID: 65828534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_northeast_010.png
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 463
+        width: 38
+        height: 44
+      alignment: 9
+      pivot: {x: 0.41729656, y: 0.34524468}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d896e2caef4cd6a44ba8699a00475325
+      internalID: 2100130387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_northwest_007.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 423
+        width: 46
+        height: 38
+      alignment: 9
+      pivot: {x: 0.6594135, y: 0.41729656}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb02ee9e7cb170d41a75973c019c316c
+      internalID: 2013183308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_northwest_008.png
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 423
+        width: 42
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5623554, y: 0.4999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a8253af12dc7194bbd4f0fbaff2f085
+      internalID: -1713208507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_northwest_009.png
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 425
+        width: 41
+        height: 36
+      alignment: 9
+      pivot: {x: 0.62775254, y: 0.44180128}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8d4ef3d30568b4dbd2cca3bf8a4772
+      internalID: -725071547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_southeast_005.png
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 397
+        width: 50
+        height: 64
+      alignment: 9
+      pivot: {x: 0.6152332, y: 0.24629068}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865f8fb88b071174f953415de510f85c
+      internalID: -1636323523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_southeast_006.png
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 421
+        width: 51
+        height: 40
+      alignment: 9
+      pivot: {x: 0.4178377, y: 0.43452606}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be45efd63ed43a144b296257a723e074
+      internalID: 176953074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_southeast_007.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 517
+        width: 54
+        height: 49
+      alignment: 9
+      pivot: {x: 0.27690592, y: 0.6175848}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4649cb5a591276c42824b015846e2eae
+      internalID: 1381990283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_southeast_008.png
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 414
+        width: 53
+        height: 47
+      alignment: 9
+      pivot: {x: 0.27269587, y: 0.5557219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd48314113382b540bacd37fd820bee9
+      internalID: -1391919665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_southwest_006.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 370
+        width: 70
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf38f6e0c2a39c4ba5b69ebef543a91
+      internalID: 282426463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_southwest_007.png
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 518
+        width: 55
+        height: 48
+      alignment: 9
+      pivot: {x: 0.68094456, y: 0.55456036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 760a5d7684cf507469edaa7ffbc756b2
+      internalID: -1139929742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_attack_southwest_008.png
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 522
+        width: 55
+        height: 44
+      alignment: 9
+      pivot: {x: 0.6904677, y: 0.5238079}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b44d13efbcd1147b2da9d5138156c5
+      internalID: -962723586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_die_left_001.png
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 377
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36671c554f526b5468df9784ea176d7d
+      internalID: -688430925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_die_left_002.png
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 377
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a9f3440ca6d146469b4c3befa625d72
+      internalID: -1518865465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_die_left_003.png
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 379
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd01634ba2cbb84f9928bb1d8a618de
+      internalID: 1094700255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_die_left_004.png
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 390
+        width: 37
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bcf02f673eca7a44963c3fa8044a1d9
+      internalID: -11522730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_die_left_005.png
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 390
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c0d82d0b27b5d468a6001749a1325e
+      internalID: 312126415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_die_left_006.png
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 391
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00053f46294aa9c4bb3b12ebf3ecd963
+      internalID: -662160606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_die_left_007.png
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 391
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b3d1c4cb33f9248a225f1944a97cf7
+      internalID: -1528386405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_die_right_001.png
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 377
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a0bc14b016a2747a1a73d1360c0274
+      internalID: -83244161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_die_right_002.png
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 377
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe1a80f5f6a47cc47bb20ad6848f4086
+      internalID: -823811545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_die_right_003.png
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 379
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d050d395d929b4893a66710bca8a46
+      internalID: -521936261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_die_right_004.png
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 355
+        width: 37
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e949f7c5a467e4d93b8abf09694e3b
+      internalID: -430251380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_die_right_005.png
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 355
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb835c45c8a3c847a82d44f098a13ec
+      internalID: -1885009104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_die_right_006.png
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 391
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8973e6e9ec8b4e545a7fd41c97c88bda
+      internalID: 1822941286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_die_right_007.png
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 368
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974b0623a4ad33a4ca0963ee4af438e0
+      internalID: 1598591463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_idle_back_001.png
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 329
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.47711834, y: 0.41991106}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c112dd37710f340a0ff05dccf4a0a2
+      internalID: 660150531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_idle_back_002.png
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 328
+        width: 42
+        height: 49
+      alignment: 9
+      pivot: {x: 0.4771191, y: 0.34309044}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3139226ee9f33ce4cbfc4305eed5a37a
+      internalID: 1085901243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_idle_back_003.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 277
+        width: 42
+        height: 49
+      alignment: 9
+      pivot: {x: 0.4885586, y: 0.37251064}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7866f2bf0f2a3154c94be7fcd1224e60
+      internalID: 89895306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_idle_back_004.png
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 278
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.46567607, y: 0.39988837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42f199bde861b04cbe5bd87db2e5737
+      internalID: -965947792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_idle_front_001.png
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 276
+        width: 45
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5213574, y: 0.39428222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c123eb723406a438a0ee67b0062fc1
+      internalID: 519033467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_idle_front_002.png
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 275
+        width: 45
+        height: 51
+      alignment: 9
+      pivot: {x: 0.55339354, y: 0.3586659}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db62b52b1f357c64d93a78a18904ff6b
+      internalID: 1754199881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_idle_front_003.png
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 276
+        width: 45
+        height: 50
+      alignment: 9
+      pivot: {x: 0.54271513, y: 0.39428222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc03457f074a204d8928a65fa637ef2
+      internalID: -289407219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_idle_front_004.png
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 277
+        width: 45
+        height: 49
+      alignment: 9
+      pivot: {x: 0.53203636, y: 0.38231736}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54044dc964d6c8a4ea639f10f5ddc735
+      internalID: -273807378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_move_side_left_001.png
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 465
+        width: 25
+        height: 42
+      alignment: 9
+      pivot: {x: 0.41619384, y: 0.40023077}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3beba0bb8b52ebb4a8020203d202dd07
+      internalID: 1073092856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_move_side_left_002.png
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 346
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7e5ab9e20488b41a7f19b8b80ef17b
+      internalID: -157835708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_move_side_left_003.png
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 284
+        width: 36
+        height: 42
+      alignment: 9
+      pivot: {x: 0.32647365, y: 0.41991097}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581cd0f7dfb982e408ddf3e93e31e75d
+      internalID: -1205310593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_move_side_left_004.png
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 346
+        width: 32
+        height: 43
+      alignment: 9
+      pivot: {x: 0.37986755, y: 0.38824746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 145c92c512ebd7943a2e1d46648a10e1
+      internalID: 1414955285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_move_side_left_005.png
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 300
+        width: 28
+        height: 44
+      alignment: 9
+      pivot: {x: 0.44851467, y: 0.4563155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be89602b0d9f7d418794f786f02f1c7
+      internalID: 1794000861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_move_side_left_006.png
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 299
+        width: 22
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5000014, y: 0.4466071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5d56d8530923a42810bcc731e1d8c0
+      internalID: -466376936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_move_side_right_001.png
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 302
+        width: 25
+        height: 42
+      alignment: 9
+      pivot: {x: 0.57688844, y: 0.43135217}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26bb4ac17f9399943b9db9244c4dc696
+      internalID: 181342230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_move_side_right_002.png
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 301
+        width: 31
+        height: 43
+      alignment: 9
+      pivot: {x: 0.62401164, y: 0.4105984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c296661fda0dcac44ab412bfeff6523d
+      internalID: -1880330661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_move_side_right_003.png
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 284
+        width: 36
+        height: 42
+      alignment: 9
+      pivot: {x: 0.6067878, y: 0.41991097}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb63e65d700c804e8e5b000bfdaa7b6
+      internalID: -1642406605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_move_side_right_004.png
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 256
+        width: 32
+        height: 43
+      alignment: 9
+      pivot: {x: 0.64185715, y: 0.373318}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e166868243f844786e3e3706ced9f4
+      internalID: 1615692079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_move_side_right_005.png
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 300
+        width: 28
+        height: 44
+      alignment: 9
+      pivot: {x: 0.56865036, y: 0.48907956}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32fd99797beca34cb4ddac3353c7a5b
+      internalID: 713101749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_move_side_right_006.png
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 254
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3803a7fd69a42c44ad59f6607793464
+      internalID: 1465280522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_idle_left_001.png
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 247
+        width: 34
+        height: 52
+      alignment: 9
+      pivot: {x: 0.2997293, y: 0.4127033}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6164360ed6333f40ae828eff7027927
+      internalID: 1141060675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_idle_left_002.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 193
+        width: 35
+        height: 52
+      alignment: 9
+      pivot: {x: 0.42887178, y: 0.3563752}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62fe0817b971a18498c084c7cf4c2ee5
+      internalID: -1990624412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_idle_left_003.png
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 194
+        width: 35
+        height: 51
+      alignment: 9
+      pivot: {x: 0.3313917, y: 0.41989225}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635f6393a8f22e3488519c57d09e7521
+      internalID: 108760881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_idle_left_004.png
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 193
+        width: 34
+        height: 52
+      alignment: 9
+      pivot: {x: 0.32643285, y: 0.4214328}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f44cbe90626d2c49b22910b58be74cb
+      internalID: 1400524507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_idle_right_001.png
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 193
+        width: 34
+        height: 52
+      alignment: 9
+      pivot: {x: 0.6201616, y: 0.43889236}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee783501cab93b043b2daa0257bbc81b
+      internalID: -546501832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_idle_right_002.png
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 193
+        width: 35
+        height: 52
+      alignment: 9
+      pivot: {x: 0.57781893, y: 0.43016258}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6931f3c0e4fab438e84f6414686d8f
+      internalID: 373525817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_idle_right_003.png
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 194
+        width: 35
+        height: 51
+      alignment: 9
+      pivot: {x: 0.56484896, y: 0.44659483}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe000326171a9084680f8737401583f3
+      internalID: -987156168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_idle_right_004.png
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 193
+        width: 34
+        height: 52
+      alignment: 9
+      pivot: {x: 0.6201616, y: 0.38651392}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107f7e4e5d64fa44fb7fdc1148741346
+      internalID: 1575619103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_left_attack_001.png
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 192
+        width: 36
+        height: 53
+      alignment: 9
+      pivot: {x: 0.33607483, y: 0.38865545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3df80d322e38a4e81747b967e19adb
+      internalID: -2099755784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_left_attack_002.png
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 197
+        width: 37
+        height: 48
+      alignment: 9
+      pivot: {x: 0.365043, y: 0.42434278}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0e02e84c1b41841b49c6063dca85d5
+      internalID: 123501448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_left_attack_003.png
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 202
+        width: 40
+        height: 43
+      alignment: 9
+      pivot: {x: 0.44325638, y: 0.3838746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3e0ff3b88b5a0489b27a902667ed3e
+      internalID: 441257773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_left_attack_004.png
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 202
+        width: 40
+        height: 43
+      alignment: 9
+      pivot: {x: 0.43190843, y: 0.4049885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b4b521eed0de734485a09d6018c078d
+      internalID: 1642783723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_left_attack_005.png
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 205
+        width: 30
+        height: 40
+      alignment: 9
+      pivot: {x: 0.4092102, y: 0.44325715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa29cb733f4907e4e99725cde2e98032
+      internalID: -265117303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_left_attack_006.png
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 193
+        width: 33
+        height: 52
+      alignment: 9
+      pivot: {x: 0.45873192, y: 0.32540601}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5f39ed8a3cd034facc2f1ea89b950b
+      internalID: 1623833553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_left_attack_007.png
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 210
+        width: 51
+        height: 35
+      alignment: 9
+      pivot: {x: 0.7492245, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906dcecf69985b34281053f8588cf26f
+      internalID: -1201489596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_left_attack_008.png
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 175
+        width: 51
+        height: 33
+      alignment: 9
+      pivot: {x: 0.7314226, y: 0.50000095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647927d4334673f4f83a11b24e0a6a1d
+      internalID: -2135450758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_left_attack_009.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 138
+        width: 50
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eea54b73a9641246a3a57c4706375f9
+      internalID: -26748342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_left_attack_010.png
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 138
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53fae7a906b13c54d98bb7b14ac23823
+      internalID: -1187757148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_left_attack_011.png
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 130
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d80a75d710f8e442ac295c68b184a9f
+      internalID: 2041503000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_left_attack_012.png
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 117
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8052bbdb423dfd4c91a0881c26c2714
+      internalID: -1003378302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_right_attack_001.png
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 120
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c134c5b0df6d7343b86c7b8c25ff9e1
+      internalID: 1831848401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_right_attack_002.png
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 125
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc3bc81592cfd34b9bf39424fc86104
+      internalID: -1620967053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_right_attack_003.png
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 130
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e84e2ca38ab95a54481bcbf75ff64054
+      internalID: 33912175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_right_attack_004.png
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 130
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07963c3cf2e5a324299567f216f7b908
+      internalID: 825606124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_right_attack_005.png
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 133
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc41cea64ede144abeaa5da76d0249d
+      internalID: 1795237118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_right_attack_006.png
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 121
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d660d7c487fd594db4adfa82751ad1e
+      internalID: 9541518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_right_attack_007.png
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 138
+        width: 51
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4b9e6817e3c1c4b80632842b093821
+      internalID: -581393723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_right_attack_008.png
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 140
+        width: 51
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecbcba680a939a54cafd9f5627171771
+      internalID: -2007526216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_right_attack_009.png
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 138
+        width: 50
+        height: 35
+      alignment: 9
+      pivot: {x: 0.20039551, y: 0.48703048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90b9706c4d54a84b86276981fb10819
+      internalID: -1997023400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_right_attack_010.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 101
+        width: 47
+        height: 35
+      alignment: 9
+      pivot: {x: 0.21521255, y: 0.4509709}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e74f08171dc5a64fb25b667bfea78ec
+      internalID: -1543662781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_right_attack_011.png
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 93
+        width: 30
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5457606, y: 0.49201894}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cfc5680402bf904baff310d90262860
+      internalID: -166226635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_side_right_attack_012.png
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 80
+        width: 32
+        height: 56
+      alignment: 9
+      pivot: {x: 0.62767124, y: 0.38651413}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ccfac7cbba20064ebf99c25b35c53c4
+      internalID: 1808850700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_walk_back_001.png
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 97
+        width: 44
+        height: 39
+      alignment: 9
+      pivot: {x: 0.3761964, y: 0.43016267}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230e748169a03494c9e14852814d23ed
+      internalID: 863672360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_walk_back_002.png
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 97
+        width: 43
+        height: 39
+      alignment: 9
+      pivot: {x: 0.40498814, y: 0.41852316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5a48506f361f947845ee0ea0342b53
+      internalID: -2142222560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_walk_back_003.png
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 89
+        width: 42
+        height: 47
+      alignment: 9
+      pivot: {x: 0.4783834, y: 0.37444112}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b13a398b5418f444839ba033768b117
+      internalID: 1357653496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_walk_back_004.png
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 575
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4919c07b70993f4fbc95aca59ee3e24
+      internalID: 1515502475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_walk_back_005.png
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 529
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6754dd85a3183c241ab706343c4ad6db
+      internalID: -220101358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_walk_back_006.png
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 480
+        width: 42
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35512266}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82bf2360352db9409af1f8cb24eab9f
+      internalID: 1255155833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_walk_front_001.png
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 430
+        width: 45
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5349189, y: 0.28175545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ae5fb41677df643847b9de73c15599
+      internalID: -1268962507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_walk_front_002.png
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 252
+        width: 45
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5201755, y: 0.31649065}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0328e71dd910fcd478b57ab2d13167a1
+      internalID: -1414006869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_walk_front_003.png
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 201
+        width: 44
+        height: 49
+      alignment: 9
+      pivot: {x: 0.53095037, y: 0.3332448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff65519ff3bcc184596c05fdc3a6dccd
+      internalID: -2069844983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_walk_front_004.png
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 152
+        width: 43
+        height: 47
+      alignment: 9
+      pivot: {x: 0.57389796, y: 0.32614914}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee9a25a5da8e86408e684e7bb2751e9
+      internalID: 522876463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_walk_front_005.png
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 103
+        width: 40
+        height: 47
+      alignment: 9
+      pivot: {x: 0.63618314, y: 0.33580765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78cc98d48ef75504897315a37ab7f722
+      internalID: -896465692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_knight_walk_front_006.png
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 53
+        width: 44
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5390006, y: 0.34984827}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8688b452dbc5199488f15f01c9675b0d
+      internalID: -649624519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_burst_die_left_001.png
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 393
+        width: 38
+        height: 35
+      alignment: 9
+      pivot: {x: 0.55058527, y: 0.4450823}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1934fe3d2d832964989f3840d310ace9
+      internalID: 161517951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_burst_die_left_002.png
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 306
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16ed4cf4856693428f3e312aa1ec6a3
+      internalID: -2025678125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_burst_die_left_003.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 41
+        width: 51
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1499ed819798eb042befc22e9c38b026
+      internalID: 1920376407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_burst_die_left_004.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 24
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5570abe0bf236bd43babe63bd7af71eb
+      internalID: 72630688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_burst_die_left_005.png
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 13
+        width: 78
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a7dd22c09d0ee4eae5bd09a1eb5a40
+      internalID: -2021914645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_burst_die_left_006.png
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 10
+        width: 78
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccaa897b745b0284ea5ad3309707cf9f
+      internalID: 1096333380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_burst_die_left_007.png
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 10
+        width: 79
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f480b9a8f742246949da8764e71511
+      internalID: -1332292820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_burst_die_left_008.png
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 11
+        width: 80
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0256225bae5834b8ca2c6a7b4e737c
+      internalID: 1354883494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_burst_die_left_009.png
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 541
+        width: 83
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9feeee8a6f1a2149899ab92c255eacf
+      internalID: 244436426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_burst_die_left_010.png
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 466
+        width: 82
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15aa5b1dd1ad454a8bfb09596644cf9
+      internalID: 1013436985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_burst_die_right_001.png
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 429
+        width: 38
+        height: 35
+      alignment: 9
+      pivot: {x: 0.45864868, y: 0.4102077}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5644ccb3436542d45b5f4dce13eb9ada
+      internalID: 309837925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_burst_die_right_002.png
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 426
+        width: 40
+        height: 38
+      alignment: 9
+      pivot: {x: 0.46396178, y: 0.42412686}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb0666483b273f47888c4198e8bba9d
+      internalID: -1200462912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_burst_die_right_003.png
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 378
+        width: 51
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5000012, y: 0.4582148}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c61f250d5966684eb626bd491a7f658
+      internalID: -818275387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_burst_die_right_004.png
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 313
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593f4222ba50f7a4a8fbc1ebb1dcfc6e
+      internalID: 1522101635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_burst_die_right_005.png
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 237
+        width: 78
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b07d0011897014a8b6a09ff921654c
+      internalID: -209718650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_burst_die_right_006.png
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 158
+        width: 78
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff1d56124c1a97b4a95be19d31df08ee
+      internalID: -670260338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_burst_die_right_007.png
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 79
+        width: 79
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4311fe4f973c043be1029552ab4a2b
+      internalID: 582444245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_burst_die_right_008.png
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 1
+        width: 80
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850c66ed28d0af34587c16aebe27a6f6
+      internalID: 862539424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_burst_die_right_009.png
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 541
+        width: 83
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b294e5b34e9e3c4d8dcbae7f599ce7d
+      internalID: 1708646369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_burst_die_right_010.png
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 466
+        width: 82
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f4a81552c9eec49acea8402f8c43ee
+      internalID: -1331608384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_shard_001.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 522
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0e50c39fe2f0e45b9a904727b41b41
+      internalID: 897059723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_shard_002.png
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 522
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092061abecbcd5b4991d5be3cda29e76
+      internalID: -182917553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_shard_003.png
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 525
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9514a4aa01b9c3b46a5f60666b1843de
+      internalID: -1241953283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun_nut_shard_004.png
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 524
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5df00b354af77a44906e754f69abd5b
+      internalID: -286224233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: cf1f210f93dfbf34fbfe643de030e84e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      gun_knight_attack_front_012.png: 1826425880
+      gun_knight_attack_front_007.png: 50369769
+      gun_knight_die_left_004.png: -11522730
+      gun_knight_die_right_004.png: -430251380
+      gun_knight_attack_front_006.png: 1041477010
+      gun_knight_idle_front_001.png: 519033467
+      gun_knight_attack_back_005.png: 1114907051
+      gun_knight_attack_front_004.png: -2186191
+      gun_knight_side_right_attack_003.png: 33912175
+      gun_knight_side_right_attack_007.png: -581393723
+      gun_nut_burst_die_right_010.png: -1331608384
+      gun_knight_attack_back_011.png: 1956141356
+      gun_knight_side_right_attack_009.png: -1997023400
+      gun_knight_attack_southeast_006.png: 176953074
+      gun_nut_shard_004.png: -286224233
+      gun_nut_burst_die_right_001.png: 309837925
+      gun_knight_attack_back_010.png: 1078824723
+      gun_knight_attack_northeast_007.png: 898339148
+      gun_knight_attack_front_008.png: 751677384
+      gun_knight_side_idle_right_003.png: -987156168
+      gun_knight_side_left_attack_009.png: -26748342
+      gun_knight_attack_northeast_010.png: 2100130387
+      gun_knight_side_idle_left_002.png: -1990624412
+      gun_knight_side_right_attack_004.png: 825606124
+      gun_nut_burst_die_left_003.png: 1920376407
+      gun_knight_move_side_left_004.png: 1414955285
+      gun_knight_attack_back_004.png: -1567286757
+      gun_knight_side_left_attack_007.png: -1201489596
+      gun_knight_attack_back_007.png: 892977362
+      gun_knight_attack_front_010.png: -757316649
+      gun_knight_move_side_left_002.png: -157835708
+      gun_knight_die_left_003.png: 1094700255
+      gun_nut_burst_die_left_005.png: -2021914645
+      gun_nut_burst_die_right_007.png: 582444245
+      gun_knight_side_right_attack_010.png: -1543662781
+      gun_knight_attack_front_003.png: 635986233
+      gun_knight_walk_front_004.png: 522876463
+      gun_nut_burst_die_left_010.png: 1013436985
+      gun_knight_side_right_attack_008.png: -2007526216
+      gun_knight_die_left_007.png: -1528386405
+      gun_knight_side_right_attack_012.png: 1808850700
+      gun_knight_walk_back_003.png: 1357653496
+      gun_knight_side_left_attack_006.png: 1623833553
+      gun_knight_walk_back_002.png: -2142222560
+      gun_knight_attack_back_006.png: -2001097118
+      gun_knight_walk_back_005.png: -220101358
+      gun_knight_attack_northeast_006.png: 8829174
+      gun_knight_move_side_right_005.png: 713101749
+      gun_knight_walk_back_001.png: 863672360
+      gun_knight_attack_front_005.png: -1535260378
+      gun_knight_side_right_attack_005.png: 1795237118
+      gun_knight_attack_southwest_006.png: 282426463
+      gun_nut_burst_die_right_005.png: -209718650
+      gun_knight_side_left_attack_001.png: -2099755784
+      gun_knight_side_left_attack_008.png: -2135450758
+      gun_nut_burst_die_right_004.png: 1522101635
+      gun_knight_die_left_002.png: -1518865465
+      gun_knight_attack_northeast_009.png: 65828534
+      gun_knight_walk_front_005.png: -896465692
+      gun_knight_die_right_005.png: -1885009104
+      gun_knight_die_right_001.png: -83244161
+      gun_knight_idle_front_002.png: 1754199881
+      gun_knight_move_side_left_001.png: 1073092856
+      gun_knight_die_right_007.png: 1598591463
+      gun_knight_idle_back_003.png: 89895306
+      gun_knight_die_left_005.png: 312126415
+      gun_nut_burst_die_left_001.png: 161517951
+      gun_knight_side_idle_left_001.png: 1141060675
+      gun_knight_side_left_attack_005.png: -265117303
+      gun_knight_walk_back_004.png: 1515502475
+      gun_nut_shard_001.png: 897059723
+      gun_knight_attack_back_002.png: 716375373
+      gun_knight_side_left_attack_010.png: -1187757148
+      gun_knight_side_right_attack_001.png: 1831848401
+      gun_knight_side_idle_left_003.png: 108760881
+      gun_nut_burst_die_left_008.png: 1354883494
+      gun_knight_side_left_attack_004.png: 1642783723
+      gun_knight_attack_front_002.png: -415963340
+      gun_knight_side_left_attack_012.png: -1003378302
+      gun_knight_die_right_006.png: 1822941286
+      gun_knight_attack_front_011.png: -1292749396
+      gun_nut_burst_die_right_008.png: 862539424
+      gun_knight_walk_front_002.png: -1414006869
+      gun_nut_burst_die_left_006.png: 1096333380
+      gun_knight_die_right_003.png: -521936261
+      gun_knight_side_idle_right_002.png: 373525817
+      gun_knight_die_left_001.png: -688430925
+      gun_nut_burst_die_right_009.png: 1708646369
+      gun_knight_die_right_002.png: -823811545
+      gun_knight_side_right_attack_006.png: 9541518
+      gun_nut_burst_die_right_002.png: -1200462912
+      gun_knight_idle_back_004.png: -965947792
+      gun_knight_idle_back_002.png: 1085901243
+      gun_knight_move_side_right_006.png: 1465280522
+      gun_knight_move_side_left_003.png: -1205310593
+      gun_knight_attack_northwest_008.png: -1713208507
+      gun_knight_side_idle_right_004.png: 1575619103
+      gun_knight_attack_southeast_007.png: 1381990283
+      gun_knight_die_left_006.png: -662160606
+      gun_knight_attack_front_009.png: 1052140918
+      gun_knight_attack_northeast_008.png: 1863968171
+      gun_knight_attack_back_008.png: 1942963349
+      gun_knight_walk_front_006.png: -649624519
+      gun_nut_burst_die_right_003.png: -818275387
+      gun_knight_move_side_right_001.png: 181342230
+      gun_knight_move_side_right_003.png: -1642406605
+      gun_knight_walk_front_003.png: -2069844983
+      gun_nut_burst_die_left_004.png: 72630688
+      gun_knight_idle_back_001.png: 660150531
+      gun_knight_attack_back_001.png: -604178061
+      gun_knight_attack_northwest_007.png: 2013183308
+      gun_nut_burst_die_right_006.png: -670260338
+      gun_knight_move_side_left_006.png: -466376936
+      gun_knight_side_left_attack_003.png: 441257773
+      gun_nut_burst_die_left_002.png: -2025678125
+      gun_knight_side_idle_left_004.png: 1400524507
+      gun_knight_side_right_attack_011.png: -166226635
+      gun_knight_attack_southeast_008.png: -1391919665
+      gun_knight_side_idle_right_001.png: -546501832
+      gun_nut_burst_die_left_007.png: -1332292820
+      gun_knight_attack_northwest_009.png: -725071547
+      gun_knight_idle_front_003.png: -289407219
+      gun_nut_burst_die_left_009.png: 244436426
+      gun_knight_idle_front_004.png: -273807378
+      gun_knight_attack_southwest_008.png: -962723586
+      gun_knight_walk_front_001.png: -1268962507
+      gun_knight_attack_back_003.png: -1621997675
+      gun_knight_side_right_attack_002.png: -1620967053
+      gun_knight_attack_southeast_005.png: -1636323523
+      gun_knight_attack_front_001.png: 1430244422
+      gun_knight_move_side_right_002.png: -1880330661
+      gun_knight_move_side_right_004.png: 1615692079
+      gun_knight_side_left_attack_002.png: 123501448
+      gun_knight_attack_southwest_007.png: -1139929742
+      gun_knight_walk_back_006.png: 1255155833
+      gun_nut_shard_002.png: -182917553
+      gun_nut_shard_003.png: -1241953283
+      gun_knight_side_left_attack_011.png: 2041503000
+      gun_knight_move_side_left_005.png: 1794000861
+      gun_knight_attack_back_009.png: -2123634172
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -6,6 +6,7 @@
     Cubulon = 2,
     Sniper = 3,
     GrenadeMan = 4,
+    GunKnight = 5,
     
     
     //bosses

@@ -5,6 +5,8 @@ namespace GamePlay.Enemy
   public class EnemyAnimState
   {
     public static readonly int die = Animator.StringToHash("die");
+    public static readonly int up = Animator.StringToHash("up");
+    public static readonly int down = Animator.StringToHash("down");
     public static readonly int upRight = Animator.StringToHash("upRight");
     public static readonly int upLeft = Animator.StringToHash("upLeft");
     public static readonly int downRight = Animator.StringToHash("downRight");
