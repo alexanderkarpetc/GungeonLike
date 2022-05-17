@@ -23,9 +23,9 @@ namespace GamePlay.Enemy.Brain
       EnemyController = owner.GetComponent<EnemyController>();
     }
 
-    public virtual void OnUpdate()
+    public virtual void Update()
     {
-      _parts.ForEach(x=> x.OnUpdate());
+      _parts.ForEach(x=> x.Update());
     }
 
     public virtual void OnCreate()

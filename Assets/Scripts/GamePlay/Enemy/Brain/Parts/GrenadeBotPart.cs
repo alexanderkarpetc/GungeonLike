@@ -19,7 +19,7 @@ namespace GamePlay.Enemy.Brain.Parts
       GameObject.Instantiate(boom, Brain.Owner.transform.position, Quaternion.identity);
     }
 
-    public override void OnUpdate()
+    protected override void OnUpdate()
     {
       var distance = Vector3.Distance(Brain.Owner.transform.position, Brain.Target.transform.position);
       if(distance < 1)

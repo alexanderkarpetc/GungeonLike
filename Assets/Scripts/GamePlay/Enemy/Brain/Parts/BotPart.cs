@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 
 namespace GamePlay.Enemy.Brain.Parts
 {
@@ -6,12 +9,29 @@ namespace GamePlay.Enemy.Brain.Parts
   {
     protected BotBrain Brain;
     protected GameObject Owner => Brain.Owner;
+    private Dictionary<Action, float> _delayedActions = new Dictionary<Action, float>();
 
     protected BotPart(BotBrain brain)
     {
       Brain = brain;
     }
+    
+    protected void DelayCall(Action action, float delay)
+    {
+      _delayedActions.Add(action, Time.time + delay);
+    }
 
-    public abstract void OnUpdate();
+    public void Update()
+    {
+      OnUpdate();
+      if(_delayedActions.Count == 0)
+        return;
+      var actionToExecute = _delayedActions.FirstOrDefault(x => x.Value <= Time.time).Key;
+      if(actionToExecute == null)
+        return;
+      actionToExecute.Invoke();
+      _delayedActions.Remove(actionToExecute);
+    }
+    protected virtual void OnUpdate(){}
   }
 }

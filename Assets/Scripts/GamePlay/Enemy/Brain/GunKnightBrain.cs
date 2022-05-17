@@ -11,13 +11,15 @@ namespace GamePlay.Enemy.Brain
       _parts.Clear();
       Owner = owner;
       var moving = new TargetFinder(this);
+      var attacking = new GunKnightAttacking(this);
       _parts.Add(moving);
+      _parts.Add(attacking);
     }
     public override void OnCreate()
     {
       EnemyController.GetAiPath().maxSpeed = StaticData.EnemyKnightSpeedBase;
       EnemyController.GetDestinationSetter().target = AppModel.PlayerTransform();
-      EnemyController.State.Hp = 100;
+      EnemyController.State.Hp = 70;
     }
   }
 }

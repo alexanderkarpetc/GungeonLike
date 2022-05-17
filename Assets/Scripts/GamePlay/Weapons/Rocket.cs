@@ -28,7 +28,7 @@ namespace GamePlay.Weapons
 
         private void Explode()
         {
-            DamageManager.Explode(transform.position, Radius, Weapon.BaseDamage);
+            DamageManager.Explode(transform.position, Radius, Damage);
         }
     }
 }

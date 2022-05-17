@@ -18,7 +18,7 @@ namespace GamePlay
     [HideInInspector] public float Speed;
     [HideInInspector] public float Impulse;
     [HideInInspector] public Vector2 Direction;
-    [HideInInspector] public Weapon Weapon;
+    public float Damage;
 
     void Update()
     {
@@ -38,7 +38,7 @@ namespace GamePlay
         fx.transform.SetParent(AppModel.FxContainer().transform);
         if (other.CompareTag("Environment"))
         {
-          DamageManager.Hit(other.GetComponent<Level.Environment>(), Weapon.BaseDamage);
+          DamageManager.Hit(other.GetComponent<Level.Environment>(), Damage);
         }
         Destroy(gameObject);
       }
@@ -65,7 +65,7 @@ namespace GamePlay
     protected void HitEnemy(Collider2D enemy)
     {
       var enemyController = enemy.GetComponent<EnemyController>();
-      DamageManager.Hit(enemyController, Weapon.BaseDamage, transform.rotation * Direction.normalized * Impulse);
+      DamageManager.Hit(enemyController, Damage, transform.rotation * Direction.normalized * Impulse);
     }
   }
 }

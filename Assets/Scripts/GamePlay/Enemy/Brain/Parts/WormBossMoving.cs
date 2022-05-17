@@ -19,7 +19,7 @@ namespace GamePlay.Enemy.Brain.Parts
       return AppModel.CurrentRoom.GetRoomData().controlPoints.Select(x => (Vector2) x.position).ToList();
     }
 
-    public override void OnUpdate()
+    protected override void OnUpdate()
     {
       var agent = Brain.EnemyController.GetAiPath();
       if (targets.Count == 0) return;

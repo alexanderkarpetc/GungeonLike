@@ -7,8 +7,8 @@ namespace GamePlay.Enemy.Brain.Parts
 {
   public class CubulonBotShooting : BotPart
   {
-    protected float _nextShotTime;
-    protected GameObject _projectile;
+    private float _nextShotTime;
+    private GameObject _projectile;
     private float _delay;
 
     public CubulonBotShooting(BotBrain brain) : base(brain)
@@ -19,7 +19,7 @@ namespace GamePlay.Enemy.Brain.Parts
       _projectile = Resources.Load<GameObject>("Prefabs/Projectiles/BlueProjectile");
     }
 
-    public override void OnUpdate()
+    protected override void OnUpdate()
     {
       if (Time.time > _nextShotTime)
       {

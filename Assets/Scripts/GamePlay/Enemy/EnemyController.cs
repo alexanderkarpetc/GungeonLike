@@ -55,7 +55,7 @@ namespace GamePlay.Enemy
     private void Update()
     {
       if(!isDying)
-        _botBrain.OnUpdate();
+        _botBrain.Update();
     }
 
     public void DealDamage(float damage)

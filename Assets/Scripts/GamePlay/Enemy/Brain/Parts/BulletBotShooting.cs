@@ -13,7 +13,7 @@ namespace GamePlay.Enemy.Brain.Parts
       _controller = Owner.GetComponent<EnemyController>();
       _weapon = _controller.Weapon;
     }
-    public override void OnUpdate()
+    protected override void OnUpdate()
     {
       if(Brain.Target == null)
         return;

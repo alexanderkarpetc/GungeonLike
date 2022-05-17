@@ -90,7 +90,7 @@ namespace GamePlay.Weapons
       go.transform.SetParent(AppModel.BulletContainer().transform);
       var projectile = go.GetComponent<Projectile>();
       projectile.IsPlayerBullet = IsPlayers;
-      projectile.Weapon = this;
+      projectile.Damage = BaseDamage;
       projectile.Speed = _bulletSpeed;
       projectile.Impulse = _impulse;
 

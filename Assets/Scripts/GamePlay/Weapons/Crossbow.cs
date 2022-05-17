@@ -34,7 +34,7 @@ namespace GamePlay.Weapons
       go.transform.SetParent(AppModel.BulletContainer().transform);
       var projectile = go.GetComponent<Projectile>();
       projectile.IsPlayerBullet = IsPlayers;
-      projectile.Weapon = this;
+      projectile.Damage = BaseDamage;
       projectile.Speed = _hasSightSkill ? _bulletSpeed * 2 : _bulletSpeed;
       projectile.Impulse = _hasSightSkill ? _impulse * 2 : _impulse;
 

@@ -7,7 +7,7 @@
       brain.Target = AppModel.PlayerGameObj();
     }
 
-    public override void OnUpdate()
+    protected override void OnUpdate()
     {
       
     }
