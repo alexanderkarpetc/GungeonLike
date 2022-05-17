@@ -36,6 +36,8 @@ namespace GamePlay.Enemy
             {
                 _animator.SetTrigger(EnemyAnimState.hitLeftDown);
             }
+
+            _currentAnim = 0;
         } 
 
         public void StopAttacking()
