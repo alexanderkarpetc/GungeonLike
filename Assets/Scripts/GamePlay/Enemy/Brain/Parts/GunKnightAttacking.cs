@@ -17,7 +17,7 @@ namespace GamePlay.Enemy.Brain.Parts
 
     public GunKnightAttacking(BotBrain brain) : base(brain)
     {
-      _projectile = Resources.Load<GameObject>("Prefabs/Projectiles/BlueProjectile");
+      _projectile = Resources.Load<GameObject>("Prefabs/Projectiles/Projectile");
       _animator = Brain.EnemyController.GetComponent<KnightEnemyAnimator>();
     }
     
@@ -44,14 +44,23 @@ namespace GamePlay.Enemy.Brain.Parts
 
     private void Hit()
     {
-      var angleShift = 360 / StaticData.EnemyCubulonShotsCount;
-      for (var i = 0; i < StaticData.EnemyCubulonShotsCount; i++)
+      var playerPos = AppModel.PlayerTransform().position;
+      var center = Brain.EnemyController.transform.position - (playerPos - Brain.EnemyController.transform.position).normalized * 3;
+      var radius = 4;
+
+      for (var i = 0; i < StaticData.GunKnightShotsCount; i++)
       {
-        var go = GameObject.Instantiate(_projectile, Brain.EnemyController.transform.position, Quaternion.identity);
+        Vector2 direction = playerPos - center;
+        var flyAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        var angle = flyAngle - StaticData.GunKnightShotsCount + i*2;
+        var x = Mathf.Cos(angle * Mathf.Deg2Rad) * radius + center.x;
+        var y = Mathf.Sin(angle * Mathf.Deg2Rad) * radius + center.y;
+        var spawnPos = new Vector3(x, y, 0);
+        var go = GameObject.Instantiate(_projectile, spawnPos, Quaternion.identity);
         go.transform.SetParent(AppModel.BulletContainer().transform);
         var projectile = go.GetComponent<Projectile>();
-        projectile.Speed = StaticData.EnemyCubulonShotSpeed;
-        projectile.Direction = Weapon.DegreeToVector2(i * angleShift);
+        projectile.Speed = 13;
+        projectile.Direction = Weapon.DegreeToVector2(flyAngle - 15 + i);
       }
       
       _isAttacking = false;
