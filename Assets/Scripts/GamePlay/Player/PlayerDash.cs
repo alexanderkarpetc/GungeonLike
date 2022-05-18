@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -8,8 +9,15 @@ namespace GamePlay.Player
   public class PlayerDash : MonoBehaviour
   {
     [SerializeField] private GameObject _dashVfx;
+    private Rigidbody2D _rigidbody;
     private List<GameObject> _vfxs = new List<GameObject>();
     private bool _canDash = true;
+    private float _dashDistance = 3f;
+
+    private void Start()
+    {
+      _rigidbody = GetComponent<Rigidbody2D>();
+    }
 
     private void Update()
     {
@@ -21,16 +29,24 @@ namespace GamePlay.Player
 
     private void DoDash()
     {
+      var direction = _rigidbody.velocity.normalized;
+      if( direction == Vector2.zero)
+        return;
+      var end = (Vector2) AppModel.PlayerTransform().position + direction * _dashDistance;
+
+      var wall = Physics2D.LinecastAll(AppModel.PlayerTransform().position, end)
+        .FirstOrDefault(x => x.collider.CompareTag("Obstacle"));
+      if (wall.collider != null)
+        end = wall.point;
       _canDash = false;
-      Vector2 direction = ((Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - (Vector2)transform.position).normalized / 1.5f;
       for (var i = 0; i < 4; i++)
       {
         var vfx = Instantiate(_dashVfx);
-        vfx.transform.position = (Vector2)AppModel.PlayerTransform().position + direction * i;
+        vfx.transform.position = Vector2.Lerp(AppModel.PlayerTransform().position , end, i/4f);
         _vfxs.Add(vfx);
       }
 
-      AppModel.PlayerTransform().position = _vfxs.Last().transform.position;
+      AppModel.PlayerTransform().position = end;
       StartCoroutine(EndDash());
     }
 

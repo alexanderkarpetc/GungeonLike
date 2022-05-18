@@ -42,9 +42,6 @@ namespace GamePlay.Player
 
     private void Move()
     {
-      // var newMovement = new Vector2(_horizontalMove, _verticalMove).normalized * StaticData.PlayerSpeedBase * AppModel.Player().SpeedMultiplier * Time.deltaTime
-                        // + _rigidbody.position;
-      // _rigidbody.MovePosition(newMovement);
       _rigidbody.velocity = new Vector2(_horizontalMove, _verticalMove).normalized * StaticData.PlayerSpeedBase * AppModel.Player().SpeedMultiplier;
     }
 
