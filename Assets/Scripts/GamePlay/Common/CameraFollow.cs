@@ -12,12 +12,12 @@ namespace GamePlay
       _player = AppModel.PlayerTransform();
     }
 
-    void Update()
+    private void Update()
     {
       if (_player != null)
       {
         var targetPos = new Vector3(_player.position.x, _player.position.y, -10);
-        transform.position = Vector3.Lerp(transform.position, targetPos, Speed);
+        transform.position = Vector3.MoveTowards(transform.position, targetPos, Speed * Time.deltaTime);
       }
     }
   }
