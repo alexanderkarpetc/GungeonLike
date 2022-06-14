@@ -8,7 +8,6 @@ namespace GamePlay
   {
     [SerializeField] private Color cameraColor = Color.black;
     [SerializeField] private GameObject HUD;
-    [SerializeField] private float cameraSpeed;
     [SerializeField] private PlayerController _playerController;
     [SerializeField] private bool _initplayer;
 
@@ -40,8 +39,7 @@ namespace GamePlay
     {
       var mainCamera = GameObject.Find("Main Camera");
       mainCamera.GetComponent<Camera>().backgroundColor = cameraColor;
-      var cameraFollow = mainCamera.AddComponent<CameraFollow>();
-      cameraFollow.Speed = cameraSpeed;
+      mainCamera.AddComponent<CameraFollow>();
       AppModel.InitHud(Instantiate(HUD).GetComponent<HudController>());
     }
 
