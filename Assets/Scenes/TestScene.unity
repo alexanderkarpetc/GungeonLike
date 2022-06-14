@@ -1147,21 +1147,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5033752205620974188, guid: a6c6df2a6a55f394cb5016c2b55cc0f9,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5033752205620974188, guid: a6c6df2a6a55f394cb5016c2b55cc0f9,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5033752205620974188, guid: a6c6df2a6a55f394cb5016c2b55cc0f9,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -30
-      objectReference: {fileID: 0}
-    - target: {fileID: 5033752205620974188, guid: a6c6df2a6a55f394cb5016c2b55cc0f9,
-        type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
@@ -1495,11 +1480,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2122418035361844763, guid: e402fd5444936fb44991c99b49d5806e,
-        type: 3}
-      propertyPath: cameraSpeed
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 2122418035361844763, guid: e402fd5444936fb44991c99b49d5806e,
         type: 3}
       propertyPath: _isGenerated

@@ -13,10 +13,12 @@ namespace GamePlay.Player
     private List<GameObject> _vfxs = new List<GameObject>();
     private bool _canDash = true;
     private float _dashDistance = 3f;
+    private CameraFollow _cameraFollow;
 
     private void Start()
     {
       _rigidbody = GetComponent<Rigidbody2D>();
+      _cameraFollow = Camera.main.GetComponent<CameraFollow>();
     }
 
     private void Update()
@@ -46,6 +48,7 @@ namespace GamePlay.Player
         _vfxs.Add(vfx);
       }
 
+      _cameraFollow.Speed = 15;
       AppModel.PlayerTransform().position = end;
       StartCoroutine(EndDash());
     }
@@ -61,6 +64,7 @@ namespace GamePlay.Player
       }
 
       yield return new WaitForSeconds(0.5f);
+      _cameraFollow.SetDefaultSpeed();
       _canDash = true;
     }
   }

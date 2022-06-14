@@ -40,8 +40,7 @@ namespace GamePlay
     {
       var mainCamera = GameObject.Find("Main Camera");
       mainCamera.GetComponent<Camera>().backgroundColor = cameraColor;
-      var cameraFollow = mainCamera.AddComponent<CameraFollow>();
-      cameraFollow.Speed = cameraSpeed;
+      mainCamera.AddComponent<CameraFollow>();
       AppModel.InitHud(Instantiate(HUD).GetComponent<HudController>());
     }
 
