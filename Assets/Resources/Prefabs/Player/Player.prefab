@@ -139,7 +139,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -400,7 +400,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -452,7 +452,6 @@ GameObject:
   - component: {fileID: 8222597889230808033}
   - component: {fileID: 5269694308860655541}
   - component: {fileID: 4421666015233022856}
-  - component: {fileID: 1680114856994215193}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -634,18 +633,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dashVfx: {fileID: 4534549783064382515, guid: 8c5b79fa12aa22245aff0f7b8895ff59,
     type: 3}
---- !u!114 &1680114856994215193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8463245576141808205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cc9ffcdc03142e08cd873b8d2df340f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8552638818282441729
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,7 +685,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
