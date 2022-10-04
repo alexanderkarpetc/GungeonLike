@@ -7,7 +7,6 @@ namespace GamePlay.Player
     public override void Interact(PlayerInteract playerInteract)
     {
       AppModel.StraightRoomController.ProcessNextRoom();
-      playerInteract.Interactable = null;
     }
   }
 }

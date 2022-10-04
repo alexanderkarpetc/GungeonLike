@@ -68,7 +68,7 @@ namespace GamePlay.Level.Controllers
 
     private void OpenDoors()
     {
-      _roomData.exits.ForEach(x => x.CanGoNextRoom = true);
+      _roomData.exits.ForEach(x => x.IsActive = true);
     }
 
     public RoomData GetRoomData()

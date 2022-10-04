@@ -1,45 +1,36 @@
-﻿using GamePlay.Common;
-using GamePlay.Player;
+﻿using GamePlay.Player;
 using GamePlay.Weapons;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace GamePlay.Level
 {
-  public class ShopItemView : MonoBehaviour
+  public class ShopItemView : Interactable
   {
     [SerializeField] private Text _price;
     [SerializeField] private SpriteRenderer _sprite;
 
-    private ShopItemInteractable _interactable;
+    private int Price;
+    private Weapon _weapon;
 
+    public override void Interact(PlayerInteract playerInteract)
+    {
+      if (AppModel.Player().Backpack.GetCoins() < Price)
+      {
+        return;
+      }
+      
+      AppModel.Player().Backpack.WithdrawResource(ResourceKind.Coins, Price);
+      AppModel.Player().Backpack.AddWeapon(_weapon);
+      Destroy(gameObject);
+    }
+    
     public void SetData (Weapon weapon)
     {
       var price = AppModel.WeaponData().GetWeaponInfo(weapon.Type).Price;
       _price.text = price.ToString();
       _sprite.sprite = weapon._uiImage;
-      _interactable = new ShopItemInteractable
-      {
-        Price = price,
-        Weapon = weapon,
-        View = gameObject
-      };
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-      if (other.CompareTag("Player"))
-      {
-        other.GetComponent<PlayerInteract>().Interactable = _interactable;
-      }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-      if (other.CompareTag("Player"))
-      {
-        other.GetComponent<PlayerInteract>().Interactable = null;
-      }
+      _weapon = weapon;
     }
   }
 }

@@ -107,7 +107,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -606806811, guid: 2277f447b4c0e234f82f33d77b804a08, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -191,7 +191,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -606806811, guid: 2277f447b4c0e234f82f33d77b804a08, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -275,7 +275,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -22650485, guid: 2277f447b4c0e234f82f33d77b804a08, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -474,8 +474,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 50
+  IsPickable: 0
   DestroyFx: {fileID: 0}
-  IsDestroying: 0
   _animator: {fileID: 4357693962755562535}
   _interactor: {fileID: 8559852439914918474}
   _collider: {fileID: 8284632803255828860}
@@ -555,7 +555,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -22650485, guid: 2277f447b4c0e234f82f33d77b804a08, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -638,4 +638,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770f476f568d42de80d098e162e5e671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsActive: 1
   _table: {fileID: 8939464404704712775}

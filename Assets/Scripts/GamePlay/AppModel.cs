@@ -29,6 +29,7 @@ namespace GamePlay
     private static SpawnPoint _spawnPointPrefab;
     private static GameObject _bulletContainer;
     private static GameObject _fxContainer;
+    private static GameObject _envContainer;
     private static GameObject _playerGameObj;
     private static HudController _hud;
 
@@ -88,11 +89,17 @@ namespace GamePlay
     {
       return _fxContainer;
     }
+    
+    public static GameObject EnvContainer()
+    {
+      return _envContainer;
+    }
 
-    public static void SetContainers(GameObject bullets, GameObject fxs)
+    public static void SetContainers(GameObject bullets, GameObject fxs, GameObject env)
     {
       _bulletContainer = bullets;
       _fxContainer = fxs;
+      _envContainer = env;
     }
 
     public static void InitHud(HudController hud)

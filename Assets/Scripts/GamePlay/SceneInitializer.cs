@@ -32,7 +32,10 @@ namespace GamePlay
     {
       var bullets = new GameObject("Bullets");
       var fxs = new GameObject("Fx");
-      AppModel.SetContainers(bullets, fxs);
+      var env = GameObject.Find("Env");
+      if(env == null)
+        env = new GameObject("Env");
+      AppModel.SetContainers(bullets, fxs, env);
     }
 
     private void InitCamera()

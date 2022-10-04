@@ -4,17 +4,16 @@ using UnityEngine;
 
 namespace GamePlay.Level
 {
-  public class TableInteractor : MonoBehaviour
+  public class TableInteractor : Interactable
   {
     [SerializeField] private Table _table;
-    private TableInteractable _interactable;
     private bool _isActive;
 
-    private void Start()
+    public override void Interact(PlayerInteract playerInteract)
     {
-      _interactable = new TableInteractable {Table = _table};
+      _table.Flip();
     }
-
+    
     private void Update()
     {
       if (_isActive)
@@ -25,7 +24,7 @@ namespace GamePlay.Level
           side = posDif.x < 0 ? TableSide.Left : TableSide.Right;
         else
           side = posDif.y < 0 ? TableSide.Bot : TableSide.Top;
-        _interactable.Table.ChooseSide(side);
+        _table.ChooseSide(side);
       }
     }
 
@@ -34,7 +33,6 @@ namespace GamePlay.Level
       if (other.CompareTag("Player"))
       {
         _isActive = true;
-        other.GetComponent<PlayerInteract>().Interactable = _interactable;
       }
     }
 
@@ -42,9 +40,7 @@ namespace GamePlay.Level
     {
       if (other.CompareTag("Player"))
       {
-        _isActive = false;
-        _interactable.Table.ChooseSide(null);
-        other.GetComponent<PlayerInteract>().Interactable = null;
+        _table.ChooseSide(null);
       }
     }
   }

@@ -24,8 +24,7 @@ namespace GamePlay.Common
         if (hit.CompareTag("Environment"))
         {
           var environment = hit.GetComponent<Environment>();
-          if(!environment.IsDestroying)
-            environment.DealDamage(damage);
+          environment.DealDamage(damage);
         }
       }
     }

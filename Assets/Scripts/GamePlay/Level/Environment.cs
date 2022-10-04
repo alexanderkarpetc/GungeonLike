@@ -7,14 +7,17 @@ namespace GamePlay.Level
   {
     [SerializeField] private float Health;
     [SerializeField] protected GameObject DestroyFx;
-    public bool IsDestroying;
+    
+    private bool _isDestroying;
 
     public void DealDamage(float damage)
     {
+      if(_isDestroying)
+        return;
       Health -= damage;
       if (Health <= 0)
       {
-        IsDestroying = true;
+        _isDestroying = true;
         DoDestroy();
       }
     }

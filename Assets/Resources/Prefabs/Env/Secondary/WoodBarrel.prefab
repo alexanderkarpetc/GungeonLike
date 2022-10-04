@@ -102,9 +102,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 5
+  IsPickable: 1
   DestroyFx: {fileID: 8852081176880956201, guid: 19b5ca1aeb14e5943b85503160c53570,
     type: 3}
-  IsDestroying: 0
 --- !u!1 &8320255628992551309
 GameObject:
   m_ObjectHideFlags: 0
