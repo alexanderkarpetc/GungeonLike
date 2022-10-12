@@ -36,20 +36,19 @@ namespace GamePlay.Player
           .Where(x => x.GetComponent<Interactable>().IsActive).Where(x =>
           {
             Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-            var playerAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             Vector2 interactableDirection = x.transform.position - transform.position;
-            var interactableAngle = Mathf.Atan2(interactableDirection.y, interactableDirection.x) * Mathf.Rad2Deg;
-            return Mathf.Abs(playerAngle - interactableAngle) < 90;
+            var lookAngle = Vector2.Angle(interactableDirection, direction);
+            return lookAngle < 90;
           }).ToList();
         if (!interactables.Any())
         {
-          yield return new WaitForSeconds(0.2f);
+          yield return new WaitForSeconds(0.1f);
           _interactable = null;
           continue;
         }
         var closest = interactables.OrderByDescending(x => Vector2.Distance(transform.position, x.transform.position)).First();
         _interactable = closest.GetComponent<Interactable>();
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
       }
     }
 
