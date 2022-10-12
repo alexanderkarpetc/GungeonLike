@@ -456,7 +456,7 @@ PrefabInstance:
     - target: {fileID: 8320255628129186649, guid: f172a07a6c1374d47b4911cbaf46d6a0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8320255628129186649, guid: f172a07a6c1374d47b4911cbaf46d6a0,
         type: 3}
@@ -1039,7 +1039,7 @@ PrefabInstance:
     - target: {fileID: 8320255628129186649, guid: 4a29c86c03cb7954d9ee4996d2c39492,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8320255628129186649, guid: 4a29c86c03cb7954d9ee4996d2c39492,
         type: 3}
@@ -1562,7 +1562,7 @@ PrefabInstance:
     - target: {fileID: 8320255628129186649, guid: 4a29c86c03cb7954d9ee4996d2c39492,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8320255628129186649, guid: 4a29c86c03cb7954d9ee4996d2c39492,
         type: 3}
@@ -1631,7 +1631,7 @@ PrefabInstance:
     - target: {fileID: 8320255628129186649, guid: 7666d423c5d1bcd40b6fee1601f12257,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8320255628129186649, guid: 7666d423c5d1bcd40b6fee1601f12257,
         type: 3}
@@ -1797,11 +1797,11 @@ Transform:
   - {fileID: 2105664565}
   - {fileID: 1148920515}
   - {fileID: 704004457}
+  - {fileID: 187017735}
   - {fileID: 2059129778}
   - {fileID: 815022351}
   - {fileID: 711605093}
   - {fileID: 650094334}
-  - {fileID: 187017735}
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1870,7 +1870,7 @@ PrefabInstance:
     - target: {fileID: 8320255628129186649, guid: 7666d423c5d1bcd40b6fee1601f12257,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8320255628129186649, guid: 7666d423c5d1bcd40b6fee1601f12257,
         type: 3}

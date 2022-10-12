@@ -452,6 +452,7 @@ GameObject:
   - component: {fileID: 8222597889230808033}
   - component: {fileID: 5269694308860655541}
   - component: {fileID: 4421666015233022856}
+  - component: {fileID: 8723019512984667596}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -511,7 +512,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdd694d4ad4e2a942978832eca07b450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTurnAnimator: {fileID: 3688945083984600635}
+  IsBusy: 0
+  playerAnimatorView: {fileID: 3688945083984600635}
   _rigidbody: {fileID: 7375126048374487353}
   _body: {fileID: 8463245576065121774}
   _startingWeapon: {fileID: 1712927347, guid: 02dac79d2ed7c094799836c1418fa78d, type: 3}
@@ -531,6 +533,7 @@ MonoBehaviour:
   _body: {fileID: 8463245576065121776}
   VerticalMove: 0
   HorizontalMove: 0
+  IsKicking: 0
 --- !u!114 &366866975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -633,6 +636,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dashVfx: {fileID: 4534549783064382515, guid: 8c5b79fa12aa22245aff0f7b8895ff59,
     type: 3}
+--- !u!114 &8723019512984667596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8463245576141808205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 072d675577a24a8ca9d3dced3cb2402a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _kickDuration: 0.5
+  _kickPower: 12
+  _animatorView: {fileID: 3688945083984600635}
+  _controller: {fileID: 8463245576141808200}
+  _playerInteract: {fileID: 8222597889230808033}
 --- !u!1 &8552638818282441729
 GameObject:
   m_ObjectHideFlags: 0

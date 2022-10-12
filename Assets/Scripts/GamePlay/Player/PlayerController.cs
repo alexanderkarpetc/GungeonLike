@@ -8,7 +8,9 @@ namespace GamePlay.Player
 {
   public class PlayerController : MonoBehaviour
   {
-    [SerializeField] private PlayerTurnAnimator playerTurnAnimator;
+    [HideInInspector] public bool IsBusy;
+
+    [SerializeField] private PlayerAnimatorView playerAnimatorView;
     [SerializeField] private Rigidbody2D _rigidbody;
     [SerializeField] private SpriteRenderer _body;
     [SerializeField] private Weapon _startingWeapon;
@@ -32,11 +34,16 @@ namespace GamePlay.Player
       var a = Input.GetKey(KeyCode.A) ? 1 : 0;
       var d = Input.GetKey(KeyCode.D) ? 1 : 0;
       _horizontalMove = d - a;
-      playerTurnAnimator.HorizontalMove = _horizontalMove;
       var w = Input.GetKey(KeyCode.W) ? 1 : 0;
       var s = Input.GetKey(KeyCode.S) ? 1 : 0;
       _verticalMove = w - s;
-      playerTurnAnimator.VerticalMove = _verticalMove;
+      if (IsBusy)
+      {
+        _horizontalMove = 0;
+        _verticalMove = 0;
+      }
+      playerAnimatorView.HorizontalMove = _horizontalMove;
+      playerAnimatorView.VerticalMove = _verticalMove;
       Move();
     }
 

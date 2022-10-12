@@ -12,15 +12,43 @@ namespace GamePlay.Level
     [SerializeField] private Rigidbody2D _rigidbody2D;
     [SerializeField] private Collider2D _colllider;
     [SerializeField] private DynamicGridObstacle _gridObstacle;
+    [SerializeField] protected Animator _animator;
+    private static readonly int RollUp = Animator.StringToHash("RollUp");
+    private static readonly int RollDown = Animator.StringToHash("RollDown");
+    private static readonly int RollRight = Animator.StringToHash("RollRight");
+    private static readonly int RollLeft = Animator.StringToHash("RollLeft");
     private bool _isCarrying;
     private Coroutine _routine;
-
+    
     public override void Interact(PlayerInteract playerInteract)
     {
       if (!_isCarrying)
         PickUp();
       else
         PutDown();
+    }
+    
+    public void Kick(Vector2 direction, float kickPower, PlayerLookDirection lookDirection)
+    {
+      _rigidbody2D.bodyType = RigidbodyType2D.Kinematic;
+      _rigidbody2D.velocity = direction * kickPower;
+      _env.gameObject.AddComponent<DestroyOnTouch>();
+      if(_animator != null)
+        switch (lookDirection)
+        {
+          case PlayerLookDirection.Up:
+            _animator.SetTrigger(RollUp);
+            break;
+          case PlayerLookDirection.Down:
+            _animator.SetTrigger(RollDown);
+            break;
+          case PlayerLookDirection.Right:
+            _animator.SetTrigger(RollRight);
+            break;
+          case PlayerLookDirection.Left:
+            _animator.SetTrigger(RollLeft);
+            break;
+        }
     }
 
 

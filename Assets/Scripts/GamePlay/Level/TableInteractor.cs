@@ -41,6 +41,7 @@ namespace GamePlay.Level
       if (other.CompareTag("Player"))
       {
         _table.ChooseSide(null);
+        _isActive = false;
       }
     }
   }

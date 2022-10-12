@@ -12,6 +12,8 @@ namespace GamePlay.Player
     public static readonly int DownRun = Animator.StringToHash("downRun");
     public static readonly int DownRightRun = Animator.StringToHash("downRightRun");
     public static readonly int UpRightRun = Animator.StringToHash("upRightRun");
+    public static readonly int UpKick = Animator.StringToHash("upKick");
+    public static readonly int DownKick = Animator.StringToHash("downKick");
     
     public static readonly string IdleDown = "IdleDown";
     public static readonly string IdleUp = "IdleUp";
