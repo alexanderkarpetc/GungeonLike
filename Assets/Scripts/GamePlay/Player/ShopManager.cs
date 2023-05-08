@@ -25,7 +25,7 @@ namespace GamePlay.Player
 
     public ShopItemView SpawnRandomWeapon()
     {
-      var shopItem = Object.Instantiate(_shopItem, Vector3.zero, Quaternion.identity, _parentObj.transform);
+      var shopItem = Object.Instantiate(_shopItem, (Vector2)AppModel.PlayerTransform().position + Vector2.up, Quaternion.identity, _parentObj.transform);
       var weapon = AppModel.DropManager().GetAbsentWeapon();
       shopItem.SetData(weapon);
       return shopItem;
