@@ -10,6 +10,7 @@ namespace GamePlay.Enemy.Brain.Parts
     private float _nextShotTime;
     private GameObject _projectile;
     private float _delay;
+    private string _projectileName;
 
     public CubulonBotShooting(BotBrain brain) : base(brain)
     {
@@ -17,6 +18,7 @@ namespace GamePlay.Enemy.Brain.Parts
         .Find(x => x.name.Equals("DownLeft")).length;
       _nextShotTime = Time.time + _delay;
       _projectile = Resources.Load<GameObject>("Prefabs/Projectiles/BlueProjectile");
+      _projectileName = _projectile.GetComponent<Projectile>().ProjectileName;
     }
 
     protected override void OnUpdate()
@@ -27,7 +29,7 @@ namespace GamePlay.Enemy.Brain.Parts
         var angleShift = 360 / StaticData.EnemyCubulonShotsCount;
         for (var i = 0; i < StaticData.EnemyCubulonShotsCount; i++)
         {
-          var go = GameObject.Instantiate(_projectile, Brain.EnemyController.transform.position, Quaternion.identity);
+          var go = BulletPoolManager.Instance.GetBulletFromPool(_projectile, Brain.EnemyController.transform.position, Quaternion.identity, _projectileName);
           go.transform.SetParent(AppModel.BulletContainer().transform);
           var projectile = go.GetComponent<Projectile>();
           projectile.Speed = StaticData.EnemyCubulonShotSpeed;

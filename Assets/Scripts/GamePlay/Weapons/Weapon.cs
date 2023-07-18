@@ -8,6 +8,9 @@ namespace GamePlay.Weapons
 {
   public class Weapon : MonoBehaviour
   {
+    private static readonly int ReloadAnim = Animator.StringToHash("Reload");
+    private static readonly int ShootAnim = Animator.StringToHash("Shoot");
+
     public bool IsDoubleHanded;
     public int MagazineSize;
     public Sprite _uiImage;
@@ -34,8 +37,12 @@ namespace GamePlay.Weapons
     [HideInInspector] public bool reloading;
     [HideInInspector] public float reloadingTime;
     [HideInInspector] public float BaseDamage;
-    private static readonly int ReloadAnim = Animator.StringToHash("Reload");
-    private static readonly int ShootAnim = Animator.StringToHash("Shoot");
+    protected string projectileName;
+
+    private void Awake()
+    {
+      projectileName = _projectile.GetComponent<Projectile>().ProjectileName;
+    }
 
     protected virtual void Start()
     {
@@ -76,7 +83,7 @@ namespace GamePlay.Weapons
       _nextShotTime = Time.time + _shootRate;
       _animator.SetTrigger(ShootAnim);
       yield return new WaitForSeconds(_shootDelay);
-      SpawnProjectiles();
+      InitProjectiles();
       State.bulletsLeft--;
       if (State.bulletsLeft <= 0)
       {
@@ -84,9 +91,9 @@ namespace GamePlay.Weapons
       }
     }
 
-    protected virtual void SpawnProjectiles()
+    protected virtual void InitProjectiles()
     {
-      var go = Instantiate(_projectile, _shootPoint.position, Quaternion.identity);
+      var go = BulletPoolManager.Instance.GetBulletFromPool(_projectile, _shootPoint.position, Quaternion.identity, projectileName);
       go.transform.SetParent(AppModel.BulletContainer().transform);
       var projectile = go.GetComponent<Projectile>();
       projectile.IsPlayerBullet = IsPlayers;

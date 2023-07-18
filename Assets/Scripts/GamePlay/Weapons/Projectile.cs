@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using GamePlay.Common;
 using GamePlay.Enemy;
 using GamePlay.Player;
-using GamePlay.Weapons;
 using UnityEngine;
 
 namespace GamePlay
@@ -11,6 +9,7 @@ namespace GamePlay
   public class Projectile : MonoBehaviour
   {
     public GameObject Owner;
+    public string ProjectileName;
     protected static List<string> _envTags = new List<string> {"Obstacle", "Environment"};
     [SerializeField] private GameObject _enemyHitFx;
     [SerializeField] protected GameObject _envHitFx;
@@ -20,7 +19,7 @@ namespace GamePlay
     [HideInInspector] public Vector2 Direction;
     public float Damage;
 
-    void Update()
+    private void Update()
     {
       transform.Translate(Time.deltaTime * Speed * Direction);
     }
@@ -40,12 +39,12 @@ namespace GamePlay
         {
           DamageManager.Hit(other.GetComponent<Level.Environment>(), Damage);
         }
-        Destroy(gameObject);
+        BulletPoolManager.Instance.ReturnBulletToPool(this, ProjectileName);
       }
       if (!IsPlayerBullet && other.CompareTag("Player"))
       {
         HitPlayer(other);
-        Destroy(gameObject);
+        BulletPoolManager.Instance.ReturnBulletToPool(this, ProjectileName);
       }
       
       if (IsPlayerBullet && other.CompareTag("Enemy"))
@@ -53,8 +52,18 @@ namespace GamePlay
         if (_enemyHitFx != null)
           Instantiate(_enemyHitFx, transform.position, transform.rotation);
         HitEnemy(other);
-        Destroy(gameObject);
+        BulletPoolManager.Instance.ReturnBulletToPool(this, ProjectileName);
       }
+    }
+    
+    public void CleanUp()
+    {
+      IsPlayerBullet = false;
+      Damage = 0;
+      Speed = 0;
+      Impulse = 0;
+      Owner = null;
+      Direction = Vector2.zero;
     }
 
     protected void HitPlayer(Collider2D other)

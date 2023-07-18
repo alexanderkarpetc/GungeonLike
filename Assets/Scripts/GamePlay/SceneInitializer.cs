@@ -1,4 +1,5 @@
-﻿using GamePlay.Player;
+﻿using GamePlay.Common;
+using GamePlay.Player;
 using Import;
 using UnityEngine;
 
@@ -31,6 +32,7 @@ namespace GamePlay
     private void InitContainers()
     {
       var bullets = new GameObject("Bullets");
+      bullets.AddComponent<BulletPoolManager>();
       var fxs = new GameObject("Fx");
       var env = GameObject.Find("Env");
       if(env == null)

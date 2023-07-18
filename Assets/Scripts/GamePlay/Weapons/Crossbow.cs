@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using GamePlay.Common;
 using GamePlay.Player;
 using UnityEngine;
@@ -28,9 +27,9 @@ namespace GamePlay.Weapons
       _hasSightSkill = AppModel.Player().Skills.Exists(x => x.Kind == SkillKind.Gunslinger);
     }
 
-    protected override void SpawnProjectiles()
+    protected override void InitProjectiles()
     {
-      var go = Instantiate(_projectile, _shootPoint.position, Quaternion.identity);
+      var go = BulletPoolManager.Instance.GetBulletFromPool(_projectile, _shootPoint.position, Quaternion.identity, projectileName);
       go.transform.SetParent(AppModel.BulletContainer().transform);
       var projectile = go.GetComponent<Projectile>();
       projectile.IsPlayerBullet = IsPlayers;

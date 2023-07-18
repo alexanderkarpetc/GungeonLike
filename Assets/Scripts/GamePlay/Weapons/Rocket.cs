@@ -1,5 +1,4 @@
-﻿using System;
-using GamePlay.Common;
+﻿using GamePlay.Common;
 using UnityEngine;
 
 namespace GamePlay.Weapons
@@ -22,7 +21,7 @@ namespace GamePlay.Weapons
                 var fx = Instantiate(_envHitFx, transform.position,
                     Quaternion.LookRotation(Vector3.forward, Direction*new Vector2(-1,-1)));
                 fx.transform.SetParent(AppModel.FxContainer().transform);
-                Destroy(gameObject);
+                BulletPoolManager.Instance.ReturnBulletToPool(this, ProjectileName);
             }
         }
 

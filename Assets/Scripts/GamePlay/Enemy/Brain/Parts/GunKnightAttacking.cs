@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Linq;
+﻿using System.Linq;
 using GamePlay.Common;
 using GamePlay.Weapons;
 using UnityEngine;
@@ -14,11 +12,13 @@ namespace GamePlay.Enemy.Brain.Parts
     private readonly KnightEnemyAnimator _animator;
     private float _nextAttackTime = 0;
     private float _attackInterval = 2f;
+    private string _projectileName;
 
     public GunKnightAttacking(BotBrain brain) : base(brain)
     {
       _projectile = Resources.Load<GameObject>("Prefabs/Projectiles/Projectile");
       _animator = Brain.EnemyController.GetComponent<KnightEnemyAnimator>();
+      _projectileName = _projectile.GetComponent<Projectile>().ProjectileName;
     }
     
     protected override void OnUpdate()
@@ -56,7 +56,7 @@ namespace GamePlay.Enemy.Brain.Parts
         var x = Mathf.Cos(angle * Mathf.Deg2Rad) * radius + center.x;
         var y = Mathf.Sin(angle * Mathf.Deg2Rad) * radius + center.y;
         var spawnPos = new Vector3(x, y, 0);
-        var go = GameObject.Instantiate(_projectile, spawnPos, Quaternion.identity);
+        var go = BulletPoolManager.Instance.GetBulletFromPool(_projectile, spawnPos, Quaternion.identity, _projectileName);
         go.transform.SetParent(AppModel.BulletContainer().transform);
         var projectile = go.GetComponent<Projectile>();
         projectile.Speed = 13;
