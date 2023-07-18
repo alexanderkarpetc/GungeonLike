@@ -33,8 +33,6 @@ namespace GamePlay
     private static GameObject _playerGameObj;
     private static HudController _hud;
 
-
-
     public static PlayerState Player()
     {
       return _playerState ?? (_playerState = new PlayerState());

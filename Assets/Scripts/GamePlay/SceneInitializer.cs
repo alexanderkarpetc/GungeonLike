@@ -1,6 +1,7 @@
 ﻿using GamePlay.Common;
 using GamePlay.Player;
 using Import;
+using Popups;
 using UnityEngine;
 
 namespace GamePlay
@@ -10,6 +11,7 @@ namespace GamePlay
     [SerializeField] private Color cameraColor = Color.black;
     [SerializeField] private GameObject HUD;
     [SerializeField] private PlayerController _playerController;
+    [SerializeField] private PopupManager _popupManager;
     [SerializeField] private bool _initplayer;
 
     void Awake()
@@ -38,6 +40,7 @@ namespace GamePlay
       if(env == null)
         env = new GameObject("Env");
       AppModel.SetContainers(bullets, fxs, env);
+      Instantiate(_popupManager);
     }
 
     private void InitCamera()

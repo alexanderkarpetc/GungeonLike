@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using GamePlay.Common;
 using GamePlay.Player;
+using Popups;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace GamePlay.UI
 {
-  public class SkillTree : MonoBehaviour
+  public class SkillTree : Popup
   {
     [SerializeField] private Text _description;
     [SerializeField] private Text _quantity;

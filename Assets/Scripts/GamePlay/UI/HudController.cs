@@ -1,4 +1,6 @@
 ﻿using System.Collections;
+using GamePlay.UI;
+using Popups;
 using UnityEngine;
 
 namespace GamePlay.Player
@@ -8,13 +10,11 @@ namespace GamePlay.Player
     [SerializeField] private GameObject _dmgPanel;
     [SerializeField] private float _blinkDuration;
     [SerializeField] private GameObject _console;
-    [SerializeField] private GameObject _skillTree;
     [SerializeField] private GameObject _devPanel;
 
     private void Start()
     {
       AppModel.Player().OnDamageTake += ScreenBlink;
-      _skillTree.SetActive(false);
       _console.SetActive(false);
       _dmgPanel.SetActive(false);
       _devPanel.SetActive(false);
@@ -29,7 +29,10 @@ namespace GamePlay.Player
       }
       if (Input.GetKeyDown(KeyCode.Escape))
       {
-        _skillTree.SetActive(!_skillTree.activeSelf);
+        if (PopupManager.Instance.IsShown<SkillTree>())
+          PopupManager.Instance.HidePopup<SkillTree>();
+        else
+          PopupManager.Instance.ShowPopup<SkillTree>();
       }
     }
 
