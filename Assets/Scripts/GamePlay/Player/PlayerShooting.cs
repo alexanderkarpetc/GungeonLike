@@ -1,7 +1,6 @@
-﻿using System;
-using GamePlay.Common;
-using GamePlay.Weapons;
+﻿using GamePlay.Weapons;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace GamePlay.Player
 {
@@ -17,6 +16,12 @@ namespace GamePlay.Player
 
     private void CheckShoot()
     {
+      if (EventSystem.current.IsPointerOverGameObject())
+      {
+        // The mouse is over a UI element, so do not process other mouse input.
+        return;
+      }
+
       if (Weapon == null)
       {
         Weapon = _weaponSlot.GetChild(0).GetComponent<Weapon>();
