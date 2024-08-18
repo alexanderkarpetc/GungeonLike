@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using GamePlay.Level.Controllers;
+using GamePlay.UI;
 using UnityEngine;
 
 namespace GamePlay
@@ -7,6 +8,8 @@ namespace GamePlay
   public class StraightLevelController : MonoBehaviour
   {
     [SerializeField] private List<GameObject> predefinedRooms;
+    [SerializeField] private CameraFade _cameraFade;
+
     private int _currentRoomIndex = -1;
     private GameObject _currentRoom;
     private GameObject _astarObj;
@@ -18,6 +21,7 @@ namespace GamePlay
 
     public void ProcessNextRoom()
     {
+      _cameraFade.MakeFade();
       _currentRoomIndex++;
       if (_currentRoom != null)
       {
