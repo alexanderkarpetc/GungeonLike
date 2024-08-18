@@ -1,6 +1,7 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using Cysharp.Threading.Tasks;
 using GamePlay.Player;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,7 +15,7 @@ namespace GamePlay.UI
     [SerializeField] private Text _increaseValue;
     [SerializeField] private int _startFontSize;
     [SerializeField] private int _targetFontSize;
-    private Coroutine _coroutine;
+    private CancellationTokenSource _cts;
 
     private void Start()
     {
@@ -26,13 +27,13 @@ namespace GamePlay.UI
     {
       if (ammoBox.ContainsKey(_kind))
       {
-        if (_coroutine != null)
-          StopCoroutine(_coroutine);
-        _coroutine = StartCoroutine(IncreaseAmmo(ammoBox[_kind]));
+        _cts?.Cancel();
+        _cts = new CancellationTokenSource();
+        IncreaseAmmo(ammoBox[_kind], _cts.Token).Forget();
       }
     }
 
-    private IEnumerator IncreaseAmmo(int amount)
+    private async UniTaskVoid IncreaseAmmo(int amount, CancellationToken token)
     {
       _increaseValue.gameObject.SetActive(true);
       _increaseValue.fontSize = _startFontSize;
@@ -40,22 +41,24 @@ namespace GamePlay.UI
       var startTime = Time.time;
       var firstPartEndTime = startTime + 0.2f;
       var secondPartEndTime = firstPartEndTime + 2f;
-      var deltaSizePerTime = (_targetFontSize - _startFontSize) / 0.2;
+      var deltaSizePerTime = (_targetFontSize - _startFontSize) / 0.2f;
+
       while (Time.time < firstPartEndTime)
       {
-        _increaseValue.fontSize = (int) ((Time.time - startTime) * deltaSizePerTime + _startFontSize);
-        yield return null;
+        if (token.IsCancellationRequested) return;
+        _increaseValue.fontSize = (int)((Time.time - startTime) * deltaSizePerTime + _startFontSize);
+        await UniTask.Yield(PlayerLoopTiming.Update);
       }
-      
+
       while (Time.time < secondPartEndTime)
       {
+        if (token.IsCancellationRequested) return;
         _increaseValue.color = new Color(1, 1, 1, ((secondPartEndTime - Time.time) / 2f));
-        yield return null;
+        await UniTask.Yield(PlayerLoopTiming.Update);
       }
 
       _increaseValue.gameObject.SetActive(false);
-      _coroutine = null;
-      yield return null;
+      _cts = null;
     }
 
     private void Update()
@@ -66,6 +69,7 @@ namespace GamePlay.UI
     private void OnDestroy()
     {
       AppModel.Player().Backpack.OnAmmoChange -= OnAmmoChange;
+      _cts?.Cancel();
     }
   }
 }
