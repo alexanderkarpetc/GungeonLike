@@ -13,7 +13,7 @@ namespace GamePlay.UI
     
         private Material _material;
 
-        private void Awake()
+        private void Start()
         {
             _material = new Material(_spriteRenderer.material);
             _spriteRenderer.material = _material;
@@ -26,6 +26,7 @@ namespace GamePlay.UI
 
         private async UniTask Fade()
         {
+            await UniTask.Yield(PlayerLoopTiming.Update);
             float visionValue = 0;
             while (visionValue < _visionValueEnd)
             {
