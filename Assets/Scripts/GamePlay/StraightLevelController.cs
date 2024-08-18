@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Security.Cryptography;
-using GamePlay.Level;
+﻿using System.Collections.Generic;
 using GamePlay.Level.Controllers;
-using GamePlay.Player;
 using UnityEngine;
 
 namespace GamePlay
@@ -15,7 +11,7 @@ namespace GamePlay
     private GameObject _currentRoom;
     private GameObject _astarObj;
 
-    private void Start()
+    public void Init()
     {
       AppModel.StraightRoomController = this;
     }

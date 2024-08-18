@@ -16,7 +16,7 @@ namespace GamePlay.Enemy.Brain.Parts
 
     public GunKnightAttacking(BotBrain brain) : base(brain)
     {
-      _projectile = Resources.Load<GameObject>("Prefabs/Projectiles/Projectile");
+      _projectile = Resources.Load<GameObject>("Prefabs/Projectiles/BlueProjectile");
       _animator = Brain.EnemyController.GetComponent<KnightEnemyAnimator>();
       _projectileName = _projectile.GetComponent<Projectile>().ProjectileName;
     }

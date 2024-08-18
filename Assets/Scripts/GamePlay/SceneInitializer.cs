@@ -14,7 +14,7 @@ namespace GamePlay
     [SerializeField] private PopupManager _popupManager;
     [SerializeField] private bool _initplayer;
 
-    void Awake()
+    private void Awake()
     {
       InitCamera();
       InitContainers();
@@ -59,6 +59,7 @@ namespace GamePlay
     
     private void DoStraightLevelLogic(StraightLevelController straightLevelController)
     {
+      straightLevelController.Init();
       straightLevelController.ProcessNextRoom();
     }
   }
