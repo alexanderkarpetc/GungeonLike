@@ -56,7 +56,7 @@ namespace GamePlay.Player
         private void Move()
         {
             Vector2 targetVelocity = new Vector2(_horizontalMove, _verticalMove).normalized * StaticData.PlayerSpeedBase * AppModel.Player().SpeedMultiplier;
-            _rigidbody.velocity = Vector2.Lerp(_rigidbody.velocity, targetVelocity, Inertia);
+            _rigidbody.linearVelocity = Vector2.Lerp(_rigidbody.linearVelocity, targetVelocity, Inertia);
         }
 
         public void Hit()

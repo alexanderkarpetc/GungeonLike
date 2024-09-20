@@ -31,7 +31,7 @@ namespace GamePlay.Level
     public void Kick(Vector2 direction, float kickPower, PlayerLookDirection lookDirection)
     {
       _rigidbody2D.bodyType = RigidbodyType2D.Kinematic;
-      _rigidbody2D.velocity = direction * kickPower;
+      _rigidbody2D.linearVelocity = direction * kickPower;
       _env.gameObject.AddComponent<DestroyOnTouch>();
       if(_animator != null)
         switch (lookDirection)

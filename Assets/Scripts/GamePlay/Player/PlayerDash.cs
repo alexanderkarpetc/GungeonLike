@@ -31,7 +31,7 @@ namespace GamePlay.Player
 
     private void DoDash()
     {
-      var direction = _rigidbody.velocity.normalized;
+      var direction = _rigidbody.linearVelocity.normalized;
       if( direction == Vector2.zero)
         return;
       var end = (Vector2) AppModel.PlayerTransform().position + direction * _dashDistance;
