@@ -13,7 +13,8 @@ namespace GamePlay.UI
     private void Start()
     {
       AppModel.Player().Backpack.OnResourcesChange += OnResourcesChange;
-      _value.text = AppModel.Player().Backpack.Resources[_kind].ToString();
+      // todo: uncomment this line
+      // _value.text = AppModel.Player().Backpack.Resources[_kind].ToString();
     }
 
     private void OnResourcesChange(ResourceKind kind, int value)

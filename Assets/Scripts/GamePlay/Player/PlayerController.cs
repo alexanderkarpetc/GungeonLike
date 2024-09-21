@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using GamePlay.Common;
 using GamePlay.Weapons;
+using Unity.Netcode;
 using UnityEngine;
 
 namespace GamePlay.Player
 {
-    public class PlayerController : MonoBehaviour
+    public class PlayerController : NetworkBehaviour
     {
         [HideInInspector] public bool IsBusy;
 
@@ -21,9 +22,12 @@ namespace GamePlay.Player
         
         private readonly float Inertia = 0.2f;
 
-        public void Init()
+        // todo: move to some init
+        private void Start()
         {
+            AppModel.SetPlayer(gameObject);
             _initializer.Init(_startingWeapon);
+            // todo: should be changed to some shit
         }
 
         private void Update()

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Cysharp.Threading.Tasks;
+using UnityEngine;
 
 namespace GamePlay
 {
@@ -8,8 +9,14 @@ namespace GamePlay
     private static float _defaultSpeed = 200f;
     public float Speed;
 
-    void Start()
+    private void Start()
     {
+      InitCamera().Forget();
+    }
+
+    private async UniTask InitCamera()
+    {
+      await UniTask.WaitUntil(() => AppModel.PlayerTransform() != null);
       _player = AppModel.PlayerTransform();
       SetDefaultSpeed();
     }

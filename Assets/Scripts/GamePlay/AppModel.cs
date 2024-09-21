@@ -55,7 +55,7 @@ namespace GamePlay
 
     public static Transform PlayerTransform()
     {
-      return PlayerGameObj().transform;
+      return PlayerGameObj()?.transform;
     }
         
     public static DropManager DropManager()

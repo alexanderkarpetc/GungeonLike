@@ -63,6 +63,8 @@ namespace GamePlay.UI
 
     private void Update()
     {
+      if (AppModel.Player().Backpack.Ammo == null)
+        return;
       _value.text = AppModel.Player().Backpack.Ammo[_kind].ToString();
     }
 

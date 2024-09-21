@@ -10,22 +10,14 @@ namespace GamePlay
   {
     [SerializeField] private Color cameraColor = Color.black;
     [SerializeField] private GameObject HUD;
-    [SerializeField] private PlayerController _playerController;
     [SerializeField] private PopupManager _popupManager;
-    [SerializeField] private bool _initplayer;
 
     private void Awake()
     {
       InitCamera();
       InitContainers();
       BalanceLoader.LoadBalance();
-      if(_initplayer)
-        InitPlayer();
-      else
-      {
-        AppModel.SetPlayer(GameObject.Find("Player"));
-      }
-      _playerController.Init();
+      // todo: check if needed
       var straightLevelController = GameObject.Find("StraightLevelController");
       if(straightLevelController != null)
         DoStraightLevelLogic(straightLevelController.GetComponent<StraightLevelController>());
@@ -51,12 +43,6 @@ namespace GamePlay
       AppModel.InitHud(Instantiate(HUD).GetComponent<HudController>());
     }
 
-    private void InitPlayer()
-    {
-      var playerGo = Instantiate(_playerController).gameObject;
-      AppModel.SetPlayer(playerGo);
-    }
-    
     private void DoStraightLevelLogic(StraightLevelController straightLevelController)
     {
       straightLevelController.Init();

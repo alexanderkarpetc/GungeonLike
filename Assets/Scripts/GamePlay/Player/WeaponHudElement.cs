@@ -17,6 +17,8 @@ namespace GamePlay.Player
 
     private void Update()
     {
+      if (AppModel.Player().Weapon == null)
+        return;
       var weapon = AppModel.Player().Weapon;
       if (_currentWeapon != weapon)
       {

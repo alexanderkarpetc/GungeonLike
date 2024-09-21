@@ -1,4 +1,5 @@
-﻿using DefaultNamespace;
+﻿using Cysharp.Threading.Tasks;
+using DefaultNamespace;
 using GamePlay.Player;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,8 +14,14 @@ namespace GamePlay
     private PlayerController _player;
     private PlayerState _playerState;
 
-    void Start()
+    private void Start()
     {
+      InitHeart().Forget();
+    }
+
+    private async UniTask InitHeart()
+    {
+      await   UniTask.WaitUntil(() => AppModel.PlayerGameObj() != null);
       _player = AppModel.PlayerGameObj().GetComponent<PlayerController>();
       _playerState = AppModel.Player();
       _playerState.OnHealthChanged += ReDraw;
