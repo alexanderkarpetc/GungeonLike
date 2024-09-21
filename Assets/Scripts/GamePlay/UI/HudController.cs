@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Cysharp.Threading.Tasks;
 using GamePlay.UI;
 using Popups;
 using UnityEngine;
@@ -14,11 +15,18 @@ namespace GamePlay.Player
 
     private void Start()
     {
-      AppModel.Player().OnDamageTake += ScreenBlink;
+      Subscribe().Forget();
       _console.SetActive(false);
       _dmgPanel.SetActive(false);
       _devPanel.SetActive(false);
     }
+
+    private async UniTask Subscribe()
+    {
+      await UniTask.WaitUntil(() => AppModel.PlayerState() != null);
+      AppModel.PlayerState().OnDamageTake += ScreenBlink;
+    }
+
     public GameObject DevPanel => _devPanel;
 
     private void Update()

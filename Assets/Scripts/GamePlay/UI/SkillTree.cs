@@ -28,14 +28,14 @@ namespace GamePlay.UI
 
     public void Select(Skill skill)
     {
-      var playerState = AppModel.Player();
+      var playerState = AppModel.PlayerState();
       playerState.LearnSkill(skill);
       _branches.ForEach(x=>x.UpdateSkillStates());
     }
 
     private void Redraw()
     {
-      var playerState = AppModel.Player();
+      var playerState = AppModel.PlayerState();
       _quantity.text = playerState.GetSkillPoints().ToString();
       _level.text = $"Current Level: {playerState.Level}";
       _levelProgress.sizeDelta = new Vector2((float)playerState.Exp / StaticData.RequiredXp(playerState.Level) * _progressMax,

@@ -23,7 +23,7 @@ namespace GamePlay
     {
       await   UniTask.WaitUntil(() => AppModel.PlayerGameObj() != null);
       _player = AppModel.PlayerGameObj().GetComponent<PlayerController>();
-      _playerState = AppModel.Player();
+      _playerState = AppModel.PlayerState();
       _playerState.OnHealthChanged += ReDraw;
       ReDraw();
     }
@@ -33,8 +33,8 @@ namespace GamePlay
       foreach (Transform child in transform)
         Destroy(child.gameObject);
 
-      var fullContainers = _playerState.GetHp();
-      var emptyContainers = _playerState.GetMaxHp() - fullContainers;
+      var fullContainers = _playerState.CurrentHp;
+      var emptyContainers = _playerState.MaxHp - fullContainers;
       for (var i = 0; i < fullContainers; i++)
       {
         var go = Instantiate(heart, transform);

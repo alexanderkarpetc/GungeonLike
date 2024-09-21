@@ -4,14 +4,16 @@ using System.Linq;
 using GamePlay.Common;
 using GamePlay.Enemy;
 using GamePlay.Weapons;
+using Unity.Netcode;
 using UnityEngine;
 
 namespace GamePlay.Player
 {
-  public class PlayerState
+  public class PlayerState : NetworkBehaviour
   {
-    private int _maxHp;
-    private int _currentHp;
+    public int CurrentHp;
+    public int MaxHp;
+
     private int _skillsPoints;
     private int _level = 1;
     private int _exp = 0;
@@ -27,10 +29,9 @@ namespace GamePlay.Player
     private Weapon _weapon;
     public event Action OnSkillLearned;
 
-    public PlayerState()
+    private void Awake()
     {
-      _currentHp = 3;
-      _maxHp = 3;
+      AppModel.SetPlayerState(this);
     }
 
     public void SetWeapon(Weapon weapon)
@@ -38,33 +39,23 @@ namespace GamePlay.Player
       _weapon = weapon;
     }
 
-    public int GetHp()
-    {
-      return _currentHp;
-    }
-
     public void Heal()
     {
-      _currentHp = Mathf.Clamp(_currentHp + 1, 0, _maxHp);
+      CurrentHp = Mathf.Clamp(CurrentHp + 1, 0, MaxHp);
       OnHealthChanged.NullSafeInvoke();
     }
     
     public void DealDamage()
     {
-      _currentHp--;
+      CurrentHp--;
       OnHealthChanged.NullSafeInvoke();
       OnDamageTake.NullSafeInvoke();
     }
     
     public void IncreaseMaxHp()
     {
-      _maxHp++;
+      MaxHp++;
       OnHealthChanged.NullSafeInvoke();
-    }
-
-    public int GetMaxHp()
-    {
-      return _maxHp;
     }
 
     public void LearnSkill(Skill skill)

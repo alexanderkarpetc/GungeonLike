@@ -14,17 +14,17 @@ namespace GamePlay.Weapons
     {
       base.Start();
       CheckSkillExists();
-      AppModel.Player().OnSkillLearned += CheckSkillExists;
+      AppModel.PlayerState().OnSkillLearned += CheckSkillExists;
     }
 
     private void OnDestroy()
     {
-      AppModel.Player().OnSkillLearned -= CheckSkillExists;
+      AppModel.PlayerState().OnSkillLearned -= CheckSkillExists;
     }
 
     private void CheckSkillExists()
     {
-      _hasSightSkill = AppModel.Player().Skills.Exists(x => x.Kind == SkillKind.Gunslinger);
+      _hasSightSkill = AppModel.PlayerState().Skills.Exists(x => x.Kind == SkillKind.Gunslinger);
     }
 
     protected override void InitProjectiles()

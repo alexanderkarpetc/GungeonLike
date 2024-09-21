@@ -8,16 +8,16 @@ namespace GamePlay.Player
     {
       if (Input.GetAxis("Mouse ScrollWheel") > 0f) // forward
       {
-        AppModel.Player().Backpack.NextWeapon();
+        AppModel.PlayerState().Backpack.NextWeapon();
       }
       else if (Input.GetAxis("Mouse ScrollWheel") < 0f) // backwards
       {
-        AppModel.Player().Backpack.PreviousWeapon();
+        AppModel.PlayerState().Backpack.PreviousWeapon();
       }
 
       if (Input.GetKeyDown(KeyCode.R)) // backwards
       {
-        AppModel.Player().Weapon.Reload();
+        AppModel.PlayerState().Weapon.Reload();
       }
     }
   }

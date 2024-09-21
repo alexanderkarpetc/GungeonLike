@@ -87,7 +87,7 @@ namespace GamePlay.Enemy
     {
       OnDeath?.Invoke(this);
       AppModel.DropManager().DropOnEnemyDeath(transform, Type);
-      AppModel.Player().AddExp(Type);
+      AppModel.PlayerState().AddExp(Type);
       Destroy(gameObject);
     }
 

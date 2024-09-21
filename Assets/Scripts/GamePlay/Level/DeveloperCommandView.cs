@@ -17,7 +17,7 @@ namespace GamePlay.Level
     }
     public void AddMoney()
     {
-      AppModel.Player().Backpack.AddResource(ResourceKind.Coins, 20);
+      AppModel.PlayerState().Backpack.AddResource(ResourceKind.Coins, 20);
     }
   }
 }

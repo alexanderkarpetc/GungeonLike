@@ -40,13 +40,13 @@ namespace GamePlay.UI
 
     public void UpdateState()
     {
-      var skills = AppModel.Player().Skills.Where(x => x.BranchKind == _skill.BranchKind).ToList();
+      var skills = AppModel.PlayerState().Skills.Where(x => x.BranchKind == _skill.BranchKind).ToList();
       if (skills.Contains(_skill))
       {
         _state = State.Picked;
       }
-      else if (AppModel.Player().GetNextAvailableSkillOfKind(_skill.BranchKind) == _skill &&
-               AppModel.Player().GetSkillPoints() != 0)
+      else if (AppModel.PlayerState().GetNextAvailableSkillOfKind(_skill.BranchKind) == _skill &&
+               AppModel.PlayerState().GetSkillPoints() != 0)
       {
         _state = State.Enabled;
       }

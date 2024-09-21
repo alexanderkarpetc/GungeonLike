@@ -20,7 +20,13 @@ namespace GamePlay.UI
     private void Start()
     {
       _increaseValue.gameObject.SetActive(false);
-      AppModel.Player().Backpack.OnAmmoChange += OnAmmoChange;
+      Subscribe().Forget();
+    }
+
+    private async UniTask Subscribe()
+    {
+      await UniTask.WaitUntil(() => AppModel.PlayerState() != null);
+      AppModel.PlayerState().Backpack.OnAmmoChange += OnAmmoChange;
     }
 
     private void OnAmmoChange(Dictionary<AmmoKind, int> ammoBox)
@@ -63,14 +69,14 @@ namespace GamePlay.UI
 
     private void Update()
     {
-      if (AppModel.Player().Backpack.Ammo == null)
+      if (AppModel.PlayerState()?.Backpack?.Ammo == null)
         return;
-      _value.text = AppModel.Player().Backpack.Ammo[_kind].ToString();
+      _value.text = AppModel.PlayerState().Backpack.Ammo[_kind].ToString();
     }
 
     private void OnDestroy()
     {
-      AppModel.Player().Backpack.OnAmmoChange -= OnAmmoChange;
+      AppModel.PlayerState().Backpack.OnAmmoChange -= OnAmmoChange;
       _cts?.Cancel();
     }
   }

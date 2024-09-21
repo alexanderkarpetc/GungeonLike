@@ -25,14 +25,24 @@ namespace GamePlay.Player
         // todo: move to some init
         private void Start()
         {
-            AppModel.SetPlayer(gameObject);
+            if (!IsOwner) return; // Only initialize for the owning player
+
+            // Initialize the player if this is the owner
+            AppModel.SetPlayerGo(gameObject);
             _initializer.Init(_startingWeapon);
-            // todo: should be changed to some shit
+            // todo: should be changed to some logic
         }
 
         private void Update()
         {
+            if (!IsOwner) return; // Only the owner should handle input
             ReadInput();
+        }
+
+        private void FixedUpdate()
+        {
+            if (!IsOwner) return; // Only the owner can move their player
+            Move();
         }
 
         private void ReadInput()
@@ -52,14 +62,9 @@ namespace GamePlay.Player
             playerAnimatorView.VerticalMove = _verticalMove;
         }
 
-        private void FixedUpdate()
-        {
-            Move();
-        }
-
         private void Move()
         {
-            Vector2 targetVelocity = new Vector2(_horizontalMove, _verticalMove).normalized * StaticData.PlayerSpeedBase * AppModel.Player().SpeedMultiplier;
+            Vector2 targetVelocity = new Vector2(_horizontalMove, _verticalMove).normalized * StaticData.PlayerSpeedBase * AppModel.PlayerState().SpeedMultiplier;
             _rigidbody.linearVelocity = Vector2.Lerp(_rigidbody.linearVelocity, targetVelocity, Inertia);
         }
 
@@ -72,10 +77,10 @@ namespace GamePlay.Player
         private IEnumerator ApplyHit()
         {
             _isInvincible = true;
-            var state = AppModel.Player();
+            var state = AppModel.PlayerState();
             state.DealDamage();
 
-            if (state.GetHp() <= 0)
+            if (state.CurrentHp <= 0)
             {
                 Die();
                 yield break;

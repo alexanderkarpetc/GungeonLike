@@ -54,13 +54,13 @@ namespace GamePlay.Player
 
     public Weapon GetAbsentWeapon()
     {
-      return AllGuns.Where(x => !AppModel.Player().Backpack.GetWeapons().Contains(x)).ToList().Random();
+      return AllGuns.Where(x => !AppModel.PlayerState().Backpack.GetWeapons().Contains(x)).ToList().Random();
     }
 
     private List<AmmoKind> FindDeficientAmmo(int quantity)
     {
       var kindToPercent = new Dictionary<AmmoKind, float>();
-      foreach (var ammo in AppModel.Player().Backpack.Ammo)
+      foreach (var ammo in AppModel.PlayerState().Backpack.Ammo)
       {
         kindToPercent.Add(ammo.Key, (float) ammo.Value / AppModel.WeaponData().AmmoCapacity[ammo.Key]);
       }

@@ -9,8 +9,8 @@ namespace GamePlay.Player
   {
     public void Init(Weapon startingWeapon)
     {
-      AppModel.Player().Backpack.AddWeapon(startingWeapon);
-      AppModel.Player().Backpack.Ammo = new Dictionary<AmmoKind, int>
+      AppModel.PlayerState().Backpack.AddWeapon(startingWeapon);
+      AppModel.PlayerState().Backpack.Ammo = new Dictionary<AmmoKind, int>
       {
         {AmmoKind.Pistol, AppModel.WeaponData().AmmoCapacity[AmmoKind.Pistol] / 3},
         {AmmoKind.Riffle, AppModel.WeaponData().AmmoCapacity[AmmoKind.Riffle] / 3},
@@ -19,7 +19,7 @@ namespace GamePlay.Player
         {AmmoKind.Bolt, AppModel.WeaponData().AmmoCapacity[AmmoKind.Bolt] / 3},
         {AmmoKind.Bomb, AppModel.WeaponData().AmmoCapacity[AmmoKind.Bomb] / 5},
       };
-      AppModel.Player().Backpack.Resources = new Dictionary<ResourceKind, int>
+      AppModel.PlayerState().Backpack.Resources = new Dictionary<ResourceKind, int>
       {
         {ResourceKind.Coins, 10},
       };

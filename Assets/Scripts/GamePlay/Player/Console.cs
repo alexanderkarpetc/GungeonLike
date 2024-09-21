@@ -27,7 +27,7 @@ namespace GamePlay.Player
           TryAddGun(text[1]);
           break;
         case "skillpoint":
-          AppModel.Player().AddSkillPoint();
+          AppModel.PlayerState().AddSkillPoint();
           break;
         default:
           Debug.LogError("No SUCH command " + text[0]);
@@ -43,7 +43,7 @@ namespace GamePlay.Player
       var weapon = _weapons.FirstOrDefault(x => x.name.Equals(name));
       if (weapon == null)
         weapon = _weapons.First(x => x.name.ToLower().Contains(name.ToLower()));
-      AppModel.Player().Backpack.AddWeapon(weapon);
+      AppModel.PlayerState().Backpack.AddWeapon(weapon);
     }
   }
 }

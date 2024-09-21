@@ -15,13 +15,13 @@ namespace GamePlay.Level
 
     public override void Interact(PlayerInteract playerInteract)
     {
-      if (AppModel.Player().Backpack.GetCoins() < Price)
+      if (AppModel.PlayerState().Backpack.GetCoins() < Price)
       {
         return;
       }
       
-      AppModel.Player().Backpack.WithdrawResource(ResourceKind.Coins, Price);
-      AppModel.Player().Backpack.AddWeapon(_weapon);
+      AppModel.PlayerState().Backpack.WithdrawResource(ResourceKind.Coins, Price);
+      AppModel.PlayerState().Backpack.AddWeapon(_weapon);
       Destroy(gameObject);
     }
     

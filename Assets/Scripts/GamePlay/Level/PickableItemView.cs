@@ -32,11 +32,11 @@ namespace GamePlay.Level
         }
         if (!Ammo.IsNullOrEmpty())
         {
-          AppModel.Player().Backpack.AddAmmo(Ammo);
+          AppModel.PlayerState().Backpack.AddAmmo(Ammo);
         }
         if (ResourceValue != null)
         {
-          AppModel.Player().Backpack.AddResource(ResourceValue.resourceKind, ResourceValue.amount);
+          AppModel.PlayerState().Backpack.AddResource(ResourceValue.resourceKind, ResourceValue.amount);
         }
         Destroy(gameObject);
       }
@@ -44,7 +44,7 @@ namespace GamePlay.Level
 
     private void PickWeapon(Weapon weapon)
     {
-      AppModel.Player().Backpack.AddWeapon(weapon);
+      AppModel.PlayerState().Backpack.AddWeapon(weapon);
     }
   }
 }

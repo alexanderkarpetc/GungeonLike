@@ -17,9 +17,9 @@ namespace GamePlay.Player
 
     private void Update()
     {
-      if (AppModel.Player().Weapon == null)
+      if (AppModel.PlayerState()?.Weapon == null)
         return;
-      var weapon = AppModel.Player().Weapon;
+      var weapon = AppModel.PlayerState().Weapon;
       if (_currentWeapon != weapon)
       {
         if (_reload != null)
@@ -43,7 +43,7 @@ namespace GamePlay.Player
     private IEnumerator Reload()
     {
       _reloadStarted = true;
-      var weapon = AppModel.Player().Weapon;
+      var weapon = AppModel.PlayerState().Weapon;
 
       var startTime = Time.time;
       while (Time.time < startTime + weapon.reloadingTime)

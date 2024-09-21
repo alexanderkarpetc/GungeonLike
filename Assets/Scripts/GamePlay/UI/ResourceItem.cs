@@ -1,4 +1,5 @@
 ﻿using System;
+using Cysharp.Threading.Tasks;
 using GamePlay.Player;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,19 +13,25 @@ namespace GamePlay.UI
 
     private void Start()
     {
-      AppModel.Player().Backpack.OnResourcesChange += OnResourcesChange;
+      Subscribe().Forget();
       // todo: uncomment this line
       // _value.text = AppModel.Player().Backpack.Resources[_kind].ToString();
     }
 
+    private async UniTask Subscribe()
+    {
+      await UniTask.WaitUntil(() => AppModel.PlayerState() != null);
+      AppModel.PlayerState().Backpack.OnResourcesChange += OnResourcesChange;
+    }
+    
     private void OnResourcesChange(ResourceKind kind, int value)
     {
       if (kind == _kind)
-        _value.text = AppModel.Player().Backpack.Resources[_kind].ToString();
+        _value.text = AppModel.PlayerState().Backpack.Resources[_kind].ToString();
     }
     private void OnDestroy()
     {
-      AppModel.Player().Backpack.OnResourcesChange -= OnResourcesChange;
+      AppModel.PlayerState().Backpack.OnResourcesChange -= OnResourcesChange;
     }
   }
 }

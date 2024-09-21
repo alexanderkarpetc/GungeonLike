@@ -4,7 +4,7 @@
     {
         protected override void Start()
         {
-            State = new WeaponState{bulletsLeft = AppModel.Player().Backpack.Ammo[AmmoKind]};
+            State = new WeaponState{bulletsLeft = AppModel.PlayerState().Backpack.Ammo[AmmoKind]};
             BaseDamage  = AppModel.WeaponData().GetWeaponInfo(Type).Damage;
         }
     }

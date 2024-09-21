@@ -2,11 +2,12 @@
 using System.Linq;
 using GamePlay.Common;
 using GamePlay.Player;
+using Unity.Netcode;
 using UnityEngine;
 
 namespace GamePlay.Weapons
 {
-  public class Weapon : MonoBehaviour
+  public class Weapon : NetworkBehaviour
   {
     private static readonly int ReloadAnim = Animator.StringToHash("Reload");
     private static readonly int ShootAnim = Animator.StringToHash("Shoot");
@@ -48,7 +49,7 @@ namespace GamePlay.Weapons
     {
       if (!IsPlayers)
       {
-        State = new WeaponState{bulletsLeft = Mathf.Min(MagazineSize, AppModel.Player().Backpack.Ammo[AmmoKind])};
+        State = new WeaponState{bulletsLeft = Mathf.Min(MagazineSize, AppModel.PlayerState().Backpack.Ammo[AmmoKind])};
       }
       reloadingTime = _animator.runtimeAnimatorController.animationClips.First(x=>x.name.Equals("Reload")).averageDuration;
       BaseDamage  = AppModel.WeaponData().GetWeaponInfo(Type).Damage;
@@ -71,7 +72,7 @@ namespace GamePlay.Weapons
 
     public void Reload()
     {
-      if (IsPlayers && AppModel.Player().Backpack.Ammo[AmmoKind] == 0)
+      if (IsPlayers && AppModel.PlayerState().Backpack.Ammo[AmmoKind] == 0)
         return;
       StartCoroutine(DoReload());
     }
@@ -79,7 +80,7 @@ namespace GamePlay.Weapons
     private IEnumerator ShootCoroutine()
     {
       if (IsPlayers)
-        AppModel.Player().Backpack.Ammo[AmmoKind]--;
+        AppModel.PlayerState().Backpack.Ammo[AmmoKind]--;
       _nextShotTime = Time.time + _shootRate;
       _animator.SetTrigger(ShootAnim);
       yield return new WaitForSeconds(_shootDelay);
@@ -111,7 +112,7 @@ namespace GamePlay.Weapons
       reloading = true;
       _animator.SetTrigger(ReloadAnim);
       yield return new WaitForSeconds(reloadingTime);
-      State.bulletsLeft = IsPlayers ? Mathf.Min(MagazineSize, AppModel.Player().Backpack.Ammo[AmmoKind]) : MagazineSize;
+      State.bulletsLeft = IsPlayers ? Mathf.Min(MagazineSize, AppModel.PlayerState().Backpack.Ammo[AmmoKind]) : MagazineSize;
       reloading = false;
     }
     public static Vector2 RadianToVector2(float radian)

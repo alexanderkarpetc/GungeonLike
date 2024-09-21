@@ -33,9 +33,9 @@ namespace GamePlay
     private static GameObject _playerGameObj;
     private static HudController _hud;
 
-    public static PlayerState Player()
+    public static PlayerState PlayerState()
     {
-      return _playerState ?? (_playerState = new PlayerState());
+      return _playerState;
     }
     
     public static WeaponStaticData WeaponData()
@@ -43,9 +43,14 @@ namespace GamePlay
       return _weaponStaticData ??= new WeaponStaticData();
     }
 
-    public static void SetPlayer(GameObject player)
+    public static void SetPlayerGo(GameObject player)
     {
       _playerGameObj = player;
+    }
+    
+    public static void SetPlayerState(PlayerState state)
+    {
+      _playerState = state;
     }
     
     public static GameObject PlayerGameObj()

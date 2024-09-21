@@ -461,6 +461,7 @@ GameObject:
   - component: {fileID: 8723019512984667596}
   - component: {fileID: 8920013736231235385}
   - component: {fileID: 4282468829178620688}
+  - component: {fileID: 6360848123076751811}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -522,7 +523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 594954456
+  GlobalObjectIdHash: 2400482380
   InScenePlacedSourceGlobalObjectIdHash: 0
   DeferredDespawnTick: 0
   Ownership: 1
@@ -565,6 +566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1305115df31817439424462b9854fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   _animator: {fileID: 8463245576141808202}
   _body: {fileID: 8463245576065121776}
   VerticalMove: 0
@@ -582,6 +584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 697863fb876c8d449a8c02b5d53f32c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   Weapon: {fileID: 0}
   _weaponSlot: {fileID: 8676329774120992416}
 --- !u!50 &7375126048374487353
@@ -768,6 +771,22 @@ MonoBehaviour:
   UseRigidBodyForMotion: 0
   AutoUpdateKinematicState: 1
   AutoSetKinematicOnDespawn: 1
+--- !u!114 &6360848123076751811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8463245576141808205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d5d29bff27e4ac6af4fbba0d545ccf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  CurrentHp: 3
+  MaxHp: 3
+  SpeedMultiplier: 1
 --- !u!1 &8552638818282441729
 GameObject:
   m_ObjectHideFlags: 0
