@@ -37,11 +37,11 @@ namespace GamePlay.Player
 
         private void Start()
         {
+            AppModel.SetPlayer(this, OwnerClientId);
+            
             if (!IsOwner) return; // Only initialize for the owning player
-
-            // Initialize the player if this is the owner
-            AppModel.SetPlayerGo(gameObject);
-            AppModel.SetPlayerState(this);
+            
+            AppModel.SetOwner(OwnerClientId);
             _initializer.Init(_startingWeapon);
         }
 
@@ -72,7 +72,7 @@ namespace GamePlay.Player
             var weaponInstance = Instantiate(weaponPrefab);
 
             // Set the weapon as a child of the WeaponSlot (client-side)
-            var weaponSlot = AppModel.PlayerTransform().Find("WeaponSlot");
+            var weaponSlot = AppModel.PlayerTransform(ownerClientId).Find("WeaponSlot");
             weaponInstance.transform.SetParent(weaponSlot, false);  // Set parent without affecting local scale/position
 
             var playerWeaponTurn = weaponSlot.GetComponent<PlayerWeaponTurn>();

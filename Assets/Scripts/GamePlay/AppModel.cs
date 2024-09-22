@@ -1,4 +1,5 @@
-﻿using GamePlay.Common;
+﻿using System.Collections.Generic;
+using GamePlay.Common;
 using GamePlay.Level;
 using GamePlay.Level.Controllers;
 using GamePlay.Player;
@@ -17,10 +18,10 @@ namespace GamePlay
 
     public static StraightLevelController StraightRoomController;
     public static StraightRoomController CurrentRoom;
+    public static ulong OwnerClientId;
     
     private static WeaponStaticData _weaponStaticData;
     
-    private static PlayerState _playerState;
     private static DropManager _dropManager;
     private static ShopManager _shopManager;
     
@@ -29,12 +30,14 @@ namespace GamePlay
     private static GameObject _bulletContainer;
     private static GameObject _fxContainer;
     private static GameObject _envContainer;
-    private static GameObject _playerGameObj;
+    private static Dictionary<ulong, PlayerState> _playerStates = new();
+    private static Dictionary<ulong, GameObject> _playerGameObjs = new();
     private static HudController _hud;
 
-    public static PlayerState PlayerState()
+    public static PlayerState PlayerState(ulong? clientId = null)
     {
-      return _playerState;
+      clientId ??= OwnerClientId;
+      return CollectionExtensions.GetValueOrDefault(_playerStates, clientId.Value);
     }
     
     public static WeaponStaticData WeaponData()
@@ -42,24 +45,30 @@ namespace GamePlay
       return _weaponStaticData ??= new WeaponStaticData();
     }
 
-    public static void SetPlayerGo(GameObject player)
+    public static void SetPlayer(PlayerState state, ulong ownerClientId)
     {
-      _playerGameObj = player;
+      _playerStates[ownerClientId] = state;
+      _playerGameObjs[ownerClientId] = state.gameObject;
     }
     
-    public static void SetPlayerState(PlayerState state)
+    public static void SetOwner(ulong ownerClientId)
     {
-      _playerState = state;
+      OwnerClientId = ownerClientId;
     }
     
-    public static GameObject PlayerGameObj()
+    public static GameObject PlayerGameObj(ulong? clientId = null)
     {
-      return _playerGameObj;
+      clientId ??= OwnerClientId;
+
+      return CollectionExtensions.GetValueOrDefault(_playerGameObjs, clientId.Value);
     }
 
-    public static Transform PlayerTransform()
+    public static Transform PlayerTransform(ulong? clientId = null)
     {
-      return PlayerGameObj()?.transform;
+      clientId ??= OwnerClientId;
+
+      // Return the player's transform or null if the player GameObject is not found
+      return PlayerGameObj(clientId)?.transform;
     }
         
     public static DropManager DropManager()
