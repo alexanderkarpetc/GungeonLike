@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8676329774120992416}
-  - component: {fileID: 6265370611234587884}
   m_Layer: 0
   m_Name: WeaponSlot
   m_TagString: Untagged
@@ -32,23 +31,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8463245576141808203}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6265370611234587884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3058406641535739672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de764e93e17f4e7888dd25d917311158, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _leftHandPos: {x: -0.225, y: -0.3, z: 0}
-  _rightHandPos: {x: 0.225, y: -0.3, z: 0}
-  Weapon: {fileID: 0}
-  _rightHand: {fileID: 2759612104174774373}
-  _leftHand: {fileID: 7504997240420986555}
 --- !u!1 &3933832376114909274
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,6 +444,7 @@ GameObject:
   - component: {fileID: 8723019512984667596}
   - component: {fileID: 8920013736231235385}
   - component: {fileID: 4282468829178620688}
+  - component: {fileID: 5766429700548390795}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -787,6 +770,25 @@ MonoBehaviour:
   UseRigidBodyForMotion: 0
   AutoUpdateKinematicState: 1
   AutoSetKinematicOnDespawn: 1
+--- !u!114 &5766429700548390795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8463245576141808205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de764e93e17f4e7888dd25d917311158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  Weapon: {fileID: 0}
+  _leftHandPos: {x: -0.225, y: -0.3, z: 0}
+  _rightHandPos: {x: 0.225, y: -0.3, z: 0}
+  _weaponSlot: {fileID: 3058406641535739672}
+  _rightHand: {fileID: 2759612104174774373}
+  _leftHand: {fileID: 7504997240420986555}
 --- !u!1 &8552638818282441729
 GameObject:
   m_ObjectHideFlags: 0

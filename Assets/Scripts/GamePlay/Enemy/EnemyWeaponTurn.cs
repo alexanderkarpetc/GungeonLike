@@ -11,16 +11,16 @@ namespace GamePlay.Enemy
     protected override void OnStart()
     {
       _player = AppModel.PlayerGameObj();
-      _controller = transform.parent.GetComponent<EnemyController>();
+      _controller = GetComponent<EnemyController>();
     }
 
     protected override void TurnGun()
     {
       var lookingPos = _controller.CurrentTarget ?? _player.transform.position;
-      Vector2 direction = lookingPos - transform.position;
+      Vector2 direction = lookingPos - _weaponSlot.transform.position;
       Angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
       var rot = Quaternion.AngleAxis(Mathf.Abs(Angle) < 90 ? Angle : - 180 + Angle, Vector3.forward);
-      transform.rotation = rot;
+      _weaponSlot.transform.rotation = rot;
     }
 
     protected override void ChangeSortingOrder()

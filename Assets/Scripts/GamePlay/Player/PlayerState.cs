@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Cysharp.Threading.Tasks;
 using GamePlay.Common;
 using GamePlay.Enemy;
 using GamePlay.Weapons;
@@ -11,6 +12,9 @@ namespace GamePlay.Player
 {
     public class PlayerState : NetworkBehaviour
     {
+        // todo: not a good idea to have this here
+        public NetworkVariable<WeaponType> CurrentWeaponType = new NetworkVariable<WeaponType>();
+
         public int CurrentHp;
         public int MaxHp;
         
@@ -23,9 +27,8 @@ namespace GamePlay.Player
 
         public event Action OnHealthChanged;
         public event Action OnDamageTake;
-
         public Weapon Weapon => _weapon;
-        public Backpack Backpack = new Backpack();  // Regular C# class
+        public Backpack Backpack = new Backpack(); 
         public float SpeedMultiplier = 1f;
         public List<Skill> Skills = new List<Skill>();
         public int Level => _level;
@@ -38,33 +41,43 @@ namespace GamePlay.Player
         private void Start()
         {
             AppModel.SetPlayer(this, OwnerClientId);
-            
-            if (!IsOwner) return; // Only initialize for the owning player
-            
-            AppModel.SetOwner(OwnerClientId);
-            _initializer.Init(_startingWeapon);
+
+            if (IsOwner)
+            {
+                AppModel.SetOwner(OwnerClientId);
+                _initializer.Init(_startingWeapon);
+            }
+            else
+            {
+                SyncWeaponWithWait(_startingWeapon.Type, OwnerClientId).Forget();
+            }
         }
 
-        // Set Weapon locally and notify server
         public void SetWeapon(Weapon weapon)
         {
-            if (!IsOwner) return; // Only the owning client can call this
+            if (!IsOwner) return;
 
             _weapon = weapon;
-            Backpack.AddWeapon(weapon); // Update the backpack locally
-            AddWeaponServerRpc(weapon.Type, OwnerClientId); // Notify server to sync weapon
+            Backpack.AddWeapon(weapon);
+            AddWeaponServerRpc(weapon.Type, OwnerClientId);
         }
 
         [ServerRpc]
         public void AddWeaponServerRpc(WeaponType type, ulong ownerClientId)
         {
-            // Sync the weapon to all clients by telling them to instantiate the weapon and set it
             SyncWeaponToClientsClientRpc(type, ownerClientId);
+            CurrentWeaponType.Value = type;
         }
 
         [ClientRpc]
         public void SyncWeaponToClientsClientRpc(WeaponType type, ulong ownerClientId)
         {
+            SyncWeaponWithWait(type, ownerClientId).Forget();
+        }
+
+        private async UniTask SyncWeaponWithWait(WeaponType type, ulong ownerClientId)
+        {
+            await UniTask.WaitUntil(() => AppModel.PlayerTransform(ownerClientId) != null);
             // Find the weapon prefab on the client (same way as on the server)
             var weaponPrefab = AppModel.DropManager().AllGuns.First(x => x.Type == type);
 
@@ -75,7 +88,7 @@ namespace GamePlay.Player
             var weaponSlot = AppModel.PlayerTransform(ownerClientId).Find("WeaponSlot");
             weaponInstance.transform.SetParent(weaponSlot, false);  // Set parent without affecting local scale/position
 
-            var playerWeaponTurn = weaponSlot.GetComponent<PlayerWeaponTurn>();
+            var playerWeaponTurn = GetComponent<PlayerWeaponTurn>();
             playerWeaponTurn.Weapon = weaponInstance;
             
             Backpack.AddWeapon(weaponInstance);
@@ -94,6 +107,7 @@ namespace GamePlay.Player
         public void SyncWeaponChangeServerRpc(int weaponIndex)
         {
             SyncWeaponChangeClientRpc(weaponIndex); // Sync change with all clients
+            CurrentWeaponType.Value = Backpack.GetWeapons()[Backpack.CurrentWeaponIndex].Type;
         }
 
         // Client-side: sync backpack state
