@@ -621,6 +621,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magnum
       objectReference: {fileID: 0}
+    - target: {fileID: 7922705935557505119, guid: 4defcc20b07f920429d3000689e86ee4,
+        type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 2084604154
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

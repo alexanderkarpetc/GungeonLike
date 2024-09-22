@@ -69,9 +69,10 @@ namespace GamePlay.UI
 
     private void Update()
     {
-      if (AppModel.PlayerState()?.Backpack?.Ammo == null)
-        return;
-      _value.text = AppModel.PlayerState().Backpack.Ammo[_kind].ToString();
+      if (AppModel.PlayerState()?.Backpack?.IsInitialized == true)
+      {
+        _value.text = AppModel.PlayerState().Backpack.Ammo[_kind].ToString();
+      }
     }
 
     private void OnDestroy()

@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace GamePlay.Weapons
 {
-  public class Weapon : NetworkBehaviour
+  public class Weapon : MonoBehaviour
   {
     private static readonly int ReloadAnim = Animator.StringToHash("Reload");
     private static readonly int ShootAnim = Animator.StringToHash("Shoot");

@@ -560,6 +560,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9218048875519357227}
     m_Modifications:
+    - target: {fileID: -2007950512594981093, guid: 4b29eb23877aaac428150f64792f872a,
+        type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 3329085737
+      objectReference: {fileID: 0}
     - target: {fileID: 4700838025113585318, guid: 4b29eb23877aaac428150f64792f872a,
         type: 3}
       propertyPath: m_RootOrder

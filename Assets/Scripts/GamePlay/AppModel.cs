@@ -24,7 +24,6 @@ namespace GamePlay
     private static DropManager _dropManager;
     private static ShopManager _shopManager;
     
-    private static Transform _playerTransform;
     private static EnemyFactory _enemyFactory;
     private static SpawnPoint _spawnPointPrefab;
     private static GameObject _bulletContainer;

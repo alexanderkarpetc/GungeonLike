@@ -13,26 +13,13 @@ namespace GamePlay.Player
         [SerializeField] private PlayerAnimatorView playerAnimatorView;
         [SerializeField] private Rigidbody2D _rigidbody;
         [SerializeField] private SpriteRenderer _body;
-        [SerializeField] private Weapon _startingWeapon;
         
         private int _verticalMove;
         private int _horizontalMove;
         private bool _isInvincible;
-        private PlayerInitializer _initializer = new PlayerInitializer();
         
         private readonly float Inertia = 0.2f;
-
-        // todo: move to some init
-        private void Start()
-        {
-            if (!IsOwner) return; // Only initialize for the owning player
-
-            // Initialize the player if this is the owner
-            AppModel.SetPlayerGo(gameObject);
-            _initializer.Init(_startingWeapon);
-            // todo: should be changed to some logic
-        }
-
+        
         private void Update()
         {
             if (!IsOwner) return; // Only the owner should handle input

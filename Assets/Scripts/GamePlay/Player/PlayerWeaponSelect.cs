@@ -4,15 +4,16 @@ namespace GamePlay.Player
 {
   public class PlayerWeaponSelect : MonoBehaviour
   {
-    void Update()
+    private void Update()
     {
       if (Input.GetAxis("Mouse ScrollWheel") > 0f) // forward
       {
-        AppModel.PlayerState().Backpack.NextWeapon();
+        AppModel.PlayerState().NextWeapon();
       }
       else if (Input.GetAxis("Mouse ScrollWheel") < 0f) // backwards
       {
-        AppModel.PlayerState().Backpack.PreviousWeapon();
+        // todo: implement PreviousWeapon
+        // AppModel.PlayerState().PreviousWeapon();
       }
 
       if (Input.GetKeyDown(KeyCode.R)) // backwards

@@ -449,6 +449,7 @@ GameObject:
   - component: {fileID: 8463245576141808203}
   - component: {fileID: 8463245576141808202}
   - component: {fileID: 7033236124157041281}
+  - component: {fileID: 6360848123076751811}
   - component: {fileID: 8463245576141808200}
   - component: {fileID: 3688945083984600635}
   - component: {fileID: 366866975}
@@ -461,7 +462,6 @@ GameObject:
   - component: {fileID: 8723019512984667596}
   - component: {fileID: 8920013736231235385}
   - component: {fileID: 4282468829178620688}
-  - component: {fileID: 6360848123076751811}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -536,6 +536,23 @@ MonoBehaviour:
   AutoObjectParentSync: 1
   SyncOwnerTransformWhenParented: 1
   AllowOwnerToParent: 0
+--- !u!114 &6360848123076751811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8463245576141808205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d5d29bff27e4ac6af4fbba0d545ccf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  CurrentHp: 3
+  MaxHp: 3
+  _startingWeapon: {fileID: 1712927347, guid: 02dac79d2ed7c094799836c1418fa78d, type: 3}
+  SpeedMultiplier: 1
 --- !u!114 &8463245576141808200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -553,7 +570,6 @@ MonoBehaviour:
   playerAnimatorView: {fileID: 3688945083984600635}
   _rigidbody: {fileID: 7375126048374487353}
   _body: {fileID: 8463245576065121774}
-  _startingWeapon: {fileID: 1712927347, guid: 02dac79d2ed7c094799836c1418fa78d, type: 3}
 --- !u!114 &3688945083984600635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -771,22 +787,6 @@ MonoBehaviour:
   UseRigidBodyForMotion: 0
   AutoUpdateKinematicState: 1
   AutoSetKinematicOnDespawn: 1
---- !u!114 &6360848123076751811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8463245576141808205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d5d29bff27e4ac6af4fbba0d545ccf3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowTopMostFoldoutHeaderGroup: 1
-  CurrentHp: 3
-  MaxHp: 3
-  SpeedMultiplier: 1
 --- !u!1 &8552638818282441729
 GameObject:
   m_ObjectHideFlags: 0
