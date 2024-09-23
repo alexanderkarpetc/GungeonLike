@@ -55,17 +55,19 @@ namespace GamePlay.Player
         [ServerRpc]
         private void ShootServerRpc()
         {
-            // Broadcast shooting to all clients
             ShootClientRpc();
         }
 
         [ClientRpc]
         private void ShootClientRpc()
         {
-            if (Weapon != null)
+            //todo: dirty hack remove it later
+            if (Weapon == null && IsOwner == false)
             {
-                Weapon.TryShoot();  // Execute the shooting action
+                Weapon = _weaponSlot.GetChild(0).GetComponent<Weapon>();
+                Weapon.IsPlayers = true;
             }
+            Weapon.TryShoot();
         }
 
         [ServerRpc]

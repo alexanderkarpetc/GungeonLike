@@ -41,15 +41,18 @@ namespace GamePlay.Player
         private void Start()
         {
             AppModel.SetPlayer(this, OwnerClientId);
-
             if (IsOwner)
             {
+                gameObject.name = $"PlayerOwner_{OwnerClientId}";
                 AppModel.SetOwner(OwnerClientId);
                 _initializer.Init(_startingWeapon);
             }
             else
             {
-                SyncWeaponWithWait(_startingWeapon.Type, OwnerClientId).Forget();
+                gameObject.name = $"Player_{OwnerClientId}";
+                // todo: VERY dirty shit
+                if(!IsHost)
+                    SyncWeaponWithWait(_startingWeapon.Type, OwnerClientId).Forget();
             }
         }
 
@@ -77,6 +80,7 @@ namespace GamePlay.Player
 
         private async UniTask SyncWeaponWithWait(WeaponType type, ulong ownerClientId)
         {
+            Debug.Log($"SyncWeaponWithWait ownerClientId:{ownerClientId}, IsOwner:{IsOwner}");
             await UniTask.WaitUntil(() => AppModel.PlayerTransform(ownerClientId) != null);
             // Find the weapon prefab on the client (same way as on the server)
             var weaponPrefab = AppModel.DropManager().AllGuns.First(x => x.Type == type);

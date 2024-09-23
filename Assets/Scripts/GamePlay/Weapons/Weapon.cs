@@ -19,6 +19,7 @@ namespace GamePlay.Weapons
     public SpriteRenderer Body;
     public Transform SecondHandPos;
 
+    // todo: probably should be reworked
     public bool IsPlayers;
     public WeaponType Type;
     public WeaponShootingType ShootingType;

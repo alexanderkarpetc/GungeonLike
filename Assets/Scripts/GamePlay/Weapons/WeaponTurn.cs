@@ -21,8 +21,7 @@ namespace GamePlay
         protected float Angle;
 
         // NetworkVariable to sync the angle across clients
-        private NetworkVariable<float> NetworkAngle = new NetworkVariable<float>(
-            writePerm: NetworkVariableWritePermission.Owner);
+        protected NetworkVariable<float> NetworkAngle = new(writePerm: NetworkVariableWritePermission.Owner);
 
         private void Start()
         {
@@ -58,18 +57,13 @@ namespace GamePlay
             MoveHands();
         }
 
-        protected virtual void TurnGun()
-        {
-            // Calculate angle based on mouse position
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector3 direction = mousePos - transform.position;
-            Angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        }
+        protected virtual void TurnGun(){ }
 
         private void ApplyNetworkAngle()
         {
-            // Sync angle from the server or owner
-            _weaponSlot.transform.rotation = Quaternion.Euler(0f, 0f, NetworkAngle.Value);
+            Angle = NetworkAngle.Value;
+            var rot = Quaternion.AngleAxis(Mathf.Abs(Angle) < 90 ? Angle : - 180 + Angle, Vector3.forward);
+            _weaponSlot.transform.rotation = rot;
         }
 
         private void MoveHands()

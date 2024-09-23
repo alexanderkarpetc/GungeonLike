@@ -45,9 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab8da9f3235945ecafa725a523b02890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  Weapon: {fileID: 6918760433909502876}
   _leftHandPos: {x: -0.45, y: -0.4, z: 0}
   _rightHandPos: {x: 0.45, y: -0.4, z: 0}
-  Weapon: {fileID: 6918760433909502876}
+  _weaponSlot: {fileID: 0}
   _rightHand: {fileID: 2434628803022153710}
   _leftHand: {fileID: 8044148372320362800}
   _animator: {fileID: 8284064114409565633}
