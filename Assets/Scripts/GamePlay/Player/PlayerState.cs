@@ -95,6 +95,7 @@ namespace GamePlay.Player
             playerWeaponTurn.Weapon = weaponInstance;
             
             Backpack.AddWeapon(weaponInstance);
+            weaponInstance.IsOwner = IsOwner;
         }
 
         // Weapon switching

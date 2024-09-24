@@ -39,6 +39,7 @@ namespace GamePlay.Weapons
     [HideInInspector] public bool reloading;
     [HideInInspector] public float reloadingTime;
     [HideInInspector] public float BaseDamage;
+    [HideInInspector] public bool IsOwner;
     protected string projectileName;
 
     private void Awake()
@@ -102,6 +103,7 @@ namespace GamePlay.Weapons
       projectile.Damage = BaseDamage;
       projectile.Speed = _bulletSpeed;
       projectile.Impulse = _impulse;
+      projectile.IsOwner = IsOwner;
 
       projectile.Direction = DegreeToVector2(transform.rotation.eulerAngles.z + AppModel.random.NextFloat(-_normalDispersion, _normalDispersion));
       if (IsInverted)

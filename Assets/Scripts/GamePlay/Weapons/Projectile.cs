@@ -4,7 +4,7 @@ using GamePlay.Enemy;
 using GamePlay.Player;
 using UnityEngine;
 
-namespace GamePlay
+namespace GamePlay.Weapons
 {
   public class Projectile : MonoBehaviour
   {
@@ -18,6 +18,7 @@ namespace GamePlay
     [HideInInspector] public float Impulse;
     [HideInInspector] public Vector2 Direction;
     public float Damage;
+    public bool IsOwner;
 
     private void Update()
     {
@@ -35,15 +36,18 @@ namespace GamePlay
         var fx = Instantiate(_envHitFx, transform.position,
           Quaternion.LookRotation(Vector3.forward, Direction*new Vector2(-1,-1)));
         fx.transform.SetParent(AppModel.FxContainer().transform);
-        if (other.CompareTag("Environment"))
+        if (IsOwner && other.CompareTag("Environment"))
         {
-          DamageManager.Hit(other.GetComponent<Level.Environment>(), Damage);
+            DamageManager.Hit(other.GetComponent<Level.Environment>(), Damage);
         }
         BulletPoolManager.Instance.ReturnBulletToPool(this, ProjectileName);
       }
       if (!IsPlayerBullet && other.CompareTag("Player"))
       {
-        HitPlayer(other);
+        if (IsOwner)
+        {
+          HitPlayer(other);
+        }
         BulletPoolManager.Instance.ReturnBulletToPool(this, ProjectileName);
       }
       
@@ -51,7 +55,10 @@ namespace GamePlay
       {
         if (_enemyHitFx != null)
           Instantiate(_enemyHitFx, transform.position, transform.rotation);
-        HitEnemy(other);
+        if (IsOwner)
+        {
+          HitEnemy(other);
+        }
         BulletPoolManager.Instance.ReturnBulletToPool(this, ProjectileName);
       }
     }
@@ -64,6 +71,7 @@ namespace GamePlay
       Impulse = 0;
       Owner = null;
       Direction = Vector2.zero;
+      IsOwner = false;
     }
 
     protected void HitPlayer(Collider2D other)
