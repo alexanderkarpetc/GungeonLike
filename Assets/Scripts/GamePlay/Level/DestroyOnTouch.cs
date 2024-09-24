@@ -20,7 +20,7 @@ namespace GamePlay.Level
             if(col.CompareTag("Player") && _spawnTime + _invincibleTime > Time.time)
                 return;
             if(col.CompareTag("Player") || col.CompareTag("Environment") || col.CompareTag("Obstacle"))
-                _environment.DealDamage(100);
+                _environment.DealDamageServerRpc(100);
         }
     }
 }

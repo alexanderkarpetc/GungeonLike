@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  Health: 3
+  maxHealth: 9
   DestroyFx: {fileID: 8852081176880956201, guid: 78125da19f870bb4993ab05c2b512d36,
     type: 3}
   Damage: 50

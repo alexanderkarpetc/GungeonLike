@@ -24,7 +24,7 @@ namespace GamePlay.Common
         if (hit.CompareTag("Environment"))
         {
           var environment = hit.GetComponent<Environment>();
-          environment.DealDamage(damage);
+          environment.DealDamageServerRpc(damage);
         }
       }
     }
@@ -37,7 +37,7 @@ namespace GamePlay.Common
 
     public static void Hit(Environment environment, float damage)
     {
-      environment.DealDamage(damage);
+      environment.DealDamageServerRpc(damage);
     }
 
     public static void Hit(EnemyController enemyController, float damage)

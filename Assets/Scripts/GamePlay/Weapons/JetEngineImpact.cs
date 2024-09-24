@@ -12,7 +12,7 @@ namespace GamePlay.Weapons
     {
       if (other.CompareTag("Environment"))
       {
-        other.GetComponent<Level.Environment>().DealDamage(AppModel.WeaponData().JetEngineDamage);
+        other.GetComponent<Level.Environment>().DealDamageServerRpc(AppModel.WeaponData().JetEngineDamage);
       }
 
       if (other.CompareTag("Enemy"))
