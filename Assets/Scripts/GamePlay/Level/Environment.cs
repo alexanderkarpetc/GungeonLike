@@ -1,9 +1,10 @@
 ﻿using System;
+using Unity.Netcode;
 using UnityEngine;
 
 namespace GamePlay.Level
 {
-  public class Environment : MonoBehaviour
+  public class Environment : NetworkBehaviour
   {
     [SerializeField] private float Health;
     [SerializeField] protected GameObject DestroyFx;

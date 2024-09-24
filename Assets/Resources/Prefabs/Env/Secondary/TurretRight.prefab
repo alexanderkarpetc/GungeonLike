@@ -175,6 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0885827109af39e4589f1d37298c0742, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   Health: 20
   DestroyFx: {fileID: 0}
   _projectile: {fileID: 1269866929858603303, guid: 9919c1c86db24b245b8f0eb02510c399,

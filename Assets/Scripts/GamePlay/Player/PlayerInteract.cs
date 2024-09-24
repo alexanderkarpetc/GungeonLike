@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections;
 using System.Linq;
+using Unity.Netcode;
 using UnityEngine;
 
 namespace GamePlay.Player
 {
-  public class PlayerInteract : MonoBehaviour
+  public class PlayerInteract : NetworkBehaviour
   {
     private Interactable _interactable;
     [SerializeField] private GameObject _interactObj;
@@ -14,12 +15,14 @@ namespace GamePlay.Player
 
     private void Start()
     {
+      if(!IsOwner) return;
       _layerMask = LayerMask.GetMask("Interactable");
       StartCoroutine(FindInteractable());
     }
 
     private void Update()
     {
+      if(!IsOwner) return;
       CheckInteract();
     }
 
@@ -89,7 +92,7 @@ namespace GamePlay.Player
     Left
   }
 
-  public abstract class Interactable : MonoBehaviour
+  public abstract class Interactable : NetworkBehaviour
   {
     public bool IsActive;
 

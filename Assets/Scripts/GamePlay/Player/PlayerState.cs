@@ -80,7 +80,6 @@ namespace GamePlay.Player
 
         private async UniTask SyncWeaponWithWait(WeaponType type, ulong ownerClientId)
         {
-            Debug.Log($"SyncWeaponWithWait ownerClientId:{ownerClientId}, IsOwner:{IsOwner}");
             await UniTask.WaitUntil(() => AppModel.PlayerTransform(ownerClientId) != null);
             // Find the weapon prefab on the client (same way as on the server)
             var weaponPrefab = AppModel.DropManager().AllGuns.First(x => x.Type == type);
