@@ -1,9 +1,10 @@
 ﻿using System;
+using Unity.Netcode;
 using UnityEngine;
 
 namespace GamePlay.Level
 {
-  public class DeveloperView : MonoBehaviour
+  public class DeveloperView : NetworkBehaviour
   {
     private GameObject _devPanel;
     private bool _leftControl;
@@ -15,6 +16,7 @@ namespace GamePlay.Level
 
     private void Update()
     {
+      if(!IsOwner) return;
       if(Input.GetKeyDown(KeyCode.LeftControl))
         _leftControl = true;
       if(Input.GetKeyUp(KeyCode.LeftControl))

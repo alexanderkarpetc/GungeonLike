@@ -1,7 +1,14 @@
-﻿namespace GamePlay.Enemy.State
+﻿using Unity.Netcode;
+
+namespace GamePlay.Enemy.State
 {
-  public class EnemyState
+  public struct EnemyState : INetworkSerializable
   {
-    public float Hp = 10;
+    public float Hp;
+
+    public void NetworkSerialize<T>(BufferSerializer<T> serializer) where T : IReaderWriter
+    {
+      serializer.SerializeValue(ref Hp);
+    }
   }
 }

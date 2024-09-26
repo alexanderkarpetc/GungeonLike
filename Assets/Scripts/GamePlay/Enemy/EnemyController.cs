@@ -7,11 +7,12 @@ using GamePlay.Enemy.Brain;
 using GamePlay.Enemy.State;
 using GamePlay.Weapons;
 using Pathfinding;
+using Unity.Netcode;
 using UnityEngine;
 
 namespace GamePlay.Enemy
 {
-  public class EnemyController : MonoBehaviour
+  public class EnemyController : NetworkBehaviour
   {
     public static Func<EnemyType, GameObject, BotBrain> BotBrainByType = (type, gameObj) =>
     {
@@ -28,7 +29,7 @@ namespace GamePlay.Enemy
 
       return new BotBrain(gameObj);
     };
-    [SerializeField] protected EnemyType Type;
+    [SerializeField] public EnemyType Type;
     [SerializeField] private AIDestinationSetter _destinationSetter;
     [SerializeField] private Rigidbody2D _rigidbody;
     [SerializeField] private AIPath _aiPath;
@@ -38,7 +39,7 @@ namespace GamePlay.Enemy
 
     public Action<EnemyController> OnDeath;
 
-    public EnemyState State;
+    public NetworkVariable<EnemyState> State = new();
     public Weapon Weapon;
     public Vector3? CurrentTarget;
     
@@ -47,13 +48,19 @@ namespace GamePlay.Enemy
 
     private void Start()
     {
-      State = new EnemyState();
+      if(!IsSpawned)
+        GetComponent<NetworkObject>().Spawn();
+      if (!IsServer) return;
+      //todo: probably should be reworked
+      Weapon.IsOwner = true;
+      State.Value = new EnemyState{Hp = 10};
       _botBrain = BotBrainByType(Type, gameObject);
       _botBrain.OnCreate();
     }
 
     private void Update()
     {
+      if (!IsServer) return;
       if(!isDying)
         _botBrain.Update();
     }
@@ -62,6 +69,7 @@ namespace GamePlay.Enemy
     {
       State.Hp -= damage;
     }
+
     public void Hit(Vector2 impulse)
     {
       StartCoroutine(HitImpulse(impulse));
