@@ -30,7 +30,7 @@ namespace GamePlay.Common
     }
     public static void Hit(EnemyController enemyController, float damage, Vector2? impulse)
     {
-      enemyController.DealDamage(damage);
+      enemyController.DealDamageServerRpc(damage);
       if(impulse != null)
         enemyController.Hit(impulse.Value);
     }
@@ -42,7 +42,7 @@ namespace GamePlay.Common
 
     public static void Hit(EnemyController enemyController, float damage)
     {
-      enemyController.DealDamage(damage);
+      enemyController.DealDamageServerRpc(damage);
     }
 
     public static void HitPlayer(PlayerController playerController)

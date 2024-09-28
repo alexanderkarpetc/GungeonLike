@@ -23,7 +23,7 @@ namespace GamePlay.Enemy.Brain.Parts
     {
       var distance = Vector3.Distance(Brain.Owner.transform.position, Brain.Target.transform.position);
       if(distance < 1)
-        DamageManager.Hit(Brain.EnemyController, Brain.EnemyController.State.Hp, Vector2.zero);
+        DamageManager.Hit(Brain.EnemyController, Brain.EnemyController.State.Value.Hp, Vector2.zero);
     }
   }
 }

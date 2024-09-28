@@ -19,7 +19,7 @@ namespace GamePlay.Enemy.Brain
     {
       EnemyController.GetAiPath().maxSpeed = StaticData.EnemyKnightSpeedBase;
       EnemyController.GetDestinationSetter().target = AppModel.PlayerTransform();
-      EnemyController.State.Hp = 70;
+      EnemyController.SetHealthServerRpc(70);
     }
   }
 }

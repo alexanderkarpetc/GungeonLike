@@ -53,7 +53,7 @@ namespace GamePlay.Enemy
       if (!IsServer) return;
       //todo: probably should be reworked
       Weapon.IsOwner = true;
-      State.Value = new EnemyState{Hp = 10};
+      SetHealthServerRpc(10);
       _botBrain = BotBrainByType(Type, gameObject);
       _botBrain.OnCreate();
     }
@@ -65,15 +65,22 @@ namespace GamePlay.Enemy
         _botBrain.Update();
     }
 
-    public void DealDamage(float damage)
+    [ServerRpc]
+    public void SetHealthServerRpc(int value)
     {
-      State.Hp -= damage;
+      State.Value = new EnemyState{Hp = value};
+    }
+    
+    [ServerRpc]
+    public void DealDamageServerRpc(float damage)
+    {
+      State.Value = new EnemyState {Hp = State.Value.Hp - damage};
     }
 
     public void Hit(Vector2 impulse)
     {
       StartCoroutine(HitImpulse(impulse));
-      if (!isDying && State.Hp <= 0)
+      if (!isDying && State.Value.Hp <= 0)
       {
         Death();
         return;
