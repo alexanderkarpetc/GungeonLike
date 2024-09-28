@@ -6,16 +6,12 @@ namespace GamePlay.Enemy.Brain
 {
   public class WormBossBrain : BotBrain
   {
-
-    public WormBossBrain(GameObject owner) : base(owner)
+    public override void Init()
     {
+      base.Init();
       _parts.Clear();
       var wormBossMoving = new WormBossMoving(this);
       _parts.Add(wormBossMoving);
-    }
-
-    public override void OnCreate()
-    {
       EnemyController.GetAiPath().maxSpeed = StaticData.WormBossSpeedBase;
       EnemyController.SetHealthServerRpc(200);
     }

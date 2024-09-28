@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 6891638882169214825}
   - component: {fileID: 5014539121441640379}
   - component: {fileID: -5846778255720608659}
+  - component: {fileID: -793310008206220747}
   m_Layer: 0
   m_Name: GrenadeMan
   m_TagString: Enemy
@@ -301,6 +302,21 @@ MonoBehaviour:
   SwitchTransformSpaceWhenParented: 0
   Interpolate: 1
   SlerpPosition: 0
+--- !u!114 &-793310008206220747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8284064114409565638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4d7da6b5abd4ca8af25efb689012083, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  Target: {fileID: 0}
+  EnemyController: {fileID: 0}
 --- !u!1 &8284064114467451515
 GameObject:
   m_ObjectHideFlags: 0

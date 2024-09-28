@@ -26,6 +26,8 @@ namespace GamePlay.Player
 
             if (Weapon == null)
             {
+                if (_weaponSlot.childCount == 0)
+                    return;
                 Weapon = _weaponSlot.GetChild(0).GetComponent<Weapon>();
                 Weapon.IsPlayers = true;
             }

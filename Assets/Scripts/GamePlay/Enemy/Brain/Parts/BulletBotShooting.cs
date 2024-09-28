@@ -17,7 +17,7 @@ namespace GamePlay.Enemy.Brain.Parts
     {
       if(Brain.Target == null)
         return;
-      var raycast = Physics2D.LinecastAll(Brain.Owner.transform.position, Brain.Target.transform.position)
+      var raycast = Physics2D.LinecastAll(Brain.gameObject.transform.position, Brain.Target.transform.position)
         .Where(x=>x.collider.CompareTag("Obstacle") || x.collider.CompareTag("Player"));
       if (raycast.First().collider.CompareTag("Player"))
         TryShoot();
@@ -25,7 +25,7 @@ namespace GamePlay.Enemy.Brain.Parts
 
     private void TryShoot()
     {
-      _weapon.TryShoot();
+      Brain.ShootWeaponServerRpc();
     }
   }
 }

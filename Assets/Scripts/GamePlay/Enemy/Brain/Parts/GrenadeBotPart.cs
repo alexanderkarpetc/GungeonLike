@@ -15,13 +15,13 @@ namespace GamePlay.Enemy.Brain.Parts
     {
       var boom = Resources.Load<GameObject>("Vfx/Explosion/BoomFx");
       
-      DamageManager.Explode(Brain.Owner.transform.position, 2, 50);
-      GameObject.Instantiate(boom, Brain.Owner.transform.position, Quaternion.identity);
+      DamageManager.Explode(Brain.gameObject.transform.position, 2, 50);
+      GameObject.Instantiate(boom, Brain.gameObject.transform.position, Quaternion.identity);
     }
 
     protected override void OnUpdate()
     {
-      var distance = Vector3.Distance(Brain.Owner.transform.position, Brain.Target.transform.position);
+      var distance = Vector3.Distance(Brain.gameObject.transform.position, Brain.Target.transform.position);
       if(distance < 1)
         DamageManager.Hit(Brain.EnemyController, Brain.EnemyController.State.Value.Hp, Vector2.zero);
     }

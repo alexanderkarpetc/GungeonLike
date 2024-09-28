@@ -6,17 +6,14 @@ namespace GamePlay.Enemy.Brain
 {
   public class GunKnightBrain : BotBrain
   {
-    public GunKnightBrain(GameObject owner) : base(owner)
+    public override void Init()
     {
+      base.Init();
       _parts.Clear();
-      Owner = owner;
       var moving = new TargetFinder(this);
       var attacking = new GunKnightAttacking(this);
       _parts.Add(moving);
       _parts.Add(attacking);
-    }
-    public override void OnCreate()
-    {
       EnemyController.GetAiPath().maxSpeed = StaticData.EnemyKnightSpeedBase;
       EnemyController.GetDestinationSetter().target = AppModel.PlayerTransform();
       EnemyController.SetHealthServerRpc(70);

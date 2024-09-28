@@ -6,15 +6,12 @@ namespace GamePlay.Enemy.Brain
 {
   public class GrenadeBrain : BotBrain
   {
-    public GrenadeBrain(GameObject owner) : base(owner)
+    public override void Init()
     {
+      base.Init();
       _parts.Clear();
       var grenadeBotPart = new GrenadeBotPart(this);
       _parts.Add(grenadeBotPart);
-    }
-
-    public override void OnCreate()
-    {
       EnemyController.GetAiPath().maxSpeed = StaticData.GrenadeManSpeed;
       EnemyController.GetDestinationSetter().target = AppModel.PlayerTransform();
     }

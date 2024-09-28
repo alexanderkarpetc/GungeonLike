@@ -14,21 +14,6 @@ namespace GamePlay.Enemy
 {
   public class EnemyController : NetworkBehaviour
   {
-    public static Func<EnemyType, GameObject, BotBrain> BotBrainByType = (type, gameObj) =>
-    {
-      if (type == EnemyType.Cubulon)
-        return new CubulonBrain(gameObj);
-      if (type == EnemyType.GrenadeMan)
-        return new GrenadeBrain(gameObj);
-      if (type == EnemyType.WormEnemy)
-        return new WormBossBrain(gameObj);
-      if (type == EnemyType.Sniper)
-        return new SniperBulletBrain(gameObj);
-      if (type == EnemyType.GunKnight)
-        return new GunKnightBrain(gameObj);
-
-      return new BotBrain(gameObj);
-    };
     [SerializeField] public EnemyType Type;
     [SerializeField] private AIDestinationSetter _destinationSetter;
     [SerializeField] private Rigidbody2D _rigidbody;
@@ -50,12 +35,19 @@ namespace GamePlay.Enemy
     {
       if(!IsSpawned)
         GetComponent<NetworkObject>().Spawn();
-      if (!IsServer) return;
-      //todo: probably should be reworked
-      Weapon.IsOwner = true;
-      SetHealthServerRpc(10);
-      _botBrain = BotBrainByType(Type, gameObject);
-      _botBrain.OnCreate();
+      if (IsServer)
+      {
+        //todo: probably should be reworked
+        Weapon.IsOwner = true;
+        SetHealthServerRpc(10);
+        _botBrain = GetComponent<BotBrain>();
+        _botBrain.Init();
+      }
+      else
+      {
+        _botBrain = GetComponent<BotBrain>();
+        _botBrain.ClientInit();
+      }
     }
 
     private void Update()

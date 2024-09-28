@@ -8,7 +8,7 @@ namespace GamePlay.Enemy.Brain.Parts
   public abstract class BotPart : IUpdatable
   {
     protected BotBrain Brain;
-    protected GameObject Owner => Brain.Owner;
+    protected GameObject Owner => Brain.gameObject;
     private Dictionary<Action, float> _delayedActions = new Dictionary<Action, float>();
 
     protected BotPart(BotBrain brain)
