@@ -1,5 +1,7 @@
-﻿using GamePlay.Player;
+﻿using System.Linq;
+using GamePlay.Player;
 using GamePlay.Weapons;
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,12 +23,32 @@ namespace GamePlay.Level
       }
       
       AppModel.PlayerState().Backpack.WithdrawResource(ResourceKind.Coins, Price);
-      AppModel.PlayerState().Backpack.AddWeapon(_weapon);
+      AddWeaponServerRpc();
       Destroy(gameObject);
     }
-    
-    public void SetData (Weapon weapon)
+
+    [ServerRpc]
+    private void AddWeaponServerRpc()
     {
+      AddWeaponClientRpc();
+    }
+
+    [ClientRpc]
+    private void AddWeaponClientRpc()
+    {
+      AppModel.PlayerState(OwnerClientId).Backpack.AddWeapon(_weapon);
+    }
+
+    [ServerRpc]
+    public void SetDataServerRpc(WeaponType type)
+    {
+      SetDataClientRpc(type);
+    }
+    
+    [ClientRpc]
+    private void SetDataClientRpc (WeaponType type)
+    {
+      var weapon = AppModel.DropManager().AllGuns.First(gun => gun.Type == type);
       var price = AppModel.WeaponData().GetWeaponInfo(weapon.Type).Price;
       _price.text = price.ToString();
       _sprite.sprite = weapon._uiImage;

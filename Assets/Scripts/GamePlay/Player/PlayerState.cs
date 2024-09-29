@@ -50,16 +50,14 @@ namespace GamePlay.Player
             else
             {
                 gameObject.name = $"Player_{OwnerClientId}";
-                // todo: VERY dirty shit
-                if(!IsHost)
-                    SyncWeaponWithWait(_startingWeapon.Type, OwnerClientId).Forget();
+                Backpack.AddWeapon(_startingWeapon);
+                SyncWeapon(_startingWeapon.Type, OwnerClientId).Forget();
             }
         }
 
-        public void SetWeapon(Weapon weapon)
+        public void AddWeapon(Weapon weapon)
         {
             if (!IsOwner) return;
-
             Backpack.AddWeapon(weapon);
             AddWeaponServerRpc(weapon.Type, OwnerClientId);
         }
@@ -67,58 +65,44 @@ namespace GamePlay.Player
         [ServerRpc]
         public void AddWeaponServerRpc(WeaponType type, ulong ownerClientId)
         {
-            SyncWeaponToClientsClientRpc(type, ownerClientId);
             CurrentWeaponType.Value = type;
+            SyncWeaponToClientsClientRpc(type, ownerClientId);
         }
 
         [ClientRpc]
         public void SyncWeaponToClientsClientRpc(WeaponType type, ulong ownerClientId)
         {
-            SyncWeaponWithWait(type, ownerClientId).Forget();
+            SyncWeapon(type, ownerClientId).Forget();
         }
 
-        private async UniTask SyncWeaponWithWait(WeaponType type, ulong ownerClientId)
+        // todo: check called twice for client on start
+        private async UniTask SyncWeapon(WeaponType type, ulong ownerClientId)
         {
             await UniTask.WaitUntil(() => AppModel.PlayerTransform(ownerClientId) != null);
-            // Find the weapon prefab on the client (same way as on the server)
-            var weaponPrefab = AppModel.DropManager().AllGuns.First(x => x.Type == type);
 
-            // Instantiate the weapon on the client side
-            var weaponInstance = Instantiate(weaponPrefab);
-
-            // Set the weapon as a child of the WeaponSlot (client-side)
             var weaponSlot = AppModel.PlayerTransform(ownerClientId).Find("WeaponSlot");
-            weaponInstance.transform.SetParent(weaponSlot, false);
+            if(weaponSlot.childCount != 0)
+                Destroy(weaponSlot.transform.GetChild(0).gameObject);
+            
+            var weaponPrefab = Backpack.GetWeapons().First(x => x.Type == type);
+
+            var weaponInstance = Instantiate(weaponPrefab, weaponSlot, false);
+            // todo: should be moved
+            weaponInstance.State = new WeaponState { bulletsLeft = weaponInstance.MagazineSize };
+            weaponInstance.IsPlayers = true;
 
             var playerWeaponTurn = GetComponent<PlayerWeaponTurn>();
             playerWeaponTurn.Weapon = weaponInstance;
             
-            Backpack.AddWeapon(weaponInstance);
             weaponInstance.IsOwner = IsOwner;
             _weapon = weaponInstance;
         }
 
-        // Weapon switching
         public void NextWeapon()
         {
-            if (!IsOwner) return; // Only the owning client can call this
-            Backpack.NextWeapon(); // Update locally
-            SyncWeaponChangeServerRpc(Backpack.CurrentWeaponIndex); // Notify server to sync change
-        }
-
-        // Server-side: sync weapon change
-        [ServerRpc]
-        public void SyncWeaponChangeServerRpc(int weaponIndex)
-        {
-            SyncWeaponChangeClientRpc(weaponIndex); // Sync change with all clients
-            CurrentWeaponType.Value = Backpack.GetWeapons()[Backpack.CurrentWeaponIndex].Type;
-        }
-
-        // Client-side: sync backpack state
-        [ClientRpc]
-        public void SyncWeaponChangeClientRpc(int weaponIndex)
-        {
-            Backpack.SelectWeapon(weaponIndex); // Update backpack on clients
+            if (!IsOwner) return;
+            Backpack.NextWeapon(); 
+            AddWeaponServerRpc(Backpack.CurrentWeapon.Type, OwnerClientId);
         }
 
         public void Heal()

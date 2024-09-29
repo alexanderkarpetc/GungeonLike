@@ -12,7 +12,7 @@ namespace GamePlay.Player
         public bool IsInitialized;
         public int CurrentWeaponIndex = -1;
         public Dictionary<AmmoKind, int> Ammo = new Dictionary<AmmoKind, int>();
-        
+        public Weapon CurrentWeapon => _weapons[CurrentWeaponIndex];
         private Dictionary<ResourceKind, int> _resources;
         private readonly List<Weapon> _weapons = new List<Weapon>();
 
@@ -43,8 +43,6 @@ namespace GamePlay.Player
         {
             _weapons.Add(newWeapon);
             CurrentWeaponIndex = _weapons.Count - 1;
-            newWeapon.State = new WeaponState { bulletsLeft = newWeapon.MagazineSize };
-            newWeapon.IsPlayers = true;
         }
 
         public void SelectWeapon(int weaponIndex)
@@ -61,7 +59,6 @@ namespace GamePlay.Player
         {
             if (_weapons.Count <= 1) return;
             CurrentWeaponIndex = (CurrentWeaponIndex + 1) % _weapons.Count;
-            SelectWeapon(CurrentWeaponIndex);
         }
 
         public void PreviousWeapon()

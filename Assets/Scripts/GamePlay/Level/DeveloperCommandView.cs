@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace GamePlay.Level
 {
+  // todo: not working on client
   public class DeveloperCommandView : MonoBehaviour
   {
     public void SpawnRandomEnemy()

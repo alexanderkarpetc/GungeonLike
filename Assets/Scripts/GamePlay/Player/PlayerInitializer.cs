@@ -9,7 +9,7 @@ namespace GamePlay.Player
   {
     public void Init(Weapon startingWeapon)
     {
-      AppModel.PlayerState().SetWeapon(startingWeapon);
+      AppModel.PlayerState().AddWeapon(startingWeapon);
       AppModel.PlayerState().Backpack.Ammo = new Dictionary<AmmoKind, int>
       {
         {AmmoKind.Pistol, AppModel.WeaponData().AmmoCapacity[AmmoKind.Pistol] / 3},
