@@ -67,17 +67,15 @@ namespace GamePlay.Enemy
     public void DealDamageServerRpc(float damage)
     {
       State.Value = new EnemyState {Hp = State.Value.Hp - damage};
-    }
-
-    public void Hit(Vector2 impulse)
-    {
-      StartCoroutine(HitImpulse(impulse));
       if (!isDying && State.Value.Hp <= 0)
       {
         Death();
-        return;
       }
+    }
 
+    public void GiveImpulse(Vector2 impulse)
+    {
+      StartCoroutine(HitImpulse(impulse));
       enemyAnimator.Hit(_hitAnimDuration);
     }
 

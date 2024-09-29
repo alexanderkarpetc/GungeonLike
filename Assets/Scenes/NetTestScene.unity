@@ -851,6 +851,11 @@ PrefabInstance:
       propertyPath: GlobalObjectIdHash
       value: 2919315006
       objectReference: {fileID: 0}
+    - target: {fileID: 5921649804076346526, guid: 9577bc46c17706f459a7e03a987e9036,
+        type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 2891847987
+      objectReference: {fileID: 0}
     - target: {fileID: 8284064114409565632, guid: 9577bc46c17706f459a7e03a987e9036,
         type: 3}
       propertyPath: m_RootOrder
@@ -4205,6 +4210,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5236554935438097460, guid: 240533e2d00861f4dad2381acdee5c45,
+        type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 324026432
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

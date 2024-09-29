@@ -26,9 +26,9 @@ namespace GamePlay
       if (_currentRoom != null)
       {
         Destroy(_currentRoom);
-        foreach (Transform child in AppModel.DropManager().GetDropped())
+        foreach (var item in AppModel.DropManager().GetDropped)
         {
-          Destroy(child.gameObject);
+          Destroy(item.gameObject);
         }
       }
       var nextRoom = predefinedRooms[_currentRoomIndex];

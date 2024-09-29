@@ -124,6 +124,7 @@ MonoBehaviour:
   reloading: 0
   reloadingTime: 0
   BaseDamage: 0
+  IsOwner: 0
   BulletsCount: 5
   DispersionAngle: 90
 --- !u!1 &4700838025997285464

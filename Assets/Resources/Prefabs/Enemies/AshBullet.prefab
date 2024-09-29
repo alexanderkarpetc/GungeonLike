@@ -227,6 +227,7 @@ GameObject:
   - component: {fileID: 8923363792129985386}
   - component: {fileID: 6374623533480901266}
   - component: {fileID: -4667535222585021086}
+  - component: {fileID: 8644430296243950487}
   m_Layer: 0
   m_Name: AshBullet
   m_TagString: Enemy
@@ -546,8 +547,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
   Target: {fileID: 0}
-  Owner: {fileID: 0}
   EnemyController: {fileID: 0}
+--- !u!114 &8644430296243950487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8284064114409565638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d0727d5ae3244e3b569694d3912374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  TransitionStateInfoList: []
+  m_Animator: {fileID: 8284064114409565633}
 --- !u!1 &8284064114467451515
 GameObject:
   m_ObjectHideFlags: 0

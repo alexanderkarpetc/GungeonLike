@@ -6,6 +6,7 @@ using GamePlay.Enemy;
 using GamePlay.Extensions;
 using GamePlay.Level;
 using GamePlay.Weapons;
+using Unity.Netcode;
 using UnityEngine;
 
 namespace GamePlay.Player
@@ -16,8 +17,9 @@ namespace GamePlay.Player
     private PickableItemView _pedestal;
     private PickableItemView _ammoBox;
     private PickableItemView _coin;
-    private GameObject _parentObj;
+    private List<PickableItemView> _drops = new();
 
+    public List<PickableItemView> GetDropped => _drops;
     public DropManager()
     {
       var guns = Resources.LoadAll("Prefabs/Guns", typeof(Weapon));
@@ -32,16 +34,15 @@ namespace GamePlay.Player
 
     public void DropOnEnemyDeath(Transform transform, EnemyType enemyType)
     {
-      if(_parentObj == null)
-        _parentObj = Util.InitParentIfNeed("Drop");
+      PickableItemView pedestal;
       if ((int)enemyType >= 100)
       {
-        var pedestal = Object.Instantiate(_pedestal, transform.position, Quaternion.identity, _parentObj.transform);
+        pedestal = Object.Instantiate(_pedestal, transform.position, Quaternion.identity);
         pedestal.Weapon = AllGuns.First();
       }
       else
       {
-        var pedestal = Object.Instantiate(_ammoBox, transform.position, Quaternion.identity, _parentObj.transform);
+        pedestal = Object.Instantiate(_ammoBox, transform.position, Quaternion.identity);
         var deficientAmmo = FindDeficientAmmo(3);
         pedestal.Ammo = new Dictionary<AmmoKind, int>
         {
@@ -50,6 +51,8 @@ namespace GamePlay.Player
           {deficientAmmo[2], AppModel.WeaponData().GetAmmoAmountForKind(deficientAmmo[2])},
         };
       }
+      pedestal.GetComponent<NetworkObject>().Spawn();
+      _drops.Add(pedestal);
     }
 
     public Weapon GetAbsentWeapon()
@@ -69,11 +72,6 @@ namespace GamePlay.Player
       percentagesList.Sort((x,y)=> x.Value.CompareTo(y.Value));
 
       return percentagesList.Select(x=>x.Key).Take(quantity).ToList();
-    }
-
-    public Transform GetDropped()
-    {
-      return _parentObj.transform;
     }
   }
 }
