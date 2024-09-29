@@ -74,6 +74,7 @@ namespace GamePlay.Weapons
 
     public void Reload()
     {
+      //todo: change this check cause should be checked only for local player
       if (IsPlayers && AppModel.PlayerState().Backpack.Ammo[AmmoKind] == 0)
         return;
       StartCoroutine(DoReload());

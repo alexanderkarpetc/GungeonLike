@@ -60,7 +60,6 @@ namespace GamePlay.Player
         {
             if (!IsOwner) return;
 
-            _weapon = weapon;
             Backpack.AddWeapon(weapon);
             AddWeaponServerRpc(weapon.Type, OwnerClientId);
         }
@@ -89,13 +88,14 @@ namespace GamePlay.Player
 
             // Set the weapon as a child of the WeaponSlot (client-side)
             var weaponSlot = AppModel.PlayerTransform(ownerClientId).Find("WeaponSlot");
-            weaponInstance.transform.SetParent(weaponSlot, false);  // Set parent without affecting local scale/position
+            weaponInstance.transform.SetParent(weaponSlot, false);
 
             var playerWeaponTurn = GetComponent<PlayerWeaponTurn>();
             playerWeaponTurn.Weapon = weaponInstance;
             
             Backpack.AddWeapon(weaponInstance);
             weaponInstance.IsOwner = IsOwner;
+            _weapon = weaponInstance;
         }
 
         // Weapon switching
