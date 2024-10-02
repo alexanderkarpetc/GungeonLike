@@ -82,7 +82,7 @@ namespace GamePlay.Weapons
 
     private IEnumerator ShootCoroutine()
     {
-      if (IsPlayers)
+      if (IsPlayers && IsOwner)
         AppModel.PlayerState().Backpack.Ammo[AmmoKind]--;
       _nextShotTime = Time.time + _shootRate;
       _animator.SetTrigger(ShootAnim);

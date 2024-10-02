@@ -11,7 +11,7 @@ namespace GamePlay.Level
     public class PickableItemView : NetworkBehaviour
     {
         [HideInInspector] public Weapon Weapon;
-        [HideInInspector] public Dictionary<AmmoKind, int> Ammo;
+        [HideInInspector] public Dictionary<AmmoKind, int> Ammo = new ();
         public ResourcePack ResourceValue;
 
         private int _index;
@@ -35,6 +35,30 @@ namespace GamePlay.Level
                 }
             }
         }
+    
+        [ServerRpc]
+        public void AddAmmoServerRpc (AmmoKind ammoKind, int amount)
+        {
+            AddAmmoClientRpc(ammoKind, amount);
+        }
+        
+        [ClientRpc]
+        private void AddAmmoClientRpc (AmmoKind ammoKind, int amount)
+        {
+            Ammo.Add(ammoKind, amount);
+        }
+    
+        [ServerRpc]
+        public void SetWeaponServerRpc (WeaponType type)
+        {
+            SetWeaponClientRpc(type);
+        }
+    
+        [ClientRpc]
+        private void SetWeaponClientRpc (WeaponType type)
+        {
+            Weapon = AppModel.DropManager().AllGuns.First(gun => gun.Type == type);
+        }
 
         [ClientRpc]
         private void NotifyClientToPickWeaponClientRpc(ulong clientId, ClientRpcParams clientRpcParams = default)
@@ -53,7 +77,7 @@ namespace GamePlay.Level
                 PickWeapon(Weapon);
             }
 
-            if (Ammo != null && Ammo.Count > 0)
+            if (Ammo.Count > 0)
             {
                 AppModel.PlayerState().Backpack.AddAmmo(Ammo);
             }

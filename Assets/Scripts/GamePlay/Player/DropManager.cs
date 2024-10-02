@@ -38,20 +38,23 @@ namespace GamePlay.Player
       if ((int)enemyType >= 100)
       {
         pedestal = Object.Instantiate(_pedestal, transform.position, Quaternion.identity);
-        pedestal.Weapon = AllGuns.First();
+        pedestal.GetComponent<NetworkObject>().Spawn();
+        pedestal.SetWeaponServerRpc(WeaponType.Crossbow);
       }
       else
       {
         pedestal = Object.Instantiate(_ammoBox, transform.position, Quaternion.identity);
-        var deficientAmmo = FindDeficientAmmo(3);
-        pedestal.Ammo = new Dictionary<AmmoKind, int>
-        {
-          {deficientAmmo[0], AppModel.WeaponData().GetAmmoAmountForKind(deficientAmmo[0])},
-          {deficientAmmo[1], AppModel.WeaponData().GetAmmoAmountForKind(deficientAmmo[1])},
-          {deficientAmmo[2], AppModel.WeaponData().GetAmmoAmountForKind(deficientAmmo[2])},
-        };
+        pedestal.GetComponent<NetworkObject>().Spawn();
+        var deficientAmmo = FindDeficientAmmo(1);
+        pedestal.AddAmmoServerRpc(deficientAmmo[0], AppModel.WeaponData().GetAmmoAmountForKind(deficientAmmo[0]));
+        // todo: add  more ammo types like it was before
+        // pedestal.Ammo = new Dictionary<AmmoKind, int>
+        // {
+        //   {deficientAmmo[0], AppModel.WeaponData().GetAmmoAmountForKind(deficientAmmo[0])},
+        //   {deficientAmmo[1], AppModel.WeaponData().GetAmmoAmountForKind(deficientAmmo[1])},
+        //   {deficientAmmo[2], AppModel.WeaponData().GetAmmoAmountForKind(deficientAmmo[2])},
+        // };
       }
-      pedestal.GetComponent<NetworkObject>().Spawn();
       _drops.Add(pedestal);
     }
 
