@@ -1405,6 +1405,9 @@ TilemapRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1445,6 +1448,7 @@ TilemapCollider2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 442540556362109476}
   m_Enabled: 1
+  serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -1468,7 +1472,8 @@ TilemapCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.4}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
@@ -5295,6 +5300,9 @@ TilemapRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5338,6 +5346,8 @@ GameObject:
   - component: {fileID: 874448859247282561}
   - component: {fileID: 874448859247282560}
   - component: {fileID: 3519507016241241206}
+  - component: {fileID: -8006321307303449519}
+  - component: {fileID: -8336821113095747685}
   m_Layer: 0
   m_Name: TrainingKateRoom
   m_TagString: Untagged
@@ -5399,10 +5409,48 @@ MonoBehaviour:
   - {fileID: 4989570883606149724}
   - {fileID: 5016730130188945927}
   exits:
-  - {fileID: 7559797538453711597}
+  - {fileID: 0}
   enemies: []
   controlPoints: []
   kind: 0
+--- !u!114 &-8006321307303449519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874448859247282575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 3439878840
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
+--- !u!114 &-8336821113095747685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874448859247282575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33aa8358c08f4fce9377101acc260a20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
 --- !u!1 &1567187315571613005
 GameObject:
   m_ObjectHideFlags: 0
@@ -6555,6 +6603,9 @@ TilemapRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6595,6 +6646,7 @@ TilemapCollider2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1620689509556261738}
   m_Enabled: 1
+  serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -6618,7 +6670,8 @@ TilemapCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0.5}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
@@ -8067,6 +8120,9 @@ TilemapRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8236,6 +8292,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 874448859247282561}
     m_Modifications:
+    - target: {fileID: 3021919275920513284, guid: 7b08cba2627cb02428e62bc314e28c65,
+        type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 2462511405
+      objectReference: {fileID: 0}
     - target: {fileID: 4093366488259173500, guid: 7b08cba2627cb02428e62bc314e28c65,
         type: 3}
       propertyPath: m_Name
@@ -8301,18 +8362,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b08cba2627cb02428e62bc314e28c65, type: 3}
---- !u!114 &7559797538453711597 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2909902315625747514, guid: 7b08cba2627cb02428e62bc314e28c65,
-    type: 3}
-  m_PrefabInstance: {fileID: 4651030340558814935}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e752c5daf6d4d2a8bd43f2975614793, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &8666412574780121768 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4093366488259173503, guid: 7b08cba2627cb02428e62bc314e28c65,
@@ -8327,6 +8376,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 874448859247282561}
     m_Modifications:
+    - target: {fileID: 2684467662852545758, guid: 46bea6b7e427be546939a26112e6aacc,
+        type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 1802369197
+      objectReference: {fileID: 0}
     - target: {fileID: 3782928776641485221, guid: 46bea6b7e427be546939a26112e6aacc,
         type: 3}
       propertyPath: m_RootOrder

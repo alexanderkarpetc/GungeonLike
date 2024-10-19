@@ -18,9 +18,9 @@ namespace GamePlay
       InitContainers();
       BalanceLoader.LoadBalance();
       // todo: check if needed
-      var straightLevelController = GameObject.Find("StraightLevelController");
-      if(straightLevelController != null)
-        DoStraightLevelLogic(straightLevelController.GetComponent<StraightLevelController>());
+      // var straightLevelController = GameObject.Find("StraightLevelController");
+      // if(straightLevelController != null)
+        // DoStraightLevelLogic(straightLevelController.GetComponent<StraightLevelController>());
     }
 
     private void InitContainers()
@@ -45,8 +45,8 @@ namespace GamePlay
 
     private void DoStraightLevelLogic(StraightLevelController straightLevelController)
     {
-      straightLevelController.Init();
-      straightLevelController.ProcessNextRoom();
+      // straightLevelController.Init();
+      // straightLevelController.ProcessNextRoom();
     }
   }
 }

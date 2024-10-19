@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2661842417115662388}
   - component: {fileID: 6712162844649499059}
-  - component: {fileID: 2909902315625747514}
   m_Layer: 0
   m_Name: NextRoomInteract
   m_TagString: Finish
@@ -25,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2503455156950864197}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4093366488259173503}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &6712162844649499059
 BoxCollider2D:
@@ -41,11 +40,32 @@ BoxCollider2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2503455156950864197}
   m_Enabled: 1
+  serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
   m_Offset: {x: 0.0048353076, y: -1.2727325}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -56,29 +76,21 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
   m_Size: {x: 1.6306144, y: 2.7446637}
   m_EdgeRadius: 0
---- !u!114 &2909902315625747514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2503455156950864197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e752c5daf6d4d2a8bd43f2975614793, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsActive: 0
 --- !u!1001 &914554598620693978
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2684467662852545758, guid: 46bea6b7e427be546939a26112e6aacc,
+        type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 3010846697
+      objectReference: {fileID: 0}
     - target: {fileID: 3782928776641485221, guid: 46bea6b7e427be546939a26112e6aacc,
         type: 3}
       propertyPath: m_RootOrder
@@ -140,7 +152,38 @@ PrefabInstance:
       value: DoorSideInteractable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3782928776641485221, guid: 46bea6b7e427be546939a26112e6aacc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2661842417115662388}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3782928776641485222, guid: 46bea6b7e427be546939a26112e6aacc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7085956312275293601}
   m_SourcePrefab: {fileID: 100100000, guid: 46bea6b7e427be546939a26112e6aacc, type: 3}
+--- !u!1 &4093366488259173500 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3782928776641485222, guid: 46bea6b7e427be546939a26112e6aacc,
+    type: 3}
+  m_PrefabInstance: {fileID: 914554598620693978}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7085956312275293601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4093366488259173500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e752c5daf6d4d2a8bd43f2975614793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  IsActive: 0
 --- !u!4 &4093366488259173503 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3782928776641485221, guid: 46bea6b7e427be546939a26112e6aacc,
