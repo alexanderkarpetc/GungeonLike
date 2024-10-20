@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace GamePlay.Level
 {
-    public class Candle : MonoBehaviour
+    public class Candle : Environment
     {
 
     }

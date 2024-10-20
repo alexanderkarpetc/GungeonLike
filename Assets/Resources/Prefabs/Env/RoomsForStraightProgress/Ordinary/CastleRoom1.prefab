@@ -3593,7 +3593,7 @@ MonoBehaviour:
   - {fileID: 8497263597883880064}
   - {fileID: 7608282200100468927}
   exits:
-  - {fileID: 0}
+  - {fileID: 2432169307704886359}
   enemies: []
   controlPoints: []
   kind: 0
@@ -6707,7 +6707,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5885022821575733003
 Transform:
   m_ObjectHideFlags: 0
@@ -7266,6 +7266,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b08cba2627cb02428e62bc314e28c65, type: 3}
+--- !u!114 &2432169307704886359 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7085956312275293601, guid: 7b08cba2627cb02428e62bc314e28c65,
+    type: 3}
+  m_PrefabInstance: {fileID: 4870241264890581494}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e752c5daf6d4d2a8bd43f2975614793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8887886310282202505 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4093366488259173503, guid: 7b08cba2627cb02428e62bc314e28c65,

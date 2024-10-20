@@ -7,6 +7,7 @@ namespace GamePlay.Level
 {
     public class Environment : NetworkBehaviour
     {
+        public EnvType Type;
         [SerializeField] private float maxHealth;
         [SerializeField] protected GameObject DestroyFx;
         
@@ -17,8 +18,8 @@ namespace GamePlay.Level
         private void Start()
         {
             // todo: init health on server only
-            // if (IsServer) 
-            _health.Value = maxHealth;
+            if (IsServer)        
+                _health.Value = maxHealth;
         }
 
         private void OnEnable()

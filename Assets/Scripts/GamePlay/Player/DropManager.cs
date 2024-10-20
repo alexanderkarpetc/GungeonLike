@@ -19,7 +19,7 @@ namespace GamePlay.Player
     private PickableItemView _coin;
     private List<PickableItemView> _drops = new();
 
-    public List<PickableItemView> GetDropped => _drops;
+    public List<PickableItemView> GetDropped => _drops.Where(x => x != null).ToList();
     public DropManager()
     {
       var guns = Resources.LoadAll("Prefabs/Guns", typeof(Weapon));

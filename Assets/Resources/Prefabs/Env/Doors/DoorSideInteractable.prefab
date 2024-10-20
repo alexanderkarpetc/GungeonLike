@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2661842417115662388}
   - component: {fileID: 6712162844649499059}
-  m_Layer: 0
+  - component: {fileID: 7586597798169696851}
+  m_Layer: 8
   m_Name: NextRoomInteract
   m_TagString: Finish
   m_Icon: {fileID: 0}
@@ -62,11 +63,11 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0048353076, y: -1.2727325}
+  m_Offset: {x: 0.0060330927, y: -1.12181}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -76,8 +77,35 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.6306144, y: 2.7446637}
+  m_Size: {x: 0.34611315, y: 2.7884483}
   m_EdgeRadius: 0
+--- !u!50 &7586597798169696851
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2503455156950864197}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &914554598620693978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -89,7 +117,7 @@ PrefabInstance:
     - target: {fileID: 2684467662852545758, guid: 46bea6b7e427be546939a26112e6aacc,
         type: 3}
       propertyPath: GlobalObjectIdHash
-      value: 3972198646
+      value: 3010846697
       objectReference: {fileID: 0}
     - target: {fileID: 3782928776641485221, guid: 46bea6b7e427be546939a26112e6aacc,
         type: 3}
@@ -151,7 +179,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorSideInteractable
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3782928776641485222, guid: 46bea6b7e427be546939a26112e6aacc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3782928776641485223, guid: 46bea6b7e427be546939a26112e6aacc,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.6306144
+      objectReference: {fileID: 0}
+    - target: {fileID: 3782928776641485223, guid: 46bea6b7e427be546939a26112e6aacc,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.7446637
+      objectReference: {fileID: 0}
+    - target: {fileID: 3782928776641485223, guid: 46bea6b7e427be546939a26112e6aacc,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0048353076
+      objectReference: {fileID: 0}
+    - target: {fileID: 3782928776641485223, guid: 46bea6b7e427be546939a26112e6aacc,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -1.2727325
+      objectReference: {fileID: 0}
+    - target: {fileID: 3782928776641485223, guid: 46bea6b7e427be546939a26112e6aacc,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3782928776641485220, guid: 46bea6b7e427be546939a26112e6aacc, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3782928776641485221, guid: 46bea6b7e427be546939a26112e6aacc,
@@ -184,6 +243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
   IsActive: 0
+  DoorType: 1
 --- !u!4 &4093366488259173503 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3782928776641485221, guid: 46bea6b7e427be546939a26112e6aacc,

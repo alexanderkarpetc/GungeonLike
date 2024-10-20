@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8320255628129186649}
   - component: {fileID: 8915859829560798065}
-  - component: {fileID: 3980520178067749563}
   - component: {fileID: 2024038494682650765}
+  - component: {fileID: 3980520178067749563}
   m_Layer: 8
   m_Name: Candle
   m_TagString: Environment
@@ -58,18 +58,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3980520178067749563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8320255628129186648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ef44920f7e866248a7d6ba301f68667, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2024038494682650765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,7 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 0
+  GlobalObjectIdHash: 2628539709
   InScenePlacedSourceGlobalObjectIdHash: 0
   DeferredDespawnTick: 0
   Ownership: 1
@@ -95,6 +83,22 @@ MonoBehaviour:
   AutoObjectParentSync: 1
   SyncOwnerTransformWhenParented: 1
   AllowOwnerToParent: 0
+--- !u!114 &3980520178067749563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8320255628129186648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ef44920f7e866248a7d6ba301f68667, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  Type: 3
+  maxHealth: 0
+  DestroyFx: {fileID: 0}
 --- !u!1 &8320255628992551309
 GameObject:
   m_ObjectHideFlags: 0

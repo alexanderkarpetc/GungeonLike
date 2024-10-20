@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Cysharp.Threading.Tasks;
 using GamePlay.Enemy;
+using GamePlay.Player;
 using Unity.Netcode;
 using UnityEngine;
 
@@ -10,7 +11,9 @@ namespace GamePlay.Level.Controllers
 {
     public class RoomController : NetworkBehaviour
     {
+        [SerializeField] private NetworkPrefabsList _prefabsList;
         [SerializeField] private List<Transform> _envs;
+        [SerializeField] private List<GameObject> _envPrefabCache;
 
         private Transform _env;
         private List<EnemyController> _enemies = new List<EnemyController>();
@@ -18,18 +21,23 @@ namespace GamePlay.Level.Controllers
         private RoomData _currentRoom;
 
         // Called from server
-        public void Init(RoomData currentRoom)
+        public void Init()
+        {
+            foreach (var pref in _prefabsList.PrefabList)
+            {
+                _envPrefabCache.Add(pref.Prefab);  
+            }
+        }
+
+        // Called from server
+        public void Set(RoomData currentRoom, bool isStartingRoom)
         {
             _currentRoom = currentRoom;
             _env = _currentRoom.transform.Find("Env");
             // _env.gameObject.SetActive(true);
             
             SpawnEnv();
-            foreach (var door in _currentRoom.exits)
-            {
-                door.GetComponent<NetworkObject>().Spawn();
-                _envs.Add(door.transform);
-            }
+            SpawnDoors(isStartingRoom);
             AppModel.StraightRoomController.ReInitAstar();
             AppModel.CurrentRoom = this;
 
@@ -48,16 +56,32 @@ namespace GamePlay.Level.Controllers
             }
         }
 
+        // todo: rework it somehow
         private void SpawnEnv()
         {
-            var envs = _env.GetComponentsInChildren<NetworkObject>();
-            Debug.Log($"envs: {envs.Length}");
-            // envs.ToList().ForEach(env =>
-            // {
-            //     env.Spawn();
-            //     Debug.Log($"env: {env.gameObject.name}");
-            //     _envs.Add(env.transform);
-            // });
+            var envs = _env.GetComponentsInChildren<Environment>();
+            envs.ToList().ForEach(env =>
+            {
+                var prefabToInit = _envPrefabCache.Find(prefab => prefab.GetComponent<Environment>()?.Type == env.Type);
+                var envObj = Instantiate(prefabToInit, env.transform.position, Quaternion.identity);
+                var networkObject = envObj.GetComponent<NetworkObject>();
+                networkObject.Spawn();
+                _envs.Add(envObj.transform);
+            });
+        }
+
+        // todo: rework it somehow
+        private void SpawnDoors(bool isStartingRoom)
+        {
+            foreach (var door in _currentRoom.exits)
+            {
+                var prefabToInit = _envPrefabCache.Find(prefab => prefab.GetComponent<NextRoomInteractable>()?.DoorType == door.DoorType);
+                var envObj = Instantiate(prefabToInit, door.transform.position, Quaternion.identity);
+                if(isStartingRoom)
+                    envObj.GetComponent<NextRoomInteractable>().IsActive = true;
+                envObj.GetComponent<NetworkObject>().Spawn();
+                _envs.Add(envObj.transform);
+            }
         }
 
         [ServerRpc]
@@ -147,14 +171,15 @@ namespace GamePlay.Level.Controllers
 
         public void DespawnEnv()
         {
-            _envs.Clear();
             foreach (var envObj in _envs)
             {
-                if(envObj == null)
+                if (envObj == null)
                     continue;
                 var networkObject = envObj.GetComponent<NetworkObject>();
                 networkObject.Despawn();
             }
+
+            _envs.Clear();
         }
     }
 }

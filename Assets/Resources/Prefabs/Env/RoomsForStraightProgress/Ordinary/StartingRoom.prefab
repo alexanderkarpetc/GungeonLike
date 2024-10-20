@@ -3405,8 +3405,6 @@ GameObject:
   - component: {fileID: 874448859247282561}
   - component: {fileID: 874448859247282560}
   - component: {fileID: 3519507016241241206}
-  - component: {fileID: 1089420182606161470}
-  - component: {fileID: -2232427534800379723}
   m_Layer: 0
   m_Name: StartingRoom
   m_TagString: Untagged
@@ -3466,49 +3464,10 @@ MonoBehaviour:
   - {fileID: 8497263597883880064}
   - {fileID: 7608282200100468927}
   exits:
-  - {fileID: 2848867258987404947}
+  - {fileID: 825329828520033997}
   enemies: []
   controlPoints: []
   kind: 0
---- !u!114 &1089420182606161470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 874448859247282575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 4018486032
-  InScenePlacedSourceGlobalObjectIdHash: 0
-  DeferredDespawnTick: 0
-  Ownership: 1
-  AlwaysReplicateAsRoot: 0
-  SynchronizeTransform: 1
-  ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 1
-  SpawnWithObservers: 1
-  DontDestroyWithOwner: 0
-  AutoObjectParentSync: 1
-  SyncOwnerTransformWhenParented: 1
-  AllowOwnerToParent: 0
---- !u!114 &-2232427534800379723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 874448859247282575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33aa8358c08f4fce9377101acc260a20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowTopMostFoldoutHeaderGroup: 1
-  _envs: []
 --- !u!1 &1567187315571613005
 GameObject:
   m_ObjectHideFlags: 0
@@ -4075,7 +4034,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1960088706517039396
 Transform:
   m_ObjectHideFlags: 0
@@ -4751,6 +4710,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorFrontInteractable
       objectReference: {fileID: 0}
+    - target: {fileID: 678490813321451775, guid: db1c72ad4ec61814b89b5d21368a02f7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5139413883764065023, guid: db1c72ad4ec61814b89b5d21368a02f7,
         type: 3}
       propertyPath: GlobalObjectIdHash
@@ -4761,9 +4725,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db1c72ad4ec61814b89b5d21368a02f7, type: 3}
---- !u!114 &2848867258987404947 stripped
+--- !u!114 &825329828520033997 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7994905977858795965, guid: db1c72ad4ec61814b89b5d21368a02f7,
+  m_CorrespondingSourceObject: {fileID: 4759882689995901411, guid: db1c72ad4ec61814b89b5d21368a02f7,
     type: 3}
   m_PrefabInstance: {fileID: 5294730186817074990}
   m_PrefabAsset: {fileID: 0}

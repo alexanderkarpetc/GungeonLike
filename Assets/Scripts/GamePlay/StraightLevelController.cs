@@ -30,7 +30,8 @@ namespace GamePlay
             AppModel.StraightRoomController = this;
             if(_currentRoom != null)
             {
-                _roomController.Init(_currentRoom);
+                _roomController.Init();
+                _roomController.Set(_currentRoom, true);
             }
         }
 
@@ -52,7 +53,7 @@ namespace GamePlay
 
             if (_currentRoom != null)
             {
-                _currentRoom.GetComponent<RoomController>().DespawnEnv();
+                _roomController.DespawnEnv();
 
                 foreach (var item in AppModel.DropManager().GetDropped)
                 {
@@ -67,7 +68,7 @@ namespace GamePlay
                         Destroy(item.gameObject);
                     }
                 }
-                _currentRoom.GetComponent<NetworkObject>().Despawn();
+                Destroy(_currentRoom.gameObject);
             }
 
             // Spawn the next room
@@ -75,7 +76,7 @@ namespace GamePlay
             // todo: make client rpc
             _currentRoom = Instantiate(nextRoomPrefab).GetComponent<RoomData>();
 
-            _roomController.Init(_currentRoom);
+            _roomController.Set(_currentRoom, false);
             UpdatePlayerPositionClientRpc(_currentRoom.transform.Find("StartPoint").position);
         }
 
