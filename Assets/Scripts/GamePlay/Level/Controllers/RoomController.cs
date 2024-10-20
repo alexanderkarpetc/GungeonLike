@@ -10,9 +10,10 @@ namespace GamePlay.Level.Controllers
 {
     public class RoomController : NetworkBehaviour
     {
+        [SerializeField] private List<Transform> _envs;
+
         private Transform _env;
         private List<EnemyController> _enemies = new List<EnemyController>();
-        private List<Transform> _envs = new List<Transform>();
 
         private RoomData _currentRoom;
 
@@ -20,10 +21,10 @@ namespace GamePlay.Level.Controllers
         public void Init(RoomData currentRoom)
         {
             _currentRoom = currentRoom;
-            _env = _currentRoom.transform.Find("Env").transform;
+            _env = _currentRoom.transform.Find("Env");
             // _env.gameObject.SetActive(true);
             
-            SpawnEnv().Forget();
+            SpawnEnv();
             foreach (var door in _currentRoom.exits)
             {
                 door.GetComponent<NetworkObject>().Spawn();
@@ -47,16 +48,16 @@ namespace GamePlay.Level.Controllers
             }
         }
 
-        private async UniTask SpawnEnv()
+        private void SpawnEnv()
         {
-            for (var i = 0; i < _env.childCount; i++)
-            {
-                await UniTask.Yield();
-                var envObj = _env.GetChild(i);
-                Debug.Log($"envObj: {envObj.name}");
-                envObj.GetComponent<NetworkObject>().Spawn();
-                _envs.Add(envObj);
-            }
+            var envs = _env.GetComponentsInChildren<NetworkObject>();
+            Debug.Log($"envs: {envs.Length}");
+            // envs.ToList().ForEach(env =>
+            // {
+            //     env.Spawn();
+            //     Debug.Log($"env: {env.gameObject.name}");
+            //     _envs.Add(env.transform);
+            // });
         }
 
         [ServerRpc]
@@ -146,8 +147,11 @@ namespace GamePlay.Level.Controllers
 
         public void DespawnEnv()
         {
+            _envs.Clear();
             foreach (var envObj in _envs)
             {
+                if(envObj == null)
+                    continue;
                 var networkObject = envObj.GetComponent<NetworkObject>();
                 networkObject.Despawn();
             }
