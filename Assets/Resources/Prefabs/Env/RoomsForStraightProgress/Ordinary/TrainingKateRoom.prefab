@@ -5407,7 +5407,7 @@ MonoBehaviour:
   - {fileID: 4989570883606149724}
   - {fileID: 5016730130188945927}
   exits:
-  - {fileID: 0}
+  - {fileID: 2512332163975310198}
   enemies: []
   controlPoints: []
   kind: 0
@@ -8262,6 +8262,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorSideInteractable
       objectReference: {fileID: 0}
+    - target: {fileID: 4093366488259173500, guid: 7b08cba2627cb02428e62bc314e28c65,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4093366488259173503, guid: 7b08cba2627cb02428e62bc314e28c65,
         type: 3}
       propertyPath: m_RootOrder
@@ -8322,6 +8327,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b08cba2627cb02428e62bc314e28c65, type: 3}
+--- !u!114 &2512332163975310198 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7085956312275293601, guid: 7b08cba2627cb02428e62bc314e28c65,
+    type: 3}
+  m_PrefabInstance: {fileID: 4651030340558814935}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e752c5daf6d4d2a8bd43f2975614793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8666412574780121768 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4093366488259173503, guid: 7b08cba2627cb02428e62bc314e28c65,

@@ -4554,8 +4554,8 @@ MonoBehaviour:
   - {fileID: 4241152488616078408}
   - {fileID: 0}
   exits:
-  - {fileID: 2848867258987404947}
-  - {fileID: 6303505539435867266}
+  - {fileID: 825329828520033997}
+  - {fileID: 8901241873312451804}
   enemies: []
   controlPoints: []
   kind: 0
@@ -7269,6 +7269,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorFrontInteractable (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 678490813321451775, guid: db1c72ad4ec61814b89b5d21368a02f7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5139413883764065023, guid: db1c72ad4ec61814b89b5d21368a02f7,
         type: 3}
       propertyPath: GlobalObjectIdHash
@@ -7290,9 +7295,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4145862819488957759}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6303505539435867266 stripped
+--- !u!114 &8901241873312451804 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7994905977858795965, guid: db1c72ad4ec61814b89b5d21368a02f7,
+  m_CorrespondingSourceObject: {fileID: 4759882689995901411, guid: db1c72ad4ec61814b89b5d21368a02f7,
     type: 3}
   m_PrefabInstance: {fileID: 4145862819488957759}
   m_PrefabAsset: {fileID: 0}
@@ -7375,6 +7380,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorFrontInteractable
       objectReference: {fileID: 0}
+    - target: {fileID: 678490813321451775, guid: db1c72ad4ec61814b89b5d21368a02f7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5139413883764065023, guid: db1c72ad4ec61814b89b5d21368a02f7,
         type: 3}
       propertyPath: GlobalObjectIdHash
@@ -7385,9 +7395,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db1c72ad4ec61814b89b5d21368a02f7, type: 3}
---- !u!114 &2848867258987404947 stripped
+--- !u!114 &825329828520033997 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7994905977858795965, guid: db1c72ad4ec61814b89b5d21368a02f7,
+  m_CorrespondingSourceObject: {fileID: 4759882689995901411, guid: db1c72ad4ec61814b89b5d21368a02f7,
     type: 3}
   m_PrefabInstance: {fileID: 5294730186817074990}
   m_PrefabAsset: {fileID: 0}

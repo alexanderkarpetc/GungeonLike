@@ -7206,6 +7206,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorSideInteractable
       objectReference: {fileID: 0}
+    - target: {fileID: 4093366488259173500, guid: 7b08cba2627cb02428e62bc314e28c65,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4093366488259173503, guid: 7b08cba2627cb02428e62bc314e28c65,
         type: 3}
       propertyPath: m_RootOrder
