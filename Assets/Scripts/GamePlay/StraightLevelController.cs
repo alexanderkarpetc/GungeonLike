@@ -9,6 +9,7 @@ namespace GamePlay
 {
     public class StraightLevelController : NetworkBehaviour
     {
+        // todo: randomize later and sync
         [SerializeField] private List<GameObject> predefinedRooms;
         [SerializeField] private CameraFade _cameraFade;
         [SerializeField] private RoomData _currentRoom;
@@ -51,32 +52,17 @@ namespace GamePlay
 
             _currentRoomIndex++;
 
-            if (_currentRoom != null)
+            _roomController.DespawnEnv();
+
+            foreach (var item in AppModel.DropManager().GetDropped)
             {
-                _roomController.DespawnEnv();
-
-                foreach (var item in AppModel.DropManager().GetDropped)
+                var itemNetworkObject = item.GetComponent<NetworkObject>();
+                if (itemNetworkObject != null && itemNetworkObject.IsSpawned)
                 {
-                    // todo: maybe use only despawn
-                    NetworkObject itemNetworkObject = item.GetComponent<NetworkObject>();
-                    if (itemNetworkObject != null && itemNetworkObject.IsSpawned)
-                    {
-                        itemNetworkObject.Despawn();
-                    }
-                    else
-                    {
-                        Destroy(item.gameObject);
-                    }
+                    itemNetworkObject.Despawn();
                 }
-                Destroy(_currentRoom.gameObject);
             }
-
-            // Spawn the next room
-            var nextRoomPrefab = predefinedRooms[_currentRoomIndex];
-            // todo: make client rpc
-            _currentRoom = Instantiate(nextRoomPrefab).GetComponent<RoomData>();
-
-            _roomController.Set(_currentRoom, false);
+            NextRoomClientRpc(_currentRoomIndex);
             UpdatePlayerPositionClientRpc(_currentRoom.transform.Find("StartPoint").position);
         }
 
@@ -113,6 +99,17 @@ namespace GamePlay
             {
                 _astarObj.GetComponent<AstarPath>().Scan();
             }
+        }
+        
+        [ClientRpc]
+        private void NextRoomClientRpc(int roomIndex)
+        {
+            Destroy(_currentRoom.gameObject);
+            var nextRoomPrefab = predefinedRooms[roomIndex];
+            _currentRoom = Instantiate(nextRoomPrefab).GetComponent<RoomData>();
+
+            if(IsServer)
+                _roomController.Set(_currentRoom, false);
         }
     }
 }
