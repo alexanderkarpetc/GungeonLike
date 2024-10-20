@@ -63,7 +63,7 @@ namespace GamePlay.Enemy
       State.Value = new EnemyState{Hp = value};
     }
     
-    [ServerRpc]
+    [ServerRpc(RequireOwnership = false)]
     public void DealDamageServerRpc(float damage)
     {
       State.Value = new EnemyState {Hp = State.Value.Hp - damage};

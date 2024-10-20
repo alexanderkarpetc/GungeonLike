@@ -11,6 +11,7 @@ namespace GamePlay.Level.Controllers
 {
     public class RoomController : NetworkBehaviour
     {
+        [HideInInspector] public List<NextRoomInteractable> Doors = new List<NextRoomInteractable>();
         [SerializeField] private NetworkPrefabsList _prefabsList;
         [SerializeField] private List<Transform> _envs;
         [SerializeField] private List<GameObject> _envPrefabCache;
@@ -19,6 +20,11 @@ namespace GamePlay.Level.Controllers
         private List<EnemyController> _enemies = new List<EnemyController>();
 
         private RoomData _currentRoom;
+
+        private void Start()
+        {
+            AppModel.RoomController = this;
+        }
 
         // Called from server
         public void Init()
@@ -38,8 +44,7 @@ namespace GamePlay.Level.Controllers
             
             SpawnEnv();
             SpawnDoors(isStartingRoom);
-            AppModel.StraightRoomController.ReInitAstar();
-            AppModel.CurrentRoom = this;
+            AppModel.LevelController.ReInitAstar();
 
             switch (_currentRoom.kind)
             {
@@ -139,29 +144,20 @@ namespace GamePlay.Level.Controllers
             {
                 _enemies.Remove(enemyController);
                 if (_enemies.Count == 0)
-                    OpenDoors();
+                    OpenDoorsServerRpc();
             }
         }
 
-        private void OpenDoors()
+        [ServerRpc]
+        private void OpenDoorsServerRpc()
         {
-            foreach (var exit in _currentRoom.exits)
-            {
-                exit.IsActive = true;
-            }
-
-            // If the door activation should be synchronized, you can use a ClientRpc
             OpenDoorsClientRpc();
         }
 
         [ClientRpc]
         private void OpenDoorsClientRpc()
         {
-            foreach (var exit in _currentRoom.exits)
-            {
-                // Update the door state on all clients
-                exit.IsActive = true;
-            }
+            Doors.ForEach(door => door.IsActive = true);
         }
 
         public RoomData GetRoomData()

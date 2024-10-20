@@ -16,8 +16,8 @@ namespace GamePlay
 
     public static Unity.Mathematics.Random random = new Unity.Mathematics.Random();
 
-    public static StraightLevelController StraightRoomController;
-    public static RoomController CurrentRoom;
+    public static StraightLevelController LevelController;
+    public static RoomController RoomController;
     public static ulong OwnerClientId;
     
     private static WeaponStaticData _weaponStaticData;

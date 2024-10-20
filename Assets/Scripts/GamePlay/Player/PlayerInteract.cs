@@ -99,8 +99,9 @@ namespace GamePlay.Player
     private void Start()
     {
       gameObject.layer = LayerMask.NameToLayer("Interactable");
+      OnStart();
     }
-
+    protected virtual void OnStart() { }
     public abstract void Interact(PlayerInteract playerInteract);
   }
 }

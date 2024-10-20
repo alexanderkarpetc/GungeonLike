@@ -20,6 +20,7 @@ namespace GamePlay
 
         public override void OnNetworkSpawn()
         {
+            AppModel.LevelController = this;
             if (IsServer)
             {
                 Init();
@@ -28,7 +29,6 @@ namespace GamePlay
 
         public void Init()
         {
-            AppModel.StraightRoomController = this;
             if(_currentRoom != null)
             {
                 _roomController.Init();
@@ -38,13 +38,10 @@ namespace GamePlay
 
         public void ProcessNextRoom()
         {
-            if (IsServer)
-            {
-                ProcessNextRoomServerRpc();
-            }
+            ProcessNextRoomServerRpc();
         }
 
-        [ServerRpc]
+        [ServerRpc (RequireOwnership = false)]
         private void ProcessNextRoomServerRpc()
         {
             // Fade the camera on all clients
@@ -107,7 +104,7 @@ namespace GamePlay
             Destroy(_currentRoom.gameObject);
             var nextRoomPrefab = predefinedRooms[roomIndex];
             _currentRoom = Instantiate(nextRoomPrefab).GetComponent<RoomData>();
-
+            _roomController.Doors.Clear();
             if(IsServer)
                 _roomController.Set(_currentRoom, false);
         }

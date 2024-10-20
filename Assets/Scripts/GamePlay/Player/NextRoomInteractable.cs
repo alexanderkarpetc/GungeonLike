@@ -8,9 +8,13 @@ namespace GamePlay.Player
     public DoorType DoorType;
     public override void Interact(PlayerInteract playerInteract)
     {
-      AppModel.StraightRoomController.ProcessNextRoom();
+      AppModel.LevelController.ProcessNextRoom();
     }
 
+    protected override void OnStart()
+    {
+      AppModel.RoomController.Doors.Add(this);
+    }
   }
   public enum DoorType
   {

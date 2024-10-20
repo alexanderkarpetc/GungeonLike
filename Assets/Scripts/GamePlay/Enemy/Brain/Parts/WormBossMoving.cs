@@ -16,7 +16,7 @@ namespace GamePlay.Enemy.Brain.Parts
 
     private List<Vector2> FindPoints()
     {
-      return AppModel.CurrentRoom.GetRoomData().controlPoints.Select(x => (Vector2) x.position).ToList();
+      return AppModel.RoomController.GetRoomData().controlPoints.Select(x => (Vector2) x.position).ToList();
     }
 
     protected override void OnUpdate()
