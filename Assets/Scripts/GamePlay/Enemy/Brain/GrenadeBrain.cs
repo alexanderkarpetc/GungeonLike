@@ -13,7 +13,7 @@ namespace GamePlay.Enemy.Brain
       var grenadeBotPart = new GrenadeBotPart(this);
       _parts.Add(grenadeBotPart);
       EnemyController.GetAiPath().maxSpeed = StaticData.GrenadeManSpeed;
-      EnemyController.GetDestinationSetter().target = AppModel.PlayerTransform();
+      // EnemyController.GetDestinationSetter().target = AppModel.PlayerTransform();
     }
   }
 }

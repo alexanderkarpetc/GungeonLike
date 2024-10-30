@@ -33,5 +33,6 @@ namespace GamePlay.Enemy.Brain.Parts
       _delayedActions.Remove(actionToExecute);
     }
     protected virtual void OnUpdate(){}
+    public virtual void Init(){}
   }
 }

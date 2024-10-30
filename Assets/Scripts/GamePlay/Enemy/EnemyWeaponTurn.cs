@@ -5,18 +5,16 @@ namespace GamePlay.Enemy
   public class EnemyWeaponTurn : WeaponTurn
   {
     [SerializeField] private Animator _animator;
-    private GameObject _player;
     private EnemyController _controller;
 
     protected override void OnStart()
     {
-      _player = AppModel.PlayerGameObj();
       _controller = GetComponent<EnemyController>();
     }
 
     protected override void TurnGun()
     {
-      var lookingPos = _controller.CurrentTarget ?? _player.transform.position;
+      var lookingPos = _controller.CurrentTarget ?? _controller.BotBrain.Target.transform.position;
       Vector2 direction = lookingPos - _weaponSlot.transform.position;
       Angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
       var rot = Quaternion.AngleAxis(Mathf.Abs(Angle) < 90 ? Angle : - 180 + Angle, Vector3.forward);

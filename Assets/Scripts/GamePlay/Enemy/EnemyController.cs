@@ -30,6 +30,7 @@ namespace GamePlay.Enemy
     
     private BotBrain _botBrain;
     private bool isDying;
+    public BotBrain BotBrain => _botBrain;
 
     private void Start()
     {

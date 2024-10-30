@@ -69,7 +69,8 @@ namespace GamePlay.Player
 
             if (state.CurrentHp <= 0)
             {
-                Die();
+                Debug.LogError("Player died");
+                // Die();
                 yield break;
             }
 

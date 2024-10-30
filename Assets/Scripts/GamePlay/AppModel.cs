@@ -62,6 +62,11 @@ namespace GamePlay
 
       return CollectionExtensions.GetValueOrDefault(_playerGameObjs, clientId.Value);
     }
+    
+    public static List<GameObject> PlayerGameObjs()
+    {
+      return new List<GameObject>(_playerGameObjs.Values);
+    }
 
     public static Transform PlayerTransform(ulong? clientId = null)
     {

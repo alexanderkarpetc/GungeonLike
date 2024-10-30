@@ -540,6 +540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
+  Type: 0
   maxHealth: 20
   DestroyFx: {fileID: 0}
   _animator: {fileID: 4357693962755562535}

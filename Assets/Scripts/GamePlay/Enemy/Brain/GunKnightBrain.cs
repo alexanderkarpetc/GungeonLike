@@ -15,7 +15,7 @@ namespace GamePlay.Enemy.Brain
       _parts.Add(moving);
       _parts.Add(attacking);
       EnemyController.GetAiPath().maxSpeed = StaticData.EnemyKnightSpeedBase;
-      EnemyController.GetDestinationSetter().target = AppModel.PlayerTransform();
+      // EnemyController.GetDestinationSetter().target = AppModel.PlayerTransform();
       EnemyController.SetHealthServerRpc(70);
     }
   }

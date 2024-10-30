@@ -23,8 +23,9 @@ namespace GamePlay.Enemy.Brain
       _parts.Add(shooting);
       _parts.Add(targetFinder);
       EnemyController = GetComponent<EnemyController>();
-      EnemyController.GetDestinationSetter().target = AppModel.PlayerTransform();
+      // EnemyController.GetDestinationSetter().target = AppModel.PlayerTransform();
       EnemyController.GetAiPath().maxSpeed = StaticData.EnemyBulletSpeedBase;
+      _parts.ForEach(x=> x.Init());
     }
 
     public void ClientInit()
