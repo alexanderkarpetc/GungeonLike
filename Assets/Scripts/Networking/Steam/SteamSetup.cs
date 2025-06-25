@@ -9,7 +9,7 @@ namespace Networking
         {
             if (SteamManager.Initialized)
             {
-                Debug.Log("My SteamID: " + SteamUser.GetSteamID());
+                Debug.LogError("My SteamID: " + SteamUser.GetSteamID());
                 var personaName = SteamFriends.GetPersonaName();
                 Debug.Log(personaName);
             }

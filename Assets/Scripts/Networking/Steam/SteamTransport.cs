@@ -54,7 +54,9 @@ public class SteamTransport : NetworkTransport
         }
 
         // Первичная попытка "разогреть" соединение
-        SteamNetworking.SendP2PPacket(_targetSteamId, new byte[] { 0 }, 1, EP2PSend.k_EP2PSendUnreliable, 0);
+        Debug.LogError($"Connecting to: {_targetSteamId}");
+        var success = SteamNetworking.SendP2PPacket(_targetSteamId, new byte[] { 1 }, 1, EP2PSend.k_EP2PSendUnreliable, 0);
+        Debug.LogError($"Initial ping packet sent: {success}");
 
         Debug.Log($"[SteamTransport] Connecting to host: {_targetSteamId}");
         return true;
@@ -88,9 +90,11 @@ public class SteamTransport : NetworkTransport
 
         while (SteamNetworking.IsP2PPacketAvailable(out uint size, 0))
         {
+            Debug.LogError($"Incoming packet detected, size: {size}");
             byte[] buffer = new byte[size];
             if (SteamNetworking.ReadP2PPacket(buffer, size, out uint bytesRead, out CSteamID sender, 0))
             {
+                Debug.LogError($"Got packet from {sender} ({bytesRead} bytes)");
                 if (!steamMap.ContainsKey(sender))
                 {
                     ulong newClientId = (ulong)steamMap.Count + 1;

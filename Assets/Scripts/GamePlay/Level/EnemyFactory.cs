@@ -17,19 +17,20 @@ namespace GamePlay.Level
         .Where(x => x.GetType() != typeof(BossController));
       foreach (EnemyController enemy in enemies)
       {
-        EnemySetups.Add(new EnemySetup(enemy, enemy.Weapon?.GetPower() ?? 0));
+        EnemySetups.Add(new EnemySetup(enemy, enemy.Weapon?.GetPower() ?? 0, enemy.Type));
       }
       var bosses = Resources.LoadAll("Prefabs/Enemies/Boss", typeof(EnemyController));
       foreach (EnemyController boss in bosses)
       {
-        BossSetups.Add(new EnemySetup(boss, 100));
+        BossSetups.Add(new EnemySetup(boss, 100, boss.Type));
       }
     }
 
     public EnemySetup GetRandomEnemy()
     {
       var index = AppModel.random.NextInt(0, EnemySetups.Count);
-      return EnemySetups[index];
+      // return EnemySetups[index];
+      return EnemySetups.Find(x=>x.Name == "BulletPistol");
     }
   }
 }
