@@ -235,6 +235,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4126686244016517307, guid: fe521fed97e4281478ebfbeca2ce0c3c,
         type: 3}
+      propertyPath: _transport
+      value: 
+      objectReference: {fileID: 193942408}
+    - target: {fileID: 4126686244016517307, guid: fe521fed97e4281478ebfbeca2ce0c3c,
+        type: 3}
       propertyPath: _steamManager
       value: 
       objectReference: {fileID: 1002056296}
