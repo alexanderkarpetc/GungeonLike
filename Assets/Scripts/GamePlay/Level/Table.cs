@@ -1,6 +1,4 @@
-﻿using System;
-using System.Linq;
-using UnityEditor.Animations;
+﻿using System.Linq;
 using UnityEngine;
 
 namespace GamePlay.Level

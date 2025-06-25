@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections;
 using GamePlay.Level;
-using UnityEditor.Animations;
 using UnityEngine;
 
 namespace GamePlay.Player

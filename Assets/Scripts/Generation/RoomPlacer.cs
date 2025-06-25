@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,8 +6,6 @@ using DefaultNamespace;
 using GamePlay.Level;
 using GamePlay.Level.Controllers;
 using UnityEngine;
-using UnityEngine.Tilemaps;
-using UnityEngine.WSA;
 using Random = UnityEngine.Random;
 
 public class RoomPlacer : MonoBehaviour

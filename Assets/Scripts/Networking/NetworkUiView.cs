@@ -1,4 +1,7 @@
+using System;
+using TMPro;
 using Unity.Netcode;
+using Unity.Netcode.Transports.UTP;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +12,8 @@ namespace Networking
         [SerializeField] private Button _startHostButton;
         [SerializeField] private Button _startClientButton;
         [SerializeField] private GameObject _container;
+        [SerializeField] private TMP_InputField _ip;
+        [SerializeField] private TMP_InputField _port;
 
         private void OnEnable()
         {
@@ -24,6 +29,11 @@ namespace Networking
 
         private void StartClient()
         {
+            var ip = string.IsNullOrWhiteSpace(_ip.text) ? "127.0.0.1" : _ip.text;
+            var port = string.IsNullOrWhiteSpace(_port.text) ? "7777" : _port.text;
+            var transport = NetworkManager.Singleton.GetComponent<UnityTransport>();
+            transport.ConnectionData.Address = ip;
+            transport.ConnectionData.Port = Convert.ToUInt16(port);
             NetworkManager.Singleton.StartClient();
             _container.SetActive(false);
         }
