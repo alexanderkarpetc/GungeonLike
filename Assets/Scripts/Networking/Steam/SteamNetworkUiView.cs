@@ -11,7 +11,6 @@ namespace Networking
         [SerializeField] private Button _startHostButton;
         [SerializeField] private Button _startClientButton;
         [SerializeField] private Button _stopButton;
-        [SerializeField] private Button _copyIdButton;
         [SerializeField] private SteamManager _steamManager;
         [SerializeField] private SteamTransport _transport;
         [SerializeField] private GameObject _container;
@@ -22,7 +21,6 @@ namespace Networking
             _startHostButton.onClick.AddListener(StartHost);
             _startClientButton.onClick.AddListener(StartClient);
             _stopButton.onClick.AddListener(Stop);
-            _copyIdButton.onClick.AddListener(CopyId);
         }
 
         private void OnDisable()
@@ -30,7 +28,6 @@ namespace Networking
             _startHostButton.onClick.RemoveListener(StartHost);
             _startClientButton.onClick.RemoveListener(StartClient);
             _stopButton.onClick.RemoveListener(Stop);
-            _copyIdButton.onClick.RemoveListener(CopyId);
         }
 
         private void StartClient()
@@ -50,11 +47,6 @@ namespace Networking
         {
             _steamManager.MarkQuitting();
             NetworkManager.Singleton.Shutdown(true);
-        }
-
-        private void CopyId()
-        {
-            GUIUtility.systemCopyBuffer = SteamUser.GetSteamID().ToString();
         }
     }
 }
