@@ -39,7 +39,10 @@ namespace GamePlay.Enemy
       if (IsServer)
       {
         //todo: probably should be reworked
-        Weapon.IsOwner = true;
+        if (Weapon != null)
+        {
+          Weapon.IsOwner = true;
+        }
         SetHealthServerRpc(10);
         _botBrain = GetComponent<BotBrain>();
         _botBrain.Init();

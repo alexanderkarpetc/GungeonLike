@@ -46,7 +46,7 @@ namespace GamePlay.Enemy.Brain
     }
 
     [ClientRpc]
-    private void ShootClientRpc()
+    protected virtual void ShootClientRpc()
     {
       EnemyController.Weapon.TryShoot();
     }

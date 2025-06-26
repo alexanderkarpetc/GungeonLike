@@ -17,6 +17,7 @@ namespace GamePlay
       InitCamera();
       InitContainers();
       BalanceLoader.LoadBalance();
+      ResourceLoader.Instance.Preload();
       // todo: check if needed
       // var straightLevelController = GameObject.Find("StraightLevelController");
       // if(straightLevelController != null)
