@@ -7,18 +7,14 @@ namespace GamePlay.Enemy.Brain.Parts
 {
   public class GunKnightAttacking : BotPart
   {
-    private GameObject _projectile;
     private bool _isAttacking;
     private readonly KnightEnemyAnimator _animator;
     private float _nextAttackTime = 0;
     private float _attackInterval = 2f;
-    private string _projectileName;
 
     public GunKnightAttacking(BotBrain brain) : base(brain)
     {
-      _projectile = Resources.Load<GameObject>("Prefabs/Projectiles/BlueProjectile");
       _animator = Brain.EnemyController.GetComponent<KnightEnemyAnimator>();
-      _projectileName = _projectile.GetComponent<Projectile>().ProjectileName;
     }
     
     protected override void OnUpdate()
@@ -44,25 +40,7 @@ namespace GamePlay.Enemy.Brain.Parts
 
     private void Hit()
     {
-      var playerPos = AppModel.PlayerTransform().position;
-      var center = Brain.EnemyController.transform.position - (playerPos - Brain.EnemyController.transform.position).normalized * 3;
-      var radius = 4;
-
-      for (var i = 0; i < StaticData.GunKnightShotsCount; i++)
-      {
-        Vector2 direction = playerPos - center;
-        var flyAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        var angle = flyAngle - StaticData.GunKnightShotsCount + i*2;
-        var x = Mathf.Cos(angle * Mathf.Deg2Rad) * radius + center.x;
-        var y = Mathf.Sin(angle * Mathf.Deg2Rad) * radius + center.y;
-        var spawnPos = new Vector3(x, y, 0);
-        var go = BulletPoolManager.Instance.GetBulletFromPool(_projectile, spawnPos, Quaternion.identity, _projectileName);
-        go.transform.SetParent(AppModel.BulletContainer().transform);
-        var projectile = go.GetComponent<Projectile>();
-        projectile.Speed = 13;
-        projectile.Direction = Weapon.DegreeToVector2(flyAngle - 15 + i);
-      }
-      
+      Brain.ShootWeaponServerRpc();
       _isAttacking = false;
       _animator.StopAttacking();
       Brain.EnemyController.GetAiPath().maxSpeed = StaticData.EnemyKnightSpeedBase;

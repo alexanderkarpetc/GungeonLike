@@ -30,7 +30,7 @@ namespace GamePlay.Level
     {
       var index = AppModel.random.NextInt(0, EnemySetups.Count);
       // return EnemySetups[index];
-      return EnemySetups.Find(x=>x.Name == "GrenadeMan");
+      return EnemySetups.Find(x=>x.Name == "GunKnight");
     }
   }
 }

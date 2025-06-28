@@ -21,5 +21,10 @@ namespace GamePlay.Common
             proj = _blueProjectile;
             projName = _blueProjectileName;
         }
+        public void GetGunKnightResources(out GameObject proj, out string projName)
+        {
+            proj = _blueProjectile;
+            projName = _blueProjectileName;
+        }
     }
 }

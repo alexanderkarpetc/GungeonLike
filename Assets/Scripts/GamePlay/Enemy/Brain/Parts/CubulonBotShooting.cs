@@ -1,6 +1,4 @@
 ﻿using System.Linq;
-using GamePlay.Common;
-using GamePlay.Weapons;
 using UnityEngine;
 
 namespace GamePlay.Enemy.Brain.Parts
