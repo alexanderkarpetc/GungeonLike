@@ -31,6 +31,7 @@ namespace GamePlay.Common
     public static void Hit(EnemyController enemyController, float damage, Vector2? impulse)
     {
       enemyController.DealDamageServerRpc(damage);
+      // todo check impulse from client
       if(impulse != null)
         enemyController.GiveImpulse(impulse.Value);
     }
