@@ -5,7 +5,6 @@ namespace GamePlay.Player
 {
   public class PlayerWeaponInteraction : NetworkBehaviour
   {
-    
     private void Update()
     {
       if(!IsOwner)
@@ -20,7 +19,7 @@ namespace GamePlay.Player
         // AppModel.PlayerState().PreviousWeapon();
       }
 
-      if (Input.GetKeyDown(KeyCode.R))
+      if (Input.GetKeyDown(KeyCode.R) && AppModel.PlayerState().Weapon.reloadingTime > 0)
       {
         StartReloadServerRpc(OwnerClientId);
       }

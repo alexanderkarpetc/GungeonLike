@@ -15,9 +15,18 @@ namespace GamePlay.Weapons
 
         protected override void OnTriggerEnter2D(Collider2D other)
         {
-            if (_envTags.Contains(other.tag) || other.CompareTag("Player") || other.CompareTag("Enemy"))
+            // todo maybe should share projectile logic
+            if(other.gameObject == Owner)
+                return;
+            if (_envTags.Contains(other.tag) 
+                || other.CompareTag("Enemy")
+                || (other.CompareTag("Player") && !IsPlayerBullet))
             {
-                Explode();
+                if (IsOwner)
+                {
+                    Explode();
+                }
+
                 var fx = Instantiate(_envHitFx, transform.position,
                     Quaternion.LookRotation(Vector3.forward, Direction*new Vector2(-1,-1)));
                 fx.transform.SetParent(AppModel.FxContainer().transform);
