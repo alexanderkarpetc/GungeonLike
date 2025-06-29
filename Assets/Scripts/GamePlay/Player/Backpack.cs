@@ -65,7 +65,6 @@ namespace GamePlay.Player
         {
             if (_weapons.Count <= 1) return;
             CurrentWeaponIndex = (CurrentWeaponIndex == 0) ? _weapons.Count - 1 : CurrentWeaponIndex - 1;
-            SelectWeapon(CurrentWeaponIndex);
         }
 
         public void AddAmmo(Dictionary<AmmoKind, int> ammo)

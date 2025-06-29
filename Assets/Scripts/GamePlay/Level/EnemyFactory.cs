@@ -27,8 +27,8 @@ namespace GamePlay.Level
     public EnemySetup GetRandomEnemy()
     {
       var index = AppModel.random.NextInt(0, EnemySetups.Count);
-      return EnemySetups[index];
-      return EnemySetups.Find(x=>x.Name == "Sniper");
+      // return EnemySetups[index];
+      return EnemySetups.Find(x=>x.Name == "BulletPistol");
     }
   }
 }

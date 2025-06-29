@@ -130,10 +130,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2215793121671682649}
   - component: {fileID: -2537242660815868718}
-  - component: {fileID: 2215793121671682651}
   - component: {fileID: 2215793121671682648}
   - component: {fileID: 2935388362033553556}
-  - component: {fileID: 3467845503102902075}
+  - component: {fileID: 2930494328525188010}
   m_Layer: 0
   m_Name: Pedestal
   m_TagString: Untagged
@@ -183,23 +182,6 @@ MonoBehaviour:
   AutoObjectParentSync: 1
   SyncOwnerTransformWhenParented: 1
   AllowOwnerToParent: 0
---- !u!114 &2215793121671682651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2215793121671682654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3653419f91507e54dbec4b1f4444b6bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowTopMostFoldoutHeaderGroup: 1
-  Weapon: {fileID: 0}
-  ResourceValue:
-    resourceKind: 0
-    amount: 0
 --- !u!61 &2215793121671682648
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -273,7 +255,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3467845503102902075
+--- !u!114 &2930494328525188010
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -282,10 +264,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2215793121671682654}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4eaaf89b6db4cf9bd2a2829e8a6cec2, type: 3}
+  m_Script: {fileID: 11500000, guid: 3653419f91507e54dbec4b1f4444b6bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemSprite: {fileID: 2215793121051982357}
+  ShowTopMostFoldoutHeaderGroup: 1
+  IsActive: 1
+  _price: {fileID: 0}
+  _sprite: {fileID: 2215793121051982357}
+  _weapon: {fileID: 0}
 --- !u!1 &2215793122826061166
 GameObject:
   m_ObjectHideFlags: 0

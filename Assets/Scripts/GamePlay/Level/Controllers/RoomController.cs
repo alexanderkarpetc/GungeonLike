@@ -43,6 +43,7 @@ namespace GamePlay.Level.Controllers
             // _env.gameObject.SetActive(true);
             
             SpawnEnv();
+            SpawnPickables();
             SpawnDoors(isStartingRoom);
             AppModel.LevelController.ReInitAstar();
 
@@ -72,6 +73,21 @@ namespace GamePlay.Level.Controllers
                 var networkObject = envObj.GetComponent<NetworkObject>();
                 networkObject.Spawn();
                 _envs.Add(envObj.transform);
+            });
+        }
+
+        private void SpawnPickables()
+        {
+            var pickables = _env.GetComponentsInChildren<PickableItemView>();
+            var prefabToInit = _envPrefabCache.Find(prefab => prefab.name == "Pedestal");
+
+            pickables.ToList().ForEach(pickable =>
+            {
+                var pickableObj = Instantiate(prefabToInit, pickable.transform.position, Quaternion.identity);
+                var networkObject = pickableObj.GetComponent<NetworkObject>();
+                pickableObj.GetComponent<PickableItemView>().PredefinedWeapon = pickable.PredefinedWeapon;
+                networkObject.Spawn();
+                _envs.Add(pickableObj.transform);
             });
         }
 

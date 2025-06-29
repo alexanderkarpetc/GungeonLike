@@ -1,104 +1,69 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using GamePlay.Player;
 using GamePlay.Weapons;
 using Unity.Netcode;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace GamePlay.Level
 {
-    public class PickableItemView : NetworkBehaviour
+  public class PickableItemView : Interactable
+  {
+    [SerializeField] private Text _price;
+    [SerializeField] private SpriteRenderer _sprite;
+    public Weapon PredefinedWeapon;// for testing only
+
+    public NetworkVariable<WeaponType> WeaponType = new();
+    public NetworkVariable<bool> HasWeapon = new();
+
+    private int Price;
+    private Weapon _weapon;
+
+    public override void OnNetworkSpawn()
     {
-        [HideInInspector] public Weapon Weapon;
-        [HideInInspector] public Dictionary<AmmoKind, int> Ammo = new ();
-        public ResourcePack ResourceValue;
+      // for testing only
+      if (PredefinedWeapon != null)
+      {
+        HasWeapon.Value = true;
+        WeaponType.Value = PredefinedWeapon.Type;
+      }
 
-        private int _index;
-
-        [Serializable]
-        public class ResourcePack
+      if (HasWeapon.Value)
+      {
+        var weapon = AppModel.DropManager().AllGuns.First(gun => gun.Type == WeaponType.Value);
+        if (_price != null)
         {
-            public ResourceKind resourceKind;
-            public int amount;
+          var price = AppModel.WeaponData().GetWeaponInfo(weapon.Type).Price;
+          _price.text = price.ToString();
         }
 
-        private void OnTriggerEnter2D(Collider2D other)
-        {
-            if (other.CompareTag("Player") && IsServer)  // Ensure only the server handles the trigger detection
-            {
-                var playerNetworkObject = other.GetComponent<NetworkObject>();
-                if (playerNetworkObject != null)
-                {
-                    // Notify the specific client that they should pick up the weapon
-                    NotifyClientToPickWeaponClientRpc(playerNetworkObject.OwnerClientId);
-                }
-            }
-        }
-    
-        [ServerRpc]
-        public void AddAmmoServerRpc (AmmoKind ammoKind, int amount)
-        {
-            AddAmmoClientRpc(ammoKind, amount);
-        }
-        
-        [ClientRpc]
-        private void AddAmmoClientRpc (AmmoKind ammoKind, int amount)
-        {
-            Ammo.Add(ammoKind, amount);
-        }
-    
-        [ServerRpc]
-        public void SetWeaponServerRpc (WeaponType type)
-        {
-            SetWeaponClientRpc(type);
-        }
-    
-        [ClientRpc]
-        private void SetWeaponClientRpc (WeaponType type)
-        {
-            Weapon = AppModel.DropManager().AllGuns.First(gun => gun.Type == type);
-        }
-
-        [ClientRpc]
-        private void NotifyClientToPickWeaponClientRpc(ulong clientId, ClientRpcParams clientRpcParams = default)
-        {
-            // Only the client with the corresponding clientId will execute this code
-            if (NetworkManager.Singleton.LocalClientId == clientId)
-            {
-                HandlePickUp();
-            }
-        }
-
-        private void HandlePickUp()
-        {
-            if (Weapon != null)
-            {
-                PickWeapon(Weapon);
-            }
-
-            if (Ammo.Count > 0)
-            {
-                AppModel.PlayerState().Backpack.AddAmmo(Ammo);
-            }
-
-            if (ResourceValue != null)
-            {
-                AppModel.PlayerState().Backpack.AddResource(ResourceValue.resourceKind, ResourceValue.amount);
-            }
-
-            DestroyItemOnServerRpc();
-        }
-
-        private void PickWeapon(Weapon weapon)
-        {
-            AppModel.PlayerState().Backpack.AddWeapon(weapon);
-        }
-
-        [ServerRpc(RequireOwnership = false)]
-        private void DestroyItemOnServerRpc()
-        {
-            Destroy(gameObject);
-        }
+        _sprite.sprite = weapon._uiImage;
+        _weapon = weapon;
+      }
     }
+
+    public override void Interact(PlayerInteract playerInteract)
+    {
+      if (Price > 0 && AppModel.PlayerState().Backpack.GetCoins() < Price)
+      {
+        return;
+      }
+      
+      AppModel.PlayerState().Backpack.WithdrawResource(ResourceKind.Coins, Price);
+      AddWeaponServerRpc(playerInteract.OwnerClientId);
+    }
+
+    [ServerRpc (RequireOwnership = false)]
+    private void AddWeaponServerRpc(ulong ownerClientId)
+    {
+      AddWeaponClientRpc(ownerClientId);
+      Destroy(gameObject);
+    }
+
+    [ClientRpc]
+    private void AddWeaponClientRpc(ulong ownerClientId)
+    {
+      AppModel.PlayerState(ownerClientId).AddWeapon(_weapon);
+    }
+  }
 }

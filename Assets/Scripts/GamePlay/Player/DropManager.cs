@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using DefaultNamespace;
 using GamePlay.Common;
@@ -8,18 +9,19 @@ using GamePlay.Level;
 using GamePlay.Weapons;
 using Unity.Netcode;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace GamePlay.Player
 {
   public class DropManager
   {
     public List<Weapon> AllGuns = new List<Weapon>(); 
-    private PickableItemView _pedestal;
-    private PickableItemView _ammoBox;
-    private PickableItemView _coin;
-    private List<PickableItemView> _drops = new();
+    private AutoPickableItemView _pedestal;
+    private AutoPickableItemView _ammoBox;
+    private AutoPickableItemView _coin;
+    private List<AutoPickableItemView> _drops = new();
 
-    public List<PickableItemView> GetDropped => _drops.Where(x => x != null).ToList();
+    public List<AutoPickableItemView> GetDropped => _drops.Where(x => x != null).ToList();
     public DropManager()
     {
       var guns = Resources.LoadAll("Prefabs/Guns", typeof(Weapon));
@@ -27,19 +29,20 @@ namespace GamePlay.Player
       {
         AllGuns.Add(gun as Weapon);
       }
-      _pedestal = Resources.Load("Prefabs/Player/Pedestal", typeof(PickableItemView)) as PickableItemView;
-      _ammoBox = Resources.Load("Prefabs/Player/AmmoBox", typeof(PickableItemView)) as PickableItemView;
-      _coin = Resources.Load("Prefabs/Player/Resource", typeof(PickableItemView)) as PickableItemView;
+      _pedestal = Resources.Load("Prefabs/Player/Pedestal", typeof(AutoPickableItemView)) as AutoPickableItemView;
+      _ammoBox = Resources.Load("Prefabs/Player/AmmoBox", typeof(AutoPickableItemView)) as AutoPickableItemView;
+      _coin = Resources.Load("Prefabs/Player/Resource", typeof(AutoPickableItemView)) as AutoPickableItemView;
     }
 
     public void DropOnEnemyDeath(Transform transform, EnemyType enemyType)
     {
-      PickableItemView pedestal;
+      AutoPickableItemView pedestal;
       if ((int)enemyType >= 100)
       {
-        pedestal = Object.Instantiate(_pedestal, transform.position, Quaternion.identity);
-        pedestal.GetComponent<NetworkObject>().Spawn();
-        pedestal.SetWeaponServerRpc(WeaponType.Crossbow);
+        throw new NotImplementedException("Not implemented");
+        // pedestal = Object.Instantiate(_pedestal, transform.position, Quaternion.identity);
+        // pedestal.GetComponent<NetworkObject>().Spawn();
+        // pedestal.SetWeaponServerRpc(WeaponType.Crossbow);
       }
       else
       {

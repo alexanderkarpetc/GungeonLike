@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 7592841302269064193}
   - component: {fileID: 6855530713509564109}
   - component: {fileID: 6305868744827321068}
-  - component: {fileID: 962718188144659883}
+  - component: {fileID: 141981434589366569}
   m_Layer: 0
   m_Name: ShopItem
   m_TagString: Untagged
@@ -214,7 +214,7 @@ MonoBehaviour:
   AutoObjectParentSync: 1
   SyncOwnerTransformWhenParented: 1
   AllowOwnerToParent: 0
---- !u!114 &962718188144659883
+--- !u!114 &141981434589366569
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -223,13 +223,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 7592841302269064199}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67944a89816955b489b50d17521a2d77, type: 3}
+  m_Script: {fileID: 11500000, guid: 3653419f91507e54dbec4b1f4444b6bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
   IsActive: 1
   _price: {fileID: 7023210286369717826}
   _sprite: {fileID: 7592841303002010700}
+  _weapon: {fileID: 0}
 --- !u!1 &7592841303002010706
 GameObject:
   m_ObjectHideFlags: 0

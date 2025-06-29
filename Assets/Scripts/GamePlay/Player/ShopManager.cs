@@ -13,20 +13,21 @@ namespace GamePlay.Player
 {
   public class ShopManager
   {
-    private PickableItemView _pedestal;
-    private ShopItemView _shopItem;
+    private AutoPickableItemView _pedestal;
+    private PickableItemView _pickableItem;
 
     public ShopManager()
     {
-      _shopItem = Resources.Load("Prefabs/Player/ShopItem", typeof(ShopItemView)) as ShopItemView;
+      _pickableItem = Resources.Load("Prefabs/Player/ShopItem", typeof(PickableItemView)) as PickableItemView;
     }
 
-    public ShopItemView SpawnRandomWeapon()
+    public PickableItemView SpawnRandomWeapon()
     {
-      var shopItem = Object.Instantiate(_shopItem, (Vector2)AppModel.PlayerTransform().position + Vector2.up, Quaternion.identity);
+      var shopItem = Object.Instantiate(_pickableItem, (Vector2)AppModel.PlayerTransform().position + Vector2.up, Quaternion.identity);
       shopItem.GetComponent<NetworkObject>().Spawn();
       var weapon = AppModel.DropManager().GetAbsentWeapon();
-      shopItem.SetDataServerRpc(weapon.Type);
+      shopItem.WeaponType.Value = weapon.Type;
+      shopItem.HasWeapon.Value = true;
       return shopItem;
     }
   }

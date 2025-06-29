@@ -49,8 +49,8 @@ namespace GamePlay.Player
             }
             else
             {
-                gameObject.name = $"Player_{OwnerClientId}";
-                Backpack.AddWeapon(_startingWeapon);
+                // gameObject.name = $"Player_{OwnerClientId}";
+                // Backpack.AddWeapon(_startingWeapon);
                 SyncWeapon(_startingWeapon.Type, OwnerClientId).Forget();
             }
         }
@@ -84,7 +84,7 @@ namespace GamePlay.Player
             if(weaponSlot.childCount != 0)
                 Destroy(weaponSlot.transform.GetChild(0).gameObject);
             
-            var weaponPrefab = Backpack.GetWeapons().First(x => x.Type == type);
+            var weaponPrefab = AppModel.DropManager().AllGuns.First(x => x.Type == type);
 
             var weaponInstance = Instantiate(weaponPrefab, weaponSlot, false);
             // todo: should be moved
