@@ -38,6 +38,7 @@ namespace GamePlay.Weapons
       projectile.Impulse = _hasSightSkill ? _impulse * 2 : _impulse;
 
       projectile.Direction = Vector2.right;
+      projectile.IsOwner = IsOwner;
       projectile.transform.rotation = Quaternion.Euler(0,0, transform.rotation.eulerAngles.z);
       if (IsInverted)
         projectile.Direction *= -1;

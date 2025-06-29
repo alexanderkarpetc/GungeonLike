@@ -9,6 +9,9 @@ namespace GamePlay.Player
     {
         [HideInInspector] public Weapon Weapon;
         [SerializeField] public Transform _weaponSlot;
+        
+        // JetEngineWeapon
+        // private NetworkVariable<JetEngineWeapon.ShootingState> JetEngineState = new(writePerm: NetworkVariableWritePermission.Owner);
 
         private void Update()
         {
@@ -82,6 +85,12 @@ namespace GamePlay.Player
         [ClientRpc]
         private void StartChargeClientRpc()
         {
+            //todo: dirty hack remove it later
+            if (Weapon == null && IsOwner == false)
+            {
+                Weapon = _weaponSlot.GetChild(0).GetComponent<Weapon>();
+                Weapon.IsPlayers = true;
+            }
             if (Weapon is JetEngineWeapon jetEngineWeapon)
             {
                 jetEngineWeapon.StartCharge();  // Start charging the weapon

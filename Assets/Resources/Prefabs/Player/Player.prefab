@@ -536,7 +536,8 @@ MonoBehaviour:
     m_InternalValue: 0
   CurrentHp: 3
   MaxHp: 3
-  _startingWeapon: {fileID: 1712927347, guid: 02dac79d2ed7c094799836c1418fa78d, type: 3}
+  _startingWeapon: {fileID: 1221264148990746678, guid: e5c4f0808b6ae6b4c89665a38f22b2ab,
+    type: 3}
   SpeedMultiplier: 1
 --- !u!114 &8463245576141808200
 MonoBehaviour:
@@ -736,6 +737,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
   NetworkTransformExpanded: 1
+  AutoOwnerAuthorityTickOffset: 1
+  PositionInterpolationType: 0
+  RotationInterpolationType: 0
+  ScaleInterpolationType: 0
+  PositionLerpSmoothing: 1
+  PositionMaxInterpolationTime: 0.1
+  RotationLerpSmoothing: 1
+  RotationMaxInterpolationTime: 0.1
+  ScaleLerpSmoothing: 1
+  ScaleMaxInterpolationTime: 0.1
   AuthorityMode: 0
   TickSyncChildren: 0
   UseUnreliableDeltas: 0

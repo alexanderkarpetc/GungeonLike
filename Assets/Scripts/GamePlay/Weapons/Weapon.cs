@@ -42,7 +42,7 @@ namespace GamePlay.Weapons
     [HideInInspector] public bool IsOwner;
     protected string projectileName;
 
-    private void Awake()
+    protected virtual void Awake()
     {
       projectileName = _projectile.GetComponent<Projectile>().ProjectileName;
     }

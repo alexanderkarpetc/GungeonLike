@@ -1,7 +1,7 @@
 Type;Damage;Price
 Ak47;3;15
 SpecialPistol;4;999
-JetEngine;1;50
+JetEngine;10;50
 Crossbow;10;30
 PulseRifle;5;50
 RocketLauncher;50;50

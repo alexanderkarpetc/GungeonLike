@@ -2,6 +2,7 @@
 
 namespace GamePlay.Enemy.State
 {
+  // todo use just float hp without this struct
   public struct EnemyState : INetworkSerializable
   {
     public float Hp;

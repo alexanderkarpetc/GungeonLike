@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using GamePlay.Enemy;
-using GamePlay.Weapons;
 using UnityEngine;
-using Random = Unity.Mathematics.Random;
 
 namespace GamePlay.Level
 {
@@ -29,8 +27,8 @@ namespace GamePlay.Level
     public EnemySetup GetRandomEnemy()
     {
       var index = AppModel.random.NextInt(0, EnemySetups.Count);
-      // return EnemySetups[index];
-      return EnemySetups.Find(x=>x.Name == "GunKnight");
+      return EnemySetups[index];
+      return EnemySetups.Find(x=>x.Name == "Sniper");
     }
   }
 }

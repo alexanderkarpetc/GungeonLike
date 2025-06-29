@@ -30,8 +30,13 @@ namespace GamePlay.Weapons
     private static readonly int Shooting = Animator.StringToHash("Shoot");
     private static readonly int Charging = Animator.StringToHash("Charging");
 
+    protected override void Awake()
+    {
+    }
+
     protected override void Start()
     {
+      BaseDamage = AppModel.WeaponData().GetWeaponInfo(Type).Damage;
     }
 
     private void Update()

@@ -20,6 +20,7 @@ namespace GamePlay.Weapons
         projectile.IsPlayerBullet = IsPlayers;
         projectile.Damage = BaseDamage;
         projectile.Speed = _bulletSpeed;
+        projectile.IsOwner = IsOwner;
         projectile.Direction = DegreeToVector2(currentRotation);
         if (IsInverted)
           projectile.Direction *= -1;

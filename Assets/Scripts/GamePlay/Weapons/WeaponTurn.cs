@@ -11,16 +11,13 @@ namespace GamePlay
         [SerializeField] protected Vector3 _rightHandPos;
         [SerializeField] protected GameObject _weaponSlot;
 
-        // Hand positions and rendering
         public Transform _rightHand;
         public Transform _leftHand;
         protected SpriteRenderer _leftHandRenderer;
         protected SpriteRenderer _rightHandRenderer;
 
-        // Angle for turning the gun
         protected float Angle;
 
-        // NetworkVariable to sync the angle across clients
         protected NetworkVariable<float> NetworkAngle = new(writePerm: NetworkVariableWritePermission.Owner);
 
         private void Start()

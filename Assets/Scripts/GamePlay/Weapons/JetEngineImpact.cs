@@ -10,6 +10,7 @@ namespace GamePlay.Weapons
     public Weapon Weapon;
     private void OnTriggerStay2D(Collider2D other)
     {
+      if(!Weapon.IsOwner) return;
       if (other.CompareTag("Environment"))
       {
         other.GetComponent<Level.Environment>().DealDamageServerRpc(AppModel.WeaponData().JetEngineDamage);
