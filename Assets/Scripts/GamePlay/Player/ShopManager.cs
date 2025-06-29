@@ -24,10 +24,9 @@ namespace GamePlay.Player
     public PickableItemView SpawnRandomWeapon()
     {
       var shopItem = Object.Instantiate(_pickableItem, (Vector2)AppModel.PlayerTransform().position + Vector2.up, Quaternion.identity);
-      shopItem.GetComponent<NetworkObject>().Spawn();
       var weapon = AppModel.DropManager().GetAbsentWeapon();
-      shopItem.WeaponType.Value = weapon.Type;
-      shopItem.HasWeapon.Value = true;
+      shopItem.Prepare(weapon.Type);
+      shopItem.GetComponent<NetworkObject>().Spawn();
       return shopItem;
     }
   }

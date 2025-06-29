@@ -49,8 +49,6 @@ namespace GamePlay.Player
             }
             else
             {
-                // gameObject.name = $"Player_{OwnerClientId}";
-                // Backpack.AddWeapon(_startingWeapon);
                 SyncWeapon(_startingWeapon.Type, OwnerClientId).Forget();
             }
         }
@@ -58,8 +56,19 @@ namespace GamePlay.Player
         public void AddWeapon(Weapon weapon)
         {
             if (!IsOwner) return;
+            if (Backpack.GetWeapons().Count >= StaticData.BackpackCapacity)
+            {
+                DropGunServerRpc(transform.position, CurrentWeaponType.Value);
+                Backpack.RemoveCurrentWeapon();
+            }
             Backpack.AddWeapon(weapon);
             AddWeaponServerRpc(weapon.Type, OwnerClientId);
+        }
+
+        [ServerRpc]
+        public void DropGunServerRpc(Vector3 pos, WeaponType type)
+        {
+            AppModel.DropManager().DropGun(pos, type);
         }
 
         [ServerRpc]
@@ -87,7 +96,7 @@ namespace GamePlay.Player
             var weaponPrefab = AppModel.DropManager().AllGuns.First(x => x.Type == type);
 
             var weaponInstance = Instantiate(weaponPrefab, weaponSlot, false);
-            // todo: should be moved
+            // todo: need to remember bullets left
             weaponInstance.State = new WeaponState { bulletsLeft = weaponInstance.MagazineSize };
             weaponInstance.IsPlayers = true;
 

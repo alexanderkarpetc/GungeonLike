@@ -16,7 +16,7 @@ namespace GamePlay.Player
   public class DropManager
   {
     public List<Weapon> AllGuns = new List<Weapon>(); 
-    private AutoPickableItemView _pedestal;
+    private PickableItemView _pedestal;
     private AutoPickableItemView _ammoBox;
     private AutoPickableItemView _coin;
     private List<AutoPickableItemView> _drops = new();
@@ -29,7 +29,7 @@ namespace GamePlay.Player
       {
         AllGuns.Add(gun as Weapon);
       }
-      _pedestal = Resources.Load("Prefabs/Player/Pedestal", typeof(AutoPickableItemView)) as AutoPickableItemView;
+      _pedestal = Resources.Load("Prefabs/Player/Pedestal", typeof(PickableItemView)) as PickableItemView;
       _ammoBox = Resources.Load("Prefabs/Player/AmmoBox", typeof(AutoPickableItemView)) as AutoPickableItemView;
       _coin = Resources.Load("Prefabs/Player/Resource", typeof(AutoPickableItemView)) as AutoPickableItemView;
     }
@@ -59,6 +59,13 @@ namespace GamePlay.Player
         // };
       }
       _drops.Add(pedestal);
+    }
+    
+    public void DropGun(Vector3 position, WeaponType weaponType)
+    {
+      var pedestal = Object.Instantiate(_pedestal, position, Quaternion.identity);
+      pedestal.Prepare(weaponType);
+      pedestal.GetComponent<NetworkObject>().Spawn();
     }
 
     public Weapon GetAbsentWeapon()

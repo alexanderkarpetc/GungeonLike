@@ -18,6 +18,7 @@ namespace GamePlay.Level
 
     private int Price;
     private Weapon _weapon;
+    private WeaponType? _preparedWeaponType;
 
     public override void OnNetworkSpawn()
     {
@@ -26,6 +27,12 @@ namespace GamePlay.Level
       {
         HasWeapon.Value = true;
         WeaponType.Value = PredefinedWeapon.Type;
+      }
+
+      if (_preparedWeaponType != null)
+      {
+        WeaponType.Value = _preparedWeaponType.Value;
+        HasWeapon.Value = true;
       }
 
       if (HasWeapon.Value)
@@ -40,6 +47,11 @@ namespace GamePlay.Level
         _sprite.sprite = weapon._uiImage;
         _weapon = weapon;
       }
+    }
+
+    public void Prepare(WeaponType weaponType)
+    {
+      _preparedWeaponType = weaponType;
     }
 
     public override void Interact(PlayerInteract playerInteract)

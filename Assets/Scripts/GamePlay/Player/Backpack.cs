@@ -45,6 +45,12 @@ namespace GamePlay.Player
             CurrentWeaponIndex = _weapons.Count - 1;
         }
 
+        public void RemoveCurrentWeapon()
+        {
+            _weapons.RemoveAt(CurrentWeaponIndex);
+            CurrentWeaponIndex = -1;
+        }
+
         public void SelectWeapon(int weaponIndex)
         {
             if (weaponIndex < 0 || weaponIndex >= _weapons.Count)

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 namespace Networking
 {
-    public class TemporaryUI : MonoBehaviour
+    public class NetworkUiView : MonoBehaviour
     {
         [SerializeField] private Button _startHostButton;
         [SerializeField] private Button _startClientButton;
