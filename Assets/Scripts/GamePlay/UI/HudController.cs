@@ -12,6 +12,7 @@ namespace GamePlay.Player
     [SerializeField] private float _blinkDuration;
     [SerializeField] private GameObject _console;
     [SerializeField] private GameObject _devPanel;
+    private bool _isDamaging;
 
     private void Start()
     {
@@ -46,14 +47,20 @@ namespace GamePlay.Player
 
     private void ScreenBlink()
     {
+      if (_isDamaging)
+      {
+        return;
+      }
       StartCoroutine(DoBlink());
     }
 
     private IEnumerator DoBlink()
     {
+      _isDamaging = true;
       _dmgPanel.SetActive(true);
       yield return new WaitForSeconds(_blinkDuration);
       _dmgPanel.SetActive(false);
+      _isDamaging = false;
     }
   }
 }

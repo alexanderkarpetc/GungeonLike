@@ -19,7 +19,7 @@ namespace GamePlay.Common
         }
         if (hit.CompareTag("Player"))
         {
-          HitPlayer(hit.GetComponent<PlayerController>());
+          HitPlayer(hit.GetComponent<PlayerController>(), damage);
         }
         if (hit.CompareTag("Environment"))
         {
@@ -30,7 +30,7 @@ namespace GamePlay.Common
     }
     public static void Hit(EnemyController enemyController, float damage, Vector2? impulse)
     {
-      enemyController.DealDamageServerRpc(damage);
+      enemyController.DealDamageServerRpc(Mathf.CeilToInt(damage));
       // todo check impulse from client
       if(impulse != null)
         enemyController.GiveImpulse(impulse.Value);
@@ -43,12 +43,12 @@ namespace GamePlay.Common
 
     public static void Hit(EnemyController enemyController, float damage)
     {
-      enemyController.DealDamageServerRpc(damage);
+      enemyController.DealDamageServerRpc(Mathf.CeilToInt(damage));
     }
 
-    public static void HitPlayer(PlayerController playerController)
+    public static void HitPlayer(PlayerController playerController, float damage)
     {
-      playerController.Hit();
+      playerController.DealDamageServerRpc(damage, playerController.OwnerClientId);
     }
   }
 }

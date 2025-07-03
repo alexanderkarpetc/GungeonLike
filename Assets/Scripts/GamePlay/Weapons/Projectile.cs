@@ -46,7 +46,7 @@ namespace GamePlay.Weapons
       {
         if (IsOwner)
         {
-          HitPlayer(other);
+          HitPlayer(other, Damage);
         }
         BulletPoolManager.Instance.ReturnBulletToPool(this, ProjectileName);
       }
@@ -74,12 +74,12 @@ namespace GamePlay.Weapons
       IsOwner = false;
     }
 
-    protected void HitPlayer(Collider2D other)
+    private void HitPlayer(Collider2D other, float damage)
     {
-      DamageManager.HitPlayer(other.GetComponent<PlayerController>());
+      DamageManager.HitPlayer(other.GetComponent<PlayerController>(), damage);
     }
 
-    protected void HitEnemy(Collider2D enemy)
+    private void HitEnemy(Collider2D enemy)
     {
       var enemyController = enemy.GetComponent<EnemyController>();
       DamageManager.Hit(enemyController, Damage, transform.rotation * Direction.normalized * Impulse);

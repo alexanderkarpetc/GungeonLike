@@ -16,10 +16,10 @@ namespace GamePlay.Player
         
         private int _verticalMove;
         private int _horizontalMove;
-        private bool _isInvincible;
         
         private readonly float Inertia = 0.2f;
-        
+        private bool _isDamaging;
+
         private void Update()
         {
             if (!IsOwner) return; // Only the owner should handle input
@@ -55,35 +55,46 @@ namespace GamePlay.Player
             _rigidbody.linearVelocity = Vector2.Lerp(_rigidbody.linearVelocity, targetVelocity, Inertia);
         }
 
-        public void Hit()
+            
+        [ServerRpc(RequireOwnership = false)]
+        public void DealDamageServerRpc(float damage, ulong ownerId)
         {
-            if (!_isInvincible)
-                StartCoroutine(ApplyHit());
-        }
-
-        private IEnumerator ApplyHit()
-        {
-            _isInvincible = true;
-            var state = AppModel.PlayerState();
-            state.DealDamage();
-
-            if (state.CurrentHp <= 0)
+            var state = AppModel.PlayerState(ownerId);
+            state.DealDamage(Mathf.CeilToInt(damage));
+            if (state.CurrentHp.Value <= 0)
             {
                 Debug.LogError("Player died");
                 // Die();
-                yield break;
+                // return;
             }
 
-            // ScreenBlink
-            var bodyColor = _body.color;
-            bodyColor.a = 0.5f;
-            _body.color = bodyColor;
+            ApplyHitClientRpc(ownerId);
+            StartCoroutine(ApplyHitAnimation());
+        }
 
-            yield return new WaitForSeconds(1f);
+        [ClientRpc]
+        private void ApplyHitClientRpc(ulong clientId)
+        {
+            if (NetworkManager.Singleton.LocalClientId == clientId)
+            {
+                if (_isDamaging)
+                {
+                    return;
+                }
+                StartCoroutine(ApplyHitAnimation());
+            }
+        }
 
-            bodyColor.a = 1f;
-            _body.color = bodyColor;
-            _isInvincible = false;
+        private IEnumerator ApplyHitAnimation()
+        {
+            _isDamaging = true;
+            // Red Screen
+            _body.color = Color.red;
+
+            yield return new WaitForSeconds(0.3f);
+
+            _body.color = Color.white;
+            _isDamaging = false;
         }
 
         private void Die()

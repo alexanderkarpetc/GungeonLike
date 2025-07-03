@@ -13,10 +13,10 @@ namespace GamePlay.Player
     public class PlayerState : NetworkBehaviour
     {
         // todo: not a good idea to have this here
-        public NetworkVariable<WeaponType> CurrentWeaponType = new NetworkVariable<WeaponType>();
+        public NetworkVariable<WeaponType> CurrentWeaponType = new();
 
-        public int CurrentHp;
-        public int MaxHp;
+        public NetworkVariable<int> CurrentHp = new ();
+        public NetworkVariable<int> MaxHp = new ();
         
         [SerializeField] private Weapon _startingWeapon;
 
@@ -25,7 +25,6 @@ namespace GamePlay.Player
         private int _exp = 0;
         private PlayerInitializer _initializer = new PlayerInitializer();
 
-        public event Action OnHealthChanged;
         public event Action OnDamageTake;
         public Weapon Weapon => _weapon;
         public Backpack Backpack = new Backpack(); 
@@ -49,7 +48,14 @@ namespace GamePlay.Player
             }
             else if(!IsServer)
             {
+                // here client receives server gun
                 SyncWeapon(CurrentWeaponType.Value, OwnerClientId).Forget();
+            }
+
+            if (IsServer)
+            {
+                MaxHp.Value = 100;
+                CurrentHp.Value = 100;
             }
         }
 
@@ -113,23 +119,20 @@ namespace GamePlay.Player
             AddWeaponServerRpc(Backpack.CurrentWeapon.Type, OwnerClientId);
         }
 
-        public void Heal()
+        public void Heal(int value)
         {
-            CurrentHp = Mathf.Clamp(CurrentHp + 1, 0, MaxHp);
-            OnHealthChanged?.Invoke();
+            CurrentHp.Value = Mathf.Clamp(CurrentHp.Value + value, 0, MaxHp.Value);
         }
 
-        public void DealDamage()
+        public void DealDamage(int value)
         {
-            CurrentHp--;
-            OnHealthChanged?.Invoke();
+            CurrentHp.Value -= value;
             OnDamageTake?.Invoke();
         }
 
-        public void IncreaseMaxHp()
+        public void IncreaseMaxHp(int value)
         {
-            MaxHp++;
-            OnHealthChanged?.Invoke();
+            MaxHp.Value += value;
         }
 
         public void LearnSkill(Skill skill)

@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
-using GamePlay.Common;
 using GamePlay.Enemy.Brain;
-using GamePlay.Enemy.State;
 using GamePlay.Weapons;
 using Pathfinding;
 using Unity.Netcode;
@@ -24,7 +21,7 @@ namespace GamePlay.Enemy
 
     public Action<EnemyController> OnDeath;
 
-    public NetworkVariable<EnemyState> State = new();
+    public NetworkVariable<int> Health = new();
     public Weapon Weapon;
     public Vector3? CurrentTarget;
     
@@ -64,14 +61,14 @@ namespace GamePlay.Enemy
     [ServerRpc]
     public void SetHealthServerRpc(int value)
     {
-      State.Value = new EnemyState{Hp = value};
+      Health.Value = value;
     }
     
     [ServerRpc(RequireOwnership = false)]
-    public void DealDamageServerRpc(float damage)
+    public void DealDamageServerRpc(int damage)
     {
-      State.Value = new EnemyState {Hp = State.Value.Hp - damage};
-      if (!isDying && State.Value.Hp <= 0)
+      Health.Value -= damage;
+      if (!isDying && Health.Value <= 0)
       {
         Death();
       }

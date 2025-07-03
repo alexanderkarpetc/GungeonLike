@@ -7,6 +7,7 @@ namespace GamePlay.Player
 {
   public class PlayerInitializer
   {
+    // todo init by server I guess
     public void Init(Weapon startingWeapon)
     {
       AppModel.PlayerState().AddWeapon(startingWeapon);

@@ -100,8 +100,8 @@ GameObject:
   - component: {fileID: 2215793121671682648}
   - component: {fileID: 2935388362033553556}
   - component: {fileID: -3432472208502708212}
-  - component: {fileID: 6041026885748695197}
   - component: {fileID: 3420791274627898777}
+  - component: {fileID: 1295386510620652882}
   m_Layer: 0
   m_Name: AmmoBox
   m_TagString: Untagged
@@ -223,23 +223,6 @@ MonoBehaviour:
   AutoObjectParentSync: 1
   SyncOwnerTransformWhenParented: 1
   AllowOwnerToParent: 0
---- !u!114 &6041026885748695197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2215793121671682654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3653419f91507e54dbec4b1f4444b6bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowTopMostFoldoutHeaderGroup: 1
-  Weapon: {fileID: 0}
-  ResourceValue:
-    resourceKind: 0
-    amount: 0
 --- !u!95 &3420791274627898777
 Animator:
   serializedVersion: 7
@@ -262,3 +245,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1295386510620652882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2215793121671682654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9111d0d5839962429815d8a7086b5c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  ResourceValue:
+    resourceKind: 0
+    amount: 0
