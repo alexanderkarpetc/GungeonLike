@@ -1,0 +1,347 @@
+fileFormatVersion: 2
+guid: e9ae60d4919a3fa4bafe4ef187ba60d2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 18
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: elephant_gun_fire_001.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 47
+        width: 30
+        height: 12
+      alignment: 9
+      pivot: {x: 0.2760552, y: 0.20714886}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f0c65f9ab607349b9433aaa8e0cde8
+      internalID: 897752873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elephant_gun_fire_002.png
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 44
+        width: 28
+        height: 15
+      alignment: 9
+      pivot: {x: 0.26005894, y: 0.23126602}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d8a4c2b1f6c0340bf8cb9b728aa61f
+      internalID: -1602810275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elephant_gun_fire_003.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 35
+        width: 31
+        height: 7
+      alignment: 9
+      pivot: {x: 0.2699425, y: 0.18992178}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08950c9729eb4a045b773af274af3a7a
+      internalID: 644753428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elephant_gun_fire_004.png
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 35
+        width: 31
+        height: 7
+      alignment: 9
+      pivot: {x: 0.27327654, y: 0.18992178}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2055a0935c47cd44fb0fed30c90488f0
+      internalID: 1853709536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elephant_gun_fire_005.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 25
+        width: 31
+        height: 8
+      alignment: 9
+      pivot: {x: 0.27994502, y: 0.20284247}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea200c853703c84ba550945ae2aea16
+      internalID: 1891676694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elephant_gun_fire_006.png
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 24
+        width: 31
+        height: 9
+      alignment: 9
+      pivot: {x: 0.2766107, y: 0.17843819}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98db2f2b0bfecbe4084cc3b2c43d6e66
+      internalID: -1788995647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elephant_gun_idle_001.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 13
+        width: 31
+        height: 9
+      alignment: 9
+      pivot: {x: 0.26327416, y: 0.143985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7252c3e3d7ff5f34ba1b3b9e09da16f1
+      internalID: 737525937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elephant_gun_reload_001.png
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1
+        width: 27
+        height: 21
+      alignment: 9
+      pivot: {x: 0.33921897, y: 0.2145319}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6329a91b27534504385dc1837fff809c
+      internalID: -1770526428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elephant_gun_reload_002.png
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 44
+        width: 30
+        height: 15
+      alignment: 9
+      pivot: {x: 0.27260944, y: 0.5344528}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707cc810d0b43ec478517c052e7992ed
+      internalID: 260583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elephant_gun_reload_003.png
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 20
+        width: 17
+        height: 22
+      alignment: 9
+      pivot: {x: 0.49391937, y: 0.6738312}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510eae603034cc540b9c3428015bf1a6
+      internalID: -1791662334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7547337c2445d0e44a6bcb5e431a71a8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      elephant_gun_fire_001.png: 897752873
+      elephant_gun_fire_002.png: -1602810275
+      elephant_gun_fire_003.png: 644753428
+      elephant_gun_fire_004.png: 1853709536
+      elephant_gun_fire_005.png: 1891676694
+      elephant_gun_fire_006.png: -1788995647
+      elephant_gun_idle_001.png: 737525937
+      elephant_gun_reload_001.png: -1770526428
+      elephant_gun_reload_002.png: 260583
+      elephant_gun_reload_003.png: -1791662334
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

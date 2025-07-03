@@ -47,9 +47,9 @@ namespace GamePlay.Player
                 AppModel.SetOwner(OwnerClientId);
                 _initializer.Init(_startingWeapon);
             }
-            else
+            else if(!IsServer)
             {
-                SyncWeapon(_startingWeapon.Type, OwnerClientId).Forget();
+                SyncWeapon(CurrentWeaponType.Value, OwnerClientId).Forget();
             }
         }
 
@@ -84,7 +84,6 @@ namespace GamePlay.Player
             SyncWeapon(type, ownerClientId).Forget();
         }
 
-        // todo: check called twice for client on start
         private async UniTask SyncWeapon(WeaponType type, ulong ownerClientId)
         {
             await UniTask.WaitUntil(() => AppModel.PlayerTransform(ownerClientId) != null);

@@ -10,6 +10,7 @@
     PulseRifle = 5,
     RocketLauncher = 6,
     SniperRifle = 7,
+    ElephantRifle = 8,
 
     #endregion
 
